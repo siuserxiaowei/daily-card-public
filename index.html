@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 学习卡片总入口</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  background: #fafafa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 50px 20px 40px;
+  text-align: center;
+}
+.hero h1 { font-size: 30px; margin-bottom: 10px; }
+.hero p { opacity: 0.9; font-size: 15px; }
+.container { max-width: 880px; margin: 0 auto; padding: 30px 20px 60px; }
+.section-title {
+  font-size: 18px; margin: 28px 0 14px;
+  padding-left: 10px; border-left: 4px solid #667eea;
+  display: flex; align-items: baseline; gap: 10px;
+}
+.weekday { font-size: 14px; color: #95a5a6; font-weight: normal; }
+.card {
+  display: flex; align-items: stretch;
+  background: white; border-radius: 10px; margin-bottom: 12px;
+  text-decoration: none; color: inherit;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.15s;
+  overflow: hidden;
+}
+.card:hover { box-shadow: 0 4px 16px rgba(102,126,234,0.18); transform: translateY(-1px); }
+.card-emoji {
+  font-size: 32px; padding: 18px 16px 18px 20px;
+  display: flex; align-items: center;
+  background: #f8f9fa;
+}
+.card-body { flex: 1; padding: 16px 18px; min-width: 0; }
+.card-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.card-meta { font-size: 12px; color: #95a5a6; margin-bottom: 8px; }
+.card-summary { font-size: 13px; color: #5d6d7e; line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-summary code { background: #fff8e1; color: #c0392b; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+.card-summary strong { color: #2c3e50; }
+.card-side {
+  padding: 14px 18px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  font-size: 11px; color: #95a5a6; min-width: 90px; text-align: right;
+}
+.badge { background: #e8f5e9; color: #2e7d32; padding: 3px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; }
+.card-kb { font-family: ui-monospace, monospace; }
+footer { text-align: center; padding: 30px; color: #bdc3c7; font-size: 12px; }
+@media (max-width: 600px) {
+  .hero { padding: 35px 18px; }
+  .hero h1 { font-size: 22px; }
+  .card-emoji { font-size: 24px; padding: 14px 12px; }
+  .card-side { padding: 10px 12px; min-width: 70px; }
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>📚 微信群学习卡片</h1>
+  <p>AI 替你读 N 个群,浓缩成可执行的学习点</p>
+</div>
+<div class="container">
+<section><h2 class="section-title">2026-05-04 <span class="weekday">周一</span></h2>
+<a class="card" href="2026-05-04 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">78 群 / 3,512 条消息 / 学习候选 744 条 / 真实 URL 49 个</div>
+    <div class="card-summary">5/4 群聊<strong>主旋律是 AI 编程</strong>(占 7/10 学习点)— 三条主线:<strong>(1) <code>Codex</code> + <code>Cola</code> 把 AI 编程推进到"computer use + 多步规划执行"阶段,但桌面版 100 万上下文不真实</strong>;<strong>(2) Cloudflare 给 AI agent 开户买域名,"软件买软件"时代来了</strong>;<strong>(3) 结构化文本(MD+JSON)替代 PDF 成共识</strong>。
+
+<strong>其余 3/10</strong>:OPC 公司注册新规(出海/创业)、独立开发者产品矩阵案例(watcha.cn 5 个产品)、AI 自媒体内容矩阵流(低调哥免费分享 8 步流程)。
+
+> ⚠️ 5/4 当天群</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">10 个学习点</span>
+    <span class="card-kb">23.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-04 内容创作专题.html">
+  <div class="card-emoji">✍️</div>
+  <div class="card-body">
+    <div class="card-title">内容创作专题</div>
+    <div class="card-meta">8 个内容创作方向群 / 34 条候选消息</div>
+    <div class="card-summary">5/4 内容创作圈最值得看的 3 件事:<strong>(1)<code>Codex 桌宠教程</code>成 9 群跨群最热爆款,创作圈也在围观技术派</strong>;<strong>(2)<code>钟莹</code> AI 人像摄影 prompt 框架三天涨粉 400+,提供具体可复用方法</strong>;<strong>(3)<code>枫丝语</code>提出"自媒体把文章做成 skills"是新趋势 — 内容资产化新方向</strong>。
+
+---</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">6 个学习点</span>
+    <span class="card-kb">8.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-04 电商专题.html">
+  <div class="card-emoji">🛒</div>
+  <div class="card-body">
+    <div class="card-title">电商专题</div>
+    <div class="card-meta">2 个电商相关群 / 8 条候选(数据极少)</div>
+    <div class="card-summary">5/4 电商主题 vault 里<strong>几乎没人聊</strong>。仅有的信号:<strong>(1)<code>小红书虚拟资料</code>是惠州 4 个新人都在做的赛道,<code>宋宋</code>实证月入 25000 / 日入 3000<code></strong>;<strong>(2)出海跨境融资有人开口子(全球 AI&品牌出海资源互助群)</strong>;<strong>(3)</code>赫兹的哥飞 + 彪哥 + 壹树 直播` 偏出海创业,沾电商边</strong>。
+
+⚠️ 想看真正的电商干货,你需要拉<strong>专门的电商群</strong>(TT Shop / Amazon / 闲鱼 / 补单互补 / 跨境 等),5/4 这些群不在你 vault 里。
+
+---</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">3 个学习点</span>
+    <span class="card-kb">5.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-04 出海专题.html">
+  <div class="card-emoji">🌍</div>
+  <div class="card-body">
+    <div class="card-title">出海专题</div>
+    <div class="card-meta">11 个出海方向群 / 31 条候选消息</div>
+    <div class="card-summary">5/4 出海最重要 3 件事:<strong>(1)<code>Cloudflare + Stripe 联手发布 AI Agent 三层协议</code>,agent 自己开户买域名拿 token 部署的范式确立</strong>;<strong>(2)<code>siuser小伟</code>(就是你)发了《Stripe 官方点名认证三十多位一人公司年入千万》并做成在线页</strong>;<strong>(3)<code>哥飞</code>深度拆解 SEO Canonical + 307 跳转转移权重的实战玩法</strong>。
+
+---</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">7 个学习点</span>
+    <span class="card-kb">10.3 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-03 <span class="weekday">周日</span></h2>
+<a class="card" href="2026-05-03 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">93 群 / 3,301 条消息 / 学习候选 655 条</div>
+    <div class="card-summary">5/3 跨群三条主线:<strong>(1)<code>青书</code>公开《低价订阅 ChatGPT 20x 完整教程》—— Bitget 虚拟卡 + 菲律宾/土耳其区,实付 146 刀</strong>;<strong>(2)<code>饼干哥哥</code>用爱马仕(hermes)多 Agent 搭建跨境电商团队,「Agent + 业务」组合开始走通</strong>;<strong>(3)群内多场哲学辩论 —— <code>OPC 是不是人</code>、<code>AI Coding vs 真实商业</code>、<code>管理 100 人 vs 距模型最近</code>,周日反思味浓</strong>。
+
+---</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">10 个学习点</span>
+    <span class="card-kb">15.3 KB</span>
+  </div>
+</a></section>
+
+</div>
+<footer>
+  🤖 本地生成 · 数据来自你的 Obsidian vault · 2026-05-05 10:27 更新
+</footer>
+</body>
+</html>
