@@ -662,7 +662,7 @@ ${groupSummaries.map((group) => {
     title: '8群知识点提炼',
     description: '从微信群最近30天消息中提炼出的原子知识点卡片。',
     body,
-    depth: 0,
+    depth: 1,
   }));
 }
 
