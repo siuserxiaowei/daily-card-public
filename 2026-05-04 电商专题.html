@@ -21,7 +21,27 @@
     color: white;
     padding: 60px 24px 50px;
     text-align: center;
+    position: relative;
   }
+  .nav-back {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.2s;
+  }
+  .nav-back:hover { background: rgba(255,255,255,0.3); }
   .hero .date { font-size: 14px; opacity: 0.85; margin-bottom: 10px; letter-spacing: 2px; }
   .hero h1 { font-size: 32px; margin-bottom: 16px; font-weight: 700; }
   .hero .summary { max-width: 720px; margin: 0 auto; font-size: 17px; opacity: 0.95; line-height: 1.7; text-align: left; }
@@ -70,7 +90,8 @@
   #content h2:contains("🔥") { color: #e74c3c; }
   /* 移动端 */
   @media (max-width: 640px) {
-    .hero { padding: 40px 18px; }
+    .hero { padding: 40px 18px; padding-top: 60px; }
+    .nav-back { top: 12px; left: 12px; padding: 6px 12px; font-size: 12px; }
     .hero h1 { font-size: 24px; }
     .container { padding: 24px 18px 60px; }
     #content h1 { font-size: 22px; }
@@ -87,6 +108,7 @@
 <body>
 
 <div class="hero">
+  <a class="nav-back" href="./index.html">← 返回首页</a>
   <div class="date">DAILY · 2026-05-04</div>
   <h1>📚 微信群学习卡片</h1>
   <div class="summary">5/4 电商主题 vault 里<strong>几乎没人聊</strong>。仅有的信号:<strong>(1)<code>小红书虚拟资料</code>是惠州 4 个新人都在做的赛道,<code>宋宋</code>实证月入 25000 / 日入 3000<code></strong>;<strong>(2)出海跨境融资有人开口子(全球 AI&品牌出海资源互助群)</strong>;<strong>(3)</code>赫兹的哥飞 + 彪哥 + 壹树 直播` 偏出海创业,沾电商边</strong>。

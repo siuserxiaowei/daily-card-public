@@ -21,7 +21,27 @@
     color: white;
     padding: 60px 24px 50px;
     text-align: center;
+    position: relative;
   }
+  .nav-back {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.2s;
+  }
+  .nav-back:hover { background: rgba(255,255,255,0.3); }
   .hero .date { font-size: 14px; opacity: 0.85; margin-bottom: 10px; letter-spacing: 2px; }
   .hero h1 { font-size: 32px; margin-bottom: 16px; font-weight: 700; }
   .hero .summary { max-width: 720px; margin: 0 auto; font-size: 17px; opacity: 0.95; line-height: 1.7; text-align: left; }
@@ -70,7 +90,8 @@
   #content h2:contains("🔥") { color: #e74c3c; }
   /* 移动端 */
   @media (max-width: 640px) {
-    .hero { padding: 40px 18px; }
+    .hero { padding: 40px 18px; padding-top: 60px; }
+    .nav-back { top: 12px; left: 12px; padding: 6px 12px; font-size: 12px; }
     .hero h1 { font-size: 24px; }
     .container { padding: 24px 18px 60px; }
     #content h1 { font-size: 22px; }
@@ -87,6 +108,7 @@
 <body>
 
 <div class="hero">
+  <a class="nav-back" href="./index.html">← 返回首页</a>
   <div class="date">DAILY · 2026-05-03</div>
   <h1>📚 微信群学习卡片</h1>
   <div class="summary">5/3 跨群三条主线:<strong>(1)<code>青书</code>公开《低价订阅 ChatGPT 20x 完整教程》—— Bitget 虚拟卡 + 菲律宾/土耳其区,实付 146 刀</strong>;<strong>(2)<code>饼干哥哥</code>用爱马仕(hermes)多 Agent 搭建跨境电商团队,「Agent + 业务」组合开始走通</strong>;<strong>(3)群内多场哲学辩论 —— <code>OPC 是不是人</code>、<code>AI Coding vs 真实商业</code>、<code>管理 100 人 vs 距模型最近</code>,周日反思味浓</strong>。
