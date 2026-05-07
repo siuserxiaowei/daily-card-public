@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>2026-05-06 · 赫兹的朋友们~出海交流</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f8fb;color:#243043;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB",sans-serif;line-height:1.72}.hero{background:linear-gradient(135deg,#2563eb 0%,#0f766e 100%);color:#fff;padding:44px 22px 36px}.hero-inner{max-width:1080px;margin:0 auto}.back{display:inline-flex;color:#fff;text-decoration:none;background:rgba(255,255,255,.16);padding:7px 12px;border-radius:999px;font-size:13px;margin-bottom:18px}.kicker{opacity:.82;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}h1{font-size:30px;line-height:1.25;margin:7px 0 10px}.hero p{max-width:860px;opacity:.94}.container{max-width:1080px;margin:0 auto;padding:28px 18px 64px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 24px}.stat{background:white;border:1px solid #e5e7eb;border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}.stat b{display:block;font-size:24px;color:#111827}.stat span{font-size:12px;color:#6b7280}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{display:block;text-decoration:none;color:inherit;background:white;border:1px solid #e5e7eb;border-radius:10px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s}.card:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,99,235,.13)}.card h2,.card h3{margin:0 0 8px;font-size:17px;color:#111827}.meta{font-size:12px;color:#6b7280;margin-bottom:10px}.summary{font-size:13px;color:#4b5563}.days{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.day{background:#fff;border:1px solid #e5e7eb;border-radius:9px;padding:12px;text-decoration:none;color:inherit}.day:hover{border-color:#2563eb}.badge{display:inline-flex;background:#ecfdf5;color:#047857;border-radius:999px;padding:2px 8px;font-size:12px}.report{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}.content h1{font-size:24px;border-bottom:1px solid #e5e7eb;padding-bottom:10px}.content h2{font-size:17px;margin:18px 0 8px;padding:10px 12px;background:#f8fafc;border-left:4px solid #2563eb;border-radius:6px}.content h3{font-size:16px}.content p{margin:8px 0}.content blockquote{margin:10px 0;padding:10px 14px;border-left:4px solid #f59e0b;background:#fffbeb;border-radius:6px;color:#713f12}.content code{background:#f3f4f6;color:#be123c;padding:2px 6px;border-radius:4px}.content a{color:#1d4ed8;text-decoration:none;border-bottom:1px dashed #93c5fd}.content pre{white-space:pre-wrap;background:#111827;color:#e5e7eb;padding:12px;border-radius:8px;overflow:auto}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}.toolbar a{background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:7px 12px;text-decoration:none;color:#374151;font-size:13px}footer{text-align:center;color:#9ca3af;font-size:12px;padding:28px}@media(max-width:760px){.stats,.grid,.days{grid-template-columns:1fr}h1{font-size:24px}.hero{padding-top:34px}.container{padding:20px 14px 50px}.content h2{font-size:15px}}
+</style></head><body><section class="hero"><div class="hero-inner"><a class="back" href="index.html">← 返回</a><div class="kicker">WECHAT GROUP DAILY</div><h1>2026-05-06 · 赫兹的朋友们~出海交流</h1><p>60 条消息 · 7.1 KB</p></div></section><main class="container"><div class="toolbar"><a href="index.html">本群日期列表</a><a href="../index.html">8群总入口</a><a href="../../index.html">Public 首页</a></div><article class="report content"><h1>2026-05-06 · 56205500625@chatroom</h1>
+<h2>07:31:33 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>早上好，朋友们！<br>不知道大家每次网站要接入支付是什么样的流程，我之前是创建一个Stipe 账号，然后添加webhook，手动创建自己产品，然后苦逼的去把对应的价格id 放到对应的产品上，这一套操作还挺花时间的。然后发现stripe 其实提供了cli ，可以让AI 去帮我们做这一套的操作。</p>
+<p>stripe cli 官方文档：docs.stripe.com/stripe-cli</p>
+<h2>07:31:45 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>安装cli<br>这个可以按照文档里的教程安装，不过现在这些操作我一般让AI 去做了。<br>我就告诉claude : 参考文档docs.stripe.com/stripe-cli ，帮我安装stripe cli 即可。然后AI 会执行 stripe login 让你在网页端进行授权登录。</p>
+<h2>07:32:46 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>直接使用cli 接入支付创建产品<br>接入这个也是口喷（我是让他基于模板修改的，大家可以根据自己的模板调整）：pro 会员是 9.9 每月的订阅费，把lifetime 换成Premium订阅，29.9每月，同时支持年费，分别是99 和 299 一年，参考文档：<a href="https://docs.tanstarter.dev/docs/payment/stripe，使用stripe" target="_blank" rel="noopener noreferrer">https://docs.tanstarter.dev/docs/payment/stripe，使用stripe</a> cli 创建对应的webhook 和 产品，完成stripe 的支付接入。</p>
+<p>不过需要注意的是，stripe cli 要创建线上产品，需要配置线上环境的密钥 sk_lice_xxxx。</p>
+<p>等待AI处理完成之后，你就会发现AI帮你创建好了对应价格的产品，webhook也按照要求，把监听的事件配置好了。也能直接在线上环境付款了。</p>
+<h2>07:38:35 · type244813135921</h2>
+<p><strong>这是手写的吗？</strong></p>
+<blockquote>null</blockquote>
+<h2>07:39:49 · text</h2>
+<p>wxid_5396913969012:<br>手写的，就描述需求，ai就创建产品了接入支付了</p>
+<h2>07:43:08 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>上次 @Meepo@huntifyai.com 分享过这个方式，跟着他学的，哈哈哈[社会社会]</p>
+<h2>07:43:08 · image</h2>
+<p>[图片] md5=60930b969b2b...</p>
+<h2>07:46:08 · text</h2>
+<p>lisanke:<br>[强][强]</p>
+<h2>07:46:11 · text</h2>
+<p>lisanke:<br>[Firecracker]</p>
+<h2>07:46:56 · text</h2>
+<p>lisanke:<br>这么优秀还这么勤奋爱学习，活该赫兹大佬日入万刀 [强][强]</p>
+<h2>07:49:50 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>冲冲冲[加油]，大家都日入万刀</p>
+<h2>07:52:18 · type266287972401</h2>
+<p><strong>&quot;秀才AI@tooluck.org&quot; 拍了拍 &quot;赫兹&quot;</strong></p>
+<h2>08:04:05 · text</h2>
+<p>imguoyu:<br>[啤酒]</p>
+<h2>08:19:57 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>赫兹太牛批了！</p>
+<h2>08:35:48 · type266287972401</h2>
+<p><strong>&quot;大坤&quot; 拍了拍 &quot;Meepo@huntifyai.com&quot; [啤酒]</strong></p>
+<h2>08:40:01 · type266287972401</h2>
+<p><strong>&quot;LvXiuCai&quot; 拍了拍 &quot;Meepo@huntifyai.com&quot; [啤酒]</strong></p>
+<h2>08:45:09 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>有个小建议是只暴露 stripe 测试环境的 api key 给 claude code,测试完毕到界面去一键复制到生产环境</p>
+<h2>08:46:26 · text</h2>
+<p>qq578633724:<br>赫总日入万刀了吗？坐火箭呀简直</p>
+<h2>08:46:46 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>webhook 貌似不能一键复制，还是得手动创建</p>
+<h2>08:46:50 · type244813135921</h2>
+<p><strong>是的，说的没错，但是没开单之前，我这些 key 无所谓了😄</strong></p>
+<h2>08:46:55 · type244813135921</h2>
+<p><strong>创建的产品 也能复制到生产环境吗？  或者是直接修改一下线上环境的密钥</strong></p>
+<h2>08:47:21 · text</h2>
+<p>wxid_jh05if6r9gug11:<br>就算复制过去，price id也不一样呀</p>
+<h2>08:47:33 · type244813135921</h2>
+<p><strong>没有，应该还早，前面不是祝福么[破涕为笑]</strong></p>
+<h2>08:47:59 · type244813135921</h2>
+<p><strong>直接 cli ，skill 都能给你创建，这么说吧，把 key 给他，啥都可以做，我压根就没看过那些</strong></p>
+<h2>08:48:08 · text</h2>
+<p>wxid_tqtlkugm3kvj12:<br>请问有没有教vibe coding 建站的课程，</p>
+<h2>08:48:53 · text</h2>
+<p>wxid_tqtlkugm3kvj12:<br>我想自己学学😆</p>
+<h2>08:48:53 · type244813135921</h2>
+<p><strong>你看 还是有需求</strong></p>
+<h2>08:49:13 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>price id 确实不同了，不过就复制一次，工作量还好</p>
+<h2>08:50:03 · type244813135921</h2>
+<p><strong>其实我就是为了解决webhook 和 产品配置的问题，这个还是挺繁琐的，而且人工容易配错[破涕为笑]</strong></p>
+<h2>08:50:04 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>熠辉的 vibe coding 课程不错, <a href="https://happyaicoding.com" target="_blank" rel="noopener noreferrer">https://happyaicoding.com</a>  @西西弗斯</p>
+<h2>08:50:22 · text</h2>
+<p>wxid_tqtlkugm3kvj12:<br>@Meepo@huntifyai.com 感谢🙏</p>
+<h2>08:50:27 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>不会啊，我的所有数据都是AI创建的，它能做到的</p>
+<h2>08:52:11 · text</h2>
+<p>wxid_tqtlkugm3kvj12:<br>我以前是想都不敢想，会一点编程，但按传统套路学全栈估计是很难，AI让一切成为了可能</p>
+<h2>08:58:23 · image</h2>
+<p>[图片] md5=92f83333d4fe...</p>
+<h2>08:58:48 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>就是产品后面那三个点那里</p>
+<h2>09:00:12 · type244813135921</h2>
+<p><strong>原来如此，多谢[抱拳]</strong></p>
+<h2>09:01:02 · type244813135921</h2>
+<p><strong>这样 priice id 也会变吗</strong></p>
+<h2>09:02:56 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>会变的</p>
+<h2>09:03:42 · type266287972401</h2>
+<p><strong>&quot;秀才AI@tooluck.org&quot; 拍了拍 &quot;我讲个笑话，你可别哭啊&quot;</strong></p>
+<h2>09:05:05 · text</h2>
+<p>wxid_eokeu8rcs9p312:<br>webhook 也能手动复制不？还是每次都要走一遍勾选监听事件的流程</p>
+<h2>09:08:31 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>webhook 这个貌似没有，可以登录页面看看，咱们提速还是在安全的前提下提速，祝各位早日日入万刀</p>
+<h2>09:12:38 · type244813135921</h2>
+<p><strong>如果是线上环境操作，这有个轮换密钥，换个新的，应该也就安全了吧</strong></p>
+<h2>09:12:39 · image</h2>
+<p>[图片] md5=f201373348d5...</p>
+<h2>09:14:19 · text</h2>
+<p>wxid_xzac12ng1eyk21:<br>这个更优雅，就是一定要记得换，真是没有十全十美的方案</p>
+<h2>09:15:12 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>是的</p>
+<h2>09:15:34 · type244813135921</h2>
+<p><strong>🐂🍺</strong></p>
+<h2>09:21:15 · type244813135921</h2>
+<p><strong>这个好，不要在没开单的地方担心泄露</strong></p>
+<h2>09:21:28 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>09:28:57 · type244813135921</h2>
+<p><strong>学到了!</strong></p>
+<blockquote>null</blockquote>
+<h2>09:29:06 · type266287972401</h2>
+<p><strong>&quot;大坤&quot; 拍了拍 &quot;我讲个笑话，你可别哭啊&quot;</strong></p>
+<h2>09:31:02 · text</h2>
+<p>Byang862987911:<br>听说个人身份注册使用 stripe 收款，容易封号。 有这一说吗[捂脸]</p>
+<h2>09:38:29 · type244813135921</h2>
+<p><strong>个人很多人正常用，等网站收入稳定了，可以注册公司的</strong></p>
+<h2>09:38:37 · type266287972401</h2>
+<p><strong>&quot;大坤&quot; 拍了拍 &quot;bby&quot; 明天不用来上班了</strong></p>
+<h2>09:39:13 · text</h2>
+<p>Byang862987911:<br>好的</p>
+<h2>09:39:23 · text</h2>
+<p>Byang862987911:<br>先有收入再说 哈哈</p>
+<h2>11:43:25 · system</h2>
+<p>[类型10000]</p>
+<h2>11:43:50 · text</h2>
+<p>xuefengwutong:<br>问一下，之前推荐的ahrefs订阅的那个有人还有吗</p>
+<h2>11:50:10 · text</h2>
+<p>wxid_5396913969012:<br>好像你问他都在卖的</p>
+<h2>11:50:45 · text</h2>
+<p>wxid_5396913969012:<br>【闲鱼】<a href="https://m.tb.cn/h.iCndJH0?tk=TM6s5n760VO" target="_blank" rel="noopener noreferrer">https://m.tb.cn/h.iCndJH0?tk=TM6s5n760VO</a> HU006 「快来捡漏【Similarweb 合购某宝买带semrush工具60/月】」<br>点击链接直接打开</p>
+<h2>11:51:25 · type244813135921</h2>
+<p><strong>你是说的这个吗，ahrefs 90元100的额度，可能不是很够用</strong></p>
+<blockquote>null</blockquote></article></main><footer>本地 Obsidian 群日报 · 2026-05-07 16:14 更新</footer></body></html>

@@ -1,0 +1,842 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>2026-04-29 · 赫兹的朋友们~出海交流</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f7f8fb;color:#243043;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB",sans-serif;line-height:1.72}.hero{background:linear-gradient(135deg,#2563eb 0%,#0f766e 100%);color:#fff;padding:44px 22px 36px}.hero-inner{max-width:1080px;margin:0 auto}.back{display:inline-flex;color:#fff;text-decoration:none;background:rgba(255,255,255,.16);padding:7px 12px;border-radius:999px;font-size:13px;margin-bottom:18px}.kicker{opacity:.82;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}h1{font-size:30px;line-height:1.25;margin:7px 0 10px}.hero p{max-width:860px;opacity:.94}.container{max-width:1080px;margin:0 auto;padding:28px 18px 64px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 24px}.stat{background:white;border:1px solid #e5e7eb;border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}.stat b{display:block;font-size:24px;color:#111827}.stat span{font-size:12px;color:#6b7280}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{display:block;text-decoration:none;color:inherit;background:white;border:1px solid #e5e7eb;border-radius:10px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s}.card:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,99,235,.13)}.card h2,.card h3{margin:0 0 8px;font-size:17px;color:#111827}.meta{font-size:12px;color:#6b7280;margin-bottom:10px}.summary{font-size:13px;color:#4b5563}.days{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.day{background:#fff;border:1px solid #e5e7eb;border-radius:9px;padding:12px;text-decoration:none;color:inherit}.day:hover{border-color:#2563eb}.badge{display:inline-flex;background:#ecfdf5;color:#047857;border-radius:999px;padding:2px 8px;font-size:12px}.report{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}.content h1{font-size:24px;border-bottom:1px solid #e5e7eb;padding-bottom:10px}.content h2{font-size:17px;margin:18px 0 8px;padding:10px 12px;background:#f8fafc;border-left:4px solid #2563eb;border-radius:6px}.content h3{font-size:16px}.content p{margin:8px 0}.content blockquote{margin:10px 0;padding:10px 14px;border-left:4px solid #f59e0b;background:#fffbeb;border-radius:6px;color:#713f12}.content code{background:#f3f4f6;color:#be123c;padding:2px 6px;border-radius:4px}.content a{color:#1d4ed8;text-decoration:none;border-bottom:1px dashed #93c5fd}.content pre{white-space:pre-wrap;background:#111827;color:#e5e7eb;padding:12px;border-radius:8px;overflow:auto}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}.toolbar a{background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:7px 12px;text-decoration:none;color:#374151;font-size:13px}footer{text-align:center;color:#9ca3af;font-size:12px;padding:28px}@media(max-width:760px){.stats,.grid,.days{grid-template-columns:1fr}h1{font-size:24px}.hero{padding-top:34px}.container{padding:20px 14px 50px}.content h2{font-size:15px}}
+</style></head><body><section class="hero"><div class="hero-inner"><a class="back" href="index.html">← 返回</a><div class="kicker">WECHAT GROUP DAILY</div><h1>2026-04-29 · 赫兹的朋友们~出海交流</h1><p>404 条消息 · 35.4 KB</p></div></section><main class="container"><div class="toolbar"><a href="index.html">本群日期列表</a><a href="../index.html">8群总入口</a><a href="../../index.html">Public 首页</a></div><article class="report content"><h1>2026-04-29 · 56205500625@chatroom</h1>
+<h2>07:37:14 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>早上好，朋友们！<br>最近复盘了某个网站的转化链路，主要是访问-&gt;登录-&gt;试用-&gt;付费 ，分析了这个流程做的好的地方和可能可以优化的点。今天来分享一下这个复盘过程</p>
+<h2>07:37:37 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>访问到登录</p>
+<p>缺少这部分数据，可以每个访客打开网页时生成一个访客id ，把这个访客id 的utm_soure(来源)，第一次进入时的页面，IP等信息，都保存到数据库，后续如果登录，也把这些数据和用户登录关联在一起。后续优化后也可以对比查看登录率的变化。</p>
+<p>做的好的地方：<br>有免费试用的关键字，用户会愿意试用。</p>
+<p>可能可以优化的点：<br>1.首页修改为可以直接使用的工具，未登录就可以输入内容时，上传图片。然后点击生成的时候才强制登录，记录好用户之前输入的内容，用户登录后可以使用之前的内容点击生成，可以登录成功的同时把这些数据带到专门的生成页面。因为用户在输入内容之后，不想让自己之前的内容白白输入了，更愿意去进行登录试用。</p>
+<p>2.看看用户的ip ,用户是否可能是非英语国家，导致看不懂网站的内容，而放弃使用，可以考虑根据ip识别国家语言， 然后弹出浮层让用户切换对应的多语言</p>
+<p>3.可以测试一下Google one tap 登录，对登录率是否有提升</p>
+<h2>07:37:49 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>登录到功能试用<br>做的好的地方：<br>内置了一些文字提示词和示例图片，降低用户试用的门槛</p>
+<p>可能可以优化的点：<br>1.去掉用户来源询问的弹窗，多一个操作步骤，用户可能就会离开，用已经有的utm_soure去追踪，而不是让用户进行选择。目前来源渠道也比较单一，如果后续想要知道是来自朋友推荐这些渠道，也可以试着加上好友邀请双方赠送积分，来识别好友邀请的场景。</p>
+<p>2.可以选择的参数太多了，而且有些参数看着是也不能选择，选择参数太多，用户可能会有选择困难症，提升用户生成时的复杂度。可以把这部分不能选择的内容折叠起来。</p>
+<p>3.首屏HERO区域下方第一个section ，感觉可以把 How It Works 顺序调整，换成下方的生成效果的展示，用一些已经有的效果，让用户有生成结果的心理预期，从而促进用户去进行生成。</p>
+<h2>07:38:10 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>试用到功能付费<br>做的好的地方：<br>有限时折扣的横幅，年费的优惠。<br>有积分包，避免了有些用户不喜欢订阅的问题。<br>FAQ有订阅取消说明，积分消耗、过期说明。</p>
+<p>可能可以优化的点：<br>1.当用户生成积分不足时，不要只是错误提示，而是在当前页面直接弹付费的弹窗，不用点击和跳转新页面减少折损，也可以为了让用户完成当前的生成而立即消费。</p>
+<p>2.如果有一些vip专属的功能，可以在这个功能开关旁边加上vip 的标签，点击功能时，也弹窗付费弹窗</p>
+<p>3.用户如果跳转了支付页面没有支付又返回了，可以考虑邮件或者弹窗告诉用户一个优惠码，去进行挽留</p>
+<h2>07:38:17 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>网站转化优化是一个需要测试的过程，有的东西不一定对，不同产品，不同人群，可能需要不同的策略</p>
+<h2>07:38:43 · image</h2>
+<p>[图片] md5=174424c74397...</p>
+<h2>07:41:32 · text</h2>
+<p>dashi911:<br>[强]</p>
+<h2>07:56:00 · type266287972401</h2>
+<p><strong>&quot;叮&quot; 拍了拍 &quot;赫兹&quot;</strong></p>
+<h2>09:27:58 · text</h2>
+<p>xuefengwutong:<br>[强]</p>
+<h2>09:45:37 · text</h2>
+<p>wxid_e871rukwfiq921:<br>[强]</p>
+<h2>09:48:24 · type266287972401</h2>
+<p><strong>&quot;袁锐钦Ruiqin&quot; 拍了拍 &quot;赫兹&quot;</strong></p>
+<h2>09:48:40 · text</h2>
+<p>wetas6:<br>文章呢[奸笑]</p>
+<h2>09:48:50 · image</h2>
+<p>[图片] md5=04882a5cd41c...</p>
+<h2>09:49:00 · text</h2>
+<p>wetas6:<br>今天这个数据真感动[流泪]</p>
+<h2>09:49:07 · text</h2>
+<p>nexusplus:<br>太强了，我也想写文章。</p>
+<h2>09:49:09 · text</h2>
+<p>wetas6:<br>满打满算一个月了</p>
+<h2>09:49:11 · text</h2>
+<p>wxid_d6ighd7kqofj21:<br>[强]</p>
+<h2>09:49:20 · text</h2>
+<p>dashi911:<br>袁总牛逼</p>
+<h2>09:50:03 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>这个月的百刀任务达成😄</p>
+<h2>09:50:32 · image</h2>
+<p>[图片] md5=2a4d78c17861...</p>
+<h2>09:50:37 · text</h2>
+<p>dashi911:<br>满打满算两周</p>
+<h2>09:50:43 · image</h2>
+<p>[图片] md5=61ce24804fec...</p>
+<h2>09:50:44 · type244813135921</h2>
+<p><strong>牛逼</strong></p>
+<h2>09:50:48 · type244813135921</h2>
+<p><strong>这么快么 [666]</strong></p>
+<h2>09:50:59 · text</h2>
+<p>wetas6:<br>我终于达成100块任务了</p>
+<h2>09:51:06 · text</h2>
+<p>wxid_qc456ej8nxgf21:<br>666</p>
+<h2>09:51:16 · text</h2>
+<p>dashi911:<br>@袁锐钦Ruiqin 自己手写的吗</p>
+<h2>09:51:23 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>如果SEO策略不出问题，估计大几百刀没问题</p>
+<h2>09:52:14 · image</h2>
+<p>[图片] md5=d7ad587c9c5f...</p>
+<h2>09:52:16 · system</h2>
+<p>[类型10000]</p>
+<h2>09:53:25 · type244813135921</h2>
+<p><strong>ai</strong></p>
+<blockquote>null</blockquote>
+<h2>09:53:49 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>09:53:50 · text</h2>
+<p>wxid_y7cyye1r8c2f21:<br>手写阅读能大一些</p>
+<h2>09:54:19 · text</h2>
+<p>dashi911:<br>是的，手写还得练</p>
+<h2>09:54:39 · type244813135921</h2>
+<p><strong>扯淡</strong></p>
+<blockquote>null</blockquote>
+<h2>09:54:56 · text</h2>
+<p>wxid_y7cyye1r8c2f21:<br>可以测一测</p>
+<h2>09:55:21 · image</h2>
+<p>[图片] md5=4d9b44beab58...</p>
+<h2>09:55:27 · text</h2>
+<p>wetas6:<br>主要还得看内容</p>
+<h2>09:56:28 · text</h2>
+<p>dashi911:<br>写一篇得用多长时间</p>
+<h2>09:57:11 · text</h2>
+<p>wetas6:<br>10分钟吧</p>
+<h2>09:58:19 · text</h2>
+<p>wxid_pengv8gtvr9u22:<br>总共做了多久呀</p>
+<h2>10:01:19 · type244813135921</h2>
+<p><strong>大佬分享下</strong></p>
+<h2>10:03:35 · text</h2>
+<p>elderMo:<br>大佬分享下</p>
+<h2>10:04:04 · type244813135921</h2>
+<p><strong>其实方法就那些，哥飞，小排，赫兹都分享过，关键是自己得去做，我之前看了很久却一直没做总觉得那是概率性很低的事情，但是自己真做了，才发现他们说的可能不适合自己，这时候还是得去做，做多了才能有数据</strong></p>
+<h2>10:05:01 · text</h2>
+<p>wxid_az8ummgdhxwi22:<br>你是付费站吗</p>
+<h2>10:05:06 · type244813135921</h2>
+<p><strong>请问发外链/投流了吗，还是纯靠SEO啊</strong></p>
+<blockquote>null</blockquote>
+<h2>10:05:20 · text</h2>
+<p>wxid_az8ummgdhxwi22:<br>最近 我都 1-2 周没开单了 [捂脸]</p>
+<h2>10:06:07 · type244813135921</h2>
+<p><strong>有发外链，不过也不多，但是即使不发外链，我觉得单靠SEO, 找准的月uv破千也没问题</strong></p>
+<h2>10:06:55 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>昨天我做了个记录，基本上大家可以理解为纯SEO第一个月破1k uv是没问题的</p>
+<h2>10:06:55 · image</h2>
+<p>[图片] md5=26e36be35bf9...</p>
+<h2>10:09:02 · text</h2>
+<p>wxid_az8ummgdhxwi22:<br>我走了几个有的都没啥流量，感觉可能需求选的不好，竞争太大 [破涕为笑]</p>
+<h2>10:09:05 · text</h2>
+<p>wxid_az8ummgdhxwi22:<br>做了</p>
+<h2>10:14:51 · type244813135921</h2>
+<p><strong>[强]</strong></p>
+<h2>10:16:28 · type244813135921</h2>
+<p><strong>[ThumbsUp]</strong></p>
+<h2>10:18:10 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>牛啊</p>
+<h2>10:18:48 · text</h2>
+<p>wxid_98g2m3mfrobz31:<br>牛</p>
+<h2>10:20:21 · type266287972401</h2>
+<p><strong>&quot;阿泽kk&quot; 拍了拍 &quot;Meepo@huntifyai.com&quot; [啤酒]</strong></p>
+<h2>10:20:37 · type244813135921</h2>
+<p><strong>一个月6个，执行力拉满了</strong></p>
+<h2>10:21:13 · image</h2>
+<p>[图片] md5=c3ab0caa0b17...</p>
+<h2>10:21:19 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>你们薅到多少</p>
+<h2>10:22:02 · type244813135921</h2>
+<p><strong>这是哪个的</strong></p>
+<h2>10:22:05 · system</h2>
+<p>[类型10000]</p>
+<h2>10:22:39 · text</h2>
+<p>wxid_5396913969012:<br>@高涛杰 欢迎[鼓掌]</p>
+<h2>10:22:40 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>@Meepo@huntifyai.com 所有站后台都是vercel+supabase吗</p>
+<h2>10:22:55 · image</h2>
+<p>[图片] md5=c4b21b0a9479...</p>
+<h2>10:22:56 · text</h2>
+<p>gongkaichun:<br>2亿</p>
+<h2>10:23:06 · type244813135921</h2>
+<p><strong>又一位千刀的朋友</strong></p>
+<blockquote>null</blockquote>
+<h2>10:23:07 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>@Meepo@huntifyai.com 大佬从正式出海到现在多久了？</p>
+<h2>10:23:11 · text</h2>
+<p>gaotaojie1:<br>感谢群主邀请 多像各位老板学习[呲牙]</p>
+<h2>10:23:38 · type244813135921</h2>
+<p><strong>欢迎千刀哥</strong></p>
+<h2>10:23:51 · text</h2>
+<p>wxid_jh05if6r9gug11:<br>欢迎[庆祝][庆祝]</p>
+<h2>10:23:56 · text</h2>
+<p>gongkaichun:<br>欢迎</p>
+<h2>10:24:02 · type244813135921</h2>
+<p><strong>千刀哥分享一些</strong></p>
+<h2>10:24:30 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>百刀哥，千刀哥都有了</p>
+<h2>10:24:48 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>万刀哥也有了</p>
+<h2>10:24:57 · type244813135921</h2>
+<p><strong>不要怂 就是干。大力出奇迹。细节的话看赫兹的公众号。都是细节。 [呲牙]</strong></p>
+<h2>10:25:00 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>万刀太牛逼了</p>
+<h2>10:25:07 · text</h2>
+<p>wxid_ssshen07hwxu22:<br>还有日入万刀的大佬  哈哈哈[奸笑]</p>
+<h2>10:25:30 · type244813135921</h2>
+<p><strong>千刀哥上了多少个站</strong></p>
+<h2>10:26:34 · type244813135921</h2>
+<p><strong>之前一直围观，差不多这个月开始才按正确的方法去做</strong></p>
+<h2>10:26:36 · text</h2>
+<p>gaotaojie1:<br>没仔细算。应该10个左右订阅站。还有几个本来想挂adsense广告的。但是没流量。</p>
+<h2>10:26:56 · system</h2>
+<p>[类型10000]</p>
+<h2>10:27:03 · type244813135921</h2>
+<p><strong>all in cf</strong></p>
+<h2>10:27:24 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>哦哦，cloudflare多少钱一个月</p>
+<h2>10:27:50 · type244813135921</h2>
+<p><strong>感觉是给新人一个看得见的榜样了</strong></p>
+<h2>10:27:59 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>据说现在赚流量钱adsense还不如公众号文章，是真的吗</p>
+<h2>10:28:02 · text</h2>
+<p>gaotaojie1:<br>vercel开了三个账号 暂时免费</p>
+<h2>10:28:10 · text</h2>
+<p>gaotaojie1:<br>能白嫖就白嫖</p>
+<h2>10:28:11 · type244813135921</h2>
+<p><strong>我目前也围观状态，感觉看了很多零碎知识。</strong></p>
+<blockquote>null</blockquote>
+<h2>10:28:18 · type244813135921</h2>
+<p><strong>厉害了</strong></p>
+<h2>10:28:35 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>想总结一套sop出来</p>
+<h2>10:28:35 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>我自己关注过身边的几个case来比较的话，确实是</p>
+<h2>10:28:41 · type244813135921</h2>
+<p><strong>我不算新人了，围观了很久了</strong></p>
+<h2>10:28:53 · type244813135921</h2>
+<p><strong>你是我们这些新人的榜样</strong></p>
+<h2>10:30:05 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>[旺柴]上班挣个两三万，大家看不上，都说太底层，出海弄个百刀，就成大佬了</p>
+<h2>10:30:27 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>哈哈哈</p>
+<h2>10:30:33 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>上班太痛苦</p>
+<h2>10:31:13 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>每天都在想辞职 all in  出海</p>
+<h2>10:31:23 · type244813135921</h2>
+<p><strong>哈哈哈哈</strong></p>
+<h2>10:31:23 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>上班是纯靠时间换钱，出海是自己跑通商业闭环了，规模可以无限复制</p>
+<h2>10:31:25 · text</h2>
+<p>dashi911:<br>我也是</p>
+<h2>10:31:35 · text</h2>
+<p>dashi911:<br>上班摸鱼干最好了</p>
+<h2>10:31:49 · type244813135921</h2>
+<p><strong>出海能赚到钱的，跟辞职都没啥关系</strong></p>
+<blockquote>null</blockquote>
+<h2>10:31:50 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>别裸辞，建议先赚到钱再辞职</p>
+<h2>10:32:01 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>不然前期没收入会焦虑</p>
+<h2>10:32:31 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>对  感觉更多是给不想上班的借口</p>
+<h2>10:32:47 · image</h2>
+<p>[图片] md5=b51c586e2084...</p>
+<h2>10:32:59 · type244813135921</h2>
+<p><strong>认真的吗 每天忙的跟狗一样</strong></p>
+<h2>10:33:03 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>工厂牛马  电脑椅都不给个</p>
+<h2>10:33:13 · text</h2>
+<p>wxid_rokcxafrvuqp12:<br>是上班时间很闲才好</p>
+<h2>10:33:29 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>@阿一古 干啥软件的</p>
+<h2>10:33:37 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>我也干工厂软件</p>
+<h2>10:33:48 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>10:34:00 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>做图像视觉的</p>
+<h2>10:34:13 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>高端</p>
+<h2>10:34:24 · text</h2>
+<p>wetas6:<br>宁可找个轻松点的工作，</p>
+<h2>10:34:28 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>缺陷识别  嵌入式加速GPU</p>
+<h2>10:34:32 · text</h2>
+<p>wetas6:<br>也不能辞职啊</p>
+<h2>10:34:50 · type244813135921</h2>
+<p><strong>偏硬件啊</strong></p>
+<h2>10:35:05 · type244813135921</h2>
+<p><strong>有这种？</strong></p>
+<h2>10:35:06 · text</h2>
+<p>wxid_qc456ej8nxgf21:<br>拿上班时间干出海项目的 有没有</p>
+<h2>10:35:34 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>本身硬件出身  但是这公司慢慢的让你啥都干了</p>
+<h2>10:35:46 · text</h2>
+<p>wxid_rokcxafrvuqp12:<br>我这边淡季可以摸鱼干  现在到8月底都是旺季，太忙了</p>
+<h2>10:35:52 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>给开了个800账号  以为啥都有了</p>
+<h2>10:36:04 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>视觉这些都现学的</p>
+<h2>10:36:27 · type244813135921</h2>
+<p><strong>没有也得有，这才是正路</strong></p>
+<h2>10:36:54 · type244813135921</h2>
+<p><strong>后续考虑晚上摆摊烧烤  白天出海 有没有搞头</strong></p>
+<blockquote>null</blockquote>
+<h2>10:36:57 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>哈哈哈哈哈</p>
+<h2>10:37:08 · type244813135921</h2>
+<p><strong>这是啥呀</strong></p>
+<h2>10:37:21 · type244813135921</h2>
+<p><strong>那我建议你还是早点睡觉吧</strong></p>
+<blockquote>null</blockquote>
+<h2>10:37:27 · text</h2>
+<p>wetas6:<br>[擦汗]</p>
+<h2>10:37:49 · type244813135921</h2>
+<p><strong>晚上出海，早上卖早餐吧，白天睡觉</strong></p>
+<h2>10:37:52 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>10:38:01 · text</h2>
+<p>wxid_fineonxis3f012:<br>别太离谱嗷</p>
+<h2>10:38:22 · type244813135921</h2>
+<p><strong>离谱了</strong></p>
+<h2>10:38:23 · text</h2>
+<p>wxid_fineonxis3f012:<br>直接出国摆烧烤吧</p>
+<h2>10:38:38 · text</h2>
+<p>wxid_qc456ej8nxgf21:<br>烧烤出海嘛。</p>
+<h2>10:38:50 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>我真有烧烤技术</p>
+<h2>10:38:51 · text</h2>
+<p>wxid_qc456ej8nxgf21:<br>拍短视频。我挺爱看的</p>
+<h2>10:39:07 · text</h2>
+<p>wxid_qc456ej8nxgf21:<br>老外赞不绝口</p>
+<h2>10:39:08 · type244813135921</h2>
+<p><strong>做电工吧哈哈哈</strong></p>
+<h2>10:39:19 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>真不逗乐  想过这个问题  这段时间  上班上得我太痛苦了[捂脸]</p>
+<h2>10:39:48 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>项目来了天天加班</p>
+<h2>10:39:50 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>昨天我朋友才刚找了个电工 上门说要1000刀</p>
+<h2>10:40:11 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>@阿一古 你在哪里</p>
+<h2>10:40:12 · type244813135921</h2>
+<p><strong>那个国家</strong></p>
+<blockquote>null</blockquote>
+<h2>10:40:15 · text</h2>
+<p>wetas6:<br>两个没办法并行的事，你做到一起，就是搞崩自己而已</p>
+<h2>10:40:17 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>浙江</p>
+<h2>10:40:23 · type244813135921</h2>
+<p><strong>悉尼</strong></p>
+<h2>10:40:45 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>然后装套太阳能要3000刀</p>
+<h2>10:41:07 · text</h2>
+<p>wxid_azs09cqri9hv22:<br>屋顶清理也要个几千刀啊</p>
+<h2>10:41:16 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>是啊</p>
+<h2>10:42:05 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>在美国互联网公司上班的朋友说，他们很多同事都想考电工证，哪天裁员了就去做电工。</p>
+<h2>10:42:07 · type244813135921</h2>
+<p><strong>可能我想的有点简单了  烧烤这些准备食材这些具体时间没有算过  只是家里面有人开烧烤店</strong></p>
+<blockquote>null</blockquote>
+<h2>10:42:27 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>做这个方向的内容应该播放量挺大的估计。</p>
+<h2>10:42:30 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>如果时间充裕  我觉得并行干也不是不可以</p>
+<h2>10:42:44 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>主要他昨天就是给新房子换个水电表哈哈哈哈</p>
+<h2>10:43:01 · type244813135921</h2>
+<p><strong>边当电工，边拍短视频是吧，同时赚两分钱</strong></p>
+<h2>10:43:03 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>还是得狠狠赚老外的钱</p>
+<h2>10:43:17 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>狠狠提价</p>
+<h2>10:49:31 · text</h2>
+<p>wxid_98g2m3mfrobz31:<br>@阿一古 搞吧，说不定会发现，烧烤做起来了，比出海还赚钱[憨笑]</p>
+<h2>10:50:43 · text</h2>
+<p>wxid_0503495038612:<br>还是累，感觉光做站就挺累的了，要是还能做烧烤，那算是高精力人了</p>
+<h2>10:51:43 · text</h2>
+<p>wxid_90y7gznrtlsr22:<br>我真想着出国搞餐饮来着</p>
+<h2>10:52:10 · text</h2>
+<p>wxid_90y7gznrtlsr22:<br>我就是搞餐饮的 做小吃店的</p>
+<h2>10:52:29 · type244813135921</h2>
+<p><strong>嗯嗯  后续开起来了 给大家汇报战果逗闷子</strong></p>
+<blockquote>null</blockquote>
+<h2>10:52:40 · text</h2>
+<p>wxid_90y7gznrtlsr22:<br>看英国那个是真牛</p>
+<h2>10:53:50 · system</h2>
+<p>[类型10000]</p>
+<h2>10:55:37 · text</h2>
+<p>wxid_d6ighd7kqofj21:<br>大家感觉crisp 值的订阅么，</p>
+<h2>10:55:38 · text</h2>
+<p>wxid_98g2m3mfrobz31:<br>如果真能在国外搞起来，肯定比出海赚钱多了，还稳</p>
+<h2>10:56:01 · text</h2>
+<p>wxid_d6ighd7kqofj21:<br>或者有没有便宜些的平替产品</p>
+<h2>10:56:14 · type244813135921</h2>
+<p><strong>有很多</strong></p>
+<h2>10:58:16 · text</h2>
+<p>wxid_d6ighd7kqofj21:<br>crisp 最便宜的$45,</p>
+<h2>10:58:32 · type244813135921</h2>
+<p><strong>有推荐在用的么</strong></p>
+<h2>10:59:50 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>我在zendesk工作过，但这个太贵了没必要，你可以看看Freshdesk</p>
+<h2>11:00:24 · text</h2>
+<p>wxid_d6ighd7kqofj21:<br>好的，多谢，我研究下[笑脸]</p>
+<h2>11:02:28 · type244813135921</h2>
+<p><strong>这边建议夏天卖冰粉，冬天卖烧烤</strong></p>
+<h2>11:02:56 · text</h2>
+<p>wetas6:<br>餐饮是最难的</p>
+<h2>11:03:22 · text</h2>
+<p>wetas6:<br>碰过一次，不想再碰了</p>
+<h2>11:03:34 · text</h2>
+<p>f1045693:<br>来360度转一圈</p>
+<h2>11:03:47 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>直接先去别的小摊进货 然后到别的地加价卖 看卖不卖得出去</p>
+<h2>11:04:15 · text</h2>
+<p>haibing0:<br>餐饮就是累</p>
+<h2>11:04:55 · text</h2>
+<p>haibing0:<br>我都想搞辆电三轮卖冰粉了</p>
+<h2>11:05:05 · text</h2>
+<p>haibing0:<br>周末公园里面生意好得很</p>
+<h2>11:05:13 · text</h2>
+<p>haibing0:<br>卖完就收摊</p>
+<h2>11:05:27 · text</h2>
+<p>haibing0:<br>卖不完就自己吃</p>
+<h2>11:06:09 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>11:06:16 · text</h2>
+<p>wxid_fineonxis3f012:<br>给我来一碗</p>
+<h2>11:06:33 · text</h2>
+<p>haibing0:<br>8块钱一碗</p>
+<h2>11:06:54 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>11:09:02 · image</h2>
+<p>[图片] md5=d6b092ccd813...</p>
+<h2>11:09:53 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>之前不还有进货蜜雪冰城的柠檬水然后加价到别的地方卖的</p>
+<h2>11:10:20 · text</h2>
+<p>haibing0:<br>大自然的搬运工呗</p>
+<h2>11:10:36 · text</h2>
+<p>haibing0:<br>卖水能卖成首富</p>
+<h2>11:10:39 · text</h2>
+<p>haibing0:<br>哇哈哈</p>
+<h2>11:27:17 · text</h2>
+<p>wetas6:<br>定投基金真的稳[破涕为笑]</p>
+<h2>11:34:15 · text</h2>
+<p>wxid_1m6dl9iy9y7v22:<br>中证500，比大部分人都稳的多的多（过去2年）</p>
+<h2>11:34:44 · text</h2>
+<p>wxid_1m6dl9iy9y7v22:<br>基本超出80%的股民</p>
+<h2>11:35:21 · text</h2>
+<p>wxid_8khij6drn6rv22:<br>这个卖水的我有经验</p>
+<h2>11:35:26 · text</h2>
+<p>lvzhijian001:<br>定投纳斯达克更稳[旺柴]</p>
+<h2>11:35:55 · type244813135921</h2>
+<p><strong>展开说说,赚了还是赔了?</strong></p>
+<h2>11:36:05 · text</h2>
+<p>wxid_8khij6drn6rv22:<br>之前我们那有个卖水的  运山泉水  一开始就是那种小车  人卖  后来换成了自动投币  再后来变成了公司加上了自动扫码</p>
+<h2>11:36:25 · text</h2>
+<p>wxid_8khij6drn6rv22:<br>最开始只卖几个小区  最后卖到了全市区</p>
+<h2>11:36:37 · text</h2>
+<p>wxid_8khij6drn6rv22:<br>大概三四年的变化吧</p>
+<h2>11:37:21 · text</h2>
+<p>wxid_8khij6drn6rv22:<br>最后是那种大车  扫码出水</p>
+<h2>11:37:36 · text</h2>
+<p>haibing0:<br>你们不都接自来水烧开水喝吗</p>
+<h2>11:38:30 · type244813135921</h2>
+<p><strong>？</strong></p>
+<blockquote>null</blockquote>
+<h2>11:38:36 · text</h2>
+<p>wetas6:<br>你不怕肾结石？</p>
+<h2>11:39:35 · text</h2>
+<p>wxid_2mielj7ydanb12:<br>装了净水器 不怕[皱眉]</p>
+<h2>11:40:56 · text</h2>
+<p>wxid_zbbbku811opj21:<br>肾结石和饮水不足有关，和喝了什么水关系不是很大</p>
+<h2>11:41:39 · type244813135921</h2>
+<p><strong>净水器+1</strong></p>
+<h2>11:42:38 · text</h2>
+<p>wxid_zbbbku811opj21:<br>水要多喝是关键，保证小便不发黄。</p>
+<h2>11:44:10 · type244813135921</h2>
+<p><strong>[破涕为笑]</strong></p>
+<blockquote>null</blockquote>
+<h2>11:45:34 · text</h2>
+<p>wxid_2885628855612:<br>已经有了肾结石[捂脸]</p>
+<h2>11:48:23 · text</h2>
+<p>shangsantian:<br>主要是久坐不运动</p>
+<h2>11:48:48 · text</h2>
+<p>wxid_zbbbku811opj21:<br>多喝水，多运动。。。。</p>
+<h2>11:49:11 · type244813135921</h2>
+<p><strong>我们这儿接的好像就是江里的水，结石发作率太高了，很多人体内可能都有石头，只是大小和卡没卡住的问题，小石头喝水可能排了，大石头没卡住，在体内，很多人也不会去做啥检查</strong></p>
+<h2>11:49:24 · text</h2>
+<p>wxid_azs09cqri9hv22:<br>说白了，还是水质不咋行</p>
+<h2>11:49:56 · text</h2>
+<p>wxid_zbbbku811opj21:<br>有结石痛起来，很耽误事。</p>
+<h2>11:51:08 · text</h2>
+<p>wetas6:<br>水含矿物质太高，才会导致肾结石</p>
+<h2>11:51:44 · text</h2>
+<p>wxid_zbbbku811opj21:<br>那就装净化装备，或直接大桶纯净水，多喝水，还可以避免痛风发作。。。</p>
+<h2>11:52:39 · text</h2>
+<p>wxid_zbbbku811opj21:<br>在办公室里喝水多了，小便多，小便多了会提醒自已多起身走走</p>
+<h2>11:55:00 · text</h2>
+<p>wxid_azs09cqri9hv22:<br>还得泡茶喝，喝茶利尿[苦涩]</p>
+<h2>11:55:31 · text</h2>
+<p>shangsantian:<br>水质差的地区是容易得结石，大部分地区水质都没问题的，多喝水，多运动</p>
+<h2>11:56:02 · type244813135921</h2>
+<p><strong>茶叶草酸高，浓的不要喝，容易得结石</strong></p>
+<h2>11:56:02 · text</h2>
+<p>taotao120peng:<br>华西医生给我说的，就是多喝水，治疗各种腰椎突出，结石啥的，</p>
+<h2>11:57:52 · text</h2>
+<p>wxid_zbbbku811opj21:<br>结石主要原因是水喝的少，尿液中的矿物质形成了结晶。</p>
+<h2>11:58:02 · type244813135921</h2>
+<p><strong>喝金钱草，这玩意好像就是专门排结石的。</strong></p>
+<h2>11:58:31 · text</h2>
+<p>wxid_zbbbku811opj21:<br>痛风也是因为尿液少，不能稀释尿酸，尿酸凝结成结晶</p>
+<h2>12:00:45 · text</h2>
+<p>wxid_azs09cqri9hv22:<br>海鲜那些吃多了，好像就会痛风</p>
+<h2>12:00:45 · text</h2>
+<p>wxid_db8uqoo98j4h12:<br>去年尿酸一直700多 后面每天8杯水 现在就200多</p>
+<h2>12:01:33 · text</h2>
+<p>yanfei1939:<br>前期（结晶）每天保证喝2200ml以上水，有概率直接排掉</p>
+<h2>12:01:35 · type244813135921</h2>
+<p><strong>啤酒 海鲜 熬夜啥的更容易</strong></p>
+<h2>12:16:35 · text</h2>
+<p>sunny_gao520:<br>身体第一</p>
+<h2>12:17:04 · type244813135921</h2>
+<p><strong>肾有钙乳症吗</strong></p>
+<h2>12:21:49 · type244813135921</h2>
+<p><strong>没呢 就是去年喝酒跟熬夜多了</strong></p>
+<h2>12:23:17 · text</h2>
+<p>wetas6:<br>啤酒喝多了</p>
+<h2>12:34:13 · image</h2>
+<p>[图片] md5=937ce15989c5...</p>
+<h2>12:34:44 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>赫兹群郑州群友中午面基[旺柴]</p>
+<h2>12:35:16 · text</h2>
+<p>qq578633724:<br>这也可以？</p>
+<h2>12:35:33 · type244813135921</h2>
+<p><strong>想吃</strong></p>
+<h2>12:35:44 · text</h2>
+<p>wxid_h3dtbmwbky3121:<br>有没有天津群友</p>
+<h2>12:35:46 · text</h2>
+<p>wxid_1m6dl9iy9y7v22:<br>@LvXiuCai 你不是也在郑州？</p>
+<h2>12:35:52 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>有没有武汉的</p>
+<h2>12:52:29 · text</h2>
+<p>wxid_gyyth3cigt3y22:<br>武汉</p>
+<h2>12:52:37 · text</h2>
+<p>wxid_gyyth3cigt3y22:<br>@TONG 老师</p>
+<h2>12:53:18 · type266287972401</h2>
+<p><strong>&quot;droidHZ&quot; 拍了拍 &quot;Meepo@huntifyai.com&quot; [啤酒]</strong></p>
+<h2>12:55:39 · type244813135921</h2>
+<p><strong>看好你哦[旺柴]</strong></p>
+<blockquote>null</blockquote>
+<h2>12:55:42 · type266287972401</h2>
+<p><strong>&quot;大坤&quot; 拍了拍 &quot;Meepo@huntifyai.com&quot; [啤酒]</strong></p>
+<h2>13:04:02 · type244813135921</h2>
+<p><strong>xiaomi mimo 100t计划</strong></p>
+<blockquote>null</blockquote>
+<h2>13:04:18 · text</h2>
+<p>wxid_a0pbx6odunrl12:<br>小米</p>
+<h2>13:04:36 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>@木马人 为什么你会比我少？</p>
+<h2>13:04:58 · type244813135921</h2>
+<p><strong>不知道，也不知道咋定的</strong></p>
+<h2>13:06:08 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>我准备用mimo自己跑他测试站点</p>
+<h2>13:06:22 · type244813135921</h2>
+<p><strong>+1</strong></p>
+<h2>13:06:24 · image</h2>
+<p>[图片] md5=58b7db1c7bf3...</p>
+<h2>13:07:25 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>@：）  @Eureka 你俩有啥想法主题吗，或者想知道哪些东西</p>
+<h2>13:09:24 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>@木马人 额外还有个五块[捂脸]</p>
+<h2>13:09:24 · image</h2>
+<p>[图片] md5=70368b1a9949...</p>
+<h2>13:09:35 · type244813135921</h2>
+<p><strong>注册就送，我也有</strong></p>
+<h2>13:09:41 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>哦哦</p>
+<h2>13:09:48 · system</h2>
+<p>[类型10000]</p>
+<h2>13:09:50 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>目前来看，mimo 的确还可以</p>
+<h2>13:10:12 · text</h2>
+<p>wxid_a0pbx6odunrl12:<br>好像是实名认证送的5快</p>
+<h2>13:10:12 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br>群里有没有 领到 max 的大佬</p>
+<h2>13:12:16 · text</h2>
+<p>wxid_y7cyye1r8c2f21:<br>xiaomi mimo 100t计划哪里领</p>
+<h2>13:12:34 · text</h2>
+<p>wxid_hiamm30ms5cp22:<br><a href="https://100t.xiaomimimo.com/" target="_blank" rel="noopener noreferrer">https://100t.xiaomimimo.com/</a></p>
+<h2>13:14:28 · text</h2>
+<p>wxid_y7cyye1r8c2f21:<br>谢谢</p>
+<h2>13:17:36 · text</h2>
+<p>wxid_ifaqcfmtrnaq22:<br>能领多少额度？</p>
+<h2>13:53:49 · text</h2>
+<p>kyungmin:<br>大佬们，请问一下，claude max 5x 或者 20x 是可以拼车的吗？</p>
+<h2>13:54:54 · type244813135921</h2>
+<p><strong>距离2.5公里 [呲牙]</strong></p>
+<h2>14:01:39 · type244813135921</h2>
+<p><strong>可以的</strong></p>
+<blockquote>null</blockquote>
+<h2>14:01:49 · image</h2>
+<p>[图片] md5=f5d81fd382c1...</p>
+<h2>14:01:56 · text</h2>
+<p>wetas6:<br>[偷笑]</p>
+<h2>14:02:51 · text</h2>
+<p>liumeng880446:<br>[强]</p>
+<h2>14:03:12 · text</h2>
+<p>wxid_azs09cqri9hv22:<br>袁总什么时候直播</p>
+<h2>14:03:20 · type244813135921</h2>
+<p><strong>这个拼车是像谷歌家庭账号那样吗，还是一个账号多个设备登录呢</strong></p>
+<h2>14:03:44 · text</h2>
+<p>dashi911:<br>袁总好帅</p>
+<h2>14:04:06 · text</h2>
+<p>wetas6:<br>那是ai生成的！</p>
+<h2>14:04:22 · text</h2>
+<p>wetas6:<br>我让他小龙虾给我P上我的头像</p>
+<h2>14:04:30 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>14:04:48 · text</h2>
+<p>dashi911:<br>二维码扫不了啊</p>
+<h2>14:05:05 · text</h2>
+<p>wetas6:<br>这二维码也是ai生成的啊</p>
+<h2>14:05:29 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>14:12:41 · type244813135921</h2>
+<p><strong>可以多个设备登录</strong></p>
+<blockquote>null</blockquote>
+<h2>14:13:25 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>不过我觉得最近Claude 变辣鸡了</p>
+<h2>14:15:16 · text</h2>
+<p>kyungmin:<br>我这种小白，用啥都差不多哈哈，</p>
+<h2>14:16:35 · text</h2>
+<p>kyungmin:<br>@阿一古   请问你有 claude 拼车经验吗？我想拼一个，  20 刀的 pro 只够用 3 天的 [捂脸]</p>
+<h2>14:18:10 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>公司给我买的  有时候同事的用完了  就用用我的</p>
+<h2>14:18:21 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>我没有经验  你闲鱼问问吧</p>
+<h2>14:18:27 · type244813135921</h2>
+<p><strong>你20 刀中转可能只够用一天</strong></p>
+<h2>14:18:56 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>反正是可以拼的  但是vpn要固顶  不能乱跳  容易风控</p>
+<h2>14:19:38 · text</h2>
+<p>kyungmin:<br>我不需要 vpn 人在国外</p>
+<h2>14:19:59 · type244813135921</h2>
+<p><strong>我是直接买官方的</strong></p>
+<h2>14:30:55 · text</h2>
+<p>wetas6:<br>哥，你在国外，200刀你用不起吗[苦涩]</p>
+<h2>14:33:37 · text</h2>
+<p>wxid_z6p9ie8jmmu922:<br>有点节省了</p>
+<h2>14:35:50 · text</h2>
+<p>wxid_fineonxis3f012:<br>该省得省</p>
+<h2>14:36:33 · image</h2>
+<p>[图片] md5=c221437621da...</p>
+<h2>14:36:36 · text</h2>
+<p>liumeng880446:<br>国内的中转有点贵，我一个月花 4000+ 刀，不知道能顶一个 max 的量么</p>
+<h2>14:36:43 · text</h2>
+<p>ai757786288:<br>送的1w 才用了4刀</p>
+<h2>14:37:51 · text</h2>
+<p>dashi911:<br>不是，兄弟们，光哐哐干 token 了，赚的能覆盖 token 不</p>
+<h2>14:37:54 · text</h2>
+<p>wxid_e871rukwfiq921:<br>我20刀的claude+gpt plus额度都用不完</p>
+<h2>14:38:12 · text</h2>
+<p>wxid_e871rukwfiq921:<br>不是，兄弟们，光哐哐干 token 了，赚的能覆盖 token 不</p>
+<h2>14:38:15 · type244813135921</h2>
+<p><strong>1 个月 4000 刀吗？ [捂脸]</strong></p>
+<h2>14:38:16 · type244813135921</h2>
+<p><strong>用不起啊，国外不一定都是有钱人[Lol]</strong></p>
+<h2>14:38:44 · text</h2>
+<p>kyungmin:<br>而且，一个月 200 刀，上哪都不是小钱吧？</p>
+<h2>14:38:47 · type244813135921</h2>
+<p><strong>反正 4000 多人名币</strong></p>
+<h2>14:39:04 · text</h2>
+<p>elderMo:<br>那为啥不上官方订阅？</p>
+<h2>14:39:35 · text</h2>
+<p>liumeng880446:<br>要开票</p>
+<h2>14:40:06 · text</h2>
+<p>elderMo:<br>好吧，能报销那另说</p>
+<h2>14:41:15 · type244813135921</h2>
+<p><strong>这个真香，太羡慕了</strong></p>
+<h2>14:41:55 · image</h2>
+<p>[图片] md5=06cb3e9f225a...</p>
+<h2>14:42:01 · text</h2>
+<p>wxid_e871rukwfiq921:<br>送你一个枕头</p>
+<h2>14:42:36 · image</h2>
+<p>[图片] md5=e763915b3554...</p>
+<h2>14:43:22 · type244813135921</h2>
+<p><strong>才开始用 哈哈 local自动太傻了，只能用云端机器，全自动</strong></p>
+<h2>14:45:06 · type244813135921</h2>
+<p><strong>有pro吗？</strong></p>
+<blockquote>null</blockquote>
+<h2>14:46:01 · text</h2>
+<p>wxid_e871rukwfiq921:<br>自己看吧</p>
+<h2>14:49:30 · text</h2>
+<p>kyungmin:<br>plus 29.9 软妹币一个月？这么便宜。。。</p>
+<h2>14:52:32 · text</h2>
+<p>wxid_azs09cqri9hv22:<br>之前有过7块一个月的plus，羊毛都被薅突了。</p>
+<h2>14:53:23 · text</h2>
+<p>wxid_cgky388n6cg322:<br>闲鱼现在封号快得很</p>
+<h2>14:54:12 · text</h2>
+<p>liumeng880446:<br>之前看到有卖 11、有卖 130 ，觉得花 130 安心点，后面听说都一样[裂开]</p>
+<h2>14:54:51 · type244813135921</h2>
+<p><strong>哈哈哈 我也是 之前还买过antigravity的 五六十和两三百的  感觉两三百的安心一点 其实都是企业的</strong></p>
+<h2>14:56:57 · system</h2>
+<p>[类型10000]</p>
+<h2>14:57:49 · text</h2>
+<p>wxid_5396913969012:<br>@WesLin 欢迎[鼓掌]</p>
+<h2>14:58:50 · text</h2>
+<p>nexusplus:<br>认识的人。</p>
+<h2>14:59:23 · emoji</h2>
+<p>[微信内部媒体链接已过滤]</p>
+<h2>15:03:26 · type244813135921</h2>
+<p><strong>群友你好</strong></p>
+<h2>15:11:21 · text</h2>
+<p>lwm4567489:<br>我在86上买的 90一年的 gpt plus 今天被 openai 回收了[苦涩]</p>
+<h2>15:11:38 · text</h2>
+<p>lwm4567489:<br>用了大半个月</p>
+<h2>15:12:13 · text</h2>
+<p>liumeng880446:<br>会封号吗</p>
+<h2>15:12:32 · text</h2>
+<p>lwm4567489:<br>没封，就是订阅掉了</p>
+<h2>15:12:36 · text</h2>
+<p>gongkaichun:<br>这个有点亏</p>
+<h2>15:12:44 · text</h2>
+<p>gongkaichun:<br>86半个月</p>
+<h2>15:13:12 · text</h2>
+<p>lwm4567489:<br>我之前以为撑一个月就赚了</p>
+<h2>15:13:18 · text</h2>
+<p>lwm4567489:<br>[捂脸]</p>
+<h2>15:13:45 · text</h2>
+<p>wxid_rokcxafrvuqp12:<br>我也掉了  要不还是买个美区ID自己买吧</p>
+<h2>15:14:02 · text</h2>
+<p>lwm4567489:<br>86这个站，现在都不卖了</p>
+<h2>15:14:11 · text</h2>
+<p>lwm4567489:<br>有质保的可以退款</p>
+<h2>15:14:19 · text</h2>
+<p>gongkaichun:<br>我觉得，你去搞个土区订阅，还比这个好 @小北</p>
+<h2>15:14:27 · text</h2>
+<p>lwm4567489:<br>没质保的只能认栽</p>
+<h2>15:16:02 · text</h2>
+<p>lwm4567489:<br>我有美区ID，也订了claude pro, 但是 pro 不够用</p>
+<h2>15:16:23 · type244813135921</h2>
+<p><strong>土区便宜吗</strong></p>
+<h2>15:17:07 · text</h2>
+<p>lwm4567489:<br>还是再官订个 plus 比较靠谱</p>
+<h2>15:17:55 · text</h2>
+<p>kyungmin:<br>gpt 官方和 app store 所有国家都统一价， 土耳其，印度啥的，都是 20 美刀</p>
+<h2>15:18:10 · text</h2>
+<p>kyungmin:<br>但是轻度用户的话可以考虑买 go 而不是 plus</p>
+<h2>15:18:22 · text</h2>
+<p>kyungmin:<br>go 的话价格上会有一些差距</p>
+<h2>15:18:29 · text</h2>
+<p>wxid_5109891099012:<br>可以用cursor</p>
+<h2>15:18:40 · text</h2>
+<p>kyungmin:<br>我昨天刚买了个 gpt go 印度的， 人民币 30 左右吧</p>
+<h2>15:18:57 · text</h2>
+<p>wxid_rokcxafrvuqp12:<br>降智吗</p>
+<h2>15:18:58 · type266287972401</h2>
+<p><strong>&quot;长沙第一混子&quot; 拍了拍 &quot;Jay （方）&quot; Vibe Life[Waddle]</strong></p>
+<h2>15:21:06 · type244813135921</h2>
+<p><strong>go 对于出海的人估计是不够用的，哈哈哈</strong></p>
+<h2>15:21:48 · type244813135921</h2>
+<p><strong>我在说官方价格， 不是中转 [Grin]</strong></p>
+<h2>15:22:01 · text</h2>
+<p>qq578633724:<br>Claude max 100刀 + GPT Pro 100刀都不够用[流泪]</p>
+<h2>15:22:07 · type244813135921</h2>
+<p><strong>所以我说如果是轻度用户吗</strong></p>
+<h2>15:22:42 · type244813135921</h2>
+<p><strong>请问你都干啥活儿呢？用这么多？</strong></p>
+<h2>15:22:55 · type244813135921</h2>
+<p><strong>你这样不如直接 选一个 200 刀，200 刀是 20 倍</strong></p>
+<h2>15:23:02 · image</h2>
+<p>[图片] md5=918067be8601...</p>
+<h2>15:23:08 · text</h2>
+<p>qq578633724:<br>需要交叉review</p>
+<h2>15:24:21 · type244813135921</h2>
+<p><strong>你这有点猛</strong></p>
+<h2>15:27:45 · type244813135921</h2>
+<p><strong>我买的7块的一月的还在坚挺。</strong></p>
+<h2>15:29:30 · text</h2>
+<p>wxid_y7cyye1r8c2f21:<br>86是哪个网址</p>
+<h2>15:31:50 · type244813135921</h2>
+<p><strong>[叹气]</strong></p>
+<h2>15:32:17 · type244813135921</h2>
+<p><strong><a href="https://shop.86gamestore.com/" target="_blank" rel="noopener noreferrer">https://shop.86gamestore.com/</a> 已经没得卖了</strong></p>
+<h2>15:32:45 · text</h2>
+<p>lwm4567489:<br>订阅的漏洞据说被 openai 修复了</p>
+<h2>15:32:52 · text</h2>
+<p>wxid_y7cyye1r8c2f21:<br>[破涕为笑]</p>
+<h2>15:32:59 · type244813135921</h2>
+<p><strong><a href="https://aibijia.org/" target="_blank" rel="noopener noreferrer">https://aibijia.org/</a>  有个聚合 gpt claude  gemini 购买渠道  大部分没有质保</strong></p>
+<h2>15:46:27 · image</h2>
+<p>[图片] md5=c96e04093ca2...</p>
+<h2>15:46:37 · text</h2>
+<p>kyungmin:<br>x5  400 快？ [破涕为笑]</p>
+<h2>15:47:37 · text</h2>
+<p>qq578633724:<br>不质保都是骗人的</p>
+<h2>15:47:58 · type244813135921</h2>
+<p><strong>这种就是灰产，肯定是不稳定的</strong></p>
+<h2>15:48:31 · text</h2>
+<p>qq578633724:<br>400 也可能一天就掉了</p>
+<h2>15:49:01 · text</h2>
+<p>kyungmin:<br>我刚刚在闲鱼上逛了一下， 好几个都是 claude x5  480 软妹币左右， 你们说这些能用吗？</p>
+<h2>15:49:12 · text</h2>
+<p>kyungmin:<br>我是没在闲鱼买过，所以没有经验，想请教一下各位</p>
+<h2>15:51:22 · type244813135921</h2>
+<p><strong>咸鱼的进货渠道 基本都是通过这种网站获取赚差价</strong></p>
+<h2>15:58:51 · text</h2>
+<p>flowingwatering:<br>大家有用虚拟信用卡订阅的吗？不知有啥靠谱虚拟卡推荐</p>
+<h2>16:01:13 · text</h2>
+<p>wxid_7yvze2kd8m2s22:<br>更新签名了</p>
+<h2>16:01:14 · image</h2>
+<p>[图片] md5=75522b51bcf4...</p>
+<h2>17:04:25 · text</h2>
+<p>wxid_xyohs8q5yipg52:<br>@吉林 群里还有郑州的朋友可以一起vibe coing啊</p>
+<h2>17:10:04 · type244813135921</h2>
+<p><strong>对 就是我俩面基的[奸笑]</strong></p>
+<h2>17:10:11 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>刚结束</p>
+<h2>17:10:26 · type244813135921</h2>
+<p><strong>我用的u卡买了</strong></p>
+<h2>17:10:30 · text</h2>
+<p>wxid_lgjpxjmeprud21:<br>@Meepo@huntifyai.com 忘了合个影了[奸笑]</p>
+<h2>17:23:09 · type244813135921</h2>
+<p><strong>谢谢。我也查了下，现在能开虚拟卡的好像都是货币平台，支持RMB的都停了。还想说有没漏网之鱼可用呢</strong></p>
+<h2>17:25:03 · type244813135921</h2>
+<p><strong>我朋友有做，但手续费高一点</strong></p>
+<h2>17:25:41 · type21474836529</h2>
+<p><strong><a href="https://mp.weixin.qq.com/s?__biz=MzU4ODcwNDMxOQ==&amp;mid=2247484634&amp;idx=1&amp;sn=e4a3e975f46f5e1e7909235e52c4d706&amp;chksm=fc50740fbb05035e86e8ef7f59a82989654678a6cef11fec8306e5b3aa3b6e31207d8fd83cb6&amp;mpshare=1&amp;scene=1&amp;srcid=0429gQei31ko0uBc3vQwpK5Z&amp;sharer_shareinfo=0abd7496c8a5c1f6a318c320548a6ab9&amp;sharer_shareinfo_first=0abd7496c8a5c1f6a318c320548a6ab9#rd" target="_blank" rel="noopener noreferrer">2026年 教你零门槛在线免费获得一张海外银行卡｜纯小白实操教程｜半价订阅ChatGPT、Claude、Gemini等</a></strong> — _硅基AI饲养员_</p>
+<blockquote>纯小白实操教程｜半价订阅 ChatGPT、Claude、Gemini 等模型能力，决定一切。</blockquote>
+<h2>17:26:00 · type244813135921</h2>
+<p><strong>我用的这个卡开的</strong></p>
+<h2>17:27:22 · text</h2>
+<p>flowingwatering:<br>非常感谢，我研究下</p>
+<h2>17:28:46 · type244813135921</h2>
+<p><strong>他是代充吗？还是能开卡的</strong></p>
+<h2>17:30:35 · type244813135921</h2>
+<p><strong>有实体卡</strong></p>
+<h2>17:30:44 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>所以贵一点</p>
+<h2>17:33:03 · text</h2>
+<p>flowingwatering:<br>有链接吗？方便的话可否也发我看看</p>
+<h2>17:35:43 · text</h2>
+<p>wxid_v25m6vxho82i42:<br>我问问</p>
+<h2>17:36:08 · text</h2>
+<p>flowingwatering:<br>好的，感谢</p>
+<h2>23:04:30 · image</h2>
+<p>[图片] md5=79528419fe30...</p>
+<h2>23:04:35 · text</h2>
+<p>wxid_3rqtjoifz5ms12:<br><a href="https://t.co/6me75nRVIQ" target="_blank" rel="noopener noreferrer">https://t.co/6me75nRVIQ</a></p>
+<h2>23:05:13 · text</h2>
+<p>wxid_3rqtjoifz5ms12:<br>转需，价格我帮大家看了 </p>
+<p>pro 5x 270</p>
+<h2>23:07:36 · image</h2>
+<p>[图片] md5=0e13180b4190...</p>
+<h2>23:18:16 · type244813135921</h2>
+<p><strong>贵了。</strong></p>
+<h2>23:31:33 · type244813135921</h2>
+<p><strong>现在可以了</strong></p>
+<h2>23:32:18 · type244813135921</h2>
+<p><strong>据说是非盗刷</strong></p>
+<h2>23:32:38 · text</h2>
+<p>wxid_3rqtjoifz5ms12:<br>如果能质保就挺值的</p>
+<h2>23:38:42 · text</h2>
+<p>nexusplus:<br>飞到刷<br>那是做慈善吗？</p>
+<h2>23:41:19 · type244813135921</h2>
+<p><strong>都是钻的支付漏洞</strong></p>
+<h2>23:42:11 · text</h2>
+<p>wxid_1m6dl9iy9y7v22:<br>能质保，掉了就补，这价格可以吧。pro 20x的不质保的300多，说质保的500多</p>
+<h2>23:44:51 · type244813135921</h2>
+<p><strong>他们家也不敢说质保 应该是也有被封的风险</strong></p></article></main><footer>本地 Obsidian 群日报 · 2026-05-07 16:14 更新</footer></body></html>
