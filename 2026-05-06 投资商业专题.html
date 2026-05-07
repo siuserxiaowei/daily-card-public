@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 2026-05-06 微信群学习卡片</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    line-height: 1.7;
+    color: #2c3e50;
+    background: #fafafa;
+    padding: 0;
+  }
+  .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 24px 50px;
+    text-align: center;
+  }
+  .hero .date { font-size: 14px; opacity: 0.85; margin-bottom: 10px; letter-spacing: 2px; }
+  .hero h1 { font-size: 32px; margin-bottom: 16px; font-weight: 700; }
+  .hero .summary { max-width: 720px; margin: 0 auto; font-size: 17px; opacity: 0.95; line-height: 1.7; text-align: left; }
+  .hero .summary strong { color: #fff; font-weight: 700; }
+  .hero .summary code { background: rgba(255,255,255,0.18); color: #fff8e1; padding: 2px 7px; border-radius: 4px; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.92em; }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+  #content h1 { font-size: 28px; margin: 36px 0 20px; padding-bottom: 12px; border-bottom: 2px solid #eee; }
+  #content h2 { font-size: 22px; margin: 36px 0 18px; padding-left: 12px; border-left: 4px solid #667eea; line-height: 1.3; }
+  #content h3 { font-size: 18px; margin: 28px 0 12px; color: #2c3e50; }
+  #content h3::before { content: ""; display: inline-block; width: 6px; height: 6px; background: #667eea; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+  #content p { margin: 12px 0; color: #34495e; }
+  #content ul, #content ol { margin: 12px 0 12px 24px; }
+  #content li { margin: 6px 0; }
+  #content blockquote {
+    border-left: 4px solid #f39c12;
+    background: #fff8e1;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border-radius: 4px;
+    color: #5d4037;
+  }
+  #content blockquote p { margin: 4px 0; color: #5d4037; }
+  #content a { color: #1976d2; text-decoration: none; border-bottom: 1px dashed #1976d2; }
+  #content a:hover { background: #e3f2fd; }
+  #content code {
+    background: #f4f4f4; color: #c0392b;
+    padding: 2px 6px; border-radius: 3px;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.9em;
+  }
+  #content pre {
+    background: #2d2d2d; color: #f8f8f2;
+    padding: 16px 20px; border-radius: 6px; overflow-x: auto;
+    margin: 16px 0;
+  }
+  #content pre code { background: transparent; color: inherit; padding: 0; }
+  #content table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  #content th { background: #34495e; color: white; padding: 10px 12px; text-align: left; }
+  #content td { padding: 10px 12px; border-bottom: 1px solid #ecf0f1; }
+  #content tr:nth-child(even) td { background: #f8f9fa; }
+  #content tr:hover td { background: #e3f2fd; }
+  #content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+  #content strong { color: #1a1a1a; font-weight: 600; }
+  #content em { color: #7f8c8d; }
+  /* 表情卡片 emoji */
+  #content h2:contains("🔥") { color: #e74c3c; }
+  /* 移动端 */
+  @media (max-width: 640px) {
+    .hero { padding: 40px 18px; }
+    .hero h1 { font-size: 24px; }
+    .container { padding: 24px 18px 60px; }
+    #content h1 { font-size: 22px; }
+    #content h2 { font-size: 18px; }
+    #content table { font-size: 12px; display: block; overflow-x: auto; }
+  }
+  footer {
+    text-align: center; padding: 30px 20px;
+    color: #95a5a6; font-size: 12px; border-top: 1px solid #ecf0f1;
+  }
+  footer a { color: #95a5a6; text-decoration: none; border-bottom: 1px dotted #bdc3c7; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="date">DAILY · 2026-05-06</div>
+  <h1>📚 微信群学习卡片</h1>
+  <div class="summary">四大科技公司Q1财报揭示AI分发权正从云转向模型公司，谷歌因TPU+Gemini自研双重优势跑最快，微软面临结构性困境；月之暗面半年估值翻4倍至200亿美元，是当前AI投资热度的缩影。</div>
+</div>
+
+<div class="container">
+  <div id="content">⏳ 加载中...</div>
+</div>
+
+<footer>
+  🤖 由 AI 替你读了 78 群 / 3,512 条消息后浓缩而成 ·
+  <a href="https://obsidian.md">Obsidian</a> +
+  <a href="https://www.anthropic.com/claude">Claude</a>
+</footer>
+
+<script>
+  // base64 解码 → 再按 UTF-8 解释字节(否则中文乱码)
+  const md = new TextDecoder('utf-8').decode(
+    Uint8Array.from(atob("YGBgeWFtbAotLS0KdHlwZTogbGVhcm5pbmctY2FyZApkYXRlOiAyMDI2LTA1LTA2CnRvcGljOiDmipXotYTllYbkuJoKZ2VuZXJhdGVkX2F0OiAyMDI2LTA1LTA3CnNvdXJjZTogU2hvd01lQUnouI/mtarogIzmrYwv8J+nrCBFVk9MVVRJT04g4oWhL0VQSUPnlKjmiLfnvqQvVklQMee+pOS4gOaUr+eDn+iKseekvuWMugp0YWdzOiBb6LSi5oqlLCDono3otYQsIOiwt+atjOS6kSwg5b6u6L2vLCDmnIjkuYvmmpfpnaIsIEFudGhyb3BpYywg5oqV6LWE6LaL5Yq/XQotLS0KYGBgCgojIyDwn46vIOS4gOWPpeivneaAu+e7kwoK5Zub5aSn56eR5oqA5YWs5Y+4UTHotKLmiqXmj63npLpBSeWIhuWPkeadg+ato+S7juS6kei9rOWQkeaooeWei+WFrOWPuO+8jOiwt+atjOWboFRQVStHZW1pbmnoh6rnoJTlj4zph43kvJjlir/ot5HmnIDlv6vvvIzlvq7ova/pnaLkuLTnu5PmnoTmgKflm7DlooPvvJvmnIjkuYvmmpfpnaLljYrlubTkvLDlgLznv7s05YCN6IezMjAw5Lq/576O5YWD77yM5piv5b2T5YmNQUnmipXotYTng63luqbnmoTnvKnlvbHjgIIKCiMjIPCflKUgNuS4quWtpuS5oOeCuQoKIyMjIDEuIOWbm+Wkp+enkeaKgOWFrOWPuOi0ouaKpe+8muiwt+atjOS6keS4iemHjee7k+aehOS8mOWKv+mihui3kQoKUTHotKLmiqXmoLjlv4Pnu5PorrrvvJrikaAgR2VtaW5pIEFSUiA3MCXku6XkuIrnm7TmjqXorqHlhaVHQ1DmlLblhaXvvIhBbnRocm9waWPlnKhBV1Plj6rog73noa7orqTnuqY0MCXvvInvvJvikaEg6LC35q2M6Ieq56CUVFBV56ef6LWB5q+b5Yip546H6auY5LqOR1BV77yM6Kej5Yaz5LqGIuWNlkFJ566X5Yqb56iA6YeK5Yip5ram546HIueahOS4pOmavuWbsOWig++8m+KRoiBUUFXkuI5HZW1pbmnplb/mnJ/ljY/lkIzorq3nu4PvvIzova/ku7bmoIjpgILphY3lnZHmnIDlsJHjgILov5nkuInngrnmnoTmiJDosLfmrYzkupHnmoTnu5PmnoTmgKfmiqTln47msrPjgIIKCj4gIuWIhuWPkeadg+ato+WcqOS7juS6kei9rOWQkeaooeWei+WFrOWPuOOAguiwt+atjOS6kei3keW+l+acgOW/q++8jOiDjOWQjuacieS4pOS4que7k+aehOaAp+WOn+WboO+8mkdlbWluaeeahOaUtuWFpeehruiupOavlOS+i+i/nOmrmOS6juernuS6ieWvueaJi+KApuKAplRQVeW4puadpeeahOWIqea2pue7k+aehOS8mOWKv++8jOenn+i1geavm+WIqeeOh+mrmOS6jkdQVeOAgiIgIAo+IOKAlCDnvqTmiJDlkZjvvIhTaG93TWVBSei4j+a1quiAjOatjO+8iQoKLSBb5Zub5aSn56eR5oqA5YWs5Y+46LSi5oql5ZCO77yaQUnkuqfkuJrmt7Hluqbop4Llr59dKGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zL014RjQxT3ZBNHZVRktfM0xwOGlJYlEpCgojIyMgMi4g5b6u6L2v5Zuw5aKD5piv57uT5p6E5oCn55qE77yaQ29waWxvdCDmiqTln47msrPmraPlnKjmtojlpLEKCkF6dXJl5aKe6YCf57qmNDAl6KGo6Z2i5LiN5beu77yM5L2GIE9mZmljZSDlm7rlrprmsYfnjoflop7pgJ/plb/mnJ/nu7TmjIExNC0xNSXvvIxBSeWKoOmAn+i/n+i/n+acquiHs+OAguagueWboO+8mkNsYXVkZS9HZW1pbmnlt7Llj6/pgJrov4cgQ29tcHV0ZXIgVXNlIOebtOaOpeiwg+eUqCBPZmZpY2XvvIwi5LiOT2ZmaWNl5Y6f55Sf6ZuG5oiQIui/meW8oOW3ruW8guWMlueJjOi2iuadpei2iuS4jeeogOe8uu+8jOS4lOW+rui9r+iwg+W6puWxguS4uuWFvOmhvuWQiOinhOiAjOmZkOWItuS6huaooeWei+WIhumFjeaViOeOh+OAggoKPiAiQ29waWxvdOS4u+aJk+eahCfkuI5PZmZpY2Xljp/nlJ/pm4bmiJDjgIHmnYPpmZDnrqHnkIbml6DnvJ3ooZTmjqUn6L+Z5byg54mM77yM5q2j5Zyo5Y+Y5b6X6LaK5p2l6LaK5LiN56iA57y644CCQ2xhdWRl44CBR2VtaW5p6YO95Y+v5Lul6YCa6L+HQ29tcHV0ZXIgVXNl55u05o6l6LCD55SoT2ZmaWNl44CCIiAgCj4g4oCUIOe+pOaIkOWRmO+8iFNob3dNZUFJ6LiP5rWq6ICM5q2M77yJCgojIyMgMy4g5pyI5LmL5pqX6Z2i77ya5Y2K5bm05Lyw5YC857+7NOWAje+8jOWujOaIkDIw5Lq/576O5YWD5paw6J6N6LWECgrkvLDlgLznqoHnoLQyMDDkur/nvo7lhYPvvIzono3otYTmgLvpop3otoUzOeS6v+e+juWFg+OAguWNiuW5tOWGheWujOaIkDTlgI3kvLDlgLzlop7plb/vvIzmmK/nm67liY3lm73lhoVBSeWFrOWPuOS4reiejei1hOmAn+W6puWSjOS8sOWAvOWinuW5heacgOW/q+eahOahiOS+i+S5i+S4gOOAggoKPiAi5pma54K554us5a6277ya5pyI5LmL5pqX6Z2i5bCG5a6M5oiQIDIwIOS6v+e+juWFg+aWsOiejei1hO+8jOS8sOWAvOegtCAyMDAg5Lq/576O5YWD44CC5Y2K5bm05YaF77yM5pyI5LmL5pqX6Z2i5Lyw5YC857+7IDQg5YCN77yM6J6N6LWE6LaFIDM5IOS6v+e+juWFg+OAgiIgIAo+IOKAlCDmmZrngrlMYXRlUG9zdO+8iPCfp6wgRVZPTFVUSU9OIOKFoe+8iQoKLSBb5pyI5LmL5pqX6Z2i5bCG5a6M5oiQMjDkur/nvo7lhYPmlrDono3otYRdKGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zP19fYml6PU16VTNNamsxT1RRME5nPT0mbWlkPTIyNDc1MzU3NzgpCgojIyMgNC4g5qyn5rSy5Y+y5LiK5pyA5aSn56eN5a2Q6L2u77yaQWxwaGFHbyDkuYvniLbnmoTmlrDlhazlj7ggSW5lZmZhYmxlCgrnuqLmnYnjgIHoi7HkvJ/ovr7ogZTlkIjmipXotYTmrKfmtLLlj7LkuIrmnIDlpKfnp43lrZDova7vvIzmipXlhaXmlrnlkJHmmK8gSW5lZmZhYmxl77yI55SxIEFscGhhR28g5LmL54i25Y+C5LiO5Yib56uL77yJ77yM6IGa54SmIuaXoOmZkOaZuuiDvSLlkozlvLrljJblrabkuaDjgILnp43lrZDova7op4TmqKHnvZXop4HvvIzkv6Hlj7fmhI/kuYnlvLrkuo7ph5Hpop3mnKzouqvjgIIKCj4gIuasp+a0suWPsuS4iuacgOWkp+enjeWtkOi9ru+8jOi/meWutkFJ5YWs5Y+45Yiw5bqV5pyJ5LuA5LmI6a2U5YqbICNJbmVmZmFibGUgI2FscGhhZ2/kuYvniLYgI+aXoOmZkOaZuuiDvSAj5by65YyW5a2m5LmgIiAgCj4g4oCUIOe+pOaIkOWRmO+8iFNob3dNZUFJ6LiP5rWq6ICM5q2M77yJCgotIFvnuqLmnYnoi7HkvJ/ovr7vvIzmipXkuobkuKrlj7LkuIrmnIDlpKfnp43lrZDova5dKGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zL0xiSV81ZzZRYVh1bWlGbVVVVnVFancpCgojIyMgNS4gU0sg5rW35Yqb5aOr5YWo5ZGY5aSp5Lu35aWW6YeR77yaQUkg566X5Yqb5Lqn5Lia6ZO+5Yip5ram5q2j5ZCR5Lyg5a+8CgoyMDI25bm0U0vmtbflipvlo6vlhajlubTokKXkuJrliKnmtqbpooTorqEyNTDkuIfkur/pn6nlhYPvvIzlpZbph5HmsaAyNeS4h+S6v+mfqeWFg++8jDMuNeS4h+WQjeWRmOW3peWdh+WIhu+8jOS6uuWdh+WllumHkTfkur/pn6nlhYPvvIjnuqYzMjDkuIfkurrmsJHluIHvvInjgILpl6jljavliY3lj7DlnYfmnInku73igJTigJRBSeeul+WKm+mcgOaxgueIhuWPkeW4puWKqOeahOWIqea2puW3suS8oOWvvOiHs+acgOW6leWxguehrOS7tuS+m+W6lOWVhuOAggoKPiAiMjAyNuW5tFNL5rW35Yqb5aOr5YWo5bm06JCl5Lia5Yip5ram5pyJ5pyb6L6+5YiwMjUw5LiH5Lq/6Z+p5YWD77yM5a+55bqU5aWW6YeR5rGg6KeE5qih6auY6L6+MjXkuIfkur/pn6nlhYPvvIwyMDI25bm05YWo5bm05Lq65Z2H5aWW6YeR5pyJ5pyb6L6+5YiwN+S6v+mfqeWFg++8iOe6puWQiOS6uuawkeW4gTMyMOS4h+WFg++8ieOAgiIgIAo+IOKAlCBBR0nnn6Xot6/vvIjwn4+04oCN4pig77iPIEJvbmpvdXIhIOWcqOS4iua1t++8iQoKLSBb5Lq65Z2HNjEw5LiH77yBU0vmtbflipvlo6vlhajlkZjlj5HlpKnku7flpZbph5HvvIzpl6jljavliY3lj7Dpg73mnInku71dKGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zP19fYml6PU16azJORFE0TVRRME53PT0mbWlkPTIyNDc0ODgzOTQpCgojIyMgNi4gQVBJIOS4rei9rOermeeahOWVhuS4mumAu+i+ke+8mueJueacl+aZruWFpeWcuu+8jOaatOWIqeWNs+Wwhue7iOe7kwoK5YKF55ub77yI54yO6LG556e75Yqo77yJ44CB5a2Z5a6H5pmo5ZCM5pe26auY6LCD6L+b5YWlIEFJIEFQSSDkuK3ovaznq5nvvIznibnmnJfmma7lrrbml4/nmoQgV29ybGRDbGF3L1dvcmxkUm91dGVyIOS5n+S4iue6v++8jOaPkOS+mzMwMCvmqKHlnovmjqXlhaXlubbmiZM35oqY44CC5Lit6L2s56uZ5qC45b+D5ZWG5Lia5qih5byP77ya55So5buJ5Lu35rig6YGT6LSm5Y+35YGa5rGg5a2Q77yM5oiW5YCf5Yqg5a+G6LWE5Lqn77yIV0xGSS9VU0Qx77yJ5YGa57uR5a6a6LWa5beu5Lu344CC5aS06YOo6LWE5pys5YWl5Zy66aKE56S65pq05Yip56qX5Y+j5Li06L+R5YWz6Zet44CCCgo+ICJXb3JsZENsYXfkuI3kuIDmoLfvvIzov5nnjqnmhI/kuI3lj6rmmK9BUEnvvIzlroPov5jmiormh4LnjotJUO+8jFdMRknnmoTliqDlr4botYTkuqfvvIxVU0Qx56iz5a6a5biB77yMQWdlbnTnlJ/mgIHvvIzlhajpg73nvJ3liLDkuobkuIDotbfjgILliKvor7TlgYfkuIPmipjkuobvvIznnJ/kuIPmipjmh4LnjovkuZ/otZrniIbjgIIiICAKPiDigJQg5Y2h5bCU55qEQUnmsoPojKjvvIjlpKfni5BBSeaci+WPi+WciO+8iQoKLSBb5YKF55ub44CB5a2Z5a6H5pmo5ZCM5pe26auY6LCD5p2A6L+b77yBQUkgQVBJ5Lit6L2s56uZ5pq05Yip55Sf5oSP5Y2z5bCG6JC95bmV77yBXShodHRwczovL21wLndlaXhpbi5xcS5jb20vcy8ydDNYOW4zN24yWm55X2FPRkFDaGd3KQoKIyMg8J+TjiDpk77mjqXlupMKCnwg5qCH6aKYIHwg6ZO+5o6lIHwKfC0tLS0tLXwtLS0tLS18Cnwg5Zub5aSn56eR5oqA5YWs5Y+46LSi5oqlQUnkuqfkuJrop4Llr58gfCBodHRwczovL21wLndlaXhpbi5xcS5jb20vcy9NeEY0MU92QTR2VUZLXzNMcDhpSWJRIHwKfCDmnIjkuYvmmpfpnaIyMOS6v+iejei1hOeLrOWutuaKpemBkyB8IGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zP19fYml6PU16VTNNamsxT1RRME5nPT0mbWlkPTIyNDc1MzU3NzggfAp8IOe6ouadieiLseS8n+i+vuacgOWkp+enjeWtkOi9riB8IGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zL0xiSV81ZzZRYVh1bWlGbVVVVnVFancgfAp8IFNL5rW35Yqb5aOr5Lq65Z2H5aWW6YeRNjEw5LiHIHwgaHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXprMk5EUTRNVFEwTnc9PSZtaWQ9MjI0NzQ4ODM5NCB8CnwgQVBJ5Lit6L2s56uZ5pq05Yip5Y2z5bCG6JC95bmVIHwgaHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvMnQzWDluMzduMlpueV9hT0ZBQ2hndyB8CnwgQU1E6LSi5oqlQ1BV5biC5Zy66aKE5rWLIHwgaHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpBM05UVTNNREE0TUE9PSZtaWQ9MjY2MDYzMjcyNiB8Cnwg5p2O6aOe6aOeQUnmuLjmiI/mi7805Lq/IHwgaHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpJek5qYzFOelV6TXc9PSZtaWQ9MjI0Nzg4ODU3NSB8"), c => c.charCodeAt(0))
+  );
+  const html = DOMPurify.sanitize(marked.parse(md));
+  document.getElementById('content').innerHTML = html;
+  // 把 hero 上面已经渲染的总结从 md 内容里隐藏 (避免重复)
+  document.querySelectorAll('#content h2').forEach(h => {
+    if (h.textContent.includes('一句话总结')) {
+      let next = h.nextElementSibling;
+      h.style.display = 'none';
+      while (next && next.tagName !== 'H2' && next.tagName !== 'HR') {
+        next.style.display = 'none';
+        next = next.nextElementSibling;
+      }
+    }
+  });
+</script>
+</body>
+</html>
