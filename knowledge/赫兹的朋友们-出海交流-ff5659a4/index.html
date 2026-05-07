@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赫兹的朋友们~出海交流｜知识点提炼</title>
+<meta name="description" content="赫兹的朋友们~出海交流 最近30天消息提炼出的知识点。">
+<style>
+:root{--bg:#f3f6f7;--ink:#111827;--muted:#667085;--card:#ffffff;--line:#dfe5e8;--soft:#eef3f4;--shadow:0 18px 46px rgba(15,23,42,.10);--ocean:#0b6f86;--teal:#0f766e;--gold:#a16207;--blue:#2557a7;--violet:#6d4a91;--green:#24714d;--red:#a33a4a;--inkAccent:#1f2937}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.65}a{color:inherit}.topbar{background:#0f172a;color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}.topbar-inner{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;letter-spacing:.02em}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a{font-size:13px;text-decoration:none;color:#d9e2e8;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px}.hero{background:linear-gradient(135deg,#101827 0%,#173c49 52%,#704d18 100%);color:#fff}.hero-inner{max-width:1180px;margin:0 auto;padding:48px 20px 40px}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#b7c4ce}.hero h1{font-size:42px;line-height:1.08;margin:10px 0 12px;letter-spacing:0}.hero p{max-width:820px;margin:0;color:#d8e2e6;font-size:16px}.meta-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.meta-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 12px;font-size:13px;color:#f4f7f8}.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 70px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:-54px 0 26px}.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:17px 18px;box-shadow:0 8px 22px rgba(15,23,42,.08)}.stat b{display:block;font-size:29px;line-height:1.1;letter-spacing:0}.stat span{display:block;margin-top:8px;color:var(--muted);font-size:13px;font-weight:700}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:32px 0 14px}.section-head h2{margin:0;font-size:20px;letter-spacing:0}.section-head p{margin:0;color:var(--muted);font-size:13px}.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.group-card{--accent:var(--ocean);display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.group-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 38%,var(--line))}.mark{width:56px;height:56px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:900;font-size:12px;letter-spacing:.04em}.group-card h3{font-size:20px;line-height:1.25;margin:0 0 7px}.group-meta{color:var(--muted);font-size:13px;margin-bottom:11px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line));background:color-mix(in srgb,var(--accent) 9%,white);color:color-mix(in srgb,var(--accent) 82%,black);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:800}.point-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.point-card{--accent:var(--teal);position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(15,23,42,.04)}.point-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:10px 0 0 10px}.point-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.point-cat{background:color-mix(in srgb,var(--accent) 11%,white);color:color-mix(in srgb,var(--accent) 84%,black);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:900;white-space:nowrap}.point-date{font-family:"SF Mono",Menlo,monospace;color:#7b8790;font-size:12px}.point-card h3{font-size:18px;line-height:1.3;margin:0 0 8px}.summary{font-size:14px;color:#313b44;margin:0 0 10px}.takeaway{border-top:1px solid #edf1f3;padding-top:10px;margin-top:10px;color:#44515b;font-size:13px}.quote{margin:10px 0 0;padding:9px 10px;background:#f7fafb;border:1px solid #e8eef0;border-radius:7px;color:#69757d;font-size:12px}.links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.links a{font-size:12px;text-decoration:none;color:#1d4d7a;background:#edf5fb;border:1px solid #d7e8f5;border-radius:999px;padding:3px 8px}.source{display:inline-flex;margin-top:10px;font-size:12px;text-decoration:none;color:#5d6972;border-bottom:1px dashed #aab5bb}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.filter{appearance:none;border:1px solid var(--line);background:white;color:#34404a;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;cursor:pointer}.filter.active{background:#111827;color:#fff;border-color:#111827}.accent-ocean{--accent:var(--ocean)}.accent-teal{--accent:var(--teal)}.accent-gold{--accent:var(--gold)}.accent-blue{--accent:var(--blue)}.accent-violet{--accent:var(--violet)}.accent-green{--accent:var(--green)}.accent-red{--accent:var(--red)}.accent-ink{--accent:var(--inkAccent)}footer{padding:30px 20px;text-align:center;color:#8b98a1;font-size:12px}.empty{display:none}.is-hidden{display:none!important}@media(max-width:980px){.stats{grid-template-columns:repeat(2,1fr);margin-top:-34px}.point-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){.topbar-inner{align-items:flex-start;flex-direction:column}.hero h1{font-size:30px}.hero-inner{padding:36px 16px 34px}.wrap{padding:22px 14px 58px}.stats,.group-grid,.point-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.group-card{grid-template-columns:52px minmax(0,1fr);padding:15px}.mark{width:46px;height:46px;font-size:11px}.group-card h3{font-size:18px}.stat b{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><div class="brand">赫兹的朋友们~出海交流</div><nav class="nav"><a href="../index.html">知识点首页</a><a href="../../index.html">站点首页</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><div class="kicker">GLOBAL KNOWLEDGE</div><h1>赫兹的朋友们~出海交流</h1><p>66 个知识点，来自 30 天、5,763 条消息。这里展示的是提炼后的结论、做法、风险和证据。</p><div class="meta-strip"><span class="meta-pill">2026-04-07 至 2026-05-06</span><span class="meta-pill">1,332 条候选信号</span><span class="meta-pill">关键词 / 长文本 / 外链</span></div></div></section>
+<main class="wrap">
+<div class="stats"><div class="stat"><b>66</b><span>知识点</span></div><div class="stat"><b>30</b><span>活跃天数</span></div><div class="stat"><b>5,763</b><span>消息来源</span></div><div class="stat"><b>1,332</b><span>候选信号</span></div></div>
+<section data-filter-scope><div class="section-head"><h2>知识点清单</h2><p>AI编程 29 · 出海 23 · 产品增长 7 · 风险合规 7</p></div><div class="filters"><button class="filter active" data-filter="全部">全部</button><button class="filter" data-filter="产品增长">产品增长</button><button class="filter" data-filter="出海">出海</button><button class="filter" data-filter="AI编程">AI编程</button><button class="filter" data-filter="风险合规">风险合规</button></div><div class="point-grid"><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>海外AI产品新手期复盘</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">海外AI产品新手期复盘：4个月赚到1刀，15天破1000刀 — 王马扎 文章地址： 主要的几点： 1、找软柿子需求，通过分析huggingface.co的着路页，找到一个网站域名是vercel的，站…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/cMoMgIgFXAWRrY-raJRHnw" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-07</span></div>
+  <h3>走上出海web道路月入 4w 刀</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">摸索一年，走上出海web道路月入 4w 刀，万字记录历程，分享实操 — 小耳朵sir 文章地址： 主要的几点： 1、做什么项目，学习了大量别人案例分享、摸索、实践，前前后后做过不少项目，因为 AI …</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/yjrpkSH_WzmZgpRerBdGEQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-07</span></div>
+  <h3>AI SaaS实战复盘</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">AI SaaS实战复盘：我是如何用一个月从0做到持续出单的 — Niko 文章地址： 主要的几点： 1、初步完善了自己的基础模板。慢慢完善了用户交互细节，sitemap，userjounery，把该…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/g4zPP1c_RshddlvbtfBepw" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>从焦虑到跑通</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：从焦虑到跑通：AI网站出海终于达成阶段性目标 — 赫兹 哈哈哈</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">从焦虑到跑通：AI网站出海终于达成阶段性目标 — 赫兹 哈哈哈，我自己的万刀分享贴，夹带一点私货。 文章地址： 主要的几点： 1、一个人要做产品、写代码、搞运营，每件事都不简单，出海不是学一次就会，…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/Py1nl61-q3ikQXGYE-WxLQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-07</span></div>
+  <h3>入群九个月</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：入群九个月</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">入群九个月，从网站被惩罚到月入万刀 — 刘屹 文章地址： 主要的几点： 1、不要让AI批量生成页面，如果让 AI 批量生成大量页面，这样做相当于让谷歌发现你有大量页面用户停留时长特别短，那这是一个非…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/dBN93I2USJduCOlnq68qRQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-07</span></div>
+  <h3>群聊的聊天记录 赫兹</h3>
+  <p class="summary">投流知识点：群聊的聊天记录 赫兹: 流量四板斧</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">群聊的聊天记录 赫兹: 流量四板斧，SEO、各大平台广告投流、红人传播、自己发帖灌水 赫兹: [链接] 摸索一年，走上出海web道路月入 4w 刀，万字记录历程，分享实操 赫兹: 刚好再回顾这篇文章…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>微信 clawdbot+claude code 大…</h3>
+  <p class="summary">AI 工作流知识点：微信 clawdbot+claude code 大家咋用的？之前用的一个开源的</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">微信 clawdbot+claude code 大家咋用的？之前用的一个开源的，最近死活连不上，opus4.6 也没给我解决</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-08</span></div>
+  <h3>我花3小时调研了一个出海产品</h3>
+  <p class="summary">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，花了2天调研…</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/CtC6hvXUsNj0tNyK4qqxOA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-08.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-08</span></div>
+  <h3>朋友们！ 今天分享一下Paypal 开通个人收款</h3>
+  <p class="summary">早上好，朋友们！ 今天分享一下Paypal 开通个人收款，之前我是一直用的stripe，但是有些朋友可能办理港卡或者海外公司不方便，我自己也想多开通几个收款渠道，打算试试paypal 个人收款，今天先分享pay…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">早上好，朋友们！ 今天分享一下Paypal 开通个人收款，之前我是一直用的stripe，但是有些朋友可能办理港卡或者海外公司不方便，我自己也想多开通几个收款渠道，打算试试paypal 个人收款，今天…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-08.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-09</span></div>
+  <h3>朋友们！ 想必刷Google trends 是很多…</h3>
+  <p class="summary">资料线索：朋友们！ 想必刷Google trends 是很多网站出海朋友的日常活动</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">早上好，朋友们！ 想必刷Google trends 是很多网站出海朋友的日常活动，今天分享一个开源项目pytrends</div>
+  <div class="links"><a href="https://github.com/GeneralMills/pytrends" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-09.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-09</span></div>
+  <h3>然后大家就可以用这个 开源项目做Google tr…</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：然后大家就可以用这个 开源项目做Google trends 的热词抓取</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">然后大家就可以用这个 开源项目做Google trends 的热词抓取，我就直接让claude code 帮我实现对应的逻辑 使用 prtrends 开源项目，写一个 pyhton 的搜索热点抓取项…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-09.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-10</span></div>
+  <h3>sbti 网络爆梗揭秘</h3>
+  <p class="summary">案例数据：sbti 网络爆梗揭秘</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">sbti 网络爆梗揭秘，为什么就火了！ — gh985398d1f5e4 4月9日至10日，一款名为SBTI的荒诞人格测试在社交平台引发刷屏现象。该测试以MBTI框架为灵感，用「死者」「吗喽」「人形…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzI0OTE4NzQyMQ==&amp;mid=2247483668&amp;idx=1&amp;sn=c972932b58aea50031e493da7a68fc24&amp;from_masonry=1&amp;sharer_shareinfo_first=1837e0570f25dbe9a5ba7bdcdcf8da4a&amp;sharer_shareinfo=1837e0570f25dbe9a5ba7bdcdcf8da4a#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a><a href="https://sbti.unun.dev/" target="_blank" rel="noreferrer">sbti.unun.dev</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-10.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-10</span></div>
+  <h3>然后直接使用了，比如告诉claude code</h3>
+  <p class="summary">AI 工作流知识点：然后直接使用了</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">然后直接使用了，比如告诉claude code: 使用xcrwal mcp 获取关键词“ai video generator” 前面10名的网站数据，然后参考这些网站数据，帮我生成一份核心关键词是“…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-10.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-11</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：产品自传播 — droidHZ 想必大家昨天都在朋友圈刷到过 sbti</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">网站出海每日分享：产品自传播 — droidHZ 想必大家昨天都在朋友圈刷到过 sbti，很多人都在自发分享这个产品。 我刚好觉得挺有意思，也顺手上线了一个测试网站。结果上线当天就破万用户，哥飞老师…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485449&amp;idx=1&amp;sn=84d3df4ee93917c02271b87ca2271ad0&amp;chksm=c33214d6223c70c1c7f112cc0ccaf2579006869204057d601db8bdd608d600e6a9e210ad143c&amp;mpshare=1&amp;scene=1&amp;srcid=0411Rv35bjRiGmOf3aNyff9L&amp;sharer_shareinfo=bd36f1baa11dac881488d096e18b305d&amp;sharer_shareinfo_first=bd36f1baa11dac881488d096e18b305d#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-11.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-11</span></div>
+  <h3>直播预告</h3>
+  <p class="summary">AI 工作流知识点：直播预告|对话 Refly Tom 给龙虾发一张工牌 — 出海去孵化器 北京时间 4 月 12 日周日上午 10 点</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">直播预告|对话 Refly Tom 给龙虾发一张工牌 — 出海去孵化器 北京时间 4 月 12 日周日上午 10 点，我们很高兴邀请到 Refly 创始人兼 CEO，也是一名全栈工程师的 Tom。T…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzYyMTI4MDU5Mg==&amp;mid=2247486023&amp;idx=1&amp;sn=a764eadcf07c9d8dc9ef13c41e042c1b&amp;from_masonry=1&amp;sharer_shareinfo_first=49b326ffb5a03196bcf29b94ddd9363a&amp;sharer_shareinfo=49b326ffb5a03196bcf29b94ddd9363a#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-11.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-12</span></div>
+  <h3>大的来了！claude for word 进入测试…</h3>
+  <p class="summary">AI 工作流知识点：大的来了！claude for word 进入测试阶段 @硅基神经网络 的笔记 362人分享</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">大的来了！claude for word 进入测试阶段 @硅基神经网络 的笔记 362人分享</div>
+  <div class="links"><a href="https://www.xiaohongshu.com/discovery/item/69da3e3d000000001a030b2f?app_platform=ios&amp;app_version=9.19.4&amp;share_from_user_hidden=true&amp;xsec_source=app_share&amp;type=video&amp;xsec_token=CBukUd14SXZFux2DkznbxUiqviAgLAUMsheTL2QFR8fM4=&amp;author_share=1&amp;xhsshare=WeixinSession&amp;shareRedId=N0k7RURJN0A2NzUyOTgwNjc5OTg8NTs9&amp;apptime=1775985030&amp;share_id=4427263ae8f14c4bad0dbead9e6963c1" target="_blank" rel="noreferrer">xiaohongshu.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-12.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-13</span></div>
+  <h3>今日开源AIP出海实战营手册</h3>
+  <p class="summary">资料线索：今日开源AIP出海实战营手册</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">今日开源AIP出海实战营手册，免费邮箱订阅获取 9个月涨粉26700+，带过1000+人积累的2W+字长文经验，万粉博主出过不下20人次</div>
+  <div class="links"><a href="https://x.com/gosailglobal/status/2043514796017176734" target="_blank" rel="noreferrer">x.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-13.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-13</span></div>
+  <h3>你们除了stripe</h3>
+  <p class="summary">老哥们，你们除了stripe，paypal，creem，paddle，之类的，其他的那种小型的支付平台，有人试过么，这种是不是不靠谱啊</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">老哥们，你们除了stripe，paypal，creem，paddle，之类的，其他的那种小型的支付平台，有人试过么，这种是不是不靠谱啊</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-13.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-14</span></div>
+  <h3>Vercel 开源了云端编码 Agent</h3>
+  <p class="summary">AI 工作流知识点：Vercel 开源了云端编码 Agent</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Vercel 开源了云端编码 Agent，这事儿有点意思 — SlowGrowth.慢速生长 一个 Agent 在云端自己写自己，然后开源出来让你也能用。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI0NTU3NTc5Ng==&amp;mid=2247484123&amp;idx=1&amp;sn=438ebc2944e0556d4f271b1f9fe60aa8&amp;chksm=e845da031f88f81a0c060b392cfc77e38ae5d0154e5b695bf42b41b567459bceb1aefd37ebf3&amp;mpshare=1&amp;scene=1&amp;srcid=0414IcP5DDioCc0XEtB9twO9&amp;sharer_shareinfo=52bf43b94d34abf66837580662596004&amp;sharer_shareinfo_first=52bf43b94d34abf66837580662596004#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-14.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-15</span></div>
+  <h3>然后参考官方文档的接口请求示例</h3>
+  <p class="summary">然后参考官方文档的接口请求示例，复制curl 请求示例，token 需要换成上面创建的token ，之后让AI 去获取对应的数据，拿到这些数据可以去做你想要的分析工作。 文档地址： curl --locatio…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">然后参考官方文档的接口请求示例，复制curl 请求示例，token 需要换成上面创建的token ，之后让AI 去获取对应的数据，拿到这些数据可以去做你想要的分析工作。 文档地址： curl --l…</div>
+  <div class="links"><a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data-export-api" target="_blank" rel="noreferrer">learn.microsoft.com</a><a href="https://www.clarity.ms/export-data/api/v1/project-live-insights?numOfDays=1" target="_blank" rel="noreferrer">clarity.ms</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-15.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-16</span></div>
+  <h3>群聊的聊天记录 黄小鱼🐠</h3>
+  <p class="summary">案例数据：群聊的聊天记录 黄小鱼🐠: [图片] 黄小鱼🐠: 实录工具清单汇总—— Claude (Max 版本 / Claude Code) 亦仁评价： Top 1 工具</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">群聊的聊天记录 黄小鱼🐠: [图片] 黄小鱼🐠: 实录工具清单汇总—— Claude (Max 版本 / Claude Code) 亦仁评价： Top 1 工具，“又爱又恨”（极度好用但极易封号…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-16.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-16</span></div>
+  <h3>朋友们！ 之前我们分享过群友 @shinefore…</h3>
+  <p class="summary">投流知识点：朋友们！ 之前我们分享过群友 @shineforever｜SiteData.dev sitedata 这个插件</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">早上好，朋友们！ 之前我们分享过群友 @shineforever｜SiteData.dev sitedata 这个插件，可以查看网站的流量信息，基本情况，ads投流反查和Adsense 反查，广告监…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/S2SI281obBqR3ImoqUrFmQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a><a href="https://mp.weixin.qq.com/s/k1ahEBrUNLXbo1ebRiNjmg" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-16.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-17</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：找需求的一些方法 — droidHZ 从真实痛点找需求</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：找需求的一些方法 — droidHZ 从真实痛点找需求，从市场行为找需求，从竞品找需求，从技术突破找需求</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247484623&amp;idx=1&amp;sn=df59fff5f156cb2e6e0668d33c1dacc0&amp;chksm=c35046da3715af1b31bc601de2908c0cb2f49e8c2aaf252142b64028df282ec838bdb98bb391&amp;mpshare=1&amp;scene=1&amp;srcid=0417eCWknALTHZaF4baYJQnw&amp;sharer_shareinfo=849ac5e0027a384037dc859e7fb0d1d8&amp;sharer_shareinfo_first=849ac5e0027a384037dc859e7fb0d1d8#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-17.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-18</span></div>
+  <h3>朋友们！ 今天分享一个SEO 的chrome 插件…</h3>
+  <p class="summary">资料线索：朋友们！ 今天分享一个SEO 的chrome 插件：Keywords Everywhere 插件地址：</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">早上好，朋友们！ 今天分享一个SEO 的chrome 插件：Keywords Everywhere 插件地址：</div>
+  <div class="links"><a href="https://chromewebstore.google.com/detail/keywords-everywhere-keywo/hbapdpeemoojbophdfndmlgdhppljgmp" target="_blank" rel="noreferrer">chromewebstore.google.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-18.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-19</span></div>
+  <h3>装了这 6 个 CLI</h3>
+  <p class="summary">AI 工作流知识点：装了这 6 个 CLI</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">装了这 6 个 CLI，Claude Code 可以帮我全自动建站上线 — AI工具进化论 前两天有人问我，Claude Code 和 Openclaw 这类 AI Agent 工具，到底哪里好用。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/4WPFObEQm_VrFknDtz05AA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-19.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-19</span></div>
+  <h3>Agent Harness 深度解剖</h3>
+  <p class="summary">AI 工作流知识点：Agent Harness 深度解剖：Anthropic、OpenAI、LangChain 都在构建什么 — SlowGrowth.慢速生长 Harness 不是模型的外壳</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Agent Harness 深度解剖：Anthropic、OpenAI、LangChain 都在构建什么 — SlowGrowth.慢速生长 Harness 不是模型的外壳，而是让智能体成为可能的完…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI0NTU3NTc5Ng==&amp;mid=2247484156&amp;idx=1&amp;sn=bf59b3c259cb85ae0c2f0a04c1409e2b&amp;chksm=e8ec47ae41e54be3886804d4df5c0c8944a07c3e2d9a8f41d43b9ca5adfcd7b6cc5e1c309e2e&amp;mpshare=1&amp;scene=1&amp;srcid=04192MI0Nhno9QDCGt0Bj7ID&amp;sharer_shareinfo=bc1231fe007a423935c79b6fa9ab1da1&amp;sharer_shareinfo_first=bc1231fe007a423935c79b6fa9ab1da1#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-19.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-19</span></div>
+  <h3>半年从零做到近 6000 粉</h3>
+  <p class="summary">资料线索：半年从零做到近 6000 粉</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">半年从零做到近 6000 粉，我想把这套写作系统开源给你 — AI工具进化论 我自己苦哈哈写的文章，阅读量几百。 搭完自动化写作系统之后，85 篇原创，最近升级到日更博主，单篇最高 3.</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI2MTg2NDU4OQ==&amp;mid=2247486468&amp;idx=1&amp;sn=196d18f2f633faed659b9bcd410ab7b1&amp;chksm=ebdb3a06856bc526791467777a0d104eff865e7dca9ceb4649d128deb2469cf146768ca9aa2e&amp;mpshare=1&amp;scene=1&amp;srcid=0419NUweB224u1qORVVIno1y&amp;sharer_shareinfo=c3cc4ba8277fb3b70874d8a054a1d594&amp;sharer_shareinfo_first=c3cc4ba8277fb3b70874d8a054a1d594#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-19.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-20</span></div>
+  <h3>然后就claude code 一个提示词</h3>
+  <p class="summary">AI 工作流知识点：然后就claude code 一个提示词</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">然后就claude code 一个提示词，加上网址，使用hyperframes生成演示视频即可，下面这个提示词就是我生成的提示词，是我先用AI随便生成的。 使用 /hyperframes，根据网站 …</div>
+  <div class="links"><a href="https://www.makememe.net/" target="_blank" rel="noreferrer">makememe.net</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-20.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-20</span></div>
+  <h3>Claude Design提示词泄露第3天</h3>
+  <p class="summary">让 Claude Code 先理解历史内容和当前目标，再生成学习计划与案例检索方向。</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Design提示词泄露第3天，我花一天收集各种资料拆解了422行系统提示词，跑了几个个真实测试案例 整理出这份史上最全的，从认知到实操的完整claude design教程，纯干无广：</div>
+  <div class="links"><a href="https://x.com/yaohui12138/status/2046092258488054062?s=20" target="_blank" rel="noreferrer">x.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-20.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-20</span></div>
+  <h3>朋友们！ 我们日常在提交导航站或者宣传我的网站时</h3>
+  <p class="summary">早上好，朋友们！ 我们日常在提交导航站或者宣传我的网站时，往往需要有一个演示视频，能够增加我们网站的点击，但是制作这样的视频，往往是很麻烦，但是最近HeyGen开源了HyperFrames框架。</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">早上好，朋友们！ 我们日常在提交导航站或者宣传我的网站时，往往需要有一个演示视频，能够增加我们网站的点击，但是制作这样的视频，往往是很麻烦，但是最近HeyGen开源了HyperFrames框架。</div>
+  <div class="links"><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-20.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-20</span></div>
+  <h3>Vercel 内部系统被入侵</h3>
+  <p class="summary">Vercel 内部系统被入侵，一部分 Vercel 用户数据泄漏，用vercel部署的产品 建议重置一下重要的环境变量 比如stripe的key、各个AI平台的key</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">Vercel 内部系统被入侵，一部分 Vercel 用户数据泄漏，用vercel部署的产品 建议重置一下重要的环境变量 比如stripe的key、各个AI平台的key</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-20.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-21</span></div>
+  <h3>Kimi K2.6 发布并开源</h3>
+  <p class="summary">AI 工作流知识点：Kimi K2.6 发布并开源</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Kimi K2.6 发布并开源，全面精进代码和 Agent 集群能力 — 月之暗面 Kimi 小版本，大升级</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&amp;mid=2247488415&amp;idx=1&amp;sn=e494d0a74bc414a45f65d327bc97cd22&amp;chksm=c21080fac69c02331563c332304e0babfc3e509e9870079e5333164a180cd27a45c9cc415bfd&amp;mpshare=1&amp;scene=1&amp;srcid=0420GPmYiA1f2Z8aiAnNTkPm&amp;sharer_shareinfo=1b4671e43cf3aae47abd7fea21680f4f&amp;sharer_shareinfo_first=aec92e0c9a16d0a7394050ec2a25725a#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-21.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-21</span></div>
+  <h3>朋友们！ 今天分享一个大家可能会忽视的东西</h3>
+  <p class="summary">早上好，朋友们！ 今天分享一个大家可能会忽视的东西，就是网站弹窗，对于提升用户体验和转化还是很有帮助的。很多人一提弹窗就觉得打扰用户，但如果设计得好，它反而是在减少跳转、降低决策成本。因为弹窗的对于用户来说，是…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">早上好，朋友们！ 今天分享一个大家可能会忽视的东西，就是网站弹窗，对于提升用户体验和转化还是很有帮助的。很多人一提弹窗就觉得打扰用户，但如果设计得好，它反而是在减少跳转、降低决策成本。因为弹窗的对于…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-21.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-21</span></div>
+  <h3>更新说明弹窗 大家看多了网站之后</h3>
+  <p class="summary">更新说明弹窗 大家看多了网站之后，会发现更新说明弹窗已经成为了标配。这个弹窗有几个好处： - 让用户知道你的网站是在不断迭代维护的，用户就会经常回访。 - 你新上线的功能，能让用户体验到，提升新功能点击率。 -…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">更新说明弹窗 大家看多了网站之后，会发现更新说明弹窗已经成为了标配。这个弹窗有几个好处： - 让用户知道你的网站是在不断迭代维护的，用户就会经常回访。 - 你新上线的功能，能让用户体验到，提升新功能…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-21.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-23</span></div>
+  <h3>Cronjob Response</h3>
+  <p class="summary">AI 工作流知识点：Cronjob Response: AI Site Sitemap Monitor</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">Cronjob Response: AI Site Sitemap Monitor ------------- 📊 AI站点每日监控报告 — 2026年4月22日 总体数据 • 监控站点：291个…</div>
+  <div class="links"><a href="https://aifreeforever.com/image-generators/flux-2-max" target="_blank" rel="noreferrer">aifreeforever.com</a><a href="https://aifreeforever.com/image-generators/flux-2-pro" target="_blank" rel="noreferrer">aifreeforever.com</a><a href="https://aifreeforever.com/image-generators/grok-imagine" target="_blank" rel="noreferrer">aifreeforever.com</a><a href="https://aifreeforever.com/image-generators/imagen-4" target="_blank" rel="noreferrer">aifreeforever.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-23.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-23</span></div>
+  <h3>2026年四大云数据库深度对比Turso vs N…</h3>
+  <p class="summary">2026年四大云数据库深度对比Turso vs Neon vs Supabase vs MongoDB Atlas — 良辰美 📌 本文所有信息均来源于各数据库官网公开定价页面，仅供学习参考，实际价格以官网为…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">2026年四大云数据库深度对比Turso vs Neon vs Supabase vs MongoDB Atlas — 良辰美 📌 本文所有信息均来源于各数据库官网公开定价页面，仅供学习参考，实际…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzAxMzg0MzMxNg==&amp;mid=2650965886&amp;idx=1&amp;sn=2f537624f783aaaad6a9a554aae38bd3&amp;chksm=81192fb2b08aebee06c1b24ea2708076cf602f09bb3d37548a9173f4c1ee9d48bcf2fbecb7ea&amp;mpshare=1&amp;scene=1&amp;srcid=0423JYF8A3d19q4lzdkCT6kV&amp;sharer_shareinfo=ba9f4e534e182cf7925d4327bec61829&amp;sharer_shareinfo_first=ba9f4e534e182cf7925d4327bec61829#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-23.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-23</span></div>
+  <h3>朋友们！ 最近打算办理一个美国公司</h3>
+  <p class="summary">风险提醒：朋友们！ 最近打算办理一个美国公司</p>
+  <div class="takeaway"><strong>可记：</strong>这类信号要进入风险清单，先确认规则再放大。</div>
+  <div class="quote">早上好，朋友们！ 最近打算办理一个美国公司，更合规的去收款，然后朋友给我推荐了一个globalgo fast的网站，可以快捷帮你办理美国公司，而且价格比stripe atlas还划算，所以我果断办理…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-23.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-23</span></div>
+  <h3>每月买AI工具花2万</h3>
+  <p class="summary">资料线索：每月买AI工具花2万</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">每月买AI工具花2万，支付是个灯下黑的问题 — AI异类弗兰克 新来的实习生问我，Frank，咱们公司每个月在AI工具上到底花多少钱？</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzU2Njg0OTEyNQ==&amp;mid=2247493079&amp;idx=1&amp;sn=52804cab9d2265f03e35b2f11b2b6b9b&amp;chksm=fd489a3f0b22465bf8fe66018719471f534c75ce4ae86af8210bbdbe405d0fd1d0243882b407&amp;mpshare=1&amp;scene=1&amp;srcid=0423tLsjxBU0MeCS2QE6cts0&amp;sharer_shareinfo=ce6625ec70dca2360e133aef40a9fa61&amp;sharer_shareinfo_first=ce6625ec70dca2360e133aef40a9fa61#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-23.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-23</span></div>
+  <h3>其实很早之前就走过stripe atlas 的创建…</h3>
+  <p class="summary">其实很早之前就走过stripe atlas 的创建公司这个流程，但是支付一直被拒绝。小黄鱼找过三方支付，也咨询过相关朋友都不行，所以不了了之，这次用了globalgo之后，发现很丝滑，而且价格比stripe a…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">其实很早之前就走过stripe atlas 的创建公司这个流程，但是支付一直被拒绝。小黄鱼找过三方支付，也咨询过相关朋友都不行，所以不了了之，这次用了globalgo之后，发现很丝滑，而且价格比st…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-23.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-24</span></div>
+  <h3>GPT-5.5来了</h3>
+  <p class="summary">AI 工作流知识点：GPT-5.5来了</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">GPT-5.5来了，甩开Claude Opus 4.7一条街 — 刘小排r 说几个最直观的使用感受1. 编码能力超强。 GPT-5.5让本来就不是很香的Claude Opus 4.7变得更加不香了。…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzI1MTUxNzgxMA==&amp;mid=2247501818&amp;idx=1&amp;sn=5fbaa51640fc10503526c58b71e6c92f&amp;from_masonry=1&amp;sharer_shareinfo_first=a0a3a9e5a18a77e6e5e3789aae0711da&amp;sharer_shareinfo=c498b667f21c87c652b2aa7838640b17#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-24.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：如何海外挣美刀内地花 — droidHZ 我们挣了美刀当然是要消费呀</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：如何海外挣美刀内地花 — droidHZ 我们挣了美刀当然是要消费呀，我是众安银行进行Stripe 收款的，众安银行是支持内地免手续费消费的。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485330&amp;idx=1&amp;sn=56b59fbff3c9eca3e54891d10f311056&amp;chksm=c310bdeecf42d4aa8724df1196aba9358c75aeb31dce6796ef08447b919fbccfe71301750208&amp;mpshare=1&amp;scene=1&amp;srcid=0424QqwRFFkzXAYaKo6c55oK&amp;sharer_shareinfo=e0155181ec0880ec050753698983d799&amp;sharer_shareinfo_first=e0155181ec0880ec050753698983d799#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-24.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>我希望你从独立开发saas领域里选一个大概研究生水…</h3>
+  <p class="summary">我希望你从独立开发saas领域里选一个大概研究生水平的概念。然后我希望你通过写一个寓言的方式，间接地把这个概念完整讲出来。最好一直到快结尾时，人才会慢慢意识到这个概念究竟是什么。然后在故事之后，再补一段解释，把…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">我希望你从独立开发saas领域里选一个大概研究生水平的概念。然后我希望你通过写一个寓言的方式，间接地把这个概念完整讲出来。最好一直到快结尾时，人才会慢慢意识到这个概念究竟是什么。然后在故事之后，再补…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-24.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-24</span></div>
+  <h3>记一次 Stripe 封号</h3>
+  <p class="summary">风险提醒：记一次 Stripe 封号：从全线封禁到全部恢复 — Niko的出海记录 前几天被各种平台封控的事情搞得头大先是OpenRouter因为账单地址的原因被封控了，导致我不得…</p>
+  <div class="takeaway"><strong>可记：</strong>这类信号要进入风险清单，先确认规则再放大。</div>
+  <div class="quote">记一次 Stripe 封号：从全线封禁到全部恢复 — Niko的出海记录 前几天被各种平台封控的事情搞得头大先是OpenRouter因为账单地址的原因被封控了，导致我不得已要重新准备</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzE5ODcyNDAwOA==&amp;mid=2247484058&amp;idx=1&amp;sn=75c0f23ffbf60f53f30b1d26e371aa40&amp;chksm=9780e0a6eb84ed1b3465270c1e4207b7161c9ea4d0d7f0b4fbf072baa0f1fa58ea26bf06a95e&amp;mpshare=1&amp;scene=1&amp;srcid=0424RTmdRQ919d0xzVIGfvj0&amp;sharer_shareinfo=16975e8e9621a12af6164bdfb538af91&amp;sharer_shareinfo_first=16975e8e9621a12af6164bdfb538af91#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-24.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>朋友们！ 最近Google 算法更新</h3>
+  <p class="summary">案例数据：朋友们！ 最近Google 算法更新</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">早上好，朋友们！ 最近Google 算法更新，看大家推上分享网站的数据，好像很多靠批量上线SEO内容，没有停留时长的网站，流量都降的比较多，停留时长还不错的网站，排名都上升了，我有个站也是停留数据还…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-24.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-25</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：跟着免费的保姆级教程</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：跟着免费的保姆级教程，上线自己的网站 — droidHZ 早上好，朋友们！有些朋友还没有做过网站，问我怎么能快速上线自己的网站，虽然现在上站的门槛很低了，但是要这一套流程走下来还是…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485561&amp;idx=1&amp;sn=0ee4864e9b230c9c2434b890810549c6&amp;chksm=c311bffd543b208274f7197f4fd765d66ec69ec4893d8d33f8cd94d678e3f1ec08e71316c5e7&amp;mpshare=1&amp;scene=1&amp;srcid=0425HVIZwjVUiIYwCor8xytd&amp;sharer_shareinfo=535cb85a433cf9cf4d8c6fc899a24891&amp;sharer_shareinfo_first=535cb85a433cf9cf4d8c6fc899a24891#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-25.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-25</span></div>
+  <h3>这几个 AI 产品榜单值得看</h3>
+  <p class="summary">案例数据：这几个 AI 产品榜单值得看： 全球向 - There&#39;s An AI For That (theresanaiforthat.com) — 全球最大的AI工具目录</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">这几个 AI 产品榜单值得看： 全球向 - There&#39;s An AI For That (theresanaiforthat.com) — 全球最大的AI工具目录，按排名/评分/新增排序，看品类趋…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-25.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-26</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：前期上线网站成本有多低 — droidHZ 早上好</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：前期上线网站成本有多低 — droidHZ 早上好，朋友们！今天来解答一下，还没有开始上线网站的朋友经常问我的一个问题：“前期上线网站需要多少成本？</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485567&amp;idx=1&amp;sn=0733ad32d06cecf0bd980cac055df06c&amp;chksm=c31a3b9ed98c119145fd6a97d98c372d991c6c2701ad9ddff7b7611a224d26241d53cedcc014&amp;mpshare=1&amp;scene=1&amp;srcid=0426OCHyHm6N1BTvW6hq1b4M&amp;sharer_shareinfo=cd12aa6f5bad49577ef0e3da5715bdaa&amp;sharer_shareinfo_first=cd12aa6f5bad49577ef0e3da5715bdaa#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-26.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-27</span></div>
+  <h3>我听了三小时出海创业直播</h3>
+  <p class="summary">AI 工作流知识点：我听了三小时出海创业直播</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我听了三小时出海创业直播，把哥飞、彪哥、壹树的话整理成这篇笔记 — Ruiqin袁锐钦 说实话，我已经很少花这么长时间听直播了。作为一个每天和代码、提示词、API打交道的人，我的时间被切得很碎。但这…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzg5NzAzMDI4NA==&amp;mid=2247506100&amp;idx=1&amp;sn=d2fd6ebd547af898d3710015b17d3ca6&amp;chksm=c1052866a53ce64a3d3b471f3e5cb681cbae521e967fa658d8346c34de8e6564586315a23dcf&amp;mpshare=1&amp;scene=1&amp;srcid=0427pPDboyS3BwbXdZpm5DcP&amp;sharer_shareinfo=780f65792fa556c3298961a253d3c9f0&amp;sharer_shareinfo_first=780f65792fa556c3298961a253d3c9f0#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-27.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-27</span></div>
+  <h3>你学的那套产品方法论</h3>
+  <p class="summary">资料线索：你学的那套产品方法论</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">你学的那套产品方法论，在 AI 时代全错了（Cat Wu 访谈上） — SlowGrowth.慢速生长 产品品味取代执行力，成为 AI 时代最稀缺的能力</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI0NTU3NTc5Ng==&amp;mid=2247484319&amp;idx=1&amp;sn=35185c6bb8c7b94f03c5177dd5d45568&amp;chksm=e8fda9613c8c87e5efd4a947be3f39195d15f61061a445afe9d27b611391475ee8cf798baed0&amp;mpshare=1&amp;scene=1&amp;srcid=04273SxAxDP0KF37r013ikq4&amp;sharer_shareinfo=368448852aa18aa253230ef986ad1167&amp;sharer_shareinfo_first=368448852aa18aa253230ef986ad1167#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-27.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-28</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：雷达设置</p>
+  <div class="takeaway"><strong>可记：</strong>这类信号要进入风险清单，先确认规则再放大。</div>
+  <div class="quote">网站出海每日分享：雷达设置，防止stripe封号 — droidHZ 最近看到有朋友，stripe 账号被坏人利用了，被封stripe 账号了，感觉挺影响心态的，刚好自己有2个stripe账号，另外…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247484991&amp;idx=1&amp;sn=ea79b2a209df88509b7df6b4a348e2a5&amp;chksm=c38f017816ef6956fde673dae04da4882d55e031a450e392b498a5ae9ddba81b419725ac46dc&amp;mpshare=1&amp;scene=1&amp;srcid=04285zP4LcH3uMslvZGpCGcg&amp;sharer_shareinfo=d0f22fc28ff8a10f618ebfdef9cf039b&amp;sharer_shareinfo_first=d0f22fc28ff8a10f618ebfdef9cf039b#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-28.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-28</span></div>
+  <h3>你们有谁有接过stripe这边的微信和支付宝支付？…</h3>
+  <p class="summary">资料线索：你们有谁有接过stripe这边的微信和支付宝支付？像这个</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">你们有谁有接过stripe这边的微信和支付宝支付？像这个</div>
+  <div class="links"><a href="https://gpt-image2.net/pricing站点的一次性支付弹窗支付，这个体验还可以" target="_blank" rel="noreferrer">gpt-image2.net</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-28.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-28</span></div>
+  <h3>超越DeepSeek-V4！罗福莉交出小米最强开源…</h3>
+  <p class="summary">AI 工作流知识点：超越DeepSeek-V4！罗福莉交出小米最强开源模型</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">超越DeepSeek-V4！罗福莉交出小米最强开源模型，首日适配5家国产芯片 — 智东西 免费100万亿Token，开源模型新王登场。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&amp;mid=2652801978&amp;idx=1&amp;sn=8c9f7b998c3352db1b4468669b62b538&amp;chksm=852f2d8add7da30ff83363d919c8bda2c3ab2cfb096c9483ada44967d9f0008c5b651f665c11&amp;mpshare=1&amp;scene=1&amp;srcid=0428pqR9fq6FeP1KAVMqATRx&amp;sharer_shareinfo=58333ea4531b6f3ed51e941a6d16c3f7&amp;sharer_shareinfo_first=58333ea4531b6f3ed51e941a6d16c3f7#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-28.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-29</span></div>
+  <h3>2026年 教你零门槛在线免费获得一张海外银行卡</h3>
+  <p class="summary">AI 工作流知识点：2026年 教你零门槛在线免费获得一张海外银行卡｜纯小白实操教程｜半价订阅ChatGPT、Claude、Gemini等 — 硅基AI饲养员 纯小白实操教程｜半价订阅 Ch…</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">2026年 教你零门槛在线免费获得一张海外银行卡｜纯小白实操教程｜半价订阅ChatGPT、Claude、Gemini等 — 硅基AI饲养员 纯小白实操教程｜半价订阅 ChatGPT、Claude、G…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzU4ODcwNDMxOQ==&amp;mid=2247484634&amp;idx=1&amp;sn=e4a3e975f46f5e1e7909235e52c4d706&amp;chksm=fc50740fbb05035e86e8ef7f59a82989654678a6cef11fec8306e5b3aa3b6e31207d8fd83cb6&amp;mpshare=1&amp;scene=1&amp;srcid=0429gQei31ko0uBc3vQwpK5Z&amp;sharer_shareinfo=0abd7496c8a5c1f6a318c320548a6ab9&amp;sharer_shareinfo_first=0abd7496c8a5c1f6a318c320548a6ab9#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-29.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-29</span></div>
+  <h3>有个聚合 gpt claude gemini 购买…</h3>
+  <p class="summary">AI 工作流知识点：有个聚合 gpt claude gemini 购买渠道 大部分没有质保</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">有个聚合 gpt claude gemini 购买渠道 大部分没有质保</div>
+  <div class="links"><a href="https://aibijia.org/" target="_blank" rel="noreferrer">aibijia.org</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-29.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-30</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：kie 省钱小妙招 — droidHZ 很多朋友都问过我用的什么api</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">网站出海每日分享：kie 省钱小妙招 — droidHZ 很多朋友都问过我用的什么api，我现在用kie，他们的模型也比较多 ,性价比和稳定性用下来感觉都还可以，分享一下省钱的技巧</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485009&amp;idx=1&amp;sn=1d0852983f641e2c338b9b9560836566&amp;chksm=c382c97c2ac9e5ff28dd88af155ef6e346c9a90860b1c2b3409287aea2bd4c1a5dd90194a0d3&amp;mpshare=1&amp;scene=1&amp;srcid=0430RELTPVFM5R6CwQ6qH4QK&amp;sharer_shareinfo=39519997f471fdfcb278ff8fe6ba93c6&amp;sharer_shareinfo_first=39519997f471fdfcb278ff8fe6ba93c6#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-30.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-30</span></div>
+  <h3>Cloudflare 前几天推出了一个 GEO 检…</h3>
+  <p class="summary">资料线索：Cloudflare 前几天推出了一个 GEO 检查网站：</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">Cloudflare 前几天推出了一个 GEO 检查网站：</div>
+  <div class="links"><a href="https://isitagentready.com/" target="_blank" rel="noreferrer">isitagentready.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-30.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-30</span></div>
+  <h3>工具入口 ahrefs.com/site-audi…</h3>
+  <p class="summary">工具入口 ahrefs.com/site-audit 使用方式也很简单，进入页面时候，输入url ，点击sign up for free，但是发现Google 登录点不了，不知道为啥，我就用邮箱登录注册了， 然…</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">工具入口 ahrefs.com/site-audit 使用方式也很简单，进入页面时候，输入url ，点击sign up for free，但是发现Google 登录点不了，不知道为啥，我就用邮箱登录…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-30.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-01</span></div>
+  <h3>网站出海新词上线5天146K展示</h3>
+  <p class="summary">资料线索：网站出海新词上线5天146K展示</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海新词上线5天146K展示，我做对了什么 — 不止切图 写这篇之前我犹豫了挺久，因为这是我做独立开发以来，第一次拿到这样的数据。5天，70.4K 点击，146K 展示。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkwMTU0MjQyMg==&amp;mid=2247483696&amp;idx=1&amp;sn=faf41bda01d1792ca3653e91a491fe83&amp;chksm=c1f8ac1127ae2812ee669feffcf8f4564afcb7cd8e8d2a987b5fa39d4865a42f14ffac8f8135&amp;mpshare=1&amp;scene=1&amp;srcid=0501ebBDJqkVApIYqZxsYN2t&amp;sharer_shareinfo=261c032848add47174a068a7a26c12a2&amp;sharer_shareinfo_first=261c032848add47174a068a7a26c12a2#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-01.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-01</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：如何看对标网站 — droidHZ 今天来分享怎么去看对标网站</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：如何看对标网站 — droidHZ 今天来分享怎么去看对标网站，从对标里面学到东西用到自己网站上。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485608&amp;idx=1&amp;sn=3a030302e0236f4f0f5ae0acac9644df&amp;chksm=c3436b7cb238a970f1183fd56f47c1aa90860729dd3191cd6e15d23bab0d66e1a8655076aff5&amp;mpshare=1&amp;scene=1&amp;srcid=05010PK0J7YVUl9eYvnKvMrD&amp;sharer_shareinfo=c1c154f3a0b064344cb3bc117ba1ef4f&amp;sharer_shareinfo_first=c1c154f3a0b064344cb3bc117ba1ef4f#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-01.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-02</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：网站出海每日分享：gpts 给网站引流 — droidHZ 想必大家今天都听说gpts</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">网站出海每日分享：gpts 给网站引流 — droidHZ 想必大家今天都听说gpts , 比较常用来的地方就是作为一个基准值，来衡量Google trends 一些关键词的搜索量是多少。其实gpt…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/nWYRod1p-67Af9hWDQYZ3A" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-02.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-02</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：分享5篇很有价值的复盘贴 — droidHZ 今天分享几个在网站出海上都还取得不错成绩的大佬复盘贴</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：分享5篇很有价值的复盘贴 — droidHZ 今天分享几个在网站出海上都还取得不错成绩的大佬复盘贴。他们的复盘贴，我也都看过好几遍，很有共鸣，也有很多干货，有种常读常新的感觉。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzNzYzNzE3Mg==&amp;mid=2247485418&amp;idx=1&amp;sn=3e41b07129f3f49cfc956a5b14b36a24&amp;chksm=c3133b26e3c2f6ddc0f237f374450050d44270dbaf2626d2fe684dae57ee72d201b2c0090cb6&amp;mpshare=1&amp;scene=1&amp;srcid=0502KsV9xQRCZHBXF5cekuGv&amp;sharer_shareinfo=a074ebec60751cc7a6f8897f538db73e&amp;sharer_shareinfo_first=a074ebec60751cc7a6f8897f538db73e#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-02.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-02</span></div>
+  <h3>走上出海web道路月入 4w 刀</h3>
+  <p class="summary">案例数据：走上出海web道路月入 4w 刀</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">摸索一年，走上出海web道路月入 4w 刀，万字记录历程，分享实操 — 小耳朵sir 大家好，我是小耳朵。最近一年多，做了不少项目，绕了一大圈，因为 AI 的出现，又回到互联网开始了AI web出海…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI4MTIxNjgxNw==&amp;mid=2247484208&amp;idx=1&amp;sn=bce91e48eba3c4dea7a594d11048b536&amp;chksm=ea85ea14467252f65d04672d48ac2bd46a5b550e215bf2642a393e54667fc4a57ac20579163f&amp;mpshare=1&amp;scene=1&amp;srcid=0502gLpsBQANz9P5EGF7v5dl&amp;sharer_shareinfo=1cdd542fa7fb1f1bd363c907d3afabf0&amp;sharer_shareinfo_first=1cdd542fa7fb1f1bd363c907d3afabf0#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-02.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-02</span></div>
+  <h3>朋友们！ 想必大家今天都听说gpts</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：朋友们！ 想必大家今天都听说gpts</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">早上好，朋友们！ 想必大家今天都听说gpts , 比较常用来的地方就是作为一个基准值，来衡量Google trends 一些关键词的搜索量是多少。其实gpts 作为chatgpt 的一个小助手的服务…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-02.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-04</span></div>
+  <h3>网站出海每日分享</h3>
+  <p class="summary">案例数据：网站出海每日分享：一场高质量直播：哥飞、彪哥、壹树聊出海创业 — droidHZ 上周听了丁律师组织的一个直播</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">网站出海每日分享：一场高质量直播：哥飞、彪哥、壹树聊出海创业 — droidHZ 上周听了丁律师组织的一个直播，是哥飞，彪哥，壹树三位大佬关于网站出海的分享，主要是解答大家对应网站出海的常见问题。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/UkZk7WHsuH2pjaOzfhu7ag" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-04.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-06</span></div>
+  <h3>直接使用cli 接入支付创建产品 接入这个也是口喷…</h3>
+  <p class="summary">直接使用cli 接入支付创建产品 接入这个也是口喷（我是让他基于模板修改的，大家可以根据自己的模板调整）：pro 会员是 9.9 每月的订阅费，把lifetime 换成Premium订阅，29.9每月，同时支持…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">直接使用cli 接入支付创建产品 接入这个也是口喷（我是让他基于模板修改的，大家可以根据自己的模板调整）：pro 会员是 9.9 每月的订阅费，把lifetime 换成Premium订阅，29.9每…</div>
+  <div class="links"><a href="https://docs.tanstarter.dev/docs/payment/stripe，使用stripe" target="_blank" rel="noreferrer">docs.tanstarter.dev</a></div>
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-06.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-06</span></div>
+  <h3>朋友们！ 不知道大家每次网站要接入支付是什么样的流程</h3>
+  <p class="summary">早上好，朋友们！ 不知道大家每次网站要接入支付是什么样的流程，我之前是创建一个Stipe 账号，然后添加webhook，手动创建自己产品，然后苦逼的去把对应的价格id 放到对应的产品上，这一套操作还挺花时间的。…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">早上好，朋友们！ 不知道大家每次网站要接入支付是什么样的流程，我之前是创建一个Stipe 账号，然后添加webhook，手动创建自己产品，然后苦逼的去把对应的价格id 放到对应的产品上，这一套操作还…</div>
+  
+  <a class="source" href="../../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-06.html">证据页：赫兹的朋友们~出海交流</a>
+</article></div></section>
+</main><footer>本地生成 · 赫兹的朋友们~出海交流 · 2026/5/7 16:53:03</footer>
+<script>
+document.querySelectorAll('[data-filter-scope]').forEach((scope) => {
+  const buttons = scope.querySelectorAll('[data-filter]');
+  const cards = scope.querySelectorAll('[data-category]');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const target = button.dataset.filter;
+      buttons.forEach((item) => item.classList.toggle('active', item === button));
+      cards.forEach((card) => {
+        card.classList.toggle('is-hidden', target !== '全部' && card.dataset.category !== target);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

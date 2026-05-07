@@ -1,0 +1,1313 @@
+{
+  "group": "出海独立开发交流群 - Asnull",
+  "slug": "出海独立开发交流群-Asnull-b952374a",
+  "range": {
+    "start": "2026-04-07",
+    "end": "2026-05-06"
+  },
+  "pointCount": 62,
+  "points": [
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-001",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 看到前面说账号轮询需求",
+      "summary": "AI 工作流知识点：[引用] 看到前面说账号轮询需求",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-16",
+      "importance": 4,
+      "sourceQuote": "[引用] 看到前面说账号轮询需求。 推荐一下这个工具，支持codex，cc，反重力账号轮询，有ui ↳",
+      "urls": [
+        "https://github.com/jlcodes99/cockpit-too..."
+      ],
+      "tags": [
+        "AI编程",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-002",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[链接] TanStarter 模板已支持 Cre…",
+      "summary": "风险提醒：[链接] TanStarter 模板已支持 Creem 支付 @creemio Creem 是一个面向独立开发者的 Merchant of Record（MoR）支付平台",
+      "takeaway": "这类信号要进入风险清单，先确认规则再放大。",
+      "category": "风险合规",
+      "date": "2026-05-03",
+      "importance": 4,
+      "sourceQuote": "[链接] TanStarter 模板已支持 Creem 支付 @creemio Creem 是一个面向独立开发者的 Merchant of Record（MoR）支付平台，内置全球税务合规（190+…",
+      "urls": [
+        "https://indiefox.me/blog/creem"
+      ],
+      "tags": [
+        "出海",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-003",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[链接] Reddit 依旧被严重低估",
+      "summary": "投流知识点：[链接] Reddit 依旧被严重低估",
+      "takeaway": "把渠道动作拆到素材、账号、授权和投放层，别只看表面爆款。",
+      "category": "出海",
+      "date": "2026-04-13",
+      "importance": 3,
+      "sourceQuote": "[链接] Reddit 依旧被严重低估。大部分卖家只盯着FB、Google、TikTok，但Reddit有几个独特优势： 1、Reddit的帖子被Google收录的权重极高。你在Reddit某个su…",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "长文本"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-004",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 刚好需要，感谢[强] ↳",
+      "summary": "资料线索：[引用] 刚好需要，感谢[强] ↳",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-16",
+      "importance": 3,
+      "sourceQuote": "[引用] 刚好需要，感谢[强] ↳",
+      "urls": [
+        "https://github.com/jlcodes99/cockpit-too..."
+      ],
+      "tags": [
+        "AI编程",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-005",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 群里那老哥不是说gptimage2十几个…",
+      "summary": "[引用] 群里那老哥不是说gptimage2十几个用户就转化一个订阅嘛，这转化率嘎嘎赚钱[坏笑] ↳ 得出结论 图片站 除了香蕉 都不行",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-05-05",
+      "importance": 3,
+      "sourceQuote": "[引用] 群里那老哥不是说gptimage2十几个用户就转化一个订阅嘛，这转化率嘎嘎赚钱[坏笑] ↳ 得出结论 图片站 除了香蕉 都不行",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-006",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "新建一个github仓库很合理",
+      "summary": "AI 工作流知识点：新建一个github仓库很合理",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-09",
+      "importance": 3,
+      "sourceQuote": "开源模型，新建一个github仓库很合理",
+      "urls": [
+        "https://github.com/brooks376/Happy-Horse-1.0"
+      ],
+      "tags": [
+        "AI编程",
+        "外链",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-007",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 嗯之前支付宝直接有入口",
+      "summary": "资料线索：[引用] 嗯之前支付宝直接有入口",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-07",
+      "importance": 3,
+      "sourceQuote": "[引用] 嗯之前支付宝直接有入口，现在好像找不到了，我直接在网页买了 ↳ [引用] 这个是淘宝买就OK了吧？",
+      "urls": [
+        "https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&amp;%20iTunes%20USA/all"
+      ],
+      "tags": [
+        "出海",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-008",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 好嘞谢啦 ↳ [引用] 嗯之前支付宝直接…",
+      "summary": "资料线索：[引用] 好嘞谢啦 ↳ [引用] 嗯之前支付宝直接有入口",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-07",
+      "importance": 3,
+      "sourceQuote": "[引用] 好嘞谢啦 ↳ [引用] 嗯之前支付宝直接有入口，现在好像找不到了，我直接在网页买了",
+      "urls": [
+        "https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&amp;%20iTunes%20USA/all"
+      ],
+      "tags": [
+        "出海",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-009",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "github.com 这条线索",
+      "summary": "资料线索：",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-15",
+      "importance": 3,
+      "sourceQuote": "资料线索：",
+      "urls": [
+        "https://github.com/router-for-me/CLIProxyAPI"
+      ],
+      "tags": [
+        "AI编程",
+        "外链",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-010",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 企业号 paypal 会稳一点么还是说一…",
+      "summary": "风险提醒：[引用] 企业号 paypal 会稳一点么还是说一样的？ 我对接的客服说是因为订单没回传销售网站所以触发风控封了 ↳ paypal要作为主支付渠道，他是按照投诉比例封号的",
+      "takeaway": "这类信号要进入风险清单，先确认规则再放大。",
+      "category": "风险合规",
+      "date": "2026-04-20",
+      "importance": 3,
+      "sourceQuote": "[引用] 企业号 paypal 会稳一点么还是说一样的？ 我对接的客服说是因为订单没回传销售网站所以触发风控封了 ↳ paypal要作为主支付渠道，他是按照投诉比例封号的",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-011",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 微信支付宝的很多第三方支付都不支持订阅支…",
+      "summary": "[引用] 微信支付宝的很多第三方支付都不支持订阅支付 ↳ 除了stripe，其他如果要开通微信或支付宝支付要用啥",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-28",
+      "importance": 3,
+      "sourceQuote": "[引用] 微信支付宝的很多第三方支付都不支持订阅支付 ↳ 除了stripe，其他如果要开通微信或支付宝支付要用啥",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-012",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 鄙视+1 ↳ 我用cursor怎么成古法…",
+      "summary": "[引用] 鄙视+1 ↳ 我用cursor怎么成古法ai编程了",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-11",
+      "importance": 2,
+      "sourceQuote": "[引用] 鄙视+1 ↳ 我用cursor怎么成古法ai编程了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-013",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "github.com 这条线索",
+      "summary": "资料线索：",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-16",
+      "importance": 2,
+      "sourceQuote": "资料线索：",
+      "urls": [
+        "https://github.com/jlcodes99/cockpit-tools"
+      ],
+      "tags": [
+        "AI编程",
+        "外链",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-014",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这个站之前吃了很大一波流量 ↳ [引用]…",
+      "summary": "案例数据：[引用] 这个站之前吃了很大一波流量 ↳ [引用] 这哥们儿的",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "产品增长",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 这个站之前吃了很大一波流量 ↳ [引用] 这哥们儿的",
+      "urls": [
+        "https://zimageturbo.ai"
+      ],
+      "tags": [
+        "产品增长",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-015",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这他妈是github子域名[捂脸] ↳ …",
+      "summary": "[引用] 这他妈是github子域名[捂脸] ↳ 这哥们谁啊，怎么2013的域名还宣称自己是官网",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 这他妈是github子域名[捂脸] ↳ 这哥们谁啊，怎么2013的域名还宣称自己是官网",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-016",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "xiangzili.xyz 这条线索",
+      "summary": "资料线索：",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-17",
+      "importance": 2,
+      "sourceQuote": "资料线索：",
+      "urls": [
+        "https://xiangzili.xyz/",
+        "https://codexcn.com/"
+      ],
+      "tags": [
+        "AI编程",
+        "外链",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-017",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 你被所有支付封杀了吗？ ↳ 我的stri…",
+      "summary": "[引用] 你被所有支付封杀了吗？ ↳ 我的stripe露头就秒，只要注册商户马上就封",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 你被所有支付封杀了吗？ ↳ 我的stripe露头就秒，只要注册商户马上就封",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-018",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 国内公司",
+      "summary": "[引用] 国内公司，营业执照 ↳ 除了stripe，其他如果要开通微信或支付宝支付要用啥",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-28",
+      "importance": 2,
+      "sourceQuote": "[引用] 国内公司，营业执照 ↳ 除了stripe，其他如果要开通微信或支付宝支付要用啥",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-019",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "cursor 也是用 claude 模型",
+      "summary": "AI 工作流知识点：cursor 也是用 claude 模型",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-11",
+      "importance": 2,
+      "sourceQuote": "cursor 也是用 claude 模型，那为什么不直接用 cc 呢",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-020",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "很具体的例子就是之前群友做的 imgtoimg.ai",
+      "summary": "案例数据：很具体的例子就是之前群友做的 imgtoimg.ai",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "AI编程",
+      "date": "2026-04-21",
+      "importance": 2,
+      "sourceQuote": "很具体的例子就是之前群友做的 imgtoimg.ai。仔细调研会发现它在去年起飞的阶段其实就是 GPT 4o Image 出来的时候，这个模型当时最大的亮点就是图像编辑能力，在这之前都是 Flux …",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "关键词",
+        "长文本"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-021",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 背后是一个武汉的公司",
+      "summary": "[引用] 背后是一个武汉的公司，他们公司多个产品都是分组赛马竞争来做的我记得 ↳ 昨天visualgpt那哥们儿，太牛了",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-08",
+      "importance": 2,
+      "sourceQuote": "[引用] 背后是一个武汉的公司，他们公司多个产品都是分组赛马竞争来做的我记得 ↳ 昨天visualgpt那哥们儿，太牛了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-022",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 1 ↳ 怎么感觉codex今天降智了",
+      "summary": "AI 工作流知识点：[引用] 1 ↳ 怎么感觉codex今天降智了",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-11",
+      "importance": 2,
+      "sourceQuote": "[引用] 1 ↳ 怎么感觉codex今天降智了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-023",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这个在哪里看 我的好像没有 ↳ 因为我的…",
+      "summary": "[引用] 这个在哪里看 我的好像没有 ↳ 因为我的ChatGPT也是通过这种方式开通的，我可以看到我的订阅那里显示的是谷歌",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 这个在哪里看 我的好像没有 ↳ 因为我的ChatGPT也是通过这种方式开通的，我可以看到我的订阅那里显示的是谷歌",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-024",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 当前供应量 每年的增长 然后毛估估就能算…",
+      "summary": "[引用] 当前供应量 每年的增长 然后毛估估就能算来 ↳ 还是不太懂，那怎么去计算这未来3年的供需量应该有的价格呢",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 当前供应量 每年的增长 然后毛估估就能算来 ↳ 还是不太懂，那怎么去计算这未来3年的供需量应该有的价格呢",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-025",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这个是淘宝买就OK了吧？ ↳ 我用苹果礼…",
+      "summary": "[引用] 这个是淘宝买就OK了吧？ ↳ 我用苹果礼品卡订阅+不切梯子节点，用了一个月了 就是要交多25%税",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-04-07",
+      "importance": 2,
+      "sourceQuote": "[引用] 这个是淘宝买就OK了吧？ ↳ 我用苹果礼品卡订阅+不切梯子节点，用了一个月了 就是要交多25%税",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-026",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这个站的 UI 风格怎么这么像你的那个 …",
+      "summary": "资料线索：[引用] 这个站的 UI 风格怎么这么像你的那个 All in One 的站 ↳",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "其他",
+      "date": "2026-04-07",
+      "importance": 2,
+      "sourceQuote": "[引用] 这个站的 UI 风格怎么这么像你的那个 All in One 的站 ↳",
+      "urls": [
+        "https://nano-banana.io/"
+      ],
+      "tags": [
+        "其他",
+        "外链",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-027",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 你这是闲鱼买的？ ↳ 刚刚 350块 快…",
+      "summary": "[引用] 你这是闲鱼买的？ ↳ 刚刚 350块 快开了个 200 刀的 gpt pro，真的牛逼",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-11",
+      "importance": 2,
+      "sourceQuote": "[引用] 你这是闲鱼买的？ ↳ 刚刚 350块 快开了个 200 刀的 gpt pro，真的牛逼",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-028",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "paypal要作为主支付渠道，他是按照投诉比例封号的",
+      "summary": "风险提醒：paypal要作为主支付渠道，他是按照投诉比例封号的",
+      "takeaway": "这类信号要进入风险清单，先确认规则再放大。",
+      "category": "风险合规",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "paypal要作为主支付渠道，他是按照投诉比例封号的",
+      "urls": [],
+      "tags": [
+        "出海",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-029",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "claude 4.7 刚出codex 5.5 又咋…",
+      "summary": "AI 工作流知识点：claude 4.7 刚出codex 5.5 又咋了来了",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-22",
+      "importance": 2,
+      "sourceQuote": "claude 4.7 刚出codex 5.5 又咋了来了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-030",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[链接] 复盘了几十个出海项目后",
+      "summary": "[链接] 复盘了几十个出海项目后，我确认红人营销已经不再是发帖生意",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-26",
+      "importance": 2,
+      "sourceQuote": "[链接] 复盘了几十个出海项目后，我确认红人营销已经不再是发帖生意",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-031",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 就是微信",
+      "summary": "案例数据：[引用] 就是微信",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "产品增长",
+      "date": "2026-05-05",
+      "importance": 2,
+      "sourceQuote": "[引用] 就是微信，现在要我上传收入证明 ↳ 天星可以直接转到微信",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-032",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 就点击率:营业额 ↳ 单价问题还是转化问题",
+      "summary": "[引用] 就点击率:营业额 ↳ 单价问题还是转化问题",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-05-05",
+      "importance": 2,
+      "sourceQuote": "[引用] 就点击率:营业额 ↳ 单价问题还是转化问题",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-033",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] urdp是什么意思 ↳ .ai被udrp…",
+      "summary": "[引用] urdp是什么意思 ↳ .ai被udrp之后 转化率还是一样的",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-05-05",
+      "importance": 2,
+      "sourceQuote": "[引用] urdp是什么意思 ↳ .ai被udrp之后 转化率还是一样的",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-034",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 羊总那域名上了么 ↳ 还没正式发布吧",
+      "summary": "[引用] 羊总那域名上了么 ↳ 还没正式发布吧",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-04-07",
+      "importance": 2,
+      "sourceQuote": "[引用] 羊总那域名上了么 ↳ 还没正式发布吧",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-035",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 嗯 ↳ 你用的stripe是吧",
+      "summary": "[引用] 嗯 ↳ 你用的stripe是吧",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-09",
+      "importance": 2,
+      "sourceQuote": "[引用] 嗯 ↳ 你用的stripe是吧",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-036",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 我seo排名不高 ↳ 明天流量可能更高",
+      "summary": "案例数据：[引用] 我seo排名不高 ↳ 明天流量可能更高",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "出海",
+      "date": "2026-04-10",
+      "importance": 2,
+      "sourceQuote": "[引用] 我seo排名不高 ↳ 明天流量可能更高",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-037",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] GEO大佬 ↳ [引用] 我seo排名不高",
+      "summary": "[引用] GEO大佬 ↳ [引用] 我seo排名不高",
+      "takeaway": "搜索需求可以承接外部热度，页面要提前准备好。",
+      "category": "出海",
+      "date": "2026-04-10",
+      "importance": 2,
+      "sourceQuote": "[引用] GEO大佬 ↳ [引用] 我seo排名不高",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-038",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这不比你用 cursor 便宜 ↳ 好吧…",
+      "summary": "[引用] 这不比你用 cursor 便宜 ↳ 好吧 其实是我用不来那些指令",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-11",
+      "importance": 2,
+      "sourceQuote": "[引用] 这不比你用 cursor 便宜 ↳ 好吧 其实是我用不来那些指令",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-039",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 用中转是不是就不能用codex了 ↳ […",
+      "summary": "AI 工作流知识点：[引用] 用中转是不是就不能用codex了 ↳ [图片]",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-15",
+      "importance": 2,
+      "sourceQuote": "[引用] 用中转是不是就不能用codex了 ↳ [图片]",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-040",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 域名和支付那边有问题不？ ↳ 号封了",
+      "summary": "[引用] 域名和支付那边有问题不？ ↳ 号封了",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-17",
+      "importance": 2,
+      "sourceQuote": "[引用] 域名和支付那边有问题不？ ↳ 号封了",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-041",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 那收款干啥",
+      "summary": "[引用] 那收款干啥，给creem赚福利吗，不如直接关闭收款 ↳ 能收款 就是不让提",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 那收款干啥，给creem赚福利吗，不如直接关闭收款 ↳ 能收款 就是不让提",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-042",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 整改一下让他审核试试呢 ↳ [引用] 那…",
+      "summary": "[引用] 整改一下让他审核试试呢 ↳ [引用] 那收款干啥，给creem赚福利吗，不如直接关闭收款",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 整改一下让他审核试试呢 ↳ [引用] 那收款干啥，给creem赚福利吗，不如直接关闭收款",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-043",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] gsc里显示的？怎么感觉reddit.c…",
+      "summary": "[引用] gsc里显示的？怎么感觉reddit.com在gsc和semrush、similarweb、ahrefs里都不显示？ ↳ wxidlzuylt7ds6ne22: <?xml version=\"1.0\"…",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "出海",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] gsc里显示的？怎么感觉reddit.com在gsc和semrush、similarweb、ahrefs里都不显示？ ↳ wxidlzuylt7ds6ne22: <?xml version…",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-044",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 对 ↳ 302支付，好像还不支持订阅性支付",
+      "summary": "[引用] 对 ↳ 302支付，好像还不支持订阅性支付",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 对 ↳ 302支付，好像还不支持订阅性支付",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-045",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 转gemini[坏笑] ↳ 我感觉cha…",
+      "summary": "[引用] 转gemini[坏笑] ↳ 我感觉chatgpt蹦了，不希望是我的账号封了",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 转gemini[坏笑] ↳ 我感觉chatgpt蹦了，不希望是我的账号封了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-046",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 网页版能上吗 ↳ 有遇到 codex 连…",
+      "summary": "AI 工作流知识点：[引用] 网页版能上吗 ↳ 有遇到 codex 连不上的吗 0.o",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "[引用] 网页版能上吗 ↳ 有遇到 codex 连不上的吗 0.o",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-047",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 支付漏洞",
+      "summary": "AI 工作流知识点：[引用] 支付漏洞",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 支付漏洞，用 API 补单 ↳ [引用] 但是代充到自己账号 我昨天买了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-048",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 用API补单是什么意思 ↳ [引用] 支…",
+      "summary": "AI 工作流知识点：[引用] 用API补单是什么意思 ↳ [引用] 支付漏洞，用 API 补单",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 用API补单是什么意思 ↳ [引用] 支付漏洞，用 API 补单",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-049",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 让我试一下 ↳ 我在移动端的ChatGP…",
+      "summary": "[引用] 让我试一下 ↳ 我在移动端的ChatGPT点击管理订阅，然后就会跳到谷歌的一个订阅管理页面",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 让我试一下 ↳ 我在移动端的ChatGPT点击管理订阅，然后就会跳到谷歌的一个订阅管理页面",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-050",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 搭了两个 [让我看看]除了Claude特…",
+      "summary": "AI 工作流知识点：[引用] 搭了两个 [让我看看]除了Claude特别注意 ↳ 自己搭的也不稳",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 搭了两个 [让我看看]除了Claude特别注意 ↳ 自己搭的也不稳",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-051",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 是我草率了",
+      "summary": "[引用] 是我草率了。。 ↳ 80个用户6个付费",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] 是我草率了。。 ↳ 80个用户6个付费",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-052",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] [恐惧] ↳ 80个用户6个付费",
+      "summary": "[引用] [恐惧] ↳ 80个用户6个付费",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "产品增长",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "[引用] [恐惧] ↳ 80个用户6个付费",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-053",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 用尼区的支付宝可以刷plus ↳ 听说在…",
+      "summary": "风险提醒：[引用] 用尼区的支付宝可以刷plus ↳ 听说在封号了",
+      "takeaway": "这类信号要进入风险清单，先确认规则再放大。",
+      "category": "风险合规",
+      "date": "2026-04-29",
+      "importance": 2,
+      "sourceQuote": "[引用] 用尼区的支付宝可以刷plus ↳ 听说在封号了",
+      "urls": [],
+      "tags": [
+        "出海",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-054",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] pro都不够用吗？ ↳ 感觉今天开始 c…",
+      "summary": "AI 工作流知识点：[引用] pro都不够用吗？ ↳ 感觉今天开始 codex 额度不耐用",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-29",
+      "importance": 2,
+      "sourceQuote": "[引用] pro都不够用吗？ ↳ 感觉今天开始 codex 额度不耐用",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-055",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "[引用] 这个站seo的流量做的挺行 ↳ happ…",
+      "summary": "案例数据：[引用] 这个站seo的流量做的挺行 ↳ happyhorse.app 这个站很猛",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "出海",
+      "date": "2026-05-04",
+      "importance": 2,
+      "sourceQuote": "[引用] 这个站seo的流量做的挺行 ↳ happyhorse.app 这个站很猛",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "链接/文件",
+        "关键词",
+        "引用"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-056",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "不要刻舟求剑",
+      "summary": "案例数据：不要刻舟求剑",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "产品增长",
+      "date": "2026-04-07",
+      "importance": 2,
+      "sourceQuote": "不要刻舟求剑，就算做了怎么做，放到哪个流程，本身产品是解决什么问题流量怎么样都不知道，没法当做结论的",
+      "urls": [],
+      "tags": [
+        "产品增长",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-057",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "官方的claude你们是怎么订阅的",
+      "summary": "AI 工作流知识点：官方的claude你们是怎么订阅的",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-07",
+      "importance": 2,
+      "sourceQuote": "官方的claude你们是怎么订阅的",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-058",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "我用cursor怎么成古法ai编程了",
+      "summary": "我用cursor怎么成古法ai编程了",
+      "takeaway": "把这条当成一个可验证假设，后续用数据或案例继续确认。",
+      "category": "AI编程",
+      "date": "2026-04-11",
+      "importance": 2,
+      "sourceQuote": "我用cursor怎么成古法ai编程了",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-059",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "就是让gpt看看网站有哪些违反stripe服务条款…",
+      "summary": "风险提醒：就是让gpt看看网站有哪些违反stripe服务条款的地方",
+      "takeaway": "这类信号要进入风险清单，先确认规则再放大。",
+      "category": "风险合规",
+      "date": "2026-04-19",
+      "importance": 2,
+      "sourceQuote": "就是让gpt看看网站有哪些违反stripe服务条款的地方，然后整改文案，然后加个aup协议，再去stripe申诉我已修改请求重新审查",
+      "urls": [],
+      "tags": [
+        "出海",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-060",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "这个流量开始起来了",
+      "summary": "案例数据：这个流量开始起来了",
+      "takeaway": "先记录可验证指标，再反推渠道、素材和变现链路。",
+      "category": "产品增长",
+      "date": "2026-04-20",
+      "importance": 2,
+      "sourceQuote": "这个流量开始起来了，不过cream似乎挂了。",
+      "urls": [
+        "https://happyhorse.mobi/"
+      ],
+      "tags": [
+        "产品增长",
+        "外链",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-061",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "就像那个codex充值",
+      "summary": "AI 工作流知识点：就像那个codex充值",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-24",
+      "importance": 2,
+      "sourceQuote": "就像那个codex充值，如果你不需要用户手动复制auth session，给他个按钮点一下，体验嘎嘎",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "关键词"
+      ]
+    },
+    {
+      "id": "出海独立开发交流群-Asnull-b952374a-062",
+      "group": "出海独立开发交流群 - Asnull",
+      "groupSlug": "出海独立开发交流群-Asnull-b952374a",
+      "mark": "INDIE",
+      "accent": "green",
+      "title": "codex的gpt 5.5怎么慢的跟乌龟一样",
+      "summary": "AI 工作流知识点：codex的gpt 5.5怎么慢的跟乌龟一样",
+      "takeaway": "把一次性提示词改成可复用流程，减少重复解释成本。",
+      "category": "AI编程",
+      "date": "2026-04-27",
+      "importance": 2,
+      "sourceQuote": "codex的gpt 5.5怎么慢的跟乌龟一样",
+      "urls": [],
+      "tags": [
+        "AI编程",
+        "关键词"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8群知识点提炼</title>
+<meta name="description" content="从微信群最近30天消息中提炼出的原子知识点卡片。">
+<style>
+:root{--bg:#f3f6f7;--ink:#111827;--muted:#667085;--card:#ffffff;--line:#dfe5e8;--soft:#eef3f4;--shadow:0 18px 46px rgba(15,23,42,.10);--ocean:#0b6f86;--teal:#0f766e;--gold:#a16207;--blue:#2557a7;--violet:#6d4a91;--green:#24714d;--red:#a33a4a;--inkAccent:#1f2937}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.65}a{color:inherit}.topbar{background:#0f172a;color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}.topbar-inner{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;letter-spacing:.02em}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a{font-size:13px;text-decoration:none;color:#d9e2e8;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px}.hero{background:linear-gradient(135deg,#101827 0%,#173c49 52%,#704d18 100%);color:#fff}.hero-inner{max-width:1180px;margin:0 auto;padding:48px 20px 40px}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#b7c4ce}.hero h1{font-size:42px;line-height:1.08;margin:10px 0 12px;letter-spacing:0}.hero p{max-width:820px;margin:0;color:#d8e2e6;font-size:16px}.meta-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.meta-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 12px;font-size:13px;color:#f4f7f8}.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 70px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:-54px 0 26px}.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:17px 18px;box-shadow:0 8px 22px rgba(15,23,42,.08)}.stat b{display:block;font-size:29px;line-height:1.1;letter-spacing:0}.stat span{display:block;margin-top:8px;color:var(--muted);font-size:13px;font-weight:700}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:32px 0 14px}.section-head h2{margin:0;font-size:20px;letter-spacing:0}.section-head p{margin:0;color:var(--muted);font-size:13px}.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.group-card{--accent:var(--ocean);display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.group-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 38%,var(--line))}.mark{width:56px;height:56px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:900;font-size:12px;letter-spacing:.04em}.group-card h3{font-size:20px;line-height:1.25;margin:0 0 7px}.group-meta{color:var(--muted);font-size:13px;margin-bottom:11px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line));background:color-mix(in srgb,var(--accent) 9%,white);color:color-mix(in srgb,var(--accent) 82%,black);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:800}.point-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.point-card{--accent:var(--teal);position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(15,23,42,.04)}.point-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:10px 0 0 10px}.point-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.point-cat{background:color-mix(in srgb,var(--accent) 11%,white);color:color-mix(in srgb,var(--accent) 84%,black);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:900;white-space:nowrap}.point-date{font-family:"SF Mono",Menlo,monospace;color:#7b8790;font-size:12px}.point-card h3{font-size:18px;line-height:1.3;margin:0 0 8px}.summary{font-size:14px;color:#313b44;margin:0 0 10px}.takeaway{border-top:1px solid #edf1f3;padding-top:10px;margin-top:10px;color:#44515b;font-size:13px}.quote{margin:10px 0 0;padding:9px 10px;background:#f7fafb;border:1px solid #e8eef0;border-radius:7px;color:#69757d;font-size:12px}.links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.links a{font-size:12px;text-decoration:none;color:#1d4d7a;background:#edf5fb;border:1px solid #d7e8f5;border-radius:999px;padding:3px 8px}.source{display:inline-flex;margin-top:10px;font-size:12px;text-decoration:none;color:#5d6972;border-bottom:1px dashed #aab5bb}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.filter{appearance:none;border:1px solid var(--line);background:white;color:#34404a;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;cursor:pointer}.filter.active{background:#111827;color:#fff;border-color:#111827}.accent-ocean{--accent:var(--ocean)}.accent-teal{--accent:var(--teal)}.accent-gold{--accent:var(--gold)}.accent-blue{--accent:var(--blue)}.accent-violet{--accent:var(--violet)}.accent-green{--accent:var(--green)}.accent-red{--accent:var(--red)}.accent-ink{--accent:var(--inkAccent)}footer{padding:30px 20px;text-align:center;color:#8b98a1;font-size:12px}.empty{display:none}.is-hidden{display:none!important}@media(max-width:980px){.stats{grid-template-columns:repeat(2,1fr);margin-top:-34px}.point-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){.topbar-inner{align-items:flex-start;flex-direction:column}.hero h1{font-size:30px}.hero-inner{padding:36px 16px 34px}.wrap{padding:22px 14px 58px}.stats,.group-grid,.point-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.group-card{grid-template-columns:52px minmax(0,1fr);padding:15px}.mark{width:46px;height:46px;font-size:11px}.group-card h3{font-size:18px}.stat b{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><div class="brand">微信群知识库</div><nav class="nav"><a href="index.html">首页</a><a href="groups/index.html">群入口</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><div class="kicker">EXTRACTED KNOWLEDGE POINTS</div><h1>8 群知识点提炼</h1><p>从最近 30 天 29,536 条群消息里，把高密度讨论拆成可直接阅读的知识点卡片。每张卡片都保留短证据和来源入口。</p><div class="meta-strip"><span class="meta-pill">2026-04-07 至 2026-05-06</span><span class="meta-pill">8 个目标群</span><span class="meta-pill">464 个知识点</span></div></div></section>
+<main class="wrap">
+<div class="stats"><div class="stat"><b>8</b><span>目标群</span></div><div class="stat"><b>464</b><span>知识点卡片</span></div><div class="stat"><b>29,536</b><span>消息来源</span></div><div class="stat"><b>5</b><span>主题类目</span></div></div>
+<section><div class="section-head"><h2>按群进入</h2><p>每个群都已经拆成可阅读的小点。</p></div><div class="group-grid">
+<a class="group-card accent-ocean" href="%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/index.html"><div class="mark">CHAT</div><div><h3>『闲聊』海边晒太阳</h3><div class="group-meta">72 个知识点 / 30 天 / 10,006 条消息</div><div class="chips"><span class="chip">AI编程 53</span><span class="chip">产品增长 10</span><span class="chip">出海 6</span></div></div></a><a class="group-card accent-teal" href="%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/index.html"><div class="mark">GLOBAL</div><div><h3>赫兹的朋友们~出海交流</h3><div class="group-meta">66 个知识点 / 30 天 / 5,763 条消息</div><div class="chips"><span class="chip">AI编程 29</span><span class="chip">出海 23</span><span class="chip">产品增长 7</span></div></div></a><a class="group-card accent-gold" href="MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/index.html"><div class="mark">MH26</div><div><h3>MH-2026赛季</h3><div class="group-meta">92 个知识点 / 25 天 / 3,104 条消息</div><div class="chips"><span class="chip">产品增长 37</span><span class="chip">出海 28</span><span class="chip">AI编程 22</span></div></div></a><a class="group-card accent-blue" href="%E5%93%A5%E9%A3%9E%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-5412575b/index.html"><div class="mark">GF7</div><div><h3>哥飞的朋友们⑦</h3><div class="group-meta">58 个知识点 / 30 天 / 2,890 条消息</div><div class="chips"><span class="chip">出海 19</span><span class="chip">产品增长 18</span><span class="chip">AI编程 17</span></div></div></a><a class="group-card accent-violet" href="%E5%93%A5%E9%A3%9E%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-8f703d5c/index.html"><div class="mark">GF11</div><div><h3>哥飞的朋友们⑪</h3><div class="group-meta">58 个知识点 / 29 天 / 2,592 条消息</div><div class="chips"><span class="chip">产品增长 24</span><span class="chip">AI编程 19</span><span class="chip">出海 12</span></div></div></a><a class="group-card accent-green" href="%E5%87%BA%E6%B5%B7%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E4%BA%A4%E6%B5%81%E7%BE%A4-Asnull-b952374a/index.html"><div class="mark">INDIE</div><div><h3>出海独立开发交流群 - Asnull</h3><div class="group-meta">62 个知识点 / 29 天 / 4,388 条消息</div><div class="chips"><span class="chip">AI编程 28</span><span class="chip">出海 15</span><span class="chip">产品增长 13</span></div></div></a><a class="group-card accent-red" href="%E5%90%9B%E8%A8%80%E6%88%8F%E8%AF%ADVIP%E8%AF%BB%E8%80%85%E7%BE%A4-2417598a/index.html"><div class="mark">VIP</div><div><h3>君言戏语VIP读者群</h3><div class="group-meta">30 个知识点 / 21 天 / 444 条消息</div><div class="chips"><span class="chip">产品增长 12</span><span class="chip">AI编程 9</span><span class="chip">出海 7</span></div></div></a><a class="group-card accent-ink" href="%E5%87%BA%E6%B5%B7%E7%A0%94%E4%B9%A0%E7%A4%BE-%E7%AC%AC%E5%9B%9B%E6%9C%9F-ac00c3ce/index.html"><div class="mark">STUDY</div><div><h3>出海研习社「第四期」</h3><div class="group-meta">26 个知识点 / 23 天 / 349 条消息</div><div class="chips"><span class="chip">AI编程 11</span><span class="chip">产品增长 10</span><span class="chip">出海 3</span></div></div></a>
+</div></section>
+<section data-filter-scope><div class="section-head"><h2>高价值知识点</h2><p>AI编程 188 · 产品增长 131 · 出海 113 · 风险合规 31</p></div><div class="filters"><button class="filter active" data-filter="全部">全部</button><button class="filter" data-filter="产品增长">产品增长</button><button class="filter" data-filter="出海">出海</button><button class="filter" data-filter="AI编程">AI编程</button><button class="filter" data-filter="风险合规">风险合规</button></div><div class="point-grid"><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-06</span></div>
+  <h3>Pin Trading - Scan &amp; Coll…</h3>
+  <p class="summary">投流知识点：Pin Trading - Scan &amp; Collect 记录：2026-05-06 网址： 上架：2026-02-17 下载：558/us/d 收入：80K/MRR 产…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Pin Trading - Scan &amp; Collect 记录：2026-05-06 网址： 上架：2026-02-17 ---2026-05-06--- 下载：558/us/d 收入：80K/MR…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6751493504/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.tiktok.com/search?q=pintradingapp&amp;t=1778053564212" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a><a href="https://www.facebook.com/groups/1274516222994695/" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-05-06.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-06</span></div>
+  <h3>TripRank - Speed Tracker</h3>
+  <p class="summary">案例数据：TripRank - Speed Tracker 记录：2026-05-06 网址： 上架：2026-01-06 下载:1</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">TripRank - Speed Tracker 记录：2026-05-06 网址： 上架：2026-01-06 ---2026-05-06--- 下载:1,047/us/d 收入：100K/MRR…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6757245082/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.tiktok.com/@drivewnik" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.tiktok.com/@triprankapp" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.tiktok.com/@drivewkazu" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-05-06.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-03</span></div>
+  <h3>一行Bash代码引发的范式革命</h3>
+  <p class="summary">AI 工作流知识点：一行Bash代码引发的范式革命</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">一行Bash代码引发的范式革命，拆解Codex CLI的/goal功能 一行代码值五万美元 2025年7月，澳大利亚开发者Geoffrey Huntley做了一件看起来很蠢的事。 他写了一行Bash…</div>
+  <div class="links"><a href="https://zhuanlan.zhihu.com/p/2033818674092582554?share_code=WpVwFs8QrxEY&amp;utm_psn=2034059659246563612&amp;utm_source=wechat_session&amp;utm_medium=social&amp;s_r=0" target="_blank" rel="noreferrer">zhuanlan.zhihu.com</a></div>
+  <a class="source" href="../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-03.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-green" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-05-03</span></div>
+  <h3>[链接] TanStarter 模板已支持 Cre…</h3>
+  <p class="summary">风险提醒：[链接] TanStarter 模板已支持 Creem 支付 @creemio Creem 是一个面向独立开发者的 Merchant of Record（MoR）支付平台</p>
+  <div class="takeaway"><strong>可记：</strong>这类信号要进入风险清单，先确认规则再放大。</div>
+  <div class="quote">[链接] TanStarter 模板已支持 Creem 支付 @creemio Creem 是一个面向独立开发者的 Merchant of Record（MoR）支付平台，内置全球税务合规（190+…</div>
+  <div class="links"><a href="https://indiefox.me/blog/creem" target="_blank" rel="noreferrer">indiefox.me</a></div>
+  <a class="source" href="../groups/%E5%87%BA%E6%B5%B7%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E4%BA%A4%E6%B5%81%E7%BE%A4-Asnull-b952374a/2026-05-03.html">证据页：出海独立开发交流群 - Asnull</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-01</span></div>
+  <h3>我花3小时调研了一个出海产品</h3>
+  <p class="summary">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，花了2天调研…</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/CtC6hvXUsNj0tNyK4qqxOA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-01.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ink" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-01</span></div>
+  <h3>要通过Stripe Atlas注册美国公司的</h3>
+  <p class="summary">投流知识点：要通过Stripe Atlas注册美国公司的</p>
+  <div class="takeaway"><strong>可记：</strong>把渠道动作拆到素材、账号、授权和投放层，别只看表面爆款。</div>
+  <div class="quote">要通过Stripe Atlas注册美国公司的，可以买lenny的insider: 400刀包含： Stripe Atlas：40% off Stripe Atlas，价值 $200。 Canva：1…</div>
+  <div class="links"><a href="https://www.lennysproductpass.com/" target="_blank" rel="noreferrer">lennysproductpass.com</a></div>
+  <a class="source" href="../groups/%E5%87%BA%E6%B5%B7%E7%A0%94%E4%B9%A0%E7%A4%BE-%E7%AC%AC%E5%9B%9B%E6%9C%9F-ac00c3ce/2026-05-01.html">证据页：出海研习社「第四期」</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-29</span></div>
+  <h3>2026年 教你零门槛在线免费获得一张海外银行卡</h3>
+  <p class="summary">AI 工作流知识点：2026年 教你零门槛在线免费获得一张海外银行卡｜纯小白实操教程｜半价订阅ChatGPT、Claude、Gemini等 — 硅基AI饲养员 纯小白实操教程｜半价订阅 Ch…</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">2026年 教你零门槛在线免费获得一张海外银行卡｜纯小白实操教程｜半价订阅ChatGPT、Claude、Gemini等 — 硅基AI饲养员 纯小白实操教程｜半价订阅 ChatGPT、Claude、G…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzU4ODcwNDMxOQ==&amp;mid=2247484634&amp;idx=1&amp;sn=e4a3e975f46f5e1e7909235e52c4d706&amp;chksm=fc50740fbb05035e86e8ef7f59a82989654678a6cef11fec8306e5b3aa3b6e31207d8fd83cb6&amp;mpshare=1&amp;scene=1&amp;srcid=0429gQei31ko0uBc3vQwpK5Z&amp;sharer_shareinfo=0abd7496c8a5c1f6a318c320548a6ab9&amp;sharer_shareinfo_first=0abd7496c8a5c1f6a318c320548a6ab9#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-29.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-29</span></div>
+  <h3>Coursiv - AI Certificat…</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Coursiv - AI Certificates 记录：2026-04-29 网址： 网站： 上架：2026-03-04 注册：2023-7-21(实际应该2024年) ----2026-04-2…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6758934906/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://coursiv.io/en" target="_blank" rel="noreferrer">coursiv.io</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-29.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-29</span></div>
+  <h3>45天月入30万刀，深度拆解 起因 起因是</h3>
+  <p class="summary">案例数据：45天月入30万刀</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">45天月入30万刀，深度拆解 起因 起因是：从x上面看到这条帖子 从这条帖子里面得到的信息是： 大概上架在10月，因为在10月20号左右开始有收入 思考 那么这么爆的产品，肯定会被我记录 我能看到这…</div>
+  <div class="links"><a href="https://x.com/dillionverma/status/2026507475747484063" target="_blank" rel="noreferrer">x.com</a><a href="https://x.com/dillionverma/status/2027538756006514758" target="_blank" rel="noreferrer">x.com</a><a href="https://x.com/gursheyss" target="_blank" rel="noreferrer">x.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-29.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-29</span></div>
+  <h3>AI Catch</h3>
+  <p class="summary">投流知识点：AI Catch: AI Video Generator 记录：2026-01-27 网址： 上架：2024-12-30 - 下载：37</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">AI Catch: AI Video Generator 记录：2026-01-27 网址： 上架：2024-12-30 ----2026-01-27--- 下载：37,124/ko/d 收入：60…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/globalRank/appid/6739276631/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-29.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>Lens AI</h3>
+  <p class="summary">案例数据：Lens AI: Identify Anything 记录：2026-03-27 网址： 上架：2025-04-15 -- 下载：831/us/d 收入：90k/MRR …</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Lens AI: Identify Anything 记录：2026-03-27 网址： 上架：2025-04-15 ----2026-03-27---- 下载：831/us/d 收入：90k/MR…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/comment/appid/6742785176/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-24</span></div>
+  <h3>HG - AI Video Generator</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：HG - AI Video Generator 记录：2026-01-30 网址： 上架：2025-02-18 - 下载：699/us/d - 下载：92…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">HG - AI Video Generator 记录：2026-01-30 网址： 上架：2025-02-18 ----2026-01-30--- 下载：699/us/d ----2026-02-0…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6736976330/country/us" target="_blank" rel="noreferrer">qimai.cn</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-24</span></div>
+  <h3>AI Catch</h3>
+  <p class="summary">投流知识点：AI Catch: AI Video Generator 记录：2026-01-27 网址： 上架：2024-12-30 - 下载：37</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">AI Catch: AI Video Generator 记录：2026-01-27 网址： 上架：2024-12-30 ----2026-01-27--- 下载：37,124/ko/d 收入：60…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/globalRank/appid/6739276631/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-24</span></div>
+  <h3>Unfollow Tracker</h3>
+  <p class="summary">案例数据：Unfollow Tracker: FollowHub 记录：2026-01-19 网址： 上架：2025-06-28 - 下载：4</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Unfollow Tracker: FollowHub 记录：2026-01-19 网址： 上架：2025-06-28 ----2026-01-19--- 下载：4,209/us/d 收入：300K…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/keyword/appid/6746928995/country/us/version/ios14" target="_blank" rel="noreferrer">qimai.cn</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>Menace</h3>
+  <p class="summary">案例数据：Menace: AI Prank Photo &amp; Video 记录：2026-01-04 网址： 上架：2025-11-20 --- 下载：611/us/d -- 下载：2</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Menace: AI Prank Photo &amp; Video 记录：2026-01-04 网址： 上架：2025-11-20 -----2026-01-04---- 下载：611/us/d ----…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6755408043/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.tiktok.com/@mr.bindasbanda/video/7584534827169320213" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-24</span></div>
+  <h3>replyagent</h3>
+  <p class="summary">案例数据：replyagent|reddit marketing tools 记录：2026-01-21 网址： 注册：2025-9-1 - 流量：3.8k/M 收入：8.1k/M…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">replyagent|reddit marketing tools 记录：2026-01-21 网址： 注册：2025-9-1 ----2026-01-21--- 流量：3.8k/M 收入：8.1k…</div>
+  <div class="links"><a href="https://www.replyagent.ai/" target="_blank" rel="noreferrer">replyagent.ai</a><a href="https://www.indiehackers.com/product/replyagent-ai/revenue" target="_blank" rel="noreferrer">indiehackers.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-24</span></div>
+  <h3>doke.ai</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：doke.ai 网址： 流量：34万/月 流量：40.2万/月 产品： AI PPT 流量：</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">doke.ai 记录时间：2026-03-20 网址： ---2026-03-20--- 流量：34万/月 ---2026-04-24--- 流量：40.2万/月 产品： AI PPT 流量： --…</div>
+  <div class="links"><a href="https://dokie.ai/" target="_blank" rel="noreferrer">dokie.ai</a><a href="https://www.youtube.com/hashtag/dokieai" target="_blank" rel="noreferrer">youtube.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>studley</h3>
+  <p class="summary">案例数据：studley|studley.ai 记录:2025-12-10 网址： ---2025-12-10 流量：100万/月 增速：52万/月 ---2026-01-16--…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">studley|studley.ai 记录:2025-12-10 网址： ---2025-12-10 流量：100万/月 增速：52万/月 ---2026-01-16-- 流量：130万/月 ---…</div>
+  <div class="links"><a href="https://www.studley.ai/" target="_blank" rel="noreferrer">studley.ai</a><a href="https://www.tiktok.com/@joce.erly/video/7580383028929744141?q=joce.tips&amp;t=1765338496549" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-24</span></div>
+  <h3>Dance AI</h3>
+  <p class="summary">案例数据：Dance AI: AI Dance Video Maker 记录：2026-03-12 网址： 上架：2026-02-02 ---2026-03-12-- 下载：8</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Dance AI: AI Dance Video Maker 记录：2026-03-12 网址： 上架：2026-02-02 ---2026-03-12-- 下载：8,082/us/d ---202…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/rank/appid/6758041184/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a><a href="https://www.qimai.cn/app/rank/appid/6745820631/country/us" target="_blank" rel="noreferrer">qimai.cn</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-24</span></div>
+  <h3>video upscaler</h3>
+  <p class="summary">案例数据：video upscaler 记录：2025-12-16 网址： - 流量：25万/月 - 流量：33.2万/月 - 流量：54.3万/月 - 流量：59万/月 - 流量…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">video upscaler 记录：2025-12-16 网址： ----2025-12-16--- 流量：25万/月 ----2026-01-06--- 流量：33.2万/月 ----2026-0…</div>
+  <div class="links"><a href="https://upscaler.video/" target="_blank" rel="noreferrer">upscaler.video</a><a href="https://github.com/sb2702/free-ai-video-upscaler" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-24</span></div>
+  <h3>Lyrix</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Lyrix: Dynamic Lyrics 记录：2026-03-19 网址： 上架：2024-09-25 ----2026-03-19---- 下载：5,606/us/d 收入：40K/M(预测下…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/comment/appid/6651860228/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.tiktok.com/@lyrix.app" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.tiktok.com/search/video?q=lyrix%20app&amp;t=1773889073553" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.tiktok.com/@vncleef/video/7531179658574974230?q=lyrix%20app&amp;t=1773889073553" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-24.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-23</span></div>
+  <h3>Cronjob Response</h3>
+  <p class="summary">AI 工作流知识点：Cronjob Response: AI Site Sitemap Monitor</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">Cronjob Response: AI Site Sitemap Monitor ------------- 📊 AI站点每日监控报告 — 2026年4月22日 总体数据 • 监控站点：291个…</div>
+  <div class="links"><a href="https://aifreeforever.com/image-generators/flux-2-max" target="_blank" rel="noreferrer">aifreeforever.com</a><a href="https://aifreeforever.com/image-generators/flux-2-pro" target="_blank" rel="noreferrer">aifreeforever.com</a><a href="https://aifreeforever.com/image-generators/grok-imagine" target="_blank" rel="noreferrer">aifreeforever.com</a><a href="https://aifreeforever.com/image-generators/imagen-4" target="_blank" rel="noreferrer">aifreeforever.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-23.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-22</span></div>
+  <h3>syntx.ai</h3>
+  <p class="summary">案例数据：syntx.ai | AI all in one 记录：2026-04-22 网址： --- 流量：360万/月 增速：100万/月 产品： AI Model All i…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">syntx.ai | AI all in one 记录：2026-04-22 网址： -----2026-04-22---- 流量：360万/月 增速：100万/月 产品： AI Model All…</div>
+  <div class="links"><a href="https://syntx.ai/" target="_blank" rel="noreferrer">syntx.ai</a><a href="https://www.tiktok.com/@goyart.studio/video/7629387159916530966" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://adstransparency.google.com/?region=anywhere&amp;domain=syntx.ai&amp;preset-date=Yesterday" target="_blank" rel="noreferrer">adstransparency.google.com</a><a href="https://www.tiktok.com/@goyart.studio" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-22.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-20</span></div>
+  <h3>AI Catch</h3>
+  <p class="summary">投流知识点：AI Catch: AI Video Generator 记录：2026-01-27 网址： 上架：2024-12-30 - 下载：37</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">AI Catch: AI Video Generator 记录：2026-01-27 网址： 上架：2024-12-30 ----2026-01-27--- 下载：37,124/ko/d 收入：60…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/globalRank/appid/6739276631/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-20.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-20</span></div>
+  <h3>aiimagetovideo</h3>
+  <p class="summary">投流知识点：aiimagetovideo|ai免费生成视频 记录: 2026-04-20 网址： 注册：2025-9-15 -- 流量：40万/月 增速：32万/月 产品： AI视频…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">aiimagetovideo|ai免费生成视频 记录: 2026-04-20 网址： 注册：2025-9-15 ----2026-04-20---- 流量：40万/月 增速：32万/月 产品： AI…</div>
+  <div class="links"><a href="https://aiimagetovideo.pro/" target="_blank" rel="noreferrer">aiimagetovideo.pro</a><a href="https://aiimagetovideo.pro/sitemap.xml" target="_blank" rel="noreferrer">aiimagetovideo.pro</a><a href="https://aiimagetovideo.pro/video-to-gif" target="_blank" rel="noreferrer">aiimagetovideo.pro</a><a href="https://adstransparency.google.com/?region=anywhere&amp;domain=aiimagetovideo.pro&amp;preset-date=Yesterday" target="_blank" rel="noreferrer">adstransparency.google.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-20.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-19</span></div>
+  <h3>装了这 6 个 CLI</h3>
+  <p class="summary">AI 工作流知识点：装了这 6 个 CLI</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">装了这 6 个 CLI，Claude Code 可以帮我全自动建站上线 — AI工具进化论 前两天有人问我，Claude Code 和 Openclaw 这类 AI Agent 工具，到底哪里好用。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/4WPFObEQm_VrFknDtz05AA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-19.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-blue" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>大量开发者转投Codex 14年老工程师120小时…</h3>
+  <p class="summary">AI 工作流知识点：大量开发者转投Codex 14年老工程师120小时实测告诉你原因 — 小互AI 一位 14 年老工程师的 120 小时实测 为什么越来越多资深开发者悄悄从 Claude …</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">大量开发者转投Codex 14年老工程师120小时实测告诉你原因 — 小互AI 一位 14 年老工程师的 120 小时实测 为什么越来越多资深开发者悄悄从 Claude Code 转去用 Codex…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkzMTcyMTgxNg==&amp;mid=2247509982&amp;idx=1&amp;sn=e7427a3fb01e7bf4b35c98cf20342eff&amp;chksm=c37120092cc7e14647511645c9c4e0ed22db1146210efa93775a7393aafb5430b21b09c3b421&amp;mpshare=1&amp;scene=1&amp;srcid=0416SLwMT5h0kOykVkvOtWBJ&amp;sharer_shareinfo=9bb6d889548efcbd1575f737adcdb13c&amp;sharer_shareinfo_first=9bb6d889548efcbd1575f737adcdb13c#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E5%93%A5%E9%A3%9E%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-5412575b/2026-04-16.html">证据页：哥飞的朋友们⑦</a>
+</article><article class="point-card accent-green" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>[引用] 看到前面说账号轮询需求</h3>
+  <p class="summary">AI 工作流知识点：[引用] 看到前面说账号轮询需求</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">[引用] 看到前面说账号轮询需求。 推荐一下这个工具，支持codex，cc，反重力账号轮询，有ui ↳</div>
+  <div class="links"><a href="https://github.com/jlcodes99/cockpit-too..." target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../groups/%E5%87%BA%E6%B5%B7%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E4%BA%A4%E6%B5%81%E7%BE%A4-Asnull-b952374a/2026-04-16.html">证据页：出海独立开发交流群 - Asnull</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-16</span></div>
+  <h3>Mitu AI</h3>
+  <p class="summary">投流知识点：Mitu AI: Prank Video Generator 记录：2026-04-16 网址： 上架：2025/12/04 下载：5M+</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Mitu AI: Prank Video Generator 记录：2026-04-16 网址： 上架：2025/12/04 下载：5M+ ------2026-04-16------ 下载：40万…</div>
+  <div class="links"><a href="https://play.google.com/store/apps/details?id=aiart.ai.photo.aiphotogenerator" target="_blank" rel="noreferrer">play.google.com</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-16.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-15</span></div>
+  <h3>Halo</h3>
+  <p class="summary">案例数据：Halo: AI Photo Editor 记录：2026-01-06 网址： 上架: 2025-10-03 - 下载：3</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Halo: AI Photo Editor 记录：2026-01-06 网址： 上架: 2025-10-03 ----2025-12-05--- 下载：3,158/us/d ----2026-01-…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/keyword/appid/6740445587/country/us/version/ios14" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.tiktok.com/search?q=halo%20ai%20app&amp;t=1764907965940" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-15.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-14</span></div>
+  <h3>One More Shot - AI Music …</h3>
+  <p class="summary">投流知识点：One More Shot - AI Music Video 记录：2026-04-14 网址： 上架：2025-05-06 -- 下载：515/us/d 收入：200K…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">One More Shot - AI Music Video 记录：2026-04-14 网址： 上架：2025-05-06 ----2026-04-14---- 下载：515/us/d 收入：20…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/version/appid/6744976219/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[direction" target="_blank" rel="noreferrer">facebook.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-14.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-13</span></div>
+  <h3>zorqai</h3>
+  <p class="summary">投流知识点：zorqai|ai motion control 记录: 2026-04-13 网址： 注册：2025-11-11 -- 流量：120万/月 增速：90万/月 产品： 主…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">zorqai|ai motion control 记录: 2026-04-13 网址： 注册：2025-11-11 ----2026-04-13---- 流量：120万/月 增速：90万/月 产品：…</div>
+  <div class="links"><a href="https://zorqai.com/" target="_blank" rel="noreferrer">zorqai.com</a><a href="https://www.tiktok.com/tag/zorqai" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.tiktok.com/tag/xxx" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://v.douyin.com/5K3skssVOQM/" target="_blank" rel="noreferrer">v.douyin.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-13.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-09</span></div>
+  <h3>Sherlock</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Sherlock: AI Face Search 记录：2026-04-09 网址： 上架：2026-01-22 ----2026-04-09---- 下载：3,343/us/d 收入：70K/MR…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6756683188/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.tiktok.com/@alyyycole1/video/7613418721163414814?q=sherlock%20app&amp;t=1775710846796" target="_blank" rel="noreferrer">tiktok.com</a><a href="https://www.tiktok.com/@alyyycole1" target="_blank" rel="noreferrer">tiktok.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-09.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-09</span></div>
+  <h3>meigen</h3>
+  <p class="summary">案例数据：meigen|AI图片社区 记录：2026-04-09 网址： 注册：2026-1-15 ----2026-04-09-- 流量：9.5万/月 增速：9万/月 产品： A…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">meigen|AI图片社区 记录：2026-04-09 网址： 注册：2026-1-15 ----2026-04-09-- 流量：9.5万/月 增速：9万/月 产品： AI 版本的pinterest…</div>
+  <div class="links"><a href="https://www.meigen.ai/" target="_blank" rel="noreferrer">meigen.ai</a><a href="https://adstransparency.google.com/?region=anywhere&amp;domain=meigen.ai" target="_blank" rel="noreferrer">adstransparency.google.com</a><a href="https://github.com/jau123/MeiGen-AI-Design-MCP" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-09.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-08</span></div>
+  <h3>我花3小时调研了一个出海产品</h3>
+  <p class="summary">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，花了2天调研…</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/CtC6hvXUsNj0tNyK4qqxOA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-08.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-08</span></div>
+  <h3>drama land</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">drama land|主打AI Music Video Generator 记录: 2026-04-08 网址： ---2026-04-08--- 流量：121万/月 ---------------…</div>
+  <div class="links"><a href="https://drama.land/" target="_blank" rel="noreferrer">drama.land</a><a href="https://adstransparency.google.com/?region=anywhere&amp;domain=drama.land&amp;preset-date=Yesterday" target="_blank" rel="noreferrer">adstransparency.google.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-08.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>Claude Code降智！实锤思考深度降73%</h3>
+  <p class="summary">AI 工作流知识点：Claude Code降智！实锤思考深度降73%</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Code降智！实锤思考深度降73%，你以为在用最强模型，其实早已打折 — 李自然说 一个开发者用23万次工具调用的数据，量化了我们都有的直觉 我每天用Claude Code写代码、做产…</div>
+  <div class="links"><a href="http://mp.weixin.qq.com/s?__biz=MzI2OTkzMjQxMw==&amp;mid=2247492067&amp;idx=1&amp;sn=7aa623b716dba7f0961aaa22435981cc&amp;chksm=eb58ea10a9e3dce7a95e878920a83a3c38b5e78264448bb6c111a243a23ba79bdf2da8c98d9b&amp;scene=0&amp;xtrack=1#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-07.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>从焦虑到跑通</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：从焦虑到跑通：AI网站出海终于达成阶段性目标 — 赫兹 哈哈哈</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">从焦虑到跑通：AI网站出海终于达成阶段性目标 — 赫兹 哈哈哈，我自己的万刀分享贴，夹带一点私货。 文章地址： 主要的几点： 1、一个人要做产品、写代码、搞运营，每件事都不简单，出海不是学一次就会，…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/Py1nl61-q3ikQXGYE-WxLQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-07</span></div>
+  <h3>AI SaaS实战复盘</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">AI SaaS实战复盘：我是如何用一个月从0做到持续出单的 — Niko 文章地址： 主要的几点： 1、初步完善了自己的基础模板。慢慢完善了用户交互细节，sitemap，userjounery，把该…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/g4zPP1c_RshddlvbtfBepw" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-07</span></div>
+  <h3>走上出海web道路月入 4w 刀</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">摸索一年，走上出海web道路月入 4w 刀，万字记录历程，分享实操 — 小耳朵sir 文章地址： 主要的几点： 1、做什么项目，学习了大量别人案例分享、摸索、实践，前前后后做过不少项目，因为 AI …</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/yjrpkSH_WzmZgpRerBdGEQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>海外AI产品新手期复盘</h3>
+  <p class="summary">产品立项可以先拆诱饵、投放位置、现有数据、竞品动作和预期反应，再进入 MVP 验证。</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">海外AI产品新手期复盘：4个月赚到1刀，15天破1000刀 — 王马扎 文章地址： 主要的几点： 1、找软柿子需求，通过分析huggingface.co的着路页，找到一个网站域名是vercel的，站…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/cMoMgIgFXAWRrY-raJRHnw" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-04-07.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-07</span></div>
+  <h3>就是手机端体验比较差</h3>
+  <p class="summary">案例数据：就是手机端体验比较差</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">就是手机端体验比较差，内容和社区氛围最佳，网页端流量最大，120w 月访问 运营做的比较好，实际数据一般，估值两亿美金左右,26 年二月份估值两亿美金 数据一般，估值两亿美金左右 可参考社区界面布局…</div>
+  <div class="links"><a href="https://websim.com/" target="_blank" rel="noreferrer">websim.com</a><a href="https://www.rezona.ai/" target="_blank" rel="noreferrer">rezona.ai</a><a href="https://apps.apple.com/us/app/loopit-make-playables/id6755859360" target="_blank" rel="noreferrer">apps.apple.com</a><a href="https://www.spawn.co/" target="_blank" rel="noreferrer">spawn.co</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-04-07.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-06</span></div>
+  <h3>朋友们！ 不知道大家每次网站要接入支付是什么样的流程</h3>
+  <p class="summary">早上好，朋友们！ 不知道大家每次网站要接入支付是什么样的流程，我之前是创建一个Stipe 账号，然后添加webhook，手动创建自己产品，然后苦逼的去把对应的价格id 放到对应的产品上，这一套操作还挺花时间的。…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">早上好，朋友们！ 不知道大家每次网站要接入支付是什么样的流程，我之前是创建一个Stipe 账号，然后添加webhook，手动创建自己产品，然后苦逼的去把对应的价格id 放到对应的产品上，这一套操作还…</div>
+  
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-06.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-teal" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-06</span></div>
+  <h3>直接使用cli 接入支付创建产品 接入这个也是口喷…</h3>
+  <p class="summary">直接使用cli 接入支付创建产品 接入这个也是口喷（我是让他基于模板修改的，大家可以根据自己的模板调整）：pro 会员是 9.9 每月的订阅费，把lifetime 换成Premium订阅，29.9每月，同时支持…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">直接使用cli 接入支付创建产品 接入这个也是口喷（我是让他基于模板修改的，大家可以根据自己的模板调整）：pro 会员是 9.9 每月的订阅费，把lifetime 换成Premium订阅，29.9每…</div>
+  <div class="links"><a href="https://docs.tanstarter.dev/docs/payment/stripe，使用stripe" target="_blank" rel="noreferrer">docs.tanstarter.dev</a></div>
+  <a class="source" href="../groups/%E8%B5%AB%E5%85%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E5%87%BA%E6%B5%B7%E4%BA%A4%E6%B5%81-ff5659a4/2026-05-06.html">证据页：赫兹的朋友们~出海交流</a>
+</article><article class="point-card accent-gold" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-06</span></div>
+  <h3>reddit.com 这条线索</h3>
+  <p class="summary">资料线索：</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">资料线索：</div>
+  <div class="links"><a href="https://www.reddit.com/r/ChatGPT/comments/1t0pyb4/gpt_image_2_prompt_that_is_viral_right_now_redraw/" target="_blank" rel="noreferrer">reddit.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-05-06.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-gold" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-05-06</span></div>
+  <h3>Runout Poker Trainer GTO …</h3>
+  <p class="summary">投流知识点：Runout Poker Trainer GTO Coach 记录：2026-05-06 网址： 上架：2026-03-23 --- 下载：1</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">Runout Poker Trainer GTO Coach 记录：2026-05-06 网址： 上架：2026-03-23 -----2026-05-06---- 下载：1,468/us/d 收入…</div>
+  <div class="links"><a href="https://www.qimai.cn/app/baseinfo/appid/6760210288/country/us" target="_blank" rel="noreferrer">qimai.cn</a><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=ALL&amp;is_targeted_country=false&amp;media_type=all&amp;search_type=page&amp;sort_data[mode" target="_blank" rel="noreferrer">facebook.com</a><a href="https://app.gtowizard.com/" target="_blank" rel="noreferrer">app.gtowizard.com</a></div>
+  <a class="source" href="../groups/MH-2026%E8%B5%9B%E5%AD%A3-f78a82d2/2026-05-06.html">证据页：MH-2026赛季</a>
+</article><article class="point-card accent-blue" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-05</span></div>
+  <h3>Using Gmail SMTP with Clo…</h3>
+  <p class="summary">资料线索：Using Gmail SMTP with Cloudflare Email Routing: Step-by-Step Guide</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">Using Gmail SMTP with Cloudflare Email Routing: Step-by-Step Guide</div>
+  <div class="links"><a href="https://gist.github.com/irazasyed/a5ca450f1b1b8a01e092b74866e9b2f1**" target="_blank" rel="noreferrer">gist.github.com</a></div>
+  <a class="source" href="../groups/%E5%93%A5%E9%A3%9E%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-5412575b/2026-05-05.html">证据页：哥飞的朋友们⑦</a>
+</article><article class="point-card accent-ink" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-05-05</span></div>
+  <h3>[引用] fun idea 小产品 汉字笔画学习</h3>
+  <p class="summary">资料线索：[引用] fun idea 小产品 汉字笔画学习</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">[引用] fun idea 小产品 汉字笔画学习。这类在app上一抓一大堆 ↳ [图片]</div>
+  <div class="links"><a href="https://trustmrr.com/startup/hanzistroke-pro-lifetime-access?period=3m" target="_blank" rel="noreferrer">trustmrr.com</a></div>
+  <a class="source" href="../groups/%E5%87%BA%E6%B5%B7%E7%A0%94%E4%B9%A0%E7%A4%BE-%E7%AC%AC%E5%9B%9B%E6%9C%9F-ac00c3ce/2026-05-05.html">证据页：出海研习社「第四期」</a>
+</article></div></section>
+</main><footer>本地生成 · 最近 30 天 · 2026/5/7 16:53:03</footer>
+<script>
+document.querySelectorAll('[data-filter-scope]').forEach((scope) => {
+  const buttons = scope.querySelectorAll('[data-filter]');
+  const cards = scope.querySelectorAll('[data-category]');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const target = button.dataset.filter;
+      buttons.forEach((item) => item.classList.toggle('active', item === button));
+      cards.forEach((card) => {
+        card.classList.toggle('is-hidden', target !== '全部' && card.dataset.category !== target);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

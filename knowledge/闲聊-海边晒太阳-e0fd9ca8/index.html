@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>『闲聊』海边晒太阳｜知识点提炼</title>
+<meta name="description" content="『闲聊』海边晒太阳 最近30天消息提炼出的知识点。">
+<style>
+:root{--bg:#f3f6f7;--ink:#111827;--muted:#667085;--card:#ffffff;--line:#dfe5e8;--soft:#eef3f4;--shadow:0 18px 46px rgba(15,23,42,.10);--ocean:#0b6f86;--teal:#0f766e;--gold:#a16207;--blue:#2557a7;--violet:#6d4a91;--green:#24714d;--red:#a33a4a;--inkAccent:#1f2937}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.65}a{color:inherit}.topbar{background:#0f172a;color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}.topbar-inner{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;letter-spacing:.02em}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a{font-size:13px;text-decoration:none;color:#d9e2e8;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px}.hero{background:linear-gradient(135deg,#101827 0%,#173c49 52%,#704d18 100%);color:#fff}.hero-inner{max-width:1180px;margin:0 auto;padding:48px 20px 40px}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#b7c4ce}.hero h1{font-size:42px;line-height:1.08;margin:10px 0 12px;letter-spacing:0}.hero p{max-width:820px;margin:0;color:#d8e2e6;font-size:16px}.meta-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.meta-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 12px;font-size:13px;color:#f4f7f8}.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 70px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:-54px 0 26px}.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:17px 18px;box-shadow:0 8px 22px rgba(15,23,42,.08)}.stat b{display:block;font-size:29px;line-height:1.1;letter-spacing:0}.stat span{display:block;margin-top:8px;color:var(--muted);font-size:13px;font-weight:700}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:32px 0 14px}.section-head h2{margin:0;font-size:20px;letter-spacing:0}.section-head p{margin:0;color:var(--muted);font-size:13px}.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.group-card{--accent:var(--ocean);display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.group-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 38%,var(--line))}.mark{width:56px;height:56px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:900;font-size:12px;letter-spacing:.04em}.group-card h3{font-size:20px;line-height:1.25;margin:0 0 7px}.group-meta{color:var(--muted);font-size:13px;margin-bottom:11px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line));background:color-mix(in srgb,var(--accent) 9%,white);color:color-mix(in srgb,var(--accent) 82%,black);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:800}.point-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.point-card{--accent:var(--teal);position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(15,23,42,.04)}.point-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);border-radius:10px 0 0 10px}.point-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.point-cat{background:color-mix(in srgb,var(--accent) 11%,white);color:color-mix(in srgb,var(--accent) 84%,black);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:900;white-space:nowrap}.point-date{font-family:"SF Mono",Menlo,monospace;color:#7b8790;font-size:12px}.point-card h3{font-size:18px;line-height:1.3;margin:0 0 8px}.summary{font-size:14px;color:#313b44;margin:0 0 10px}.takeaway{border-top:1px solid #edf1f3;padding-top:10px;margin-top:10px;color:#44515b;font-size:13px}.quote{margin:10px 0 0;padding:9px 10px;background:#f7fafb;border:1px solid #e8eef0;border-radius:7px;color:#69757d;font-size:12px}.links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.links a{font-size:12px;text-decoration:none;color:#1d4d7a;background:#edf5fb;border:1px solid #d7e8f5;border-radius:999px;padding:3px 8px}.source{display:inline-flex;margin-top:10px;font-size:12px;text-decoration:none;color:#5d6972;border-bottom:1px dashed #aab5bb}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.filter{appearance:none;border:1px solid var(--line);background:white;color:#34404a;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;cursor:pointer}.filter.active{background:#111827;color:#fff;border-color:#111827}.accent-ocean{--accent:var(--ocean)}.accent-teal{--accent:var(--teal)}.accent-gold{--accent:var(--gold)}.accent-blue{--accent:var(--blue)}.accent-violet{--accent:var(--violet)}.accent-green{--accent:var(--green)}.accent-red{--accent:var(--red)}.accent-ink{--accent:var(--inkAccent)}footer{padding:30px 20px;text-align:center;color:#8b98a1;font-size:12px}.empty{display:none}.is-hidden{display:none!important}@media(max-width:980px){.stats{grid-template-columns:repeat(2,1fr);margin-top:-34px}.point-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){.topbar-inner{align-items:flex-start;flex-direction:column}.hero h1{font-size:30px}.hero-inner{padding:36px 16px 34px}.wrap{padding:22px 14px 58px}.stats,.group-grid,.point-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.group-card{grid-template-columns:52px minmax(0,1fr);padding:15px}.mark{width:46px;height:46px;font-size:11px}.group-card h3{font-size:18px}.stat b{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><div class="brand">『闲聊』海边晒太阳</div><nav class="nav"><a href="../index.html">知识点首页</a><a href="../../index.html">站点首页</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><div class="kicker">CHAT KNOWLEDGE</div><h1>『闲聊』海边晒太阳</h1><p>72 个知识点，来自 30 天、10,006 条消息。这里展示的是提炼后的结论、做法、风险和证据。</p><div class="meta-strip"><span class="meta-pill">2026-04-07 至 2026-05-06</span><span class="meta-pill">1,452 条候选信号</span><span class="meta-pill">关键词 / 外链 / 长文本</span></div></div></section>
+<main class="wrap">
+<div class="stats"><div class="stat"><b>72</b><span>知识点</span></div><div class="stat"><b>30</b><span>活跃天数</span></div><div class="stat"><b>10,006</b><span>消息来源</span></div><div class="stat"><b>1,452</b><span>候选信号</span></div></div>
+<section data-filter-scope><div class="section-head"><h2>知识点清单</h2><p>AI编程 53 · 产品增长 10 · 出海 6 · 风险合规 3</p></div><div class="filters"><button class="filter active" data-filter="全部">全部</button><button class="filter" data-filter="产品增长">产品增长</button><button class="filter" data-filter="出海">出海</button><button class="filter" data-filter="AI编程">AI编程</button><button class="filter" data-filter="风险合规">风险合规</button></div><div class="point-grid"><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>Claude Code降智！实锤思考深度降73%</h3>
+  <p class="summary">AI 工作流知识点：Claude Code降智！实锤思考深度降73%</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Code降智！实锤思考深度降73%，你以为在用最强模型，其实早已打折 — 李自然说 一个开发者用23万次工具调用的数据，量化了我们都有的直觉 我每天用Claude Code写代码、做产…</div>
+  <div class="links"><a href="http://mp.weixin.qq.com/s?__biz=MzI2OTkzMjQxMw==&amp;mid=2247492067&amp;idx=1&amp;sn=7aa623b716dba7f0961aaa22435981cc&amp;chksm=eb58ea10a9e3dce7a95e878920a83a3c38b5e78264448bb6c111a243a23ba79bdf2da8c98d9b&amp;scene=0&amp;xtrack=1#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-07.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>“Claude Code更新废了”！热议Issue…</h3>
+  <p class="summary">AI 工作流知识点：“Claude Code更新废了”！热议Issue：思考深度下降67%</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">“Claude Code更新废了”！热议Issue：思考深度下降67%，已无法胜任复杂的工程任务 — 量子位 “处刑报告”还是Claude自己写的</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&amp;mid=2247881170&amp;idx=1&amp;sn=494f53424a7287eccb9d7b2a214f8b4a&amp;chksm=e979b8633c671d9359ee2cfcfd7ccf6a56cdba2ecae33af90090967fb7d8ed6c305e0c22805f&amp;mpshare=1&amp;scene=1&amp;srcid=0407eMHbdu2R4losDo44GHh7&amp;sharer_shareinfo=ae67906ed122123cd14b3baca66e00e4&amp;sharer_shareinfo_first=ae67906ed122123cd14b3baca66e00e4#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-07.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>我的 Vibe Coding 项目 — 艾逗笔 我…</h3>
+  <p class="summary">AI 工作流知识点：我的 Vibe Coding 项目 — 艾逗笔 我用 Claude Code Vibe Coding 了几个项目，非常有意思</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我的 Vibe Coding 项目 — 艾逗笔 我用 Claude Code Vibe Coding 了几个项目，非常有意思。</div>
+  <div class="links"><a href="http://mp.weixin.qq.com/s?__biz=MzU0NDk4OTk2Mg==&amp;mid=2247485853&amp;idx=1&amp;sn=afc5dfa1077903829d26046d2fdd8b9d&amp;chksm=fa427ee8b457e4c960493e70612c36cc0ca312cd026facc96dc570cb39ff3183362f7f06fc9a&amp;scene=0&amp;xtrack=1#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-07.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-07</span></div>
+  <h3>[他是怎么被骗的](</h3>
+  <p class="summary">资料线索：[他是怎么被骗的](</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">[他是怎么被骗的](</div>
+  <div class="links"><a href="https://search.weixin.qq.com/cgi-bin/newsearchweb/userclientjump?path=page%2Fsearch%2Fmobile_jump&amp;query=%E4%BB%96%E6%98%AF%E6%80%8E%E4%B9%88%E8%A2%AB%E9%AA%97%E7%9A%84&amp;scene=4812&amp;extReqParams=%5B%7B%22key%22%3A%22parentSearchId%22%2C%22textValue%22%3A%22137%3A9951101516285562256%3A%3A%3A%257B%2522shareType%2522%253A%2522message%2522%257D%22%7D%2C%7B%22key%22%3A%22topQAShareKey%22%2C%22textValue%22%3A%229951101516285562256%22%7D%5D&amp;thirdExtParam=%22%257B%2522shareFromChatbot%2522%253A1%252C%2522chatbotSecond%2522%253A1%252C%2522parentSearchID%2522%253A%2522137%253A9951101516285562256%253A%253A%253A%2525257B%25252522search_id%25252522%2525253A%252525229951101516285562256%25252522%2525252C%25252522shareType%25252522%2525253A%25252522message%25252522%2525257D%2522%252C%2522crossExtReqParams%2522%253A%255B%257B%2522key%2522%253A%2522topQAShareKey%2522%252C%2522textValue%2522%253A%25229951101516285562256%2522%257D%255D%252C%2522chatbotExtParams%2522%253A%257B%257D%257D%22&amp;type=53&amp;liteappJson=%7B%22query%22%3A%7B%22type%22%3A%22goToSearch%22%2C%22startWebSearchParams%22%3A%7B%22query%22%3A%22%E4%BB%96%E6%98%AF%E6%80%8E%E4%B9%88%E8%A2%AB%E9%AA%97%E7%9A%84%22%2C%22scene%22%3A4812%2C%22type%22%3A53%2C%22extParams%22%3A%22%257B%2522shareFromChatbot%2522%253A1%252C%2522chatbotSecond%2522%253A1%252C%2522parentSearchID%2522%253A%2522137%253A9951101516285562256%253A%253A%253A%2525257B%25252522search_id%25252522%2525253A%252525229951101516285562256%25252522%2525252C%25252522shareType%25252522%2525253A%25252522message%25252522%2525257D%2522%252C%2522crossExtReqParams%2522%253A%255B%257B%2522key%2522%253A%2522topQAShareKey%2522%252C%2522textValue%2522%253A%25229951101516285562256%2522%257D%255D%252C%2522chatbotExtParams%2522%253A%257B%257D%257D%22%2C%22extReqParams%22%3A%5B%7B%22key%22%3A%22parentSearchId%22%2C%22textValue%22%3A%22137%3A9951101516285562256%3A%3A%3A%257B%2522shareType%2522%253A%2522message%2522%257D%22%7D%2C%7B%22key%22%3A%22topQAShareKey%22%2C%22textValue%22%3A%229951101516285562256%22%7D%5D%2C%22customNavBarParams%22%3A%7B%22nativeConfig%22%3A%7B%22title%22%3A%22AI%E6%90%9C%E7%B4%A2%22%7D%2C%22hideSearchBar%22%3Atrue%7D%7D%2C%22versionCtrl%22%3A%7B%221%22%3A402667553%2C%222%22%3A671103032%2C%2237%22%3A4065593088%2C%2238%22%3A4066641664%2C%2243%22%3A4071884544%7D%7D%2C%22id%22%3A%22wxalite662c58496ffa1efd119b5eb4ea45a3ba%22%2C%22isTransparent%22%3A1%2C%22hideIcon%22%3A0%2C%22minVersion%22%3A%220.1.0%22%2C%22srcId%22%3A%22wxf6e012cbbca759dc%22%2C%22thumbUrl%22%3A%22https%3A%2F%2Fsearch.wxqcloud.qq.com%2Ft%2Ffed_upload%2F5e444d4588aaa32d6a993061ca21a764%2Fs1s_white_logo.png%22%2C%22path%22%3A%22pages%2Fauto-jumping%2Fauto-jumping%22%7D" target="_blank" rel="noreferrer">search.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-07.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-07</span></div>
+  <h3>Claude Code越更越废？！大厂AI主管公开…</h3>
+  <p class="summary">AI 工作流知识点：Claude Code越更越废？！大厂AI主管公开怒喷思考深度暴跌</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Code越更越废？！大厂AI主管公开怒喷思考深度暴跌，官方回应更被怼爆 ：菜成AI“玩具” — AI前线 Claude Code 在 2 月份更新后无法用于复杂的工程任务。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&amp;mid=2247660510&amp;idx=1&amp;sn=f5464cf7440c966e4fdc15cb1daaf0f7&amp;chksm=fafbf42f96a7e6863f4882d2c1ece8e130d23adfcd06239a79043658c847a01e5a20d52bf762&amp;mpshare=1&amp;scene=1&amp;srcid=0407Nae2riCZAyDuqTLw6LUJ&amp;sharer_shareinfo=e84af7bd28cfb4eb8e3ddc13b3ab8091&amp;sharer_shareinfo_first=e84af7bd28cfb4eb8e3ddc13b3ab8091#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-07.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-09</span></div>
+  <h3>网传有单位开始禁用 Claude Code 和 C…</h3>
+  <p class="summary">AI 工作流知识点：网传有单位开始禁用 Claude Code 和 Codex — 松鼠闹IT 不知道这个图是真是假</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">网传有单位开始禁用 Claude Code 和 Codex — 松鼠闹IT 不知道这个图是真是假。但从以往的操作来看，这个是很有可能。这次不仅禁用 Claude Code 和 Codex 这样的 A…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzA5NzA2NjYxMQ==&amp;mid=2451069967&amp;idx=1&amp;sn=1e20774263313261dcd44d3faed22bff&amp;from_masonry=1&amp;sharer_shareinfo_first=5c180df7864b15a48dc5106af5207004&amp;sharer_shareinfo=5c180df7864b15a48dc5106af5207004#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-09.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-09</span></div>
+  <h3>Anthropic 今天发了一个新产品</h3>
+  <p class="summary">AI 工作流知识点：Anthropic 今天发了一个新产品</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Anthropic 今天发了一个新产品，可能会让一批做 AI 智能体基础设施的团队失业 — 宝玉AI Anthropic 推出 Managed Agents，企业 AI 智能体基础设施全托管，按量计费</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzk1NzgxMjQ0OA==&amp;mid=2247494502&amp;idx=1&amp;sn=0a6d99e3485333e84d8e7d7c38b5720e&amp;chksm=c232655cda913f256e4103779778b3a6ca29ad14f4fc653f1ef3ae8c24d6c3d3b22e9d0d7e5a&amp;mpshare=1&amp;scene=1&amp;srcid=0409mBedsej2xy5KpBGn38yC&amp;sharer_shareinfo=00df5af983393ae1632dbbcf98ee8031&amp;sharer_shareinfo_first=00df5af983393ae1632dbbcf98ee8031#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-09.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-10</span></div>
+  <h3>code-review-graph</h3>
+  <p class="summary">AI 工作流知识点：code-review-graph：Claude Code 本地知识图谱</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token ! — AI开源提效指南 大家好！这里是AI开源提效指南！Code Review Gr…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzY5NzIxODM2MQ==&amp;mid=2247484353&amp;idx=1&amp;sn=f2ad30ea21fee327daac93a9143a76fb&amp;chksm=f593cbed653170ccd33e0d9cf6a058f7946612e96bbe323402aab844cf584da2aac0fd18c6da&amp;mpshare=1&amp;scene=1&amp;srcid=0410WzJibDWaVxxS0KkVl8l1&amp;sharer_shareinfo=5440daa378f20f9708073f4c09c6f477&amp;sharer_shareinfo_first=e1a1dfdafe5b4f302e8acda1b07caa15#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-10.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-10</span></div>
+  <h3>聊聊微信打击睡后收入 — 槽边往事</h3>
+  <p class="summary">案例数据：聊聊微信打击睡后收入 — 槽边往事</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">聊聊微信打击睡后收入 — 槽边往事</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MjM5MjAzODU2MA==&amp;mid=2652807848&amp;idx=1&amp;sn=4919cdcbec9ac3fd6ae3bb1023cbf3fe&amp;chksm=bc1d6aa721d7b5bb89f16f1fd5d959011e466a7696e0b1bc35fc7cb70dbc193b917dc5243b7a&amp;mpshare=1&amp;scene=1&amp;srcid=0410XozOgYAZYkQ8eQjXAjMe&amp;sharer_shareinfo=f9e78ffbbb7cadddfb28d2d2b59b4438&amp;sharer_shareinfo_first=f9e78ffbbb7cadddfb28d2d2b59b4438#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-10.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-11</span></div>
+  <h3>我们开源了一个股票分析系统</h3>
+  <p class="summary">资料线索：我们开源了一个股票分析系统</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">我们开源了一个股票分析系统，邀请兄弟们star[抱拳]</div>
+  <div class="links"><a href="https://github.com/aisegmentcn/stock" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-11.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-12</span></div>
+  <h3>我整天都在使用 Claude Opus 4.6</h3>
+  <p class="summary">AI 工作流知识点：我整天都在使用 Claude Opus 4.6</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我整天都在使用 Claude Opus 4.6，但我的账单每月却几乎不到 60 美元。我的秘诀是什么？我利用了微软的定价模式。 我在 2023 年购买了 GitHub Copilot 的订阅，将其集…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-12.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-12</span></div>
+  <h3>你醒啦？刚刚听你一直说 Agent Skills</h3>
+  <p class="summary">AI 工作流知识点：你醒啦？刚刚听你一直说 Agent Skills</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">你醒啦？刚刚听你一直说 Agent Skills, OpenClaw, Claude Code，是什么意思呀？现在是2022年底，ChatGPT才刚刚发布，大家都在对AI时代充满憧憬呢！对了，Nov…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-12.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-12</span></div>
+  <h3>大家的龙虾都怎么用claude code max …</h3>
+  <p class="summary">AI 工作流知识点：大家的龙虾都怎么用claude code max 套餐的</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">大家的龙虾都怎么用claude code max 套餐的，max套餐不是只能在官方套餐用吗，我看api 都是按量付费的[捂脸]</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-12.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-13</span></div>
+  <h3>1天搞定Paypal支付</h3>
+  <p class="summary">资料线索：1天搞定Paypal支付</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">1天搞定Paypal支付，网站集成PayPal支付，程序员出海必备技能 UP主：软件工程师Tim 播放：4154</div>
+  <div class="links"><a href="https://b23.tv/ORixfvT?share_medium=android&amp;share_source=weixin&amp;bbid=XUFC7A1F63CCAECF6CB1A51E19B77FA5BAB15&amp;ts=1776089878893" target="_blank" rel="noreferrer">b23.tv</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-13.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-13</span></div>
+  <h3>当前微信版本不支持展示该内容</h3>
+  <p class="summary">AI 工作流知识点：当前微信版本不支持展示该内容</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">当前微信版本不支持展示该内容，请升级至最新版本。 20倍高价买缩水AI，行业潜规则曝光 智能被回收，你买的只是体验？ 小牛说：Claude Opus 4.6思考深度暴跌67%，AMD总监用6852次…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-13.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-13</span></div>
+  <h3>专业炒鸡蛋</h3>
+  <p class="summary">资料线索：专业炒鸡蛋</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">专业炒鸡蛋，只为降低客户产品成本，减少客户生产工序，优化外务人员配置，增加生产效 @风生水起 的笔记 126人分享</div>
+  <div class="links"><a href="https://www.xiaohongshu.com/discovery/item/69d07b16000000001a0248ae?app_platform=ios&amp;app_version=9.23&amp;share_from_user_hidden=true&amp;xsec_source=app_share&amp;type=video&amp;xsec_token=CBtWdgSCpuIz6IKcTWI749284THsl9p-l1kvZRAV9PSy8=&amp;author_share=1&amp;xhsshare=WeixinSession&amp;shareRedId=N0k5NTQ5OT42NzUyOTgwNjc1OTg4SzdM&amp;apptime=1776052989&amp;share_id=d2ca18c198134e66a0b653fd7462f7be" target="_blank" rel="noreferrer">xiaohongshu.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-13.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-14</span></div>
+  <h3>Claude Code防封号终极指南 — 刘小排r…</h3>
+  <p class="summary">AI 工作流知识点：Claude Code防封号终极指南 — 刘小排r Anthropic封号</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Code防封号终极指南 — 刘小排r Anthropic封号，封的不是用量，封的是「可疑的行为模式」</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&amp;mid=2247501713&amp;idx=1&amp;sn=f1e414c9e8da5f337af197d323915730&amp;chksm=e868a41a0824d1d9b0eb42d3aef0e7bd33e7cbaf522c0bc2296db2e3a07696dcc12b6b11a457&amp;mpshare=1&amp;scene=1&amp;srcid=04143o3joUSX1msGOY1eL78F&amp;sharer_shareinfo=53bbc41f8737716375d9b08229b85bc3&amp;sharer_shareinfo_first=53bbc41f8737716375d9b08229b85bc3#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-14.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-14</span></div>
+  <h3>累计1000万+用户的AI互动内容平台</h3>
+  <p class="summary">投流知识点：累计1000万+用户的AI互动内容平台</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">造梦次元，累计1000万+用户的AI互动内容平台，最近在开放漫剧工具合作通道。 【Seedance 2.0 合作权益】 · 价格与火山官方API持平，后续更低 · 无需排队，5分钟出片 · 真实/虚…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-14.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-14</span></div>
+  <h3>mo analyze 看目录大小</h3>
+  <p class="summary">资料线索：mo analyze 看目录大小</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">mo analyze 看目录大小，有很多 App 数据残留</div>
+  <div class="links"><a href="https://github.com/tw93/mole" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-14.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-15</span></div>
+  <h3>Claude 官方公告</h3>
+  <p class="summary">AI 工作流知识点：Claude 官方公告</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude 官方公告，在部分场景会要求 Persona 身份验证 — 云洛 Cursor 代表的是“围绕代码编辑的智能增强”；Claude Code 更代表“围绕软件任务的闭环控制系统”。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzU0MDQ0OTM3Nw==&amp;mid=2247485212&amp;idx=1&amp;sn=741eb9d7e30cb3a628eb8db90e7cf51f&amp;chksm=fa4ed504f236ce3655975c6157a1764a3c64f1703dd0cfbfa96038552b9b303dccf4d905420b&amp;mpshare=1&amp;scene=1&amp;srcid=0415WZNx2bjzNd11GniSwq1k&amp;sharer_shareinfo=bad9dd089bb82e9b0171b84485034524&amp;sharer_shareinfo_first=bad9dd089bb82e9b0171b84485034524#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-15.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-15</span></div>
+  <h3>【学习的范式转变：AI时代的顶层学习法】 你接受的…</h3>
+  <p class="summary">AI 工作流知识点：【学习的范式转变：AI时代的顶层学习法】 你接受的传统教育模式</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">【学习的范式转变：AI时代的顶层学习法】 你接受的传统教育模式，本质上是为教师的便利而设计的，而非为学习者优化。这套体系可能让你浪费了数年时间。 AI已经彻底打破了学习的门槛。你不再需要“许可”去学…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-15.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-15</span></div>
+  <h3>微软副总裁亲自出马</h3>
+  <p class="summary">资料线索：微软副总裁亲自出马</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">微软副总裁亲自出马，把 Mac 的功能「搬」到 Windows！ — 数码荔枝 开源免费的 Windows 小工具</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzUxNzk1NjU0MQ==&amp;mid=2247575744&amp;idx=1&amp;sn=5a7ad4e0c02ca5e51031ef0092204c74&amp;chksm=f8982cf4b27314734a57876325c82213b148b7201a117dbdf4b46c08d84ffb770b9f39594a86&amp;mpshare=1&amp;scene=1&amp;srcid=04154kuyQDXeEWVVRp8sAZfW&amp;sharer_shareinfo=47126c1b202d3dc0f37e8cefbdbe82dc&amp;sharer_shareinfo_first=47126c1b202d3dc0f37e8cefbdbe82dc#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-15.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-15</span></div>
+  <h3>推荐openclaw作者steipete的开发工作流</h3>
+  <p class="summary">资料线索：推荐openclaw作者steipete的开发工作流</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">推荐openclaw作者steipete的开发工作流</div>
+  <div class="links"><a href="https://steipete.me/posts/2025/optimal-ai-development-workflow" target="_blank" rel="noreferrer">steipete.me</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-15.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>Claude Opus 4.7突然发布</h3>
+  <p class="summary">AI 工作流知识点：Claude Opus 4.7突然发布：逐字级精准执行指令</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Opus 4.7突然发布：逐字级精准执行指令，软件工程和视觉能力大幅领先opus 4.6 — AI寒武纪</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/DJqTjVHvg8K9DyUcTSWedA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-16.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>月 月 月 月 不确定 不确定 年 年 年 年 年…</h3>
+  <p class="summary">资料线索：月 月 月 月 不确定 不确定 年 年 年 年 年 年</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">月 月 月 月 不确定 不确定 年 年 年 年 年 年</div>
+  <div class="links"><a href="https://bolt.new/" target="_blank" rel="noreferrer">bolt.new</a><a href="https://linear.app/" target="_blank" rel="noreferrer">linear.app</a><a href="https://lovable.dev/" target="_blank" rel="noreferrer">lovable.dev</a><a href="https://www.cursor.com/" target="_blank" rel="noreferrer">cursor.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-16.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>Introducing Claude Opus 4…</h3>
+  <p class="summary">AI 工作流知识点：Introducing Claude Opus 4.7 \ Anthropic:</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Introducing Claude Opus 4.7 \ Anthropic:</div>
+  <div class="links"><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noreferrer">anthropic.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-16.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>GPT-image-2 足以封神 — 赛博禅心 放…</h3>
+  <p class="summary">AI 工作流知识点：GPT-image-2 足以封神 — 赛博禅心 放几张网友测试的效果图OpenAI 吧当你觉得他牛逼的时候</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">GPT-image-2 足以封神 — 赛博禅心 放几张网友测试的效果图OpenAI 吧当你觉得他牛逼的时候，它就摆给你看当你觉得它不行的时候，它又整个大的这个模型还没出来，如果你在无论 LMAren…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzkzNDQxOTU2MQ==&amp;mid=2247515537&amp;idx=1&amp;sn=c55a0e606b9f097c3b17adf1345c6079&amp;from_masonry=1&amp;sharer_shareinfo_first=12ef94a7d2f2805d0bc3ca0a172df85d&amp;sharer_shareinfo=12ef94a7d2f2805d0bc3ca0a172df85d#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-16.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-16</span></div>
+  <h3>这个文章的原文</h3>
+  <p class="summary">资料线索：这个文章的原文</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">这个文章的原文，还给出了它的一个技术栈的示例 null</div>
+  <div class="links"><a href="https://github.com/smhanov/spore/tree/60f8755780c8ccb23d3243ff5228c9ae1b65de0b" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-16.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-17</span></div>
+  <h3>Claude Code 桌面版烂爆了</h3>
+  <p class="summary">AI 工作流知识点：Claude Code 桌面版烂爆了</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Claude Code 桌面版烂爆了，Anthropic 终于把 “100% AI 编码”演砸了 — InfoQ 如果这就是一家正在把行业往前带的公司所代表的质量标准，那这个方向本身是有问题的。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651281809&amp;idx=1&amp;sn=8fc2d6682aeb95e7d796482b783f3e69&amp;chksm=bc89e36215bf1ad70289ed94d3ab0b8d18ad2cc0eb95b04688b910d23ab85bc6b2ab9725973f&amp;mpshare=1&amp;scene=1&amp;srcid=04170lXMYFL8pJE9ot7KQpuf&amp;sharer_shareinfo=b1e294048212b7646ec41873362cc547&amp;sharer_shareinfo_first=2807b98849ad40a9413bed25c4d05b33#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-17.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-17</span></div>
+  <h3>平台被薅秃了</h3>
+  <p class="summary">平台被薅秃了，但这个追求AI永生的人值得一份敬意 — MuleRun骡子快跑 一个没有编程经验的年轻人，靠AI搭了一套横跨11个平台、调度900个账户的自动化蜂群系统，白嫖平台算力来造他的「不朽AI助手」。</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">平台被薅秃了，但这个追求AI永生的人值得一份敬意 — MuleRun骡子快跑 一个没有编程经验的年轻人，靠AI搭了一套横跨11个平台、调度900个账户的自动化蜂群系统，白嫖平台算力来造他的「不朽AI…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzY4ODIxNDI0Mw==&amp;mid=2247483710&amp;idx=1&amp;sn=5dd911eaa467d9292350f444c31ac593&amp;chksm=f24bc705461c398c12554971d12ef609e45e9910ef140272364e00e5e8a053a597930da5f526&amp;mpshare=1&amp;scene=1&amp;srcid=0417OP6AoPRUppUwoHKajC0W&amp;sharer_shareinfo=31d274671ac36ba993c1a1789467864e&amp;sharer_shareinfo_first=e92335bb36da69c4bda0aef9272365dd#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-17.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-18</span></div>
+  <h3>设计圈的 Claude Code 时刻来了 — 宝…</h3>
+  <p class="summary">AI 工作流知识点：设计圈的 Claude Code 时刻来了 — 宝玉AI Claude Design 实测：3 轮对话产出可交互原型</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">设计圈的 Claude Code 时刻来了 — 宝玉AI Claude Design 实测：3 轮对话产出可交互原型，设计工具的游戏规则正在改写。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/QsKEIFmQf1JnA7YHIjmiNQ" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-18.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-18</span></div>
+  <h3>派安盈支付被法院列为被执行人！ — 跨境支付网 派…</h3>
+  <p class="summary">刚刚，派安盈支付被法院列为被执行人！ — 跨境支付网 派安盈支付（广东）有限公司新增一则被执行信息，案号为（2026）粤0104执10705号，执行标的561.92万元，执行法院为广州市越秀区人民法院，立案日期…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">刚刚，派安盈支付被法院列为被执行人！ — 跨境支付网 派安盈支付（广东）有限公司新增一则被执行信息，案号为（2026）粤0104执10705号，执行标的561.92万元，执行法院为广州市越秀区人民法…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzg5MjE0MzUzMA==&amp;mid=2247484558&amp;idx=1&amp;sn=97a2badcd01bd6fdfb41f27b0dcb8225&amp;chksm=ce2d2034655ebfa009c3bb66ceef57564038086932dff4fc0bd842f978ca8d3231abc099d184&amp;mpshare=1&amp;scene=1&amp;srcid=0418beFNqH7DAjxqP81zGpss&amp;sharer_shareinfo=832b0fa6887a01c927a3d9b89114e13f&amp;sharer_shareinfo_first=832b0fa6887a01c927a3d9b89114e13f#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-18.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-19</span></div>
+  <h3>关于 X 的创作者收入分成 — dontbesil…</h3>
+  <p class="summary">案例数据：关于 X 的创作者收入分成 — dontbesilent 这两天有人问我要不要来推特赚流量分成我觉得对国内的创作者来说</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">记录两句，关于 X 的创作者收入分成 — dontbesilent 这两天有人问我要不要来推特赚流量分成我觉得对国内的创作者来说，这基本上是最差的选择了在你的母语是中文的情况下，推特可能是唯一的适合…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzA5MDg2MzQ5NQ==&amp;mid=2247488587&amp;idx=1&amp;sn=0c16ea3079acd4c991de5d9d8aca88e7&amp;from_masonry=1&amp;sharer_shareinfo_first=dc127b5f0b1e9478cf56d91efc077829&amp;sharer_shareinfo=dc127b5f0b1e9478cf56d91efc077829#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-19.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-20</span></div>
+  <h3>最强编程Agent不是Codex</h3>
+  <p class="summary">AI 工作流知识点：最强编程Agent不是Codex</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">最强编程Agent不是Codex，也不是Claude Code，而是ChatGPT Pro — 刘小排r ChatGPT Pro的智能强度超乎你的想象。请你大胆向ChatGPT Pro提那种“既要又…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/7ebEo1YbqyiZU1mVkLvK9Q" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-20.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-20</span></div>
+  <h3>DeepSeek、Claude、kimi、Open…</h3>
+  <p class="summary">AI 工作流知识点：DeepSeek、Claude、kimi、Openclaw、OPC、openai、hermes agent — 微信指数 微信指数</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">DeepSeek、Claude、kimi、Openclaw、OPC、openai、hermes agent — 微信指数 微信指数</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/mp/waerrpage?appid=wxc026e7662ec26a3a&amp;type=upgrade&amp;upgradetype=3#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-20.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-21</span></div>
+  <h3>GPT-Image 2 图像模型全量上线</h3>
+  <p class="summary">AI 工作流知识点：GPT-Image 2 图像模型全量上线</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">GPT-Image 2 图像模型全量上线，太强辣！ — 歸藏的AI工具箱 看起来 Open AI 的 gpt-image-2 模型全量上线了！ 现在就可以用，效果非常顶！ 第一张图我就让它可爱地解释…</div>
+  <div class="links"><a href="http://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&amp;mid=2247496564&amp;idx=1&amp;sn=c15774ae4f7c5e6123acfceb241982aa&amp;chksm=fa3c2ed9af027a60854b330e9223b6a428401eb1c88718936b5a2d6f57fa2b9602ecfe2e0b3d&amp;scene=126&amp;sessionid=1776760482#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-21.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-21</span></div>
+  <h3>我逆向了Claude Design！免费开源！ —…</h3>
+  <p class="summary">AI 工作流知识点：我逆向了Claude Design！免费开源！ — 花叔 我昨晚在X上发了条我要开源「Huashu Design」的预告</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我逆向了Claude Design！免费开源！ — 花叔 我昨晚在X上发了条我要开源「Huashu Design」的预告，现在已经20多万阅读了。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&amp;mid=2247489770&amp;idx=1&amp;sn=80ba801b80e8343bfbc0553d8fef8170&amp;chksm=cfa5dd6344c6e4664980ad33f43be53cac524d50da88abd2dad2df173eb49b23f2d507440ca5&amp;mpshare=1&amp;scene=1&amp;srcid=0421IBtZ5SToGpl3jDsn0UGy&amp;sharer_shareinfo=c6e2383c5df0f94e0d87543a9cbbe384&amp;sharer_shareinfo_first=c6e2383c5df0f94e0d87543a9cbbe384#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-21.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-21</span></div>
+  <h3>知识星球危？ima 支持知识库付费订阅</h3>
+  <p class="summary">资料线索：知识星球危？ima 支持知识库付费订阅</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">知识星球危？ima 支持知识库付费订阅，一手内测 — 特工宇宙 AI 时代，内容创作者的新机会？</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzYyMTY1NDA0Nw==&amp;mid=2247517230&amp;idx=1&amp;sn=2e3b759fb0d6c6d44fa8ed680a9b44df&amp;chksm=fef5cd42604d5fdb9348de0f04a8481925b874cf18f399bd136efff56058018a591882dcc456&amp;mpshare=1&amp;scene=1&amp;srcid=0421kSYFIf5SSnSs4dCKYNqq&amp;sharer_shareinfo=05b964cefd8b192ca7802aa3d480a8f2&amp;sharer_shareinfo_first=05b964cefd8b192ca7802aa3d480a8f2#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-21.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-22</span></div>
+  <h3>突发：Claude Code把Pro用户「踢」了 …</h3>
+  <p class="summary">AI 工作流知识点：突发：Claude Code把Pro用户「踢」了 — APPSO 就在刚刚</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">突发：Claude Code把Pro用户「踢」了 — APPSO 就在刚刚，用户突然发现，Claude Code 从 Anthropic 的 Pro 档付费订阅中被移除了。Anthropic 官方没…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MjM5MjAyNDUyMA==&amp;mid=2651088811&amp;idx=1&amp;sn=bb0127a195ae5975757b96c98127ee57&amp;from_masonry=1&amp;sharer_shareinfo_first=58eab61b0c82bb6abd7687be9f858e1d&amp;sharer_shareinfo=58eab61b0c82bb6abd7687be9f858e1d#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-22.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-23</span></div>
+  <h3>openai.com 这条线索</h3>
+  <p class="summary">资料线索：</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">资料线索：</div>
+  <div class="links"><a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noreferrer">openai.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-23.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-23</span></div>
+  <h3>用GPT-image-2生成游戏素材 — 熊猫游戏…</h3>
+  <p class="summary">用GPT-image-2生成游戏素材 — 熊猫游戏出海 昨天尝试了下GPT-image-2 复刻游戏素材，效果很不错。随便给了他一个游戏的主场景，选择了goods sort这个玩法，是因为素材足够多。让他先复刻…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">用GPT-image-2生成游戏素材 — 熊猫游戏出海 昨天尝试了下GPT-image-2 复刻游戏素材，效果很不错。随便给了他一个游戏的主场景，选择了goods sort这个玩法，是因为素材足够多…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzIzMDE1MTY4NQ==&amp;mid=2649554615&amp;idx=1&amp;sn=ef21ae166495bf885fc1080f36420600&amp;from_masonry=1&amp;sharer_shareinfo_first=f95e8f39dbfb82b3dceb23daa0654f73&amp;sharer_shareinfo=f95e8f39dbfb82b3dceb23daa0654f73#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-23.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-24</span></div>
+  <h3>GPT-5.5来了</h3>
+  <p class="summary">AI 工作流知识点：GPT-5.5来了</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">GPT-5.5来了，甩开Claude Opus 4.7一条街 — 刘小排r 说几个最直观的使用感受1. 编码能力超强。 GPT-5.5让本来就不是很香的Claude Opus 4.7变得更加不香了。…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzI1MTUxNzgxMA==&amp;mid=2247501818&amp;idx=1&amp;sn=5fbaa51640fc10503526c58b71e6c92f&amp;from_masonry=1&amp;sharer_shareinfo_first=9b925e14131e4807ff1c4daa6d4e476e&amp;sharer_shareinfo=9b925e14131e4807ff1c4daa6d4e476e#wechat_redirect" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-24.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-24</span></div>
+  <h3>10 万名创作者在 Substack 上赚到了钱</h3>
+  <p class="summary">AI 工作流知识点：10 万名创作者在 Substack 上赚到了钱</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">10 万名创作者在 Substack 上赚到了钱，AI 版 Zapier 如何 2 年拿下 7000 万美金？ — 投资实习所 它不是在卖“AI 替你工作”，而是把你已经熟悉的工作，变成稳定运转的 …</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMDA3MjMwNw==&amp;mid=2455857836&amp;idx=1&amp;sn=96b2597e66e9e61c65da270b94c76d19&amp;chksm=81e32bb519f8fd3f493da8f4f01a565831023c6ae53a51be1606f4eb5ded66b4fe6a11e6c5e7&amp;mpshare=1&amp;scene=1&amp;srcid=0424WT2aOlTxMS6xvQTlQSWr&amp;sharer_shareinfo=4735d5dad0e6f67aa4b97d4c428ce0cf&amp;sharer_shareinfo_first=4735d5dad0e6f67aa4b97d4c428ce0cf#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-24.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-04-25</span></div>
+  <h3>做了个音频分离的工具站</h3>
+  <p class="summary">做了个音频分离的工具站，上线3个月了，每天有100个访问，但是没有一个付费的。 是继续推广或做SEO 还是 还是优化产品体验？ 群友们，这类问题，你们一般怎么判断</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">做了个音频分离的工具站，上线3个月了，每天有100个访问，但是没有一个付费的。 是继续推广或做SEO 还是 还是优化产品体验？ 群友们，这类问题，你们一般怎么判断</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-25.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-26</span></div>
+  <h3>开年连融两轮的“可以玩的抖音”</h3>
+  <p class="summary">资料线索：开年连融两轮的“可以玩的抖音”</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">开年连融两轮的“可以玩的抖音”，又融了5000万美金｜涌现新项目 — 智能涌现 上线两个月，Loopit的全球注册用户规模近200万，总融资金额达1亿美金。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkwMDQ2NDU2Nw==&amp;mid=2247516385&amp;idx=2&amp;sn=57c41d95c1f12e284ebe9178f101ee3c&amp;chksm=c1bd7c6bb610e23130890d577a4f2464d9f9452fb63cf1099e8ec0aed5d740cdb676862fc3f6&amp;mpshare=1&amp;scene=1&amp;srcid=0426NIyrYB8mT58liahjUslJ&amp;sharer_shareinfo=c057e35ec2a27a2e62c147a8c0b3aced&amp;sharer_shareinfo_first=c057e35ec2a27a2e62c147a8c0b3aced#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-26.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-26</span></div>
+  <h3>【搞笑】腹有视频气自滑 @papi酱 的笔记 9.…</h3>
+  <p class="summary">AI 工作流知识点：【搞笑】腹有视频气自滑 @papi酱 的笔记 9.1万人分享</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">【搞笑】腹有视频气自滑 @papi酱 的笔记 9.1万人分享</div>
+  <div class="links"><a href="https://www.xiaohongshu.com/discovery/item/69e75529000000001a0251cc?app_platform=ios&amp;app_version=9.27.1&amp;share_from_user_hidden=true&amp;xsec_source=app_share&amp;type=video&amp;xsec_token=CBzSBGPKeQNMGEtR1elMzENdbDrSx2gNaNcsaF8UdSwB8=&amp;author_share=1&amp;xhsshare=WeixinSession&amp;shareRedId=N0k5NTQ5OT42NzUyOTgwNjc1OTg4SzdM&amp;apptime=1777190434&amp;share_id=88ed6ebbd17645eb8578aefec4d92526" target="_blank" rel="noreferrer">xiaohongshu.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-26.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-27</span></div>
+  <h3>Github Copilot从20号开始，不接受新…</h3>
+  <p class="summary">资料线索：Github Copilot从20号开始，不接受新用户订阅了</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">Github Copilot从20号开始，不接受新用户订阅了</div>
+  <div class="links"><a href="https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/" target="_blank" rel="noreferrer">github.blog</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-27.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-27</span></div>
+  <h3>其实gpt 5.5好像有400k的上下文</h3>
+  <p class="summary">AI 工作流知识点：其实gpt 5.5好像有400k的上下文</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">其实gpt 5.5好像有400k的上下文，不知道为什么codex只给258k，但是github copilot是给了400k的：</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-27.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-27</span></div>
+  <h3>github.com 这条线索</h3>
+  <p class="summary">资料线索：</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">资料线索：</div>
+  <div class="links"><a href="https://github.com/google/skills" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-27.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-27</span></div>
+  <h3>极昼采访了那个在非洲开游戏工作室——主要做三角洲行…</h3>
+  <p class="summary">极昼采访了那个在非洲开游戏工作室——主要做三角洲行动的跑刀任务——的老哥，各种爆典，很有乐子： - 即使只算非洲，赞比亚也是偏穷的国家，就业机会匮乏，给身无长处的年轻人提供相当于20块人民币的日薪工作，就很有竞…</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">极昼采访了那个在非洲开游戏工作室——主要做三角洲行动的跑刀任务——的老哥，各种爆典，很有乐子： - 即使只算非洲，赞比亚也是偏穷的国家，就业机会匮乏，给身无长处的年轻人提供相当于20块人民币的日薪工…</div>
+  <div class="links"><a href="https://m.okjike.com/originalPosts/69ef2b2e8ca9518f974c816a?s=eyJ1IjoiNTY3YTUwZDQ2ZWY4OWMxMjAwOGE3NTc1In0%3D&amp;utm_source=wechat_session" target="_blank" rel="noreferrer">m.okjike.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-27.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-27</span></div>
+  <h3>程序员创业半年</h3>
+  <p class="summary">资料线索：程序员创业半年：顺的事、不顺的事</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">程序员创业半年：顺的事、不顺的事，和我一直没想清楚的事 — 孟健AI编程 大家好，我是孟健。刚刚在杭州参加完破局行动家大会，坐下来想了很久，才意识到离职创业已经过了半年。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzk0ODM5NTEyNA==&amp;mid=2247505930&amp;idx=1&amp;sn=a0ea9a54481e7914e0efcd9eb00bb20a&amp;chksm=c2645e9176d29fc022387f3f4605ba3c2accff9e7196ce166e7ec43ba5ff3d9acdab4b9cefc1&amp;mpshare=1&amp;scene=1&amp;srcid=0427KueJjrEyTzPOIss5Fz5i&amp;sharer_shareinfo=06518823c3652d1ed0bb3334e0996825&amp;sharer_shareinfo_first=06518823c3652d1ed0bb3334e0996825#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-27.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-27</span></div>
+  <h3>柯基为争母狗打架输了被气死，死前还咬主人一口</h3>
+  <p class="summary">资料线索：柯基为争母狗打架输了被气死</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">柯基为争母狗打架输了被气死，死前还咬主人一口：10年养200多只狗，没见过这样的 UP主：火柴微视 播放：24.6万</div>
+  <div class="links"><a href="https://b23.tv/mdnNCi0?share_medium=android&amp;share_source=weixin&amp;bbid=XUFC7A1F63CCAECF6CB1A51E19B77FA5BAB15&amp;ts=1777297797942" target="_blank" rel="noreferrer">b23.tv</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-27.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-28</span></div>
+  <h3>[YC与Garry Tan：从硅谷加速器到AI时代…</h3>
+  <p class="summary">资料线索：[YC与Garry Tan：从硅谷加速器到AI时代的创业导师](</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">[YC与Garry Tan：从硅谷加速器到AI时代的创业导师](</div>
+  <div class="links"><a href="https://gyznsw.cn/2026/03/20/2026-03-20-YC%E4%B8%8EGarry-Tan-%E4%BB%8E%E7%A1%85%E8%B0%B7%E5%8A%A0%E9%80%9F%E5%99%A8%E5%88%B0AI%E6%97%B6%E4%BB%A3%E7%9A%84%E5%88%9B%E4%B8%9A%E5%AF%BC%E5%B8%88/#:~:text=Garry%20Tan%EF%BC%88%E4%B8%AD%E6%96%87%E5%90%8D%E9%99%88%E5%98%89%E5%85%B4%EF%BC%891981%E5%B9%B4%E7%94%9F%E4%BA%8E%E5%8A%A0%E6%8B%BF%E5%A4%A7%E6%B8%A9%E5%B0%BC%E4%BC%AF%EF%BC%8C%E7%88%B6%E4%BA%B2%E6%98%AF%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%8D%8E%E4%BA%BA%EF%BC%8C%E6%AF%8D%E4%BA%B2%E6%98%AF%E7%BC%85%E7%94%B8%E5%8D%8E%E4%BA%BA%E3%80%82,%E4%BB%962003%E5%B9%B4%E4%BB%8E%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E6%AF%95%E4%B8%9A%EF%BC%8C%E6%97%A9%E5%B9%B4%E6%9B%BE%E5%9C%A8Palantir%E6%8B%85%E4%BB%BB%E6%97%A9%E6%9C%9F%E8%AE%BE%E8%AE%A1%E5%B8%88%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88%E8%BF%98%E4%BA%B2%E8%87%AA%E8%AE%BE%E8%AE%A1%E4%BA%86%E5%85%AC%E5%8F%B8Logo%EF%BC%89%EF%BC%8C2008%E5%B9%B4%E4%BD%9C%E4%B8%BA%E5%88%9B%E5%A7%8B%E4%BA%BA%E5%8F%82%E5%8A%A0YC%20S08%E6%89%B9%E6%AC%A1%EF%BC%8C%E5%88%9B%E5%8A%9E%E4%BA%86Posterous%E2%80%94%E2%80%94%E4%B8%80%E4%B8%AA%E6%9E%81%E7%AE%80%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%EF%BC%8C2012%E5%B9%B4%E8%A2%ABTwitter%E6%94%B6%E8%B4%AD%E3%80%82" target="_blank" rel="noreferrer">gyznsw.cn</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-28.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-04-28</span></div>
+  <h3>1 人 = 20 人团队</h3>
+  <p class="summary">资料线索：1 人 = 20 人团队：解析 YC CEO Garry Tan 的 gstack 工程系统 我在知乎发现了一篇值得思考的文章，一起来看看吧</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">1 人 = 20 人团队：解析 YC CEO Garry Tan 的 gstack 工程系统 我在知乎发现了一篇值得思考的文章，一起来看看吧。</div>
+  <div class="links"><a href="https://zhuanlan.zhihu.com/p/2018645722786998091?share_code=QC9rm1B8kOhN&amp;utm_psn=2032518990954766856" target="_blank" rel="noreferrer">zhuanlan.zhihu.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-28.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-28</span></div>
+  <h3>Cursor 的Pro 订阅如果不开按需付费的话</h3>
+  <p class="summary">AI 工作流知识点：Cursor 的Pro 订阅如果不开按需付费的话</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Cursor 的Pro 订阅如果不开按需付费的话，每月额度跟 Codex 一天的额度差不多</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-28.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-28</span></div>
+  <h3>是自己买claude和gpt的API</h3>
+  <p class="summary">AI 工作流知识点：是自己买claude和gpt的API</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">是自己买claude和gpt的API，直接在cursor里配置吗</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-28.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-29</span></div>
+  <h3>以昨天那组GPT-Image-2的大字海报为基础</h3>
+  <p class="summary">以昨天那组GPT-Image-2的大字海报为基础，改了一个支持肖像版本的人物海报出来，样式比较百搭，而且自适应各种风格，在个性化部分增减几个关键词就能得到很好的多样性结果。 比如语境那里可以补充人物特点，气质可…</p>
+  <div class="takeaway"><strong>可记：</strong>搜索需求可以承接外部热度，页面要提前准备好。</div>
+  <div class="quote">以昨天那组GPT-Image-2的大字海报为基础，改了一个支持肖像版本的人物海报出来，样式比较百搭，而且自适应各种风格，在个性化部分增减几个关键词就能得到很好的多样性结果。 比如语境那里可以补充人物…</div>
+  <div class="links"><a href="https://m.okjike.com/originalPosts/69f1873aa6e52d30e4e70b95?s=ewoidSI6ICI1YTEyNGY0ZGEzNzQ3MjAwMTYzNWFmNjEiCn0%3D&amp;utm_source=wechat_session" target="_blank" rel="noreferrer">m.okjike.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-29.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-29</span></div>
+  <h3>我听了三小时出海创业直播</h3>
+  <p class="summary">AI 工作流知识点：我听了三小时出海创业直播</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我听了三小时出海创业直播，把哥飞、彪哥、壹树的话整理成这篇笔记 — Ruiqin袁锐钦 说实话，我已经很少花这么长时间听直播了。作为一个每天和代码、提示词、API打交道的人，我的时间被切得很碎。但这…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=Mzg5NzAzMDI4NA==&amp;mid=2247506100&amp;idx=1&amp;sn=d2fd6ebd547af898d3710015b17d3ca6&amp;chksm=c1a8a3c05beedb14ed88eb3da952d958844a096b491991af0c7aaef8649626cb4642078553bf&amp;mpshare=1&amp;scene=1&amp;srcid=0429Di9UITOXUtQjsiily2P8&amp;sharer_shareinfo=fe9ba5e28023012b7c0ab88cae57c105&amp;sharer_shareinfo_first=fe9ba5e28023012b7c0ab88cae57c105#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-29.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="风险合规">
+  <div class="point-top"><span class="point-cat">风险合规</span><span class="point-date">2026-04-29</span></div>
+  <h3>[离谱！法国男子押注巴黎气温22℃后</h3>
+  <p class="summary">资料线索：[离谱！法国男子押注巴黎气温22℃后</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">[离谱！法国男子押注巴黎气温22℃后，自带电吹风偷偷加热气象站气温传感器，狂赚3万美金](</div>
+  <div class="links"><a href="https://view.inews.qq.com/w/20260426V049TK00?strategy=feature&amp;rate=2&amp;rg=101&amp;refer=nwx&amp;pushid=2026042902&amp;bkt=4000&amp;openid=o04IBAOyDSCjgvLkXjd6thpaAqMQ&amp;tbkt=J&amp;ft=0&amp;cur_pos=0&amp;uflag=2&amp;cg=5&amp;it=2&amp;ext=%7B%22pl%22%3A5309440%2C%22yb_qa%22%3A%22%22%7D&amp;lrg=4&amp;tab_expid=112411021%2C112416634%2C112416594%2C112411101&amp;allcmsids=20260426V049TK00_20260428V06AXJ00_20260429A006MW00_20260428V0868900_20260428A08P6I00&amp;segmentNum=3080&amp;groupid=1777441476&amp;msgid=0&amp;rpcopenid=o04IBAOyDSCjgvLkXjd6thpaAqMQ&amp;cv=0x28004737&amp;dt=2&amp;lang=zh_CN&amp;key=29f19eba5638ac44a1721780a58bd9259cc97304b28a6478695ce3eb14570b939379cd9c79d5e735e035f9107a270ee2eadf36b7f0a736e2dacd2a6b6230dd7e157508d3336110e394a4ce929eb2c791eff6f3787fe3d834a9b06aa5fdaba51221a72c34da07a9525bcf16da6bf1d69e131062479ac8ea87465df02e5e711dd4&amp;version=28004737&amp;devicetype=android-36&amp;wuid=oDdoCt5qRxZII1hZeke6JMYLKEjo&amp;sharer=o04IBAOyDSCjgvLkXjd6thpaAqMQ" target="_blank" rel="noreferrer">view.inews.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-29.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-30</span></div>
+  <h3>今天看了下这个项目</h3>
+  <p class="summary">资料线索：今天看了下这个项目</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">今天看了下这个项目，测试了下，感觉有点点意思，还没深挖</div>
+  <div class="links"><a href="https://github.com/nexu-io/open-design/" target="_blank" rel="noreferrer">github.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-30.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-30</span></div>
+  <h3>GPT-5.6曝光了！GPT-5.5疯狂迷恋哥布林</h3>
+  <p class="summary">资料线索：GPT-5.6曝光了！GPT-5.5疯狂迷恋哥布林</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">刚刚，GPT-5.6曝光了！GPT-5.5疯狂迷恋哥布林，OpenAI连夜封禁 — 新智元</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&amp;mid=2652696644&amp;idx=1&amp;sn=23b23535952dc34a625b9ca67521b86a&amp;chksm=f0e2e9d1181df01db6803a27b25d051ce3f5d41fe31b4f3a179fb260ee529b1f2cd4f457c232&amp;mpshare=1&amp;scene=1&amp;srcid=0430jabWMN6qdWs3I0Kt6LJk&amp;sharer_shareinfo=4963c44b0a83a528e84b97b67d73b228&amp;sharer_shareinfo_first=4963c44b0a83a528e84b97b67d73b228#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-30.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-30</span></div>
+  <h3>“现有 coding agent 框架（Claud…</h3>
+  <p class="summary">AI 工作流知识点：“现有 coding agent 框架（Claude Code、Cursor、OpenCode）都是给强 LLM 设计的——靠模型的强推理能力调用工具、自主决策、完成任务</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">“现有 coding agent 框架（Claude Code、Cursor、OpenCode）都是给强 LLM 设计的——靠模型的强推理能力调用工具、自主决策、完成任务。本地开源模型（8B-30B…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-30.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-04-30</span></div>
+  <h3>codex claudecode cursor 都…</h3>
+  <p class="summary">AI 工作流知识点：codex claudecode cursor 都到我办公室来</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">codex claudecode cursor 都到我办公室来</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-04-30.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-01</span></div>
+  <h3>我花3小时调研了一个出海产品</h3>
+  <p class="summary">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，花了2天调研…</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了 — Ruiqin袁锐钦 我做pngtrid.com的时候犯过一个错——先写了2周代码，上线后才发现市场已经被占满了。后来调整策略，…</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/CtC6hvXUsNj0tNyK4qqxOA" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-01.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-01</span></div>
+  <h3>这篇文章详细介绍了作者（独立开发者袁锐钦）提出的一…</h3>
+  <p class="summary">反穿流量的关键是把外部爆款需求承接到搜索或 Web 页面上：这篇文章详细介绍了作者（独立开发者袁锐钦）提出的一套系统化、可操作的3小时产品调研方法论——BRD（Business Requirements Docum…</p>
+  <div class="takeaway"><strong>可记：</strong>先记录可验证指标，再反推渠道、素材和变现链路。</div>
+  <div class="quote">这篇文章详细介绍了作者（独立开发者袁锐钦）提出的一套系统化、可操作的3小时产品调研方法论——BRD（Business Requirements Document）流程。该方法源于其个人创业实战经验（…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-01.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-01</span></div>
+  <h3>Codex 推出 /goal 功能</h3>
+  <p class="summary">AI 工作流知识点：Codex 推出 /goal 功能</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">Codex 推出 /goal 功能，不达目标，不罢休 — AGI Hunt 设定目标后 Agent 跨多轮自主迭代，不达目的不罢休</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzA4NzgzMjA4MQ==&amp;mid=2453483290&amp;idx=1&amp;sn=904eb46992f4d152d712fd963e274f9f&amp;chksm=865ecb893052098c536c820184abbefc0153f5fd2f12b376d8581a39c768f550bb31a6ad9b1b&amp;mpshare=1&amp;scene=1&amp;srcid=05017ULGkdFW7ImghSiegTEO&amp;sharer_shareinfo=f5cabf5fb899ee95209c44d49c61384e&amp;sharer_shareinfo_first=f77e8f113c2ab16ae841458b71218993#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-01.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-01</span></div>
+  <h3>最好的新加坡AI公司</h3>
+  <p class="summary">资料线索：最好的新加坡AI公司</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">最好的新加坡AI公司，本地VC恰好不懂 这大半年见了不少在新加坡的AI公司。大部分坦率地说跟新加坡没什么关系——团队是中国的，客户在海外，注册在新加坡只是因为架</div>
+  <div class="links"><a href="https://www.xiaohongshu.com/discovery/item/69f42e9e0000000037035edd?app_platform=ios&amp;app_version=9.28&amp;share_from_user_hidden=true&amp;xsec_source=app_share&amp;type=normal&amp;xsec_token=CB54nAcvlHYz4cQ03OwyT-mRR2rInrlIvlZSYA34UudE4=&amp;author_share=1&amp;xhsshare=WeixinSession&amp;shareRedId=N0c3QUY4SDo6TEZFSko0PUtESjdGRzlP&amp;apptime=1777625627&amp;share_id=4214756a8baf4a52a182d3b217c58e39" target="_blank" rel="noreferrer">xiaohongshu.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-01.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-03</span></div>
+  <h3>一行Bash代码引发的范式革命</h3>
+  <p class="summary">AI 工作流知识点：一行Bash代码引发的范式革命</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">一行Bash代码引发的范式革命，拆解Codex CLI的/goal功能 一行代码值五万美元 2025年7月，澳大利亚开发者Geoffrey Huntley做了一件看起来很蠢的事。 他写了一行Bash…</div>
+  <div class="links"><a href="https://zhuanlan.zhihu.com/p/2033818674092582554?share_code=WpVwFs8QrxEY&amp;utm_psn=2034059659246563612&amp;utm_source=wechat_session&amp;utm_medium=social&amp;s_r=0" target="_blank" rel="noreferrer">zhuanlan.zhihu.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-03.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-05-03</span></div>
+  <h3>AI 三范式 — 李继刚 萍散漫，絮飘飏，轻盈体态狂</h3>
+  <p class="summary">资料线索：AI 三范式 — 李继刚 萍散漫，絮飘飏，轻盈体态狂</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">AI 三范式 — 李继刚 萍散漫，絮飘飏，轻盈体态狂。</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MzkxMzc1NzM1Mw==&amp;mid=2247485246&amp;idx=1&amp;sn=7f5715cafd71ce2966a1b5558d7d5b27&amp;chksm=c0b89d0dacee99aa28428cc5a3c217ab02fa0410d963bb0c7b26db1d3988b6582ae556bc535c&amp;mpshare=1&amp;scene=1&amp;srcid=0502WwXm3trteH9J64nSnput&amp;sharer_shareinfo=bf884943ccac80688a28fecc5097381d&amp;sharer_shareinfo_first=bf884943ccac80688a28fecc5097381d#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-03.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="产品增长">
+  <div class="point-top"><span class="point-cat">产品增长</span><span class="point-date">2026-05-04</span></div>
+  <h3>豆包新增付费订阅</h3>
+  <p class="summary">资料线索：豆包新增付费订阅</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">豆包新增付费订阅，标准版每月68元、加强版200元、专业版500元，官方回应：始终提供免费服务，相关方案细节还在测试阶段 — 荆楚网</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s?__biz=MjM5MTI3MTY3Mg==&amp;mid=2651606584&amp;idx=1&amp;sn=dfd0a08cbe6da46d55a4f3d7e9f23a06&amp;chksm=bce6eaf71ac69af045ef886a1f701745981cfc284f5d3af1cf455c2c97bcac7a563808b1e3c8&amp;mpshare=1&amp;scene=1&amp;srcid=0504qEJ4RzGez5JJxhovlp06&amp;sharer_shareinfo=61b883d9f824ec897b45494874739f84&amp;sharer_shareinfo_first=61b883d9f824ec897b45494874739f84#rd" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-04.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="出海">
+  <div class="point-top"><span class="point-cat">出海</span><span class="point-date">2026-05-04</span></div>
+  <h3>stripe官方点名认证的三十多位一人公司年入千万…</h3>
+  <p class="summary">资料线索：stripe官方点名认证的三十多位一人公司年入千万 — 良辰美</p>
+  <div class="takeaway"><strong>可记：</strong>把这条当成一个可验证假设，后续用数据或案例继续确认。</div>
+  <div class="quote">stripe官方点名认证的三十多位一人公司年入千万 — 良辰美</div>
+  <div class="links"><a href="https://mp.weixin.qq.com/s/_q89FD6yCIJMVK7IStB8Og" target="_blank" rel="noreferrer">mp.weixin.qq.com</a></div>
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-04.html">证据页：『闲聊』海边晒太阳</a>
+</article><article class="point-card accent-ocean" data-category="AI编程">
+  <div class="point-top"><span class="point-cat">AI编程</span><span class="point-date">2026-05-04</span></div>
+  <h3>群聊的聊天记录 饼干哥哥🍪AGI</h3>
+  <p class="summary">AI 工作流知识点：群聊的聊天记录 饼干哥哥🍪AGI: codex真的牛逼</p>
+  <div class="takeaway"><strong>可记：</strong>把一次性提示词改成可复用流程，减少重复解释成本。</div>
+  <div class="quote">群聊的聊天记录 饼干哥哥🍪AGI: codex真的牛逼，尤其是加上image2的工作流，想象力可以打开。 于是我做了一个codex+image2，把图片拆成多个图层转成psd编辑的skill 开源…</div>
+  
+  <a class="source" href="../../groups/%E9%97%B2%E8%81%8A-%E6%B5%B7%E8%BE%B9%E6%99%92%E5%A4%AA%E9%98%B3-e0fd9ca8/2026-05-04.html">证据页：『闲聊』海边晒太阳</a>
+</article></div></section>
+</main><footer>本地生成 · 『闲聊』海边晒太阳 · 2026/5/7 16:53:03</footer>
+<script>
+document.querySelectorAll('[data-filter-scope]').forEach((scope) => {
+  const buttons = scope.querySelectorAll('[data-filter]');
+  const cards = scope.querySelectorAll('[data-category]');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const target = button.dataset.filter;
+      buttons.forEach((item) => item.classList.toggle('active', item === button));
+      cards.forEach((card) => {
+        card.classList.toggle('is-hidden', target !== '全部' && card.dataset.category !== target);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
