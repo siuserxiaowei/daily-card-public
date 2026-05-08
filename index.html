@@ -3,179 +3,320 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>微信群学习卡片</title>
+<title>📚 学习卡片总入口</title>
 <style>
-:root{--ink:#17202a;--muted:#667680;--paper:#fbfaf7;--card:#fffefb;--line:#e8e2d8;--shadow:0 18px 50px rgba(30,41,59,.08);--blue:#2854c5;--teal:#087f72;--amber:#ad6b00;--green:#277441;--purple:#6d45a8;--cyan:#027895;--slate:#475569;--rose:#ba3d62;--orange:#b75f18}*{box-sizing:border-box}body{margin:0;font-family:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:radial-gradient(circle at 12% 0%,#e7f2ff 0,rgba(231,242,255,0) 34%),linear-gradient(180deg,#fffdf8 0%,#f6f3ec 100%);color:var(--ink);line-height:1.6}.hero{padding:46px 24px 34px;border-bottom:1px solid rgba(39,53,67,.08);background:linear-gradient(120deg,#123b63 0%,#0e766e 54%,#6d5a2d 100%);color:white}.hero-inner{max-width:1120px;margin:0 auto}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.74}.hero h1{margin:8px 0 8px;font-size:34px;letter-spacing:0;line-height:1.16}.hero p{max-width:760px;margin:0;color:rgba(255,255,255,.83);font-size:15px}.container{max-width:1120px;margin:0 auto;padding:28px 20px 68px}.section-title{margin:28px 0 14px;font-size:17px;display:flex;align-items:center;gap:10px;color:#25313b}.section-title::before{content:"";width:10px;height:22px;border-radius:999px;background:#0e766e}.weekday{font-size:13px;color:#7c8a92;font-weight:500}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{--accent:#2854c5;position:relative;display:grid;grid-template-columns:82px minmax(0,1fr) 118px;gap:0;min-height:148px;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 2px 10px rgba(30,41,59,.04);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 32%,var(--line))}.card-emoji{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 12%,white),#f6f1e8);font-size:0}.card-emoji::before{content:attr(data-mark);width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:var(--accent);color:white;font-size:13px;font-weight:800;letter-spacing:.06em;box-shadow:inset 0 -10px 22px rgba(0,0,0,.12)}.card-body{padding:18px 18px 18px 20px;min-width:0}.card-title{font-size:20px;font-weight:800;letter-spacing:0;margin:0 0 6px;color:#151b21}.card-meta{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:10px}.card-summary{font-size:13px;color:#52616b;line-height:1.62;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.card-summary strong{color:#27313a}.card-summary code{background:#f0eadf;color:#9d3412;padding:1px 5px;border-radius:4px}.card-side{padding:18px 16px;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;border-left:1px solid #eee6db;background:linear-gradient(180deg,rgba(255,255,255,.72),rgba(250,247,240,.8));text-align:right}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 10px;background:color-mix(in srgb,var(--accent) 12%,white);color:var(--accent);font-size:12px;font-weight:800}.card-kb{font-family:"SF Mono",Menlo,monospace;color:#81909a;font-size:12px}.card[data-accent="blue"]{--accent:var(--blue)}.card[data-accent="teal"]{--accent:var(--teal)}.card[data-accent="amber"]{--accent:var(--amber)}.card[data-accent="green"]{--accent:var(--green)}.card[data-accent="purple"]{--accent:var(--purple)}.card[data-accent="cyan"]{--accent:var(--cyan)}.card[data-accent="slate"]{--accent:var(--slate)}.card[data-accent="rose"]{--accent:var(--rose)}.card[data-accent="orange"]{--accent:var(--orange)}footer{text-align:center;padding:30px;color:#8b969e;font-size:12px}@media(max-width:860px){.cards{grid-template-columns:1fr}.hero h1{font-size:27px}.card{grid-template-columns:66px minmax(0,1fr);min-height:0}.card-side{grid-column:2;flex-direction:row;align-items:center;border-left:0;border-top:1px solid #eee6db;padding:10px 16px}.card-emoji::before{width:42px;height:42px;border-radius:13px;font-size:12px}}@media(max-width:520px){.container{padding:20px 12px 54px}.hero{padding:34px 16px 28px}.card-title{font-size:17px}.card-body{padding:15px 14px}.card-summary{-webkit-line-clamp:4}}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  background: #fafafa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 50px 20px 40px;
+  text-align: center;
+}
+.hero h1 { font-size: 30px; margin-bottom: 10px; }
+.hero p { opacity: 0.9; font-size: 15px; }
+.container { max-width: 880px; margin: 0 auto; padding: 30px 20px 60px; }
+.section-title {
+  font-size: 18px; margin: 28px 0 14px;
+  padding-left: 10px; border-left: 4px solid #667eea;
+  display: flex; align-items: baseline; gap: 10px;
+}
+.weekday { font-size: 14px; color: #95a5a6; font-weight: normal; }
+.card {
+  display: flex; align-items: stretch;
+  background: white; border-radius: 10px; margin-bottom: 12px;
+  text-decoration: none; color: inherit;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.15s;
+  overflow: hidden;
+}
+.card:hover { box-shadow: 0 4px 16px rgba(102,126,234,0.18); transform: translateY(-1px); }
+.card-emoji {
+  font-size: 32px; padding: 18px 16px 18px 20px;
+  display: flex; align-items: center;
+  background: #f8f9fa;
+}
+.card-body { flex: 1; padding: 16px 18px; min-width: 0; }
+.card-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.card-meta { font-size: 12px; color: #95a5a6; margin-bottom: 8px; }
+.card-summary { font-size: 13px; color: #5d6d7e; line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-summary code { background: #fff8e1; color: #c0392b; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+.card-summary strong { color: #2c3e50; }
+.card-side {
+  padding: 14px 18px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  font-size: 11px; color: #95a5a6; min-width: 90px; text-align: right;
+}
+.badge { background: #e8f5e9; color: #2e7d32; padding: 3px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; }
+.card-kb { font-family: ui-monospace, monospace; }
+footer { text-align: center; padding: 30px; color: #bdc3c7; font-size: 12px; }
+@media (max-width: 600px) {
+  .hero { padding: 35px 18px; }
+  .hero h1 { font-size: 22px; }
+  .card-emoji { font-size: 24px; padding: 14px 12px; }
+  .card-side { padding: 10px 12px; min-width: 70px; }
+}
 </style>
 </head>
 <body>
-<header class="hero"><div class="hero-inner"><div class="kicker">WECHAT KNOWLEDGE CARDS</div><h1>微信群知识点卡片</h1><p>把群消息加工成能直接阅读的知识点、专题卡片和证据来源；优先呈现结论，而不是原始聊天目录。</p></div></header>
-<main class="container">
-<section><h2 class="section-title">2026-05-07 <span class="weekday">周四</span></h2><div class="cards"><a class="card" data-accent="teal" href="knowledge/index.html">
-  <div class="card-emoji" data-mark="POINTS"></div>
-  <div class="card-body">
-    <div class="card-title">8群知识点提炼</div>
-    <div class="card-meta">8 群 / 464 个知识点 / 29,536 条消息</div>
-    <div class="card-summary">已经改成可直接阅读的知识点卡片：每条都有结论、可执行提醒、短证据和来源入口。</div>
-  </div>
-  <div class="card-side">
-    <span class="badge">464 知识点</span>
-    <span class="card-kb">AI编程 188 · 产品增长 131 · 出海 113 · 风险合规 31 · 其他 1</span>
-  </div>
-</a></div></section><section><h2 class="section-title">2026-05-06 <span class="weekday">周三</span></h2><div class="cards"><a class="card" data-accent="blue" href="2026-05-06 学习卡片.html">
-  <div class="card-emoji" data-mark="DAILY"></div>
+<div class="hero">
+  <h1>📚 微信群学习卡片</h1>
+  <p>AI 替你读 N 个群,浓缩成可执行的学习点</p>
+</div>
+<div class="container">
+<section><h2 class="section-title">2026-05-07 <span class="weekday">周四</span></h2>
+<a class="card" href="2026-05-07 学习卡片.html">
+  <div class="card-emoji">📚</div>
   <div class="card-body">
     <div class="card-title">全主题学习卡片</div>
-    <div class="card-meta">32 群 / 6,611 条消息</div>
-    <div class="card-summary">DeepSeek V4 被 MiniMax M2.7 压制，同日 GPT-5.5 Instant 全量上线、ChatGPT 开广告平台。今天主线是模型竞争、广告变现和国内模型掉队。</div>
+    <div class="card-meta">45群 / 325条 → 56条显式候选 + 29条热议</div>
+    <div class="card-summary">Agent 框架设计哲学成为当天核心议题——<strong>TUI 只是皮，框架是骨</strong>；同日 Cursor 3.3 上线 context 分解诊断，大模型在 Meta/Stanford 地狱级测试中集体交 0 分。
+
+---</div>
   </div>
   <div class="card-side">
-    <span class="badge">9 学习点</span>
+    <span class="badge">8 个学习点</span>
+    <span class="card-kb">6.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 出海独立开发专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">3 个学习点</span>
+    <span class="card-kb">2.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 8核心群日报.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">8 核心群 / 10 条候选消息</div>
+    <div class="card-summary">今日候选消息仅来自 <strong>哥飞的朋友们⑦</strong> 1 个群，共 10 条，话题集中在 <strong>App Store 订阅变慢 + GPT Pro 充值失败</strong>，核心信号：土耳其礼品卡有封号风险，支付宝渠道更可靠，低汇率时批量充更划算。
+
+---</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">5 个学习点</span>
+    <span class="card-kb">3.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 产品增长专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">6 个学习点</span>
+    <span class="card-kb">4.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 AI编程专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">8 个学习点</span>
+    <span class="card-kb">5.6 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 AI模型专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">4 个学习点</span>
+    <span class="card-kb">2.6 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-06 <span class="weekday">周三</span></h2>
+<a class="card" href="2026-05-06 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">32群 / 170群 / 6611条消息</div>
+    <div class="card-summary"><strong>DeepSeek V4 被 MiniMax M2.7 全面压制（Skill调用尤其拉跨），同日 GPT-5.5 Instant 全量上线、ChatGPT 开广告平台——国内模型又一次掉队，OpenAI 则开始把注意力变现。</strong>
+
+---</div>
+  </div>
+  <div class="card-side">
+    <span class="badge">9 个学习点</span>
     <span class="card-kb">9.3 KB</span>
   </div>
-</a>
-<a class="card" data-accent="teal" href="2026-05-06 8核心群日报.html">
-  <div class="card-emoji" data-mark="CORE"></div>
+</a><a class="card" href="2026-05-06 投资商业专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">5 个学习点</span>
+    <span class="card-kb">3.6 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 产品增长专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">7 个学习点</span>
+    <span class="card-kb">5.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 AI编程专题.html">
+  <div class="card-emoji">📊</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    <span class="badge">8 个学习点</span>
+    <span class="card-kb">7.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 8核心群日报.html">
+  <div class="card-emoji">📊</div>
   <div class="card-body">
     <div class="card-title">8核心群日报</div>
     <div class="card-meta">4 核心群 / 215 条候选消息</div>
-    <div class="card-summary">MH 群拆出 TikTok 矩阵、迪士尼徽章 AI 定价、德州扑克 GTO 三个小众高 MRR 案例；赫兹群补上 Stripe CLI + Claude 接入支付的可抄流程。</div>
+    <div class="card-summary">五一假期收尾日，MH群连发三个小众赛道真实数据（TikTok矩阵 → $120K MRR、迪士尼徽章AI定价 → $80K MRR、德州扑克GTO → $30K MRR），赫兹群同步放出 Stripe CLI + Claude 自动接入支付的完整姿势——<strong>今天这两条线可以直接抄作业。</strong>
+
+---</div>
   </div>
   <div class="card-side">
-    <span class="badge">10 学习点</span>
+    <span class="badge">10 个学习点</span>
     <span class="card-kb">9.0 KB</span>
   </div>
-</a>
-<a class="card" data-accent="amber" href="2026-05-06 投资商业专题.html">
-  <div class="card-emoji" data-mark="INVEST"></div>
-  <div class="card-body">
-    <div class="card-title">投资商业专题</div>
-    <div class="card-meta">商业/投资信号</div>
-    <div class="card-summary">聚焦模型公司商业化、广告入口、平台估值和可变现资产。适合快速扫今天哪些商业判断值得记账、观察或避坑。</div>
-  </div>
-  <div class="card-side">
-    <span class="badge">5 学习点</span>
-    <span class="card-kb">3.6 KB</span>
-  </div>
-</a>
-<a class="card" data-accent="green" href="2026-05-06 产品增长专题.html">
-  <div class="card-emoji" data-mark="GROWTH"></div>
-  <div class="card-body">
-    <div class="card-title">产品增长专题</div>
-    <div class="card-meta">增长案例 / 渠道 / 转化</div>
-    <div class="card-summary">整理今天可复用的增长线索：小众赛道 MRR、TikTok 内容矩阵、支付链路、冷启动渠道和真实案例指标。</div>
-  </div>
-  <div class="card-side">
-    <span class="badge">7 学习点</span>
-    <span class="card-kb">5.1 KB</span>
-  </div>
-</a>
-<a class="card" data-accent="purple" href="2026-05-06 AI编程专题.html">
-  <div class="card-emoji" data-mark="CODE"></div>
-  <div class="card-body">
-    <div class="card-title">AI编程专题</div>
-    <div class="card-meta">Codex / Claude / agent</div>
-    <div class="card-summary">围绕 AI 编程工具链、agent 协作、Claude/Codex 使用体验和工程自动化，筛出当天能落地到开发流程的内容。</div>
-  </div>
-  <div class="card-side">
-    <span class="badge">8 学习点</span>
-    <span class="card-kb">7.0 KB</span>
-  </div>
-</a>
-<a class="card" data-accent="cyan" href="2026-05-06 出海独立开发专题.html">
-  <div class="card-emoji" data-mark="GLOBAL"></div>
+</a><a class="card" href="2026-05-06 出海独立开发专题.html">
+  <div class="card-emoji">📊</div>
   <div class="card-body">
     <div class="card-title">出海独立开发专题</div>
-    <div class="card-meta">收款 / SEO / 独立站</div>
-    <div class="card-summary">聚合出海独立开发相关的支付、Stripe/收款、SEO、独立站、冷启动和一人公司讨论，优先保留能执行的路径。</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
   </div>
   <div class="card-side">
-    <span class="badge">7 学习点</span>
+    <span class="badge">7 个学习点</span>
     <span class="card-kb">5.4 KB</span>
   </div>
-</a>
-<a class="card" data-accent="slate" href="2026-05-06 AI模型专题.html">
-  <div class="card-emoji" data-mark="MODEL"></div>
+</a><a class="card" href="2026-05-06 AI模型专题.html">
+  <div class="card-emoji">📊</div>
   <div class="card-body">
     <div class="card-title">AI模型专题</div>
-    <div class="card-meta">模型对比 / 平台动态</div>
-    <div class="card-summary">追踪模型能力、价格、速度、平台策略和用户迁移信号，用来判断今天该用哪个模型、避开哪个坑。</div>
+    <div class="card-meta">wechat-groups</div>
+    <div class="card-summary"></div>
   </div>
   <div class="card-side">
-    <span class="badge">5 学习点</span>
+    <span class="badge">5 个学习点</span>
     <span class="card-kb">4.0 KB</span>
   </div>
-</a></div></section><section><h2 class="section-title">2026-05-05 <span class="weekday">周二</span></h2><div class="cards"><a class="card" data-accent="blue" href="2026-05-05 学习卡片.html">
-  <div class="card-emoji" data-mark="DAILY"></div>
+</a></section>
+<section><h2 class="section-title">2026-05-05 <span class="weekday">周二</span></h2>
+<a class="card" href="2026-05-05 学习卡片.html">
+  <div class="card-emoji">📚</div>
   <div class="card-body">
     <div class="card-title">全主题学习卡片</div>
-    <div class="card-meta">61 群 / 3,046 条消息 / 634 条候选</div>
-    <div class="card-summary">Anthropic 零人公司手册、Imagineers VibeCoding 冠军作品、OPC skill 与 opcgate.com 形成当天主线，假期思考密度很高。</div>
+    <div class="card-meta">61 群 / 3,046 条消息 / 学习候选 634 条 / 真实 URL 59 个</div>
+    <div class="card-summary">5/5 三条主线:<strong>(1)<code>Anthropic 零人公司手册</code>官方发布,跟 OPC 主题一拍即合,jiangye 顺势开源 <code>opc-skill</code> + 你自己上线 <code>opcgate.com</code></strong>;<strong>(2)<code>Imagineers VibeCoding 比赛冠军揭晓</code> — Branton 的《郁金香狂潮》获冠,[imagineersclub.com](https://imagineersclub.com/) 全部作品可看</strong>;<strong>(3)群里多场哲学反思 — <code>紫苏子知识冰山</code>、<code>#吴熳 + 俞浩谈创新 = Mix</code>、<code>何帆 AI 时代不必恐慌</code>,五一假期"思考密度"明显高于 5/4</strong>。
+
+-</div>
   </div>
   <div class="card-side">
-    <span class="badge">10 学习点</span>
+    <span class="badge">10 个学习点</span>
     <span class="card-kb">18.3 KB</span>
   </div>
-</a></div></section><section><h2 class="section-title">2026-05-04 <span class="weekday">周一</span></h2><div class="cards"><a class="card" data-accent="blue" href="2026-05-04 学习卡片.html">
-  <div class="card-emoji" data-mark="DAILY"></div>
+</a></section>
+<section><h2 class="section-title">2026-05-04 <span class="weekday">周一</span></h2>
+<a class="card" href="2026-05-04 学习卡片.html">
+  <div class="card-emoji">📚</div>
   <div class="card-body">
     <div class="card-title">全主题学习卡片</div>
-    <div class="card-meta">78 群 / 3,512 条消息 / 744 条候选</div>
-    <div class="card-summary">AI 编程占据主旋律：Codex + Cola、多步规划执行、Cloudflare agent 买域名，以及结构化文本替代 PDF。</div>
+    <div class="card-meta">78 群 / 3,512 条消息 / 学习候选 744 条 / 真实 URL 49 个</div>
+    <div class="card-summary">5/4 群聊<strong>主旋律是 AI 编程</strong>(占 7/10 学习点)— 三条主线:<strong>(1) <code>Codex</code> + <code>Cola</code> 把 AI 编程推进到"computer use + 多步规划执行"阶段,但桌面版 100 万上下文不真实</strong>;<strong>(2) Cloudflare 给 AI agent 开户买域名,"软件买软件"时代来了</strong>;<strong>(3) 结构化文本(MD+JSON)替代 PDF 成共识</strong>。
+
+<strong>其余 3/10</strong>:OPC 公司注册新规(出海/创业)、独立开发者产品矩阵案例(watcha.cn 5 个产品)、AI 自媒体内容矩阵流(低调哥免费分享 8 步流程)。
+
+> ⚠️ 5/4 当天群</div>
   </div>
   <div class="card-side">
-    <span class="badge">10 学习点</span>
+    <span class="badge">10 个学习点</span>
     <span class="card-kb">23.3 KB</span>
   </div>
-</a>
-<a class="card" data-accent="rose" href="2026-05-04 内容创作专题.html">
-  <div class="card-emoji" data-mark="WRITE"></div>
+</a><a class="card" href="2026-05-04 内容创作专题.html">
+  <div class="card-emoji">✍️</div>
   <div class="card-body">
     <div class="card-title">内容创作专题</div>
-    <div class="card-meta">8 个内容创作方向群 / 34 条候选</div>
-    <div class="card-summary">Codex 桌宠教程跨群传播、AI 人像 prompt 框架涨粉、文章做成 skills 的内容资产化趋势。</div>
+    <div class="card-meta">8 个内容创作方向群 / 34 条候选消息</div>
+    <div class="card-summary">5/4 内容创作圈最值得看的 3 件事:<strong>(1)<code>Codex 桌宠教程</code>成 9 群跨群最热爆款,创作圈也在围观技术派</strong>;<strong>(2)<code>钟莹</code> AI 人像摄影 prompt 框架三天涨粉 400+,提供具体可复用方法</strong>;<strong>(3)<code>枫丝语</code>提出"自媒体把文章做成 skills"是新趋势 — 内容资产化新方向</strong>。
+
+---</div>
   </div>
   <div class="card-side">
-    <span class="badge">6 学习点</span>
+    <span class="badge">6 个学习点</span>
     <span class="card-kb">8.0 KB</span>
   </div>
-</a>
-<a class="card" data-accent="orange" href="2026-05-04 电商专题.html">
-  <div class="card-emoji" data-mark="SHOP"></div>
+</a><a class="card" href="2026-05-04 电商专题.html">
+  <div class="card-emoji">🛒</div>
   <div class="card-body">
     <div class="card-title">电商专题</div>
-    <div class="card-meta">2 个电商相关群 / 8 条候选</div>
-    <div class="card-summary">电商信号偏少，主要是小红书虚拟资料、跨境融资口子和出海直播边缘信号，可作为轻量观察。</div>
+    <div class="card-meta">2 个电商相关群 / 8 条候选(数据极少)</div>
+    <div class="card-summary">5/4 电商主题 vault 里<strong>几乎没人聊</strong>。仅有的信号:<strong>(1)<code>小红书虚拟资料</code>是惠州 4 个新人都在做的赛道,<code>宋宋</code>实证月入 25000 / 日入 3000<code></strong>;<strong>(2)出海跨境融资有人开口子(全球 AI&品牌出海资源互助群)</strong>;<strong>(3)</code>赫兹的哥飞 + 彪哥 + 壹树 直播` 偏出海创业,沾电商边</strong>。
+
+⚠️ 想看真正的电商干货,你需要拉<strong>专门的电商群</strong>(TT Shop / Amazon / 闲鱼 / 补单互补 / 跨境 等),5/4 这些群不在你 vault 里。
+
+---</div>
   </div>
   <div class="card-side">
-    <span class="badge">3 学习点</span>
+    <span class="badge">3 个学习点</span>
     <span class="card-kb">5.3 KB</span>
   </div>
-</a>
-<a class="card" data-accent="cyan" href="2026-05-04 出海专题.html">
-  <div class="card-emoji" data-mark="GLOBAL"></div>
+</a><a class="card" href="2026-05-04 出海专题.html">
+  <div class="card-emoji">🌍</div>
   <div class="card-body">
     <div class="card-title">出海专题</div>
-    <div class="card-meta">11 个出海方向群 / 31 条候选</div>
-    <div class="card-summary">Cloudflare + Stripe AI Agent 协议、Stripe 一人公司案例、SEO Canonical + 307 转权重玩法，是当天出海主线。</div>
+    <div class="card-meta">11 个出海方向群 / 31 条候选消息</div>
+    <div class="card-summary">5/4 出海最重要 3 件事:<strong>(1)<code>Cloudflare + Stripe 联手发布 AI Agent 三层协议</code>,agent 自己开户买域名拿 token 部署的范式确立</strong>;<strong>(2)<code>siuser小伟</code>(就是你)发了《Stripe 官方点名认证三十多位一人公司年入千万》并做成在线页</strong>;<strong>(3)<code>哥飞</code>深度拆解 SEO Canonical + 307 跳转转移权重的实战玩法</strong>。
+
+---</div>
   </div>
   <div class="card-side">
-    <span class="badge">8 学习点</span>
+    <span class="badge">8 个学习点</span>
     <span class="card-kb">13.9 KB</span>
   </div>
-</a></div></section><section><h2 class="section-title">2026-05-03 <span class="weekday">周日</span></h2><div class="cards"><a class="card" data-accent="blue" href="2026-05-03 学习卡片.html">
-  <div class="card-emoji" data-mark="DAILY"></div>
+</a></section>
+<section><h2 class="section-title">2026-05-03 <span class="weekday">周日</span></h2>
+<a class="card" href="2026-05-03 学习卡片.html">
+  <div class="card-emoji">📚</div>
   <div class="card-body">
     <div class="card-title">全主题学习卡片</div>
-    <div class="card-meta">93 群 / 3,301 条消息 / 655 条候选</div>
-    <div class="card-summary">ChatGPT 低价订阅教程、Hermes 多 Agent 跨境电商团队、OPC 与 AI Coding 的商业反思构成周日主线。</div>
+    <div class="card-meta">93 群 / 3,301 条消息 / 学习候选 655 条</div>
+    <div class="card-summary">5/3 跨群三条主线:<strong>(1)<code>青书</code>公开《低价订阅 ChatGPT 20x 完整教程》—— Bitget 虚拟卡 + 菲律宾/土耳其区,实付 146 刀</strong>;<strong>(2)<code>饼干哥哥</code>用爱马仕(hermes)多 Agent 搭建跨境电商团队,「Agent + 业务」组合开始走通</strong>;<strong>(3)群内多场哲学辩论 —— <code>OPC 是不是人</code>、<code>AI Coding vs 真实商业</code>、<code>管理 100 人 vs 距模型最近</code>,周日反思味浓</strong>。
+
+---</div>
   </div>
   <div class="card-side">
-    <span class="badge">10 学习点</span>
+    <span class="badge">10 个学习点</span>
     <span class="card-kb">15.3 KB</span>
   </div>
-</a></div></section>
-</main>
-<footer>本地生成 · 数据来自你的 Obsidian vault · 2026/5/7 17:09:50 更新</footer>
+</a></section>
+
+</div>
+<footer>
+  🤖 本地生成 · 数据来自你的 Obsidian vault · 2026-05-08 08:34 更新
+</footer>
 </body>
 </html>
