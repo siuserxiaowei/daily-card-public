@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 内容获客与小红书自动化｜航海家 AI 应用讨论</title>
+<meta name="description" content="AI 内容获客的核心不是让笔记更像爆款，而是把选题、素材、发布、扫描和转化拆成流程，用客资验证每一步。">
+<meta property="og:title" content="AI 内容获客与小红书自动化｜航海家 AI 应用讨论">
+<meta property="og:description" content="AI 内容获客的核心不是让笔记更像爆款，而是把选题、素材、发布、扫描和转化拆成流程，用客资验证每一步。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-08-hanghai-ai/ai-content-acquisition.html">
+<meta property="og:image" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-08-hanghai-ai/assets/signal-map.png">
+<style>
+:root {
+  --ink: #17211f;
+  --muted: #5c6864;
+  --paper: #f7f3e8;
+  --panel: rgba(255, 252, 242, 0.92);
+  --line: rgba(23, 33, 31, 0.14);
+  --green: #0f6b55;
+  --amber: #c97b23;
+  --coral: #b84c3d;
+  --blue: #315f7d;
+  --shadow: 0 22px 70px rgba(28, 41, 36, 0.18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.72;
+}
+a { color: inherit; }
+.hero {
+  min-height: 58vh;
+  padding: 28px clamp(18px, 4vw, 64px) 72px;
+  color: #fff8e6;
+  background: #10231f;
+  position: relative;
+  overflow: hidden;
+}
+.hero-visual {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .72;
+  filter: saturate(.9) contrast(1.06);
+  z-index: 0;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 31, 28, 0.94), rgba(15, 31, 28, 0.56));
+  z-index: 0;
+  pointer-events: none;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--paper));
+  pointer-events: none;
+  z-index: 0;
+}
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; position: relative; z-index: 1; }
+.brand { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; opacity: .82; }
+.nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.nav a, .back-link {
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 12px;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(12px);
+}
+.nav a:hover, .back-link:hover { background: rgba(255,255,255,.18); }
+.hero-main { max-width: 980px; margin-top: 92px; position: relative; z-index: 1; }
+.kicker { color: #f2c36b; font-size: 14px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
+h1 { font-size: clamp(34px, 7vw, 78px); line-height: .98; letter-spacing: 0; margin: 0 0 24px; max-width: 900px; }
+.lede { max-width: 760px; font-size: clamp(17px, 2vw, 22px); color: rgba(255, 248, 230, .9); margin: 0; }
+.meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+.pill { display: inline-flex; align-items: center; border: 1px solid rgba(255,255,255,.26); color: #fff7dc; border-radius: 999px; padding: 8px 12px; font-size: 13px; background: rgba(255,255,255,.09); }
+main { max-width: 1180px; margin: -42px auto 0; padding: 0 clamp(18px, 4vw, 48px) 72px; position: relative; z-index: 2; }
+.panel { background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 8px; padding: clamp(22px, 4vw, 40px); }
+.section-title { font-size: clamp(24px, 3vw, 36px); margin: 0 0 14px; line-height: 1.18; }
+.section-note { color: var(--muted); max-width: 780px; margin: 0 0 26px; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffaf0;
+  padding: 20px;
+  min-height: 238px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: linear-gradient(var(--green), var(--amber)); }
+.card:hover { transform: translateY(-3px); box-shadow: 0 18px 42px rgba(26, 38, 34, .16); border-color: rgba(15, 107, 85, .34); }
+.card small { color: var(--amber); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.card h2 { font-size: 24px; line-height: 1.18; margin: 10px 0 12px; }
+.card p { color: var(--muted); margin: 0; }
+.card .audience { margin-top: auto; padding-top: 18px; color: var(--blue); font-size: 13px; }
+.grid-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .62fr); gap: 18px; align-items: start; }
+.callout { border-left: 6px solid var(--amber); background: #fff4d9; padding: 18px 20px; border-radius: 6px; margin: 18px 0; }
+.quote { font-size: clamp(22px, 3vw, 34px); line-height: 1.28; margin: 0; }
+.list { margin: 0; padding-left: 20px; }
+.list li { margin: 8px 0; }
+.detail-section { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.detail-section h2 { font-size: 20px; margin: 0 0 10px; color: var(--green); }
+.share-box { background: #15221f; color: #fff8e6; border-radius: 8px; padding: 22px; margin-top: 22px; }
+.share-box h2 { color: #f2c36b; margin-top: 0; }
+.share-box p { margin-bottom: 0; }
+.table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+.table th, .table td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
+.table th { color: var(--green); }
+.footer { padding: 28px; text-align: center; color: var(--muted); font-size: 13px; }
+@media (max-width: 820px) {
+  .hero { min-height: 62vh; padding-bottom: 64px; }
+  .hero-main { margin-top: 64px; }
+  .topbar { align-items: flex-start; flex-direction: column; }
+  .nav { justify-content: flex-start; }
+  .cards, .grid-2 { grid-template-columns: 1fr; }
+  .card { min-height: auto; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="hero-visual" src="assets/signal-map.png" alt="业务信号图谱">
+  <div class="topbar">
+    <div class="brand">航海家 AI 应用讨论 · 内容获客</div>
+    <nav class="nav"><a href="index.html">总览</a><a href="aroma-wellness.html">香薰疗愈</a><a href="ai-content-acquisition.html">内容获客</a><a href="ai-workflow-tools.html">AI 工作流</a><a href="ecommerce-crossborder.html">电商跨境</a><a href="traditional-industry-ai.html">传统行业</a><a href="personal-ip-courses.html">IP 课程</a><a href="compute-power.html">电力算力</a><a href="ai-hardware-input.html">AI 硬件</a></nav>
+  </div>
+  <div class="hero-main">
+    <div class="kicker">2026-05-08 · Guangzhou</div>
+    <h1>AI 内容获客与小红书自动化｜航海家 AI 应用讨论</h1>
+    <p class="lede">AI 内容获客的核心不是让笔记更像爆款，而是把选题、素材、发布、扫描和转化拆成流程，用客资验证每一步。</p>
+    <div class="meta-row"><span class="pill">4 小时线下讨论</span><span class="pill">8 条业务线</span><span class="pill">公开版已脱敏</span></div>
+  </div>
+</header>
+<main><section class="panel grid-2">
+  <div>
+    <h2 class="section-title">核心判断</h2>
+    <div class="callout"><p class="quote">AI 内容获客的核心不是让笔记更像爆款，而是把选题、素材、发布、扫描和转化拆成流程，用客资验证每一步。</p></div>
+    <div class="detail-section"><h2>会上的业务信号</h2><ul class="list"><li>现场反复提到小红书自动化：选题、图文生成、发布、数据扫描、投流和私域承接都可以拆流程。</li><li>有效标准很务实：能不能带来客资，而不是文案看起来多高级。</li><li>同城获客被提到时，关键是先说清楚业务、套餐、客单价、半径和转化链路，否则 AI 只能给泛泛建议。</li></ul></div>
+    <div class="detail-section"><h2>AI 可以嵌入的环节</h2><ul class="list"><li>从竞品视频/文案中提炼选题库、痛点库、标题库和评论区问题库。</li><li>用 AI 批量生成不同角度的笔记，再通过人工抽检和数据反馈迭代。</li><li>用自动化工具做素材整理、定时发布、账号状态扫描和线索表沉淀。</li></ul></div>
+  </div>
+  <aside>
+    <div class="callout"><strong>适合转发给</strong><br>适合发给做小红书、同城获客、培训、虚拟资料、副业项目、私域转化的人。</div>
+    <div class="detail-section"><h2>建议打法</h2><ul class="list"><li>先定义“有效线索”：咨询、留资、进群、加微信、下单，选一个主指标。</li><li>建立 20 条基础选题，按痛点、场景、对比、避坑、案例、价格六类拆分。</li><li>每周复盘高互动、高留资、低转化内容，把 AI 生成逻辑改成更贴近成交。</li></ul></div>
+    <div class="detail-section"><h2>风险边界</h2><ul class="list"><li>自动化发布要注意平台风控、账号实名和内容重复度。</li><li>投流痕迹不一定能被外部准确判断，别把 AI 当成万能侦测器。</li></ul></div>
+  </aside>
+</section>
+<section class="share-box"><h2>可直接外发的一段话</h2><p>这场会里最实用的一条：AI 做内容获客，别只问“怎么写爆款”，要问“这个流程怎么稳定拿客资”。先把业务、客单价、半径、转化链路讲清楚，AI 才能真正帮忙。</p></section></main>
+<footer class="footer">由逐字稿与智能纪要二次整理 · 仅保留业务信号，不含私人聊天原文</footer>
+</body>
+</html>

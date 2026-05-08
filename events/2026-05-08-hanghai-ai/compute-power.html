@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电力、算力与基础设施机会｜航海家 AI 应用讨论</title>
+<meta name="description" content="当大家都在谈模型和应用时，底层资源也有机会：电、芯片、机房、算力调度，本质上是在 AI 时代重新定义基础设施。">
+<meta property="og:title" content="电力、算力与基础设施机会｜航海家 AI 应用讨论">
+<meta property="og:description" content="当大家都在谈模型和应用时，底层资源也有机会：电、芯片、机房、算力调度，本质上是在 AI 时代重新定义基础设施。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-08-hanghai-ai/compute-power.html">
+<meta property="og:image" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-08-hanghai-ai/assets/signal-map.png">
+<style>
+:root {
+  --ink: #17211f;
+  --muted: #5c6864;
+  --paper: #f7f3e8;
+  --panel: rgba(255, 252, 242, 0.92);
+  --line: rgba(23, 33, 31, 0.14);
+  --green: #0f6b55;
+  --amber: #c97b23;
+  --coral: #b84c3d;
+  --blue: #315f7d;
+  --shadow: 0 22px 70px rgba(28, 41, 36, 0.18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.72;
+}
+a { color: inherit; }
+.hero {
+  min-height: 58vh;
+  padding: 28px clamp(18px, 4vw, 64px) 72px;
+  color: #fff8e6;
+  background: #10231f;
+  position: relative;
+  overflow: hidden;
+}
+.hero-visual {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .72;
+  filter: saturate(.9) contrast(1.06);
+  z-index: 0;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 31, 28, 0.94), rgba(15, 31, 28, 0.56));
+  z-index: 0;
+  pointer-events: none;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--paper));
+  pointer-events: none;
+  z-index: 0;
+}
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; position: relative; z-index: 1; }
+.brand { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; opacity: .82; }
+.nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.nav a, .back-link {
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 12px;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(12px);
+}
+.nav a:hover, .back-link:hover { background: rgba(255,255,255,.18); }
+.hero-main { max-width: 980px; margin-top: 92px; position: relative; z-index: 1; }
+.kicker { color: #f2c36b; font-size: 14px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
+h1 { font-size: clamp(34px, 7vw, 78px); line-height: .98; letter-spacing: 0; margin: 0 0 24px; max-width: 900px; }
+.lede { max-width: 760px; font-size: clamp(17px, 2vw, 22px); color: rgba(255, 248, 230, .9); margin: 0; }
+.meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+.pill { display: inline-flex; align-items: center; border: 1px solid rgba(255,255,255,.26); color: #fff7dc; border-radius: 999px; padding: 8px 12px; font-size: 13px; background: rgba(255,255,255,.09); }
+main { max-width: 1180px; margin: -42px auto 0; padding: 0 clamp(18px, 4vw, 48px) 72px; position: relative; z-index: 2; }
+.panel { background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 8px; padding: clamp(22px, 4vw, 40px); }
+.section-title { font-size: clamp(24px, 3vw, 36px); margin: 0 0 14px; line-height: 1.18; }
+.section-note { color: var(--muted); max-width: 780px; margin: 0 0 26px; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffaf0;
+  padding: 20px;
+  min-height: 238px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: linear-gradient(var(--green), var(--amber)); }
+.card:hover { transform: translateY(-3px); box-shadow: 0 18px 42px rgba(26, 38, 34, .16); border-color: rgba(15, 107, 85, .34); }
+.card small { color: var(--amber); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.card h2 { font-size: 24px; line-height: 1.18; margin: 10px 0 12px; }
+.card p { color: var(--muted); margin: 0; }
+.card .audience { margin-top: auto; padding-top: 18px; color: var(--blue); font-size: 13px; }
+.grid-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .62fr); gap: 18px; align-items: start; }
+.callout { border-left: 6px solid var(--amber); background: #fff4d9; padding: 18px 20px; border-radius: 6px; margin: 18px 0; }
+.quote { font-size: clamp(22px, 3vw, 34px); line-height: 1.28; margin: 0; }
+.list { margin: 0; padding-left: 20px; }
+.list li { margin: 8px 0; }
+.detail-section { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.detail-section h2 { font-size: 20px; margin: 0 0 10px; color: var(--green); }
+.share-box { background: #15221f; color: #fff8e6; border-radius: 8px; padding: 22px; margin-top: 22px; }
+.share-box h2 { color: #f2c36b; margin-top: 0; }
+.share-box p { margin-bottom: 0; }
+.table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+.table th, .table td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
+.table th { color: var(--green); }
+.footer { padding: 28px; text-align: center; color: var(--muted); font-size: 13px; }
+@media (max-width: 820px) {
+  .hero { min-height: 62vh; padding-bottom: 64px; }
+  .hero-main { margin-top: 64px; }
+  .topbar { align-items: flex-start; flex-direction: column; }
+  .nav { justify-content: flex-start; }
+  .cards, .grid-2 { grid-template-columns: 1fr; }
+  .card { min-height: auto; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="hero-visual" src="assets/signal-map.png" alt="业务信号图谱">
+  <div class="topbar">
+    <div class="brand">航海家 AI 应用讨论 · 电力算力</div>
+    <nav class="nav"><a href="index.html">总览</a><a href="aroma-wellness.html">香薰疗愈</a><a href="ai-content-acquisition.html">内容获客</a><a href="ai-workflow-tools.html">AI 工作流</a><a href="ecommerce-crossborder.html">电商跨境</a><a href="traditional-industry-ai.html">传统行业</a><a href="personal-ip-courses.html">IP 课程</a><a href="compute-power.html">电力算力</a><a href="ai-hardware-input.html">AI 硬件</a></nav>
+  </div>
+  <div class="hero-main">
+    <div class="kicker">2026-05-08 · Guangzhou</div>
+    <h1>电力、算力与基础设施机会｜航海家 AI 应用讨论</h1>
+    <p class="lede">当大家都在谈模型和应用时，底层资源也有机会：电、芯片、机房、算力调度，本质上是在 AI 时代重新定义基础设施。</p>
+    <div class="meta-row"><span class="pill">4 小时线下讨论</span><span class="pill">8 条业务线</span><span class="pill">公开版已脱敏</span></div>
+  </div>
+</header>
+<main><section class="panel grid-2">
+  <div>
+    <h2 class="section-title">核心判断</h2>
+    <div class="callout"><p class="quote">当大家都在谈模型和应用时，底层资源也有机会：电、芯片、机房、算力调度，本质上是在 AI 时代重新定义基础设施。</p></div>
+    <div class="detail-section"><h2>会上的业务信号</h2><ul class="list"><li>会议里讨论到把国内电力资源转化为算力，再把 token/算力服务卖向海外的设想。</li><li>电力作为基建层，被类比为新时代的“地主资源”：不一定追应用，但能承接应用爆发带来的需求。</li><li>这条线门槛高，涉及芯片、机房、合规、海外客户和资金，不适合轻资产盲入。</li></ul></div>
+    <div class="detail-section"><h2>AI 可以嵌入的环节</h2><ul class="list"><li>用 AI 做市场情报：算力价格、客户需求、海外竞品、合规政策、设备 ROI。</li><li>用 AI 做运营调度辅助：资源利用率、报价模型、客户工单、故障摘要。</li><li>用 AI 做销售材料：面向海外客户的方案书、FAQ、风险说明和报价解释。</li></ul></div>
+  </div>
+  <aside>
+    <div class="callout"><strong>适合转发给</strong><br>适合发给关注算力中心、电力资源、基础设施、B2B 资源变现的人。</div>
+    <div class="detail-section"><h2>建议打法</h2><ul class="list"><li>先验证资源优势：电价、场地、网络、合规、设备采购能力。</li><li>做一版轻量商业测算，不要只看收入，要算折旧、电费、运维和空置率。</li><li>找到真实客户或渠道后再扩张，别被“AI 算力热”四个字带着跑。</li></ul></div>
+    <div class="detail-section"><h2>风险边界</h2><ul class="list"><li>重资产、强合规、强周期，资金和政策风险远高于内容/软件类业务。</li><li>如果没有资源禀赋和客户通道，普通人不宜贸然进入。</li></ul></div>
+  </aside>
+</section>
+<section class="share-box"><h2>可直接外发的一段话</h2><p>AI 应用越热，底层的电力和算力越值得看。但这不是轻创业，而是资源、资金、合规和客户渠道的生意，适合有基础设施禀赋的人认真测算。</p></section></main>
+<footer class="footer">由逐字稿与智能纪要二次整理 · 仅保留业务信号，不含私人聊天原文</footer>
+</body>
+</html>
