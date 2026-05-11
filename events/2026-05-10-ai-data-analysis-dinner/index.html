@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 数据分析项目饭局复盘：交付、流量与知识付费警惕</title>
+<meta name="description" content="根据 2026-05-10 一场 39 分钟线下饭局纪要整理的公开脱敏版：聚焦 AI 数据分析项目、流量起盘、交付模式、合作分工和知识付费行业观察。">
+<meta property="og:title" content="AI 数据分析项目饭局复盘：交付、流量与知识付费警惕">
+<meta property="og:description" content="公开脱敏版会议复盘：从 AI 数据分析项目的交付效率、流量约束、合作分成，到知识付费行业避坑。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-10-ai-data-analysis-dinner/assets/ai-data-analysis-map.png">
+<style>
+:root {
+  --ink: #16201d;
+  --paper: #efe7d6;
+  --paper-2: #f8f2e6;
+  --panel: #fffaf0;
+  --muted: #62726b;
+  --line: rgba(22, 32, 29, .16);
+  --green: #0d6f5a;
+  --moss: #365f47;
+  --amber: #b66f24;
+  --red: #a94839;
+  --blue: #2b5f7c;
+  --shadow: 0 18px 60px rgba(31, 39, 34, .16);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(22, 32, 29, .05) 1px, transparent 1px) 0 0 / 44px 44px,
+    linear-gradient(0deg, rgba(22, 32, 29, .035) 1px, transparent 1px) 0 0 / 44px 44px,
+    var(--paper);
+  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  line-height: 1.72;
+}
+
+a { color: inherit; }
+
+.hero {
+  position: relative;
+  min-height: 76vh;
+  padding: 28px clamp(18px, 5vw, 70px) 96px;
+  overflow: hidden;
+  color: #fff7df;
+  background: #10211d;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .72;
+  filter: saturate(.94) contrast(1.06);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(12, 24, 20, .97), rgba(12, 24, 20, .74) 58%, rgba(12, 24, 20, .28)),
+    linear-gradient(0deg, rgba(12, 24, 20, .58), transparent 42%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 118px;
+  background: linear-gradient(to bottom, transparent, var(--paper));
+}
+
+.topbar,
+.hero-main {
+  position: relative;
+  z-index: 1;
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.brand {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #f4d18a;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.nav a {
+  text-decoration: none;
+  border: 1px solid rgba(255, 247, 223, .34);
+  background: rgba(255, 247, 223, .08);
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+.hero-main {
+  max-width: 1060px;
+  margin-top: 92px;
+}
+
+.kicker {
+  margin-bottom: 16px;
+  color: #f4c36c;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 980px;
+  margin: 0 0 22px;
+  font-size: 58px;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+h1 span {
+  display: inline;
+}
+
+h1 .title-c {
+  display: block;
+}
+
+.lede {
+  max-width: 880px;
+  margin: 0;
+  color: rgba(255, 247, 223, .92);
+  font-size: 21px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.chip {
+  border: 1px solid rgba(255, 247, 223, .26);
+  background: rgba(255, 247, 223, .1);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  max-width: 1220px;
+  margin: -52px auto 0;
+  padding: 0 clamp(16px, 4vw, 46px) 78px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: clamp(22px, 4vw, 42px);
+  margin-bottom: 18px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .46fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.quote {
+  margin: 0;
+  color: var(--green);
+  font-size: 34px;
+  line-height: 1.34;
+}
+
+.source {
+  border-left: 6px solid var(--amber);
+  background: #fff1cd;
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  color: #3f4a45;
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.note {
+  max-width: 900px;
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 15px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric {
+  min-height: 122px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf6;
+  padding: 17px;
+}
+
+.metric strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--red);
+  font-size: 30px;
+  line-height: 1;
+}
+
+.metric span {
+  display: block;
+  color: var(--muted);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  min-height: 260px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf6;
+  padding: 21px 21px 22px 25px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  background: linear-gradient(var(--green), var(--amber));
+}
+
+.card small {
+  color: var(--amber);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+}
+
+.card h2 {
+  margin: 8px 0 10px;
+  font-size: 24px;
+  line-height: 1.22;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 15px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.list li {
+  margin: 9px 0;
+}
+
+.timeline {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+}
+
+.timeline th,
+.timeline td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.timeline th {
+  color: var(--green);
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.cell {
+  border-top: 4px solid var(--moss);
+  background: #fffdf6;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.cell h3 {
+  margin: 0 0 10px;
+  color: var(--green);
+  font-size: 19px;
+}
+
+.cell p {
+  margin: 0;
+  color: var(--muted);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+}
+
+.warning {
+  background: #fff1e7;
+  border-color: rgba(169, 72, 57, .3);
+}
+
+.warning .section-title {
+  color: var(--red);
+}
+
+.footer {
+  padding: 28px 18px 38px;
+  text-align: center;
+  color: var(--muted);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+}
+
+@media (max-width: 920px) {
+  .topbar { display: block; }
+  .nav { justify-content: flex-start; margin-top: 16px; }
+  .hero-main { margin-top: 70px; }
+  h1 { font-size: 42px; }
+  .lede { font-size: 19px; }
+  .split,
+  .cards,
+  .matrix { grid-template-columns: 1fr; }
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { min-height: auto; }
+}
+
+@media (max-width: 620px) {
+  .hero { min-height: 72vh; padding-bottom: 82px; }
+  h1 { font-size: 28px; }
+  h1 span { display: block; }
+  .hero-main { margin-top: 54px; }
+  .quote,
+  .section-title { font-size: 26px; }
+  .metrics { grid-template-columns: 1fr; }
+  .timeline { font-size: 13px; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="hero-img" src="assets/ai-data-analysis-map.png" alt="AI 数据分析项目流程图">
+  <div class="topbar">
+    <div class="brand">Dinner Notes · Public Review · 2026-05-10</div>
+    <nav class="nav">
+      <a href="#summary">总览</a>
+      <a href="#model">项目结构</a>
+      <a href="#timeline">时间线</a>
+      <a href="#risks">风险</a>
+      <a href="#actions">行动</a>
+    </nav>
+  </div>
+  <div class="hero-main">
+    <div class="kicker">39 分钟线下饭局纪要 · 公开脱敏版</div>
+    <h1><span class="title-a">AI 数据分析项目</span><span class="title-b">饭局复盘：</span><span class="title-c">交付、流量与知识付费警惕</span></h1>
+    <p class="lede">这场讨论真正有价值的地方，不是“某个项目很赚钱”，而是把一个 AI 数据分析项目拆成了交付效率、平台流量、合作分工、用户筛选和行业避坑五件事。</p>
+    <div class="chips">
+      <span class="chip">不公开原始逐字稿</span>
+      <span class="chip">不保留个人姓名</span>
+      <span class="chip">敏感起号细节仅做风险提示</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="panel split" id="summary">
+    <div>
+      <p class="quote">AI 数据分析项目的关键，不是把“课”卖出去，而是把原来一到三个月的软件教学，压缩成可复用、可质检、可分工的 AI 交付流程。</p>
+    </div>
+    <aside class="source">
+      <strong>来源信息</strong><br>
+      录音时间：2026-05-10 12:31:53 至 13:11:32<br>
+      时长：约 39 分钟<br>
+      参与人数：约 4 人<br>
+      原始材料：18 页 PDF 智能纪要与逐字稿
+    </aside>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">四个结论</h2>
+    <div class="metrics">
+      <div class="metric"><strong>10-30 分钟</strong><span>讨论中反复出现的学习周期假设：有基础的人更快，弱基础的人需要更强筛选和陪跑。</span></div>
+      <div class="metric"><strong>交付优先</strong><span>项目不是先讲故事，而是先证明 AI 工作流能稳定产出数据分析结果。</span></div>
+      <div class="metric"><strong>流量受限</strong><span>平台关键词、好评内容、私域转化和封号风险，决定项目能不能持续放量。</span></div>
+      <div class="metric"><strong>知识付费慎入</strong><span>社群打榜、向上社交和高抽佣分发，如果不能带来净成交，很容易只是成本转移。</span></div>
+    </div>
+  </section>
+
+  <section class="panel" id="model">
+    <h2 class="section-title">项目结构</h2>
+    <p class="note">公开版只保留可迁移的业务结构，不保留具体账号、具体人名、具体刷量步骤和可直接复制的平台灰色操作。</p>
+    <div class="cards">
+      <article class="card">
+        <small>Delivery</small>
+        <h2>交付模型：从软件教学改成 AI 调用</h2>
+        <p>传统数据分析培训需要逐个教软件。饭局里讨论的新模式，是用 AI 统一调动 Python、数据处理与图表工具，把“学软件”改为“描述需求、调用工具、复核结果”。这能显著降低交付时间，但前提是有清晰的质检标准。</p>
+      </article>
+      <article class="card">
+        <small>Traffic</small>
+        <h2>流量模型：平台流量只是入口，不是护城河</h2>
+        <p>会议提到某二手平台的搜索、投流和成交路径，也提到因客户评价触发封号的案例。结论是：平台流量可以起盘，但不能把项目命运压在单一账号、单一关键词和单一规则窗口上。</p>
+      </article>
+      <article class="card">
+        <small>Partnership</small>
+        <h2>合作模型：获客、兜底、携手要拆清楚</h2>
+        <p>讨论里的合作设计把角色分成获客方、交付兜底方、线下携手和自营盘。真正需要写清的是收入归属、售后责任、退款责任、客户数据归属和保密边界。</p>
+      </article>
+      <article class="card">
+        <small>Customer</small>
+        <h2>用户模型：宁可筛选，也不要全量小白</h2>
+        <p>核心判断是“不培养完全零基础”。原因不是歧视小白，而是交付成本会吞掉利润。更稳的筛选标准是：有明确需求、有基础操作能力、有付费能力、能接受规范交付流程。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="timeline">
+    <h2 class="section-title">时间线摘要</h2>
+    <table class="timeline">
+      <thead>
+        <tr><th>时间</th><th>讨论重点</th><th>整理后的判断</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>00:00-00:04</td><td>AI 数据分析项目学习周期、收益案例、合作分成。</td><td>早期叙事很容易被收益数字带偏，真正要验证的是可重复交付和获客稳定性。</td></tr>
+        <tr><td>00:04-00:09</td><td>技术优势：AI 调用工具，缩短传统数据分析教学周期。</td><td>优势成立的前提是工具链稳定、结果可复核、售后问题能闭环。</td></tr>
+        <tr><td>00:10-00:20</td><td>知识付费行业吐槽：线下活动、夸大收入、打榜和社群成本。</td><td>“向上社交”只有在带来真实成交、资源和能力迁移时才值得投入，否则只是高成本情绪消费。</td></tr>
+        <tr><td>00:20-00:24</td><td>信息差、项目投入、研发成本和扩张想法。</td><td>信息差窗口期很短，真正的壁垒要从流程、服务、品牌和数据资产里长出来。</td></tr>
+        <tr><td>00:24-00:31</td><td>CPS 业务、起盘经验、创始人亲自跑流程。</td><td>早期创始人必须亲自做脏活累活，先摸清流程，再谈 SOP 和团队复制。</td></tr>
+        <tr><td>00:31-00:39</td><td>学员筛选、平台起号、生活闲聊和人员安排。</td><td>平台操作细节不适合公开扩散；可迁移的是“筛选用户、控制风险、降低交付成本”。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">可迁移方法论</h2>
+    <div class="matrix">
+      <div class="cell"><h3>先跑交付闭环</h3><p>把客户输入、AI 分析、人工复核、结果交付、售后答疑拆成固定动作。没有这个闭环，流量越大，事故越大。</p></div>
+      <div class="cell"><h3>再跑流量闭环</h3><p>平台曝光、私域承接、企业微信成交、案例复用需要一条可追踪路径。只看曝光，不看成交和退款，会误判项目质量。</p></div>
+      <div class="cell"><h3>最后跑组织闭环</h3><p>合作方、携手、交付团队和研发人员要有明确边界。否则分成看起来合理，遇到售后、违规或退款时就会变成互相甩锅。</p></div>
+      <div class="cell"><h3>不要迷信信息差</h3><p>信息差能带来第一波钱，但会被复制。能留下来的，是服务稳定性、客户信任、案例资产和交付数据。</p></div>
+      <div class="cell"><h3>不要全吃小白</h3><p>低基础用户带来更高陪跑成本。项目早期更适合服务有明确任务、有基础材料、有结果压力的客户。</p></div>
+      <div class="cell"><h3>不要被社群账面收入迷惑</h3><p>课程 GMV、打榜排名和朋友圈截图不等于净利润。要看获客成本、分佣比例、交付时长、复购和退款。</p></div>
+    </div>
+  </section>
+
+  <section class="panel warning" id="risks">
+    <h2 class="section-title">风险清单</h2>
+    <ul class="list">
+      <li><strong>平台合规风险：</strong>关键词、客户评价、投流、账号动作都可能触发规则变化。公开版不沉淀任何具体绕规则教程。</li>
+      <li><strong>交付质量风险：</strong>AI 能快速调用工具，但不能替代结果复核。数据口径、图表解释和结论责任必须有人承担。</li>
+      <li><strong>隐私与数据风险：</strong>客户数据、学术材料、商业数据和留学相关材料都可能涉及敏感信息，必须提前约定存储、删除和使用范围。</li>
+      <li><strong>收益夸大风险：</strong>饭局里的收益案例只能当线索，不能当承诺。项目对外表达要避免“保证收益”“保证回本”式话术。</li>
+      <li><strong>团队成本风险：</strong>研发、投流、售后和线下管理都会吃掉利润。预算要绑定阶段目标，不要只按热情投入。</li>
+      <li><strong>知识付费风险：</strong>高价社群和打榜如果不能转化为客户、资源或能力，只会把利润交给平台和中间人。</li>
+    </ul>
+  </section>
+
+  <section class="panel" id="actions">
+    <h2 class="section-title">下一步行动清单</h2>
+    <div class="cards">
+      <article class="card">
+        <small>Week 1</small>
+        <h2>写出交付 SOP</h2>
+        <p>定义客户需要提交什么材料、AI 做哪几步、人工复核哪几项、最终交付什么格式，以及什么情况必须拒单。</p>
+      </article>
+      <article class="card">
+        <small>Week 1-2</small>
+        <h2>建立风险台账</h2>
+        <p>把平台规则、账号风险、敏感词、隐私数据、退款场景和客户误解列成表，每次成交前都能检查。</p>
+      </article>
+      <article class="card">
+        <small>Week 2-3</small>
+        <h2>跑小样本成交</h2>
+        <p>先用小流量、小预算、小团队跑 20 个真实订单，记录咨询来源、成交理由、交付时长、返工次数和客户反馈。</p>
+      </article>
+      <article class="card">
+        <small>Week 3-4</small>
+        <h2>再谈合作复制</h2>
+        <p>当交付和售后数据稳定后，再设计分成、培训、携手管理和区域合作。不要用还没验证的流程去放大风险。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">公开删减原则</h2>
+    <ul class="list">
+      <li>保留：项目模式、交付判断、流量约束、合作结构、知识付费行业观察、风险提示。</li>
+      <li>删除或泛化：真实人名、具体账号、具体刷量步骤、原始逐字稿、脏话、可被直接复制的平台规避细节。</li>
+      <li>不复制原始 PDF：仓库只放整理页，避免把私人饭局原文公开到 GitHub Pages。</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">根据 2026-05-10 PDF 智能纪要二次整理。公开脱敏版，仅用于项目复盘和方法论沉淀。</footer>
+</body>
+</html>
