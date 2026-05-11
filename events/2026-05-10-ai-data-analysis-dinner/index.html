@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 数据分析饭局高密度拆解：一门生意怎么起盘</title>
-<meta name="description" content="根据 2026-05-10 线下饭局纪要整理：把 AI 数据分析项目拆成产品、流量、交付、分钱、用户筛选、知识付费避坑和 SOP。">
-<meta property="og:title" content="AI 数据分析饭局高密度拆解：一门生意怎么起盘">
-<meta property="og:description" content="这不是摘要，而是从 39 分钟饭局里提炼出的项目起盘知识：怎么判断机会、怎么设计交付、怎么避开知识付费的坑。">
+<title>AI 数据分析饭局原始拆解：这门生意到底怎么赚钱</title>
+<meta name="description" content="从 2026-05-10 线下饭局纪要里拆 AI 数据分析项目：硬数字、分钱结构、流量窗口、交付模型、知识付费避坑和项目生死判断。">
+<meta property="og:title" content="AI 数据分析饭局原始拆解：这门生意到底怎么赚钱">
+<meta property="og:description" content="公开狠版：保留具体数字、项目结构、分钱逻辑、平台流量判断、交付模型、知识付费避坑和反面案例。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-10-ai-data-analysis-dinner/assets/ai-data-analysis-map.png">
 <style>
@@ -35,14 +35,14 @@ body {
     linear-gradient(0deg, rgba(21, 31, 28, .035) 1px, transparent 1px) 0 0 / 44px 44px,
     var(--paper);
   font-family: Georgia, "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
-  line-height: 1.75;
+  line-height: 1.72;
 }
 
 a { color: inherit; }
 
 .hero {
   position: relative;
-  min-height: 74vh;
+  min-height: 76vh;
   padding: 28px clamp(18px, 5vw, 70px) 96px;
   overflow: hidden;
   color: #fff7df;
@@ -55,8 +55,8 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .66;
-  filter: saturate(.92) contrast(1.05);
+  opacity: .63;
+  filter: saturate(.9) contrast(1.08);
 }
 
 .hero::before {
@@ -64,7 +64,7 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(12, 24, 20, .98), rgba(12, 24, 20, .78) 58%, rgba(12, 24, 20, .3)),
+    linear-gradient(90deg, rgba(12, 24, 20, .98), rgba(12, 24, 20, .8) 58%, rgba(12, 24, 20, .28)),
     linear-gradient(0deg, rgba(12, 24, 20, .55), transparent 42%);
 }
 
@@ -90,12 +90,14 @@ a { color: inherit; }
 
 .brand,
 .nav,
+.lede,
+.chip,
 .note,
-.card p,
-.take p,
-.table,
-.checklist,
 .source,
+.fact,
+.table,
+.list,
+.mini,
 .footer {
   font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
@@ -134,7 +136,7 @@ a { color: inherit; }
 }
 
 h1 {
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 0 22px;
   font-size: 58px;
   line-height: 1.08;
@@ -144,10 +146,11 @@ h1 {
 h1 span { display: block; }
 
 .lede {
-  max-width: 900px;
+  max-width: 930px;
   margin: 0;
-  color: rgba(255, 247, 223, .92);
+  color: rgba(255, 247, 223, .93);
   font-size: 21px;
+  line-height: 1.72;
 }
 
 .chips {
@@ -155,7 +158,6 @@ h1 span { display: block; }
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 28px;
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .chip {
@@ -214,45 +216,48 @@ main {
 }
 
 .note {
-  max-width: 920px;
+  max-width: 930px;
   margin: 0 0 22px;
   color: var(--muted);
   font-size: 15px;
 }
 
-.metrics {
+.facts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
 }
 
-.metric {
-  min-height: 130px;
+.fact {
+  min-height: 138px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fffdf6;
   padding: 17px;
 }
 
-.metric strong {
+.fact strong {
   display: block;
   margin-bottom: 10px;
   color: var(--red);
-  font-size: 30px;
-  line-height: 1;
+  font: 800 30px/1 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
-.metric span {
+.fact span {
   display: block;
   color: var(--muted);
-  font: 13px/1.55 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
-.cards {
+.cards,
+.three {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
+
+.cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .card {
   position: relative;
@@ -277,41 +282,17 @@ main {
   font: 700 13px/1.4 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
-.card h2 {
+.card h2,
+.card h3 {
   margin: 8px 0 10px;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.22;
 }
 
 .card p {
   margin: 0;
   color: var(--muted);
-  font-size: 15px;
-}
-
-.take-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.take {
-  border-top: 4px solid var(--green);
-  background: #fffdf6;
-  border-radius: 8px;
-  padding: 18px;
-}
-
-.take h3 {
-  margin: 0 0 9px;
-  color: var(--green);
-  font-size: 19px;
-}
-
-.take p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
+  font: 15px/1.7 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .table {
@@ -333,12 +314,37 @@ main {
   white-space: nowrap;
 }
 
-.checklist {
+.list {
   margin: 0;
   padding-left: 21px;
 }
 
-.checklist li { margin: 9px 0; }
+.list li { margin: 9px 0; }
+
+.verdict {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mini {
+  border-top: 4px solid var(--green);
+  background: #fffdf6;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.mini h3 {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-size: 19px;
+}
+
+.mini p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
 
 .warning {
   background: #fff1e7;
@@ -362,17 +368,18 @@ main {
   .lede { font-size: 19px; }
   .split,
   .cards,
-  .take-grid { grid-template-columns: 1fr; }
-  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .three,
+  .verdict { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 620px) {
-  .hero { min-height: 74vh; padding-bottom: 86px; }
+  .hero { min-height: 78vh; padding-bottom: 86px; }
   .hero-main { margin-top: 52px; }
   h1 { font-size: 29px; }
   .quote,
   .section-title { font-size: 26px; }
-  .metrics { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr; }
   .table { font-size: 13px; }
 }
 </style>
@@ -381,175 +388,189 @@ main {
 <header class="hero">
   <img class="hero-img" src="assets/ai-data-analysis-map.png" alt="AI 数据分析项目流程图">
   <div class="topbar">
-    <div class="brand">Dinner Notes · High Density Review · 2026-05-10</div>
+    <div class="brand">Dinner Notes · Public Hard Cut · 2026-05-10</div>
     <nav class="nav">
-      <a href="#what">这是什么</a>
-      <a href="#lessons">能学什么</a>
-      <a href="#model">商业模型</a>
-      <a href="#sop">交付 SOP</a>
-      <a href="#pitfall">避坑</a>
+      <a href="#conclusion">30 秒结论</a>
+      <a href="#facts">硬信息</a>
+      <a href="#money">怎么赚钱</a>
+      <a href="#traffic">流量</a>
+      <a href="#lesson">教训</a>
     </nav>
   </div>
   <div class="hero-main">
-    <div class="kicker">39 分钟饭局纪要 · 高密度学习版</div>
-    <h1><span>AI 数据分析饭局拆解：</span><span>一门生意怎么起盘</span></h1>
-    <p class="lede">这不是“某人说项目赚钱”的摘要，而是一套起盘逻辑：把 AI 数据分析从课程包装，拆成订单、流量、交付、分钱、用户筛选和风险控制。</p>
+    <div class="kicker">39 分钟饭局纪要 · 公开狠版</div>
+    <h1><span>AI 数据分析饭局原始拆解：</span><span>这门生意到底怎么赚钱</span></h1>
+    <p class="lede">不再写空泛复盘。这里直接拆饭局里的硬信息：谁来客、谁成交、谁交付、谁兜底、钱怎么分、平台为什么危险、知识付费为什么容易把人收割。</p>
     <div class="chips">
-      <span class="chip">保留商业判断</span>
-      <span class="chip">不放原始逐字稿</span>
-      <span class="chip">不公开具体违规操作</span>
+      <span class="chip">保留硬数字</span>
+      <span class="chip">隐藏人名与账号</span>
+      <span class="chip">不公开违规步骤</span>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="panel split" id="what">
+  <section class="panel split" id="conclusion">
     <div>
-      <p class="quote">这场饭局最值得学的，不是“AI 数据分析能不能赚钱”，而是一个项目从信息差走向可复制交付时，必须同时解决四件事：谁来客、谁成交、谁交付、谁兜底。</p>
+      <p class="quote">30 秒结论：这不是数据分析课，而是“平台获客 + AI 工具交付 + 人工兜底 + 分包协作”的订单生产线。</p>
     </div>
     <aside class="source">
       <strong>来源信息</strong><br>
       录音时间：2026-05-10 12:31:53 至 13:11:32<br>
       时长：约 39 分钟，约 4 人参与<br>
       原始材料：18 页 PDF 智能纪要与逐字稿<br>
-      整理原则：脱敏公开，保留可学习结构
+      公开边界：不放人名、账号、原始逐字稿和平台规避教程
     </aside>
   </section>
 
-  <section class="panel">
-    <h2 class="section-title">先讲人话：这到底是什么项目？</h2>
-    <p class="note">饭局讨论的是一个“AI + 数据分析”的服务/培训混合项目。表面看是在教人做数据分析，本质更像一个订单履约系统：前端拿需求，中间用 AI 调工具，后端有人复核和售后，再把交付能力分包给线下携手或学员。</p>
-    <div class="metrics">
-      <div class="metric"><strong>10-30 分钟</strong><span>不是说人人都能学会数据分析，而是核心操作被压缩成“会描述需求 + 会调 AI + 会复核输出”。</span></div>
-      <div class="metric"><strong>5/4/1</strong><span>合作方拿获客大头，携手负责一线交付，团队抽小比例但负责兜底；真正利润仍来自自营盘。</span></div>
-      <div class="metric"><strong>5-10 万</strong><span>单帖曝光数字说明平台有流量窗口，但也说明账号、评价、关键词和规则是项目最大不确定性。</span></div>
-      <div class="metric"><strong>50 万</strong><span>计划投入不是“稳赚证明”，而是前期投流、研发、试错和团队成本的预算池。</span></div>
+  <section class="panel" id="facts">
+    <h2 class="section-title">原文里的硬信息</h2>
+    <p class="note">这些数字比“项目很猛”有用，因为它们分别对应学习成本、获客成本、交付效率、组织成本和知识付费的真实利润。</p>
+    <div class="facts">
+      <div class="fact"><strong>10-30 分钟</strong><span>饭局里反复强调的学习周期。重点不是人人会数据分析，而是核心操作被压成“会描述需求、会跑 AI、会复核结果”。</span></div>
+      <div class="fact"><strong>5/4/1</strong><span>合作盘分成：渠道拿大头，携手拿交付份额，团队抽小比例但负责兜底。这个结构能扩张，也最容易在售后上扯皮。</span></div>
+      <div class="fact"><strong>5-10 万曝光</strong><span>单帖日曝光级别说明平台窗口存在，但也说明项目命门在账号、评价、规则和承接路径。</span></div>
+      <div class="fact"><strong>1500/天</strong><span>提到的单日投流成本。它不是利润证明，只说明这个项目不是零成本自然流，需要算回本周期。</span></div>
+      <div class="fact"><strong>50 万预算</strong><span>计划投入池。里面要覆盖投流、研发、试错、人员、售后和可能亏损，不是拿来证明项目稳赚。</span></div>
+      <div class="fact"><strong>2-3 万/月</strong><span>资深 AI 研发月薪量级。真正难的不是找人写页面，而是把工具调用、数据处理和交付流程产品化。</span></div>
+      <div class="fact"><strong>30 万+</strong><span>知识付费累计投入量级。这个数字说明“社群学习”如果不沉淀成交和资产，很容易只是昂贵社交。</span></div>
+      <div class="fact"><strong>2-3 万亏损</strong><span>打榜亏损案例。更刺痛的是带来的成交里有老客户，说明渠道贡献被高估。</span></div>
     </div>
   </section>
 
-  <section class="panel" id="lessons">
-    <h2 class="section-title">这场饭局真正能学到的 10 个点</h2>
-    <div class="take-grid">
-      <div class="take"><h3>1. 产品不是课，是履约系统</h3><p>如果只卖“数据分析课”，就会卷进知识付费；如果卖“我帮你把数据分析任务交付掉”，价值就落在结果、速度和可靠性上。</p></div>
-      <div class="take"><h3>2. AI 改变的是教学成本</h3><p>过去要教 Excel、Python、Origin、图表和报告，现在可以让 AI 调用工具。教学从“学软件”变成“填需求、跑流程、验结果”。</p></div>
-      <div class="take"><h3>3. 低门槛不等于低售后</h3><p>上手快只解决第一步。客户问口径、改图、解释结论、补数据时，仍然需要懂业务的人兜底。</p></div>
-      <div class="take"><h3>4. 不培养纯小白是成本策略</h3><p>小白不是不能做，而是会把利润吃在陪跑里。更适合的用户是有任务、有材料、有基础、有付费能力的人。</p></div>
-      <div class="take"><h3>5. 平台流量是放大器，也是雷区</h3><p>曝光能带订单，但平台词、评价内容、账号状态随时影响生死。项目不能只靠一个平台、一个账号、一个关键词。</p></div>
-      <div class="take"><h3>6. 分成不是越大方越好</h3><p>合作方拿五成看起来爽，但如果团队还要兜底服务、培训、售后和投流指导，必须算净利润和责任边界。</p></div>
-      <div class="take"><h3>7. 自营盘才是利润核心</h3><p>饭局里说得很清楚：对外合作是扩张，自营流量自己开单才是主利润。合作盘更多是渠道和产能杠杆。</p></div>
-      <div class="take"><h3>8. 信息差窗口很短</h3><p>一旦变成公开培训，写手和同行都会复制，价格会被打下来。真正壁垒要转向流程、案例、数据和品牌。</p></div>
-      <div class="take"><h3>9. 创始人先干杂活才有 SOP</h3><p>接单、改需求、售后、答疑、平台问题都亲自跑过，才知道哪些步骤能自动化，哪些必须人工判断。</p></div>
-      <div class="take"><h3>10. 知识付费要看净账</h3><p>GMV、打榜、社群曝光都不等于赚钱。要扣掉分佣、交付、时间、老客重复成交和机会成本。</p></div>
-    </div>
-  </section>
-
-  <section class="panel" id="model">
-    <h2 class="section-title">把这个项目拆成一张生意图</h2>
+  <section class="panel" id="money">
+    <h2 class="section-title">这门生意怎么赚钱</h2>
     <table class="table">
       <thead>
-        <tr><th>模块</th><th>饭局里的信息</th><th>你应该学到的判断</th></tr>
+        <tr><th>环节</th><th>饭局里的原始信号</th><th>真正要学的判断</th></tr>
       </thead>
       <tbody>
-        <tr><td>目标客户</td><td>提到后续想打留学群体，因为付费能力强、议价弱、需求稳定。</td><td>先找“任务刚需 + 预算明确 + 时间紧”的人群，而不是泛泛卖课。</td></tr>
-        <tr><td>流量入口</td><td>平台流量、投流、私域承接、企业微信成交都被提到。</td><td>曝光不是结果，能不能把平台线索转成私域咨询，才决定项目能不能复用。</td></tr>
-        <tr><td>交付能力</td><td>核心卖点是用 AI 调工具，缩短传统软件教学周期。</td><td>交付标准要写成“输入材料、处理步骤、复核标准、交付格式”，否则规模一大就乱。</td></tr>
-        <tr><td>合作分成</td><td>外部合作方、线下携手、团队兜底、自营盘各拿不同角色。</td><td>分成不是聊天里说清就完事，必须写清客户归属、售后责任、退款责任和保密边界。</td></tr>
-        <tr><td>竞争优势</td><td>同行仍在逐个教软件，交付周期长；新模式强调一键化和工具调用。</td><td>真正优势不是“会 AI”，而是能不能把 AI 变成稳定可验收的交付流程。</td></tr>
-        <tr><td>扩张成本</td><td>提到研发成本高、资深 AI 开发月薪两三万、准备较大预算试错。</td><td>不要只算投流费，还要算研发、售后、培训、风控、退款和管理成本。</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="panel" id="sop">
-    <h2 class="section-title">如果你要复盘成 SOP，应该这样写</h2>
-    <p class="note">下面不是平台操作教程，而是一个正规交付项目该沉淀的流程骨架。它比“项目很猛”更有用。</p>
-    <div class="cards">
-      <article class="card">
-        <small>Step 1</small>
-        <h2>客户输入模板</h2>
-        <p>让客户一次性提交：数据文件、研究问题、输出格式、截止时间、是否需要图表、是否需要解释结论、哪些内容不能做。没有输入模板，后端一定返工。</p>
-      </article>
-      <article class="card">
-        <small>Step 2</small>
-        <h2>任务分级</h2>
-        <p>把订单分成简单清洗、统计分析、可视化、建模、报告改写、紧急救火。不同级别匹配不同价格、交付时长和人工复核强度。</p>
-      </article>
-      <article class="card">
-        <small>Step 3</small>
-        <h2>AI 工具链</h2>
-        <p>把 AI 的职责限定为：读数据、生成代码、调用工具、初步出图、整理报告草稿。不要让 AI 单独承担最终结论责任。</p>
-      </article>
-      <article class="card">
-        <small>Step 4</small>
-        <h2>人工复核清单</h2>
-        <p>至少检查数据口径、异常值、统计方法、图表标签、结论是否过度、是否涉及敏感材料。复核清单是避免售后爆炸的核心。</p>
-      </article>
-      <article class="card">
-        <small>Step 5</small>
-        <h2>交付包</h2>
-        <p>交付时不要只给结果图。最好包含结果文件、处理说明、可复现脚本或步骤、图表解释、修改范围和售后边界。</p>
-      </article>
-      <article class="card">
-        <small>Step 6</small>
-        <h2>订单台账</h2>
-        <p>记录来源、成交话术、客单价、交付时长、返工次数、投诉原因、退款原因。做满 20 单再决定是否放大投流和招人。</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="panel">
-    <h2 class="section-title">知识付费那段，真正的重点不是八卦</h2>
-    <table class="table">
-      <thead>
-        <tr><th>饭局里的吐槽</th><th>可迁移的知识</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>线下活动后半段靠学员分享，收入数字被夸大。</td><td>判断一个社群或课程，不看台上故事，看学员真实结果、样本数量和可验证证据。</td></tr>
-        <tr><td>课程卖出 GMV 后，还要给平台、教练和渠道分成。</td><td>GMV 没意义，净利润才有意义。课程收入要扣掉渠道分佣、交付人力、售后和退款。</td></tr>
-        <tr><td>付费加入社群后，反过来帮平台做交付、拉新、打榜。</td><td>警惕“我付钱却还要替对方打工”的模式。学习付费应该换能力，不是换任务。</td></tr>
-        <tr><td>打榜带来的成交里，有一部分本来就是自己的老客户。</td><td>算渠道贡献时要扣除自然成交和老客重复成交，否则会高估渠道价值。</td></tr>
-        <tr><td>累计投入很高，最后只是勉强覆盖成本。</td><td>知识付费要建一张投入回收表：学费、差旅、时间、佣金、成交数、净利润、可复用资产。</td></tr>
+        <tr><td>客户是谁</td><td>后续想主攻留学生群体，因为付费能力强、议价弱、任务急。</td><td>不要泛卖“AI 数据分析”。先找有真实学术材料、报告、申请或截止时间压力的人群，但交付边界必须合规。</td></tr>
+        <tr><td>钱从哪来</td><td>一边做合作盘，让别人拉群和带人；一边做自营盘，自己做流量自己开单。</td><td>合作盘是放大器，自营盘才是利润池。自营盘掌握客户、数据、话术和复购。</td></tr>
+        <tr><td>谁获客</td><td>渠道方可以拿五成，原因是前端流量和信任很值钱。</td><td>如果渠道能稳定带高质量线索，五成可以谈；如果只会拉群，不承担成交质量和退款，五成就贵了。</td></tr>
+        <tr><td>谁交付</td><td>线下携手/学员负责一线交付，团队负责管理、指导和兜底。</td><td>交付不是“会点 AI”就够，必须有任务分级、复核表、返工边界，否则订单越多越乱。</td></tr>
+        <tr><td>谁兜底</td><td>团队抽一成但承担后端事务、携手管理和流量指导。</td><td>抽成少不代表轻松。只要兜底，就要负责售后、投诉、质量波动和客户预期。</td></tr>
+        <tr><td>为什么能打同行</td><td>同行还在一个软件一个软件教，周期一到三个月；新模式直接让 AI 调工具。</td><td>差距不在“懂一个工具”，而在能不能把需求翻译成工具动作，再把结果解释给客户。</td></tr>
       </tbody>
     </table>
   </section>
 
   <section class="panel">
-    <h2 class="section-title">CPS 案例为什么被提到？</h2>
-    <p class="note">饭局里提到外卖/淘系 CPS，不是闲聊，而是在对比“项目稳定性”。CPS 能长期赚钱，是因为它踩中了大众需求、高频消费、系统分佣和 KOL 分发。</p>
+    <h2 class="section-title">分成结构拆解：5/4/1 看起来简单，坑在责任</h2>
     <div class="cards">
-      <article class="card"><small>稳定项目</small><h2>需求每天发生</h2><p>外卖、优惠券、购物是高频刚需。数据分析不是高频需求，所以更要找高价值人群和高客单任务。</p></article>
-      <article class="card"><small>平台角色</small><h2>系统比个人更稳</h2><p>CPS 强在系统分佣和渠道网络。AI 数据分析如果只靠个人答疑，就很难稳定；必须把流程产品化。</p></article>
-      <article class="card"><small>渠道杠杆</small><h2>让别人帮你分发</h2><p>总代把优惠券收集起来给 KOL 分发，自己抽中间差。对应到本项目，就是让合作方负责获客，但交付标准必须统一。</p></article>
-      <article class="card"><small>风险提醒</small><h2>别拿短期窗口当长期壁垒</h2><p>很多项目“前一秒起飞，下一秒挂掉”。只有需求、系统、渠道、履约都成立，项目才有长期性。</p></article>
+      <article class="card">
+        <small>渠道五成</small>
+        <h2>渠道为什么贵</h2>
+        <p>因为这个项目最难的不是“会不会跑 AI”，而是稳定拿到愿意付钱的咨询。渠道如果能带来有预算、有材料、有截止时间的客户，就值钱。</p>
+      </article>
+      <article class="card">
+        <small>携手四成</small>
+        <h2>交付为什么不能太便宜</h2>
+        <p>一线交付要处理材料、跑工具、改结果、解释结论。给太少会没人认真做，给太多又压缩团队兜底利润。</p>
+      </article>
+      <article class="card">
+        <small>团队一成</small>
+        <h2>抽得少但责任最大</h2>
+        <p>团队负责兜底服务、携手管理、流量指导和售后。这个“一成”如果没有额外自营盘支撑，很容易变成吃力不讨好。</p>
+      </article>
+      <article class="card">
+        <small>隐藏条款</small>
+        <h2>真正该写进协议的东西</h2>
+        <p>客户归属、退款谁承担、交付失败谁补、数据谁保存、渠道能不能复卖、携手离开后客户归谁。这些不写清，分钱时都像没问题，出事时全是问题。</p>
+      </article>
     </div>
   </section>
 
-  <section class="panel warning" id="pitfall">
-    <h2 class="section-title">不要照抄的部分</h2>
-    <ul class="checklist">
-      <li><strong>不要公开承诺收益：</strong>饭局里的收益案例只能当线索，不能写成保证回本或保证赚钱。</li>
-      <li><strong>不要复制平台灰色动作：</strong>平台账号、评价、起号和关键词相关细节只适合作为风险提醒，不适合公开成教程。</li>
-      <li><strong>不要忽视学术与数据合规：</strong>客户材料可能涉及学术诚信、隐私数据和商业数据，必须提前设置拒单边界。</li>
-      <li><strong>不要只看曝光：</strong>曝光、咨询、成交、复购、退款、封号风险要一起看。</li>
-      <li><strong>不要过早招人放大：</strong>先跑 20 单，算清交付时长和返工率，再决定投流、合作和招聘。</li>
-    </ul>
+  <section class="panel" id="traffic">
+    <h2 class="section-title">流量打法真正的知识点</h2>
+    <p class="note">这一段不是要学平台灰色操作，反而是要看懂：平台只是窗口，不是护城河。具体关键词、账号和起号步骤不公开，因为那会把风险变成教程。</p>
+    <table class="table">
+      <thead>
+        <tr><th>信号</th><th>它说明什么</th><th>项目动作</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>单帖 5-10 万曝光</td><td>平台有搜索需求，且数据分析相关服务能被用户主动搜到。</td><td>要记录曝光到咨询、咨询到私域、私域到成交的转化，不要只晒曝光。</td></tr>
+        <tr><td>单日投流 1500</td><td>增长不是免费来的，投流可以放大，但也会放大错误话术和坏交付。</td><td>先算一单获客成本、客单价、返工率、退款率，再决定放不放预算。</td></tr>
+        <tr><td>评价触发封禁</td><td>平台风险不只来自你怎么发，也来自客户怎么评价。</td><td>售后和评价引导要合规，敏感业务要设置拒单边界。</td></tr>
+        <tr><td>企业微信承接</td><td>平台负责来客，私域负责成交和复购。</td><td>别把客户留在平台里。咨询、案例、报价、交付记录都要进入可管理的私域流程。</td></tr>
+        <tr><td>小红书/二手平台都提到限制</td><td>不同平台规则不一样，单平台打法迟早遇到天花板。</td><td>至少准备平台流量、私域转介绍、内容案例、渠道合作四条线。</td></tr>
+      </tbody>
+    </table>
   </section>
 
   <section class="panel">
-    <h2 class="section-title">你看完这份纪要，最该带走的检查表</h2>
-    <ul class="checklist">
-      <li>我卖的是“课”，还是“可验收的结果”？</li>
-      <li>客户需要提交什么材料？不提交完整材料怎么办？</li>
-      <li>哪些任务 AI 可以做，哪些必须人工复核？</li>
-      <li>我的平台线索如何进入私域？私域里谁成交？谁售后？</li>
-      <li>合作方拿多少？携手拿多少？退款时谁承担？</li>
-      <li>20 单之后，我的平均交付时长、返工率、客单价、净利润是多少？</li>
-      <li>如果平台规则变了、账号没了、关键词不能用了，这个项目还活不活？</li>
-      <li>我花钱加入的社群，到底给我带来了客户、能力、资源，还是只带来了情绪和任务？</li>
+    <h2 class="section-title">交付模型拆解：AI 调工具，不等于 AI 负责结果</h2>
+    <div class="three">
+      <article class="card"><small>过去</small><h3>教软件</h3><p>传统做法是逐个教 Excel、Python、Origin、图表和报告。学习周期长，售后靠老师答疑，交付量被老师时间卡死。</p></article>
+      <article class="card"><small>现在</small><h3>跑任务</h3><p>新做法是让 AI 调 Python、统计和图表工具。学员不必完全懂每个软件，但必须会描述任务、检查输出、知道哪里可能错。</p></article>
+      <article class="card"><small>真正门槛</small><h3>复核与解释</h3><p>客户买的不是代码，是能交差的结果。数据口径、图表解释、结论边界、修改理由，必须有人能讲清楚。</p></article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">为什么不带纯小白</h2>
+    <p class="note">饭局里最真实的一句话其实是“带亲戚很累”。这句话比“10 分钟学会”更重要，因为它暴露了交付成本。</p>
+    <div class="cards">
+      <article class="card">
+        <small>小白的问题</small>
+        <h2>什么都问，利润会被问没</h2>
+        <p>纯小白不仅问工具，还会问文件在哪、结果怎么看、客户怎么回、哪里能不能改。每个问题都不大，但加起来会吞掉交付利润。</p>
+      </article>
+      <article class="card">
+        <small>筛选标准</small>
+        <h2>有基础的人才适合复制</h2>
+        <p>更适合带的人：能看懂基本表格、会按模板提交材料、有真实任务压力、愿意按流程走。否则“低门槛项目”会变成高售后项目。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="lesson">
+    <h2 class="section-title">知识付费行业教训：别被 GMV 和打榜骗了</h2>
+    <table class="table">
+      <thead>
+        <tr><th>饭局里的反面案例</th><th>拆出来的知识</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>4000 元课卖近 400 人，看起来是大 GMV。</td><td>先别兴奋。平台分走一半，剩下还要分给多个教练，最后到个人手里的钱可能远低于朋友圈叙事。</td></tr>
+        <tr><td>有活动后半段靠学员分享，还把收入讲得很夸张。</td><td>判断课程质量，不看台上故事，看样本量、真实结果、可验证证据和后续复购。</td></tr>
+        <tr><td>付费进社群后，还要帮对方交付、拉新、打榜。</td><td>这叫“花钱买任务”。学习付费应该换能力和资源，不该反过来给平台打工。</td></tr>
+        <tr><td>打榜亏 2-3 万，只带来 3 个成交，其中还有老客户。</td><td>渠道效果要扣除自然成交和老客成交。否则你会把本来属于自己的订单算成平台功劳。</td></tr>
+        <tr><td>累计投入 30 万以上，最后只是勉强覆盖成本。</td><td>知识付费要建回收表：学费、差旅、时间、分佣、成交数、净利润、沉淀资产。没有资产，就只是热闹。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">CPS 案例为什么重要</h2>
+    <p class="note">饭局里突然讲外卖/淘系 CPS，不是跑题。它是在对比：什么项目能长期稳定赚钱，什么项目只是窗口期。</p>
+    <div class="three">
+      <article class="card"><small>高频刚需</small><h3>CPS 每天发生</h3><p>吃饭、购物、领券是高频需求。数据分析不是，所以要靠高客单和强任务压力，而不是指望每天人人都买。</p></article>
+      <article class="card"><small>系统分佣</small><h3>赚钱靠网络，不靠一个人答疑</h3><p>CPS 强在总代、KOL、分佣系统和规模化分发。数据分析项目要长期做，也必须从个人交付升级成系统交付。</p></article>
+      <article class="card"><small>稳定性</small><h3>项目别只靠窗口期</h3><p>饭局里那句“前一秒起飞，下一秒挂掉”很关键。只靠平台规则窗口的项目，一变规则就会死。</p></article>
+    </div>
+  </section>
+
+  <section class="panel warning">
+    <h2 class="section-title">最后的判断表：这个项目能不能做？</h2>
+    <div class="verdict">
+      <div class="mini"><h3>值得做</h3><p>你有稳定线索、懂数据交付、能搭人工复核、能承接私域、能处理售后，并且敢先用 20 单算清真实毛利。</p></div>
+      <div class="mini"><h3>谨慎做</h3><p>你只有一个平台账号、只会投流、没有复核能力、客户材料敏感、交付靠临时找人救火。</p></div>
+      <div class="mini"><h3>别碰</h3><p>你想靠“保证收益”卖课、想复制灰色起号步骤、想收纯小白、或者没有能力承担数据与学术合规风险。</p></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">读完这场饭局，真正该带走的问题</h2>
+    <ul class="list">
+      <li>我的项目卖的是“教学过程”，还是“客户要的结果”？</li>
+      <li>如果平台今天不给流量，我还有没有私域、渠道、案例和复购？</li>
+      <li>我算的是 GMV，还是扣掉分佣、投流、人工、退款后的净利润？</li>
+      <li>我的交付能不能被一个新人按模板跑完 70%，剩下 30% 由高手复核？</li>
+      <li>我付费加入的社群，到底让我赚到钱、学到能力、拿到资源，还是只让我帮别人热闹？</li>
     </ul>
   </section>
 </main>
 
-<footer class="footer">根据 2026-05-10 PDF 智能纪要二次整理。公开脱敏版，重点保留项目起盘知识和风险判断。</footer>
+<footer class="footer">根据 2026-05-10 PDF 智能纪要二次整理。公开狠版保留数字和商业判断，不公开人名、账号、原始逐字稿和平台规避教程。</footer>
 </body>
 </html>
