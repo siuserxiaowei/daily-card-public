@@ -3,51 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 数据分析项目饭局复盘：交付、流量与知识付费警惕</title>
-<meta name="description" content="根据 2026-05-10 一场 39 分钟线下饭局纪要整理的公开脱敏版：聚焦 AI 数据分析项目、流量起盘、交付模式、合作分工和知识付费行业观察。">
-<meta property="og:title" content="AI 数据分析项目饭局复盘：交付、流量与知识付费警惕">
-<meta property="og:description" content="公开脱敏版会议复盘：从 AI 数据分析项目的交付效率、流量约束、合作分成，到知识付费行业避坑。">
+<title>AI 数据分析饭局高密度拆解：一门生意怎么起盘</title>
+<meta name="description" content="根据 2026-05-10 线下饭局纪要整理：把 AI 数据分析项目拆成产品、流量、交付、分钱、用户筛选、知识付费避坑和 SOP。">
+<meta property="og:title" content="AI 数据分析饭局高密度拆解：一门生意怎么起盘">
+<meta property="og:description" content="这不是摘要，而是从 39 分钟饭局里提炼出的项目起盘知识：怎么判断机会、怎么设计交付、怎么避开知识付费的坑。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://siuserxiaowei.github.io/daily-card-public/events/2026-05-10-ai-data-analysis-dinner/assets/ai-data-analysis-map.png">
 <style>
 :root {
-  --ink: #16201d;
+  --ink: #151f1c;
   --paper: #efe7d6;
-  --paper-2: #f8f2e6;
   --panel: #fffaf0;
-  --muted: #62726b;
-  --line: rgba(22, 32, 29, .16);
-  --green: #0d6f5a;
-  --moss: #365f47;
+  --line: rgba(21, 31, 28, .16);
+  --muted: #637169;
+  --green: #0c6d58;
   --amber: #b66f24;
-  --red: #a94839;
-  --blue: #2b5f7c;
+  --red: #a74335;
+  --blue: #2c5d7a;
   --shadow: 0 18px 60px rgba(31, 39, 34, .16);
 }
 
 * { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-  background: var(--paper);
-}
+html { scroll-behavior: smooth; background: var(--paper); }
 
 body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(90deg, rgba(22, 32, 29, .05) 1px, transparent 1px) 0 0 / 44px 44px,
-    linear-gradient(0deg, rgba(22, 32, 29, .035) 1px, transparent 1px) 0 0 / 44px 44px,
+    linear-gradient(90deg, rgba(21, 31, 28, .05) 1px, transparent 1px) 0 0 / 44px 44px,
+    linear-gradient(0deg, rgba(21, 31, 28, .035) 1px, transparent 1px) 0 0 / 44px 44px,
     var(--paper);
   font-family: Georgia, "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
-  line-height: 1.72;
+  line-height: 1.75;
 }
 
 a { color: inherit; }
 
 .hero {
   position: relative;
-  min-height: 76vh;
+  min-height: 74vh;
   padding: 28px clamp(18px, 5vw, 70px) 96px;
   overflow: hidden;
   color: #fff7df;
@@ -60,8 +55,8 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .72;
-  filter: saturate(.94) contrast(1.06);
+  opacity: .66;
+  filter: saturate(.92) contrast(1.05);
 }
 
 .hero::before {
@@ -69,8 +64,8 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(12, 24, 20, .97), rgba(12, 24, 20, .74) 58%, rgba(12, 24, 20, .28)),
-    linear-gradient(0deg, rgba(12, 24, 20, .58), transparent 42%);
+    linear-gradient(90deg, rgba(12, 24, 20, .98), rgba(12, 24, 20, .78) 58%, rgba(12, 24, 20, .3)),
+    linear-gradient(0deg, rgba(12, 24, 20, .55), transparent 42%);
 }
 
 .hero::after {
@@ -84,23 +79,31 @@ a { color: inherit; }
 }
 
 .topbar,
-.hero-main {
-  position: relative;
-  z-index: 1;
-}
+.hero-main { position: relative; z-index: 1; }
 
 .topbar {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 22px;
 }
 
-.brand {
+.brand,
+.nav,
+.note,
+.card p,
+.take p,
+.table,
+.checklist,
+.source,
+.footer {
   font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.brand {
+  color: #f4d18a;
   font-size: 13px;
   text-transform: uppercase;
-  color: #f4d18a;
 }
 
 .nav {
@@ -108,7 +111,6 @@ a { color: inherit; }
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px;
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .nav a {
@@ -122,35 +124,27 @@ a { color: inherit; }
 
 .hero-main {
   max-width: 1060px;
-  margin-top: 92px;
+  margin-top: 88px;
 }
 
 .kicker {
   margin-bottom: 16px;
   color: #f4c36c;
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 13px;
-  text-transform: uppercase;
+  font: 700 13px/1.4 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 h1 {
-  max-width: 980px;
+  max-width: 960px;
   margin: 0 0 22px;
   font-size: 58px;
   line-height: 1.08;
   letter-spacing: 0;
 }
 
-h1 span {
-  display: inline;
-}
-
-h1 .title-c {
-  display: block;
-}
+h1 span { display: block; }
 
 .lede {
-  max-width: 880px;
+  max-width: 900px;
   margin: 0;
   color: rgba(255, 247, 223, .92);
   font-size: 21px;
@@ -181,17 +175,17 @@ main {
 }
 
 .panel {
+  margin-bottom: 18px;
+  padding: clamp(22px, 4vw, 42px);
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  padding: clamp(22px, 4vw, 42px);
-  margin-bottom: 18px;
 }
 
 .split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, .46fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .44fr);
   gap: 22px;
   align-items: start;
 }
@@ -208,23 +202,21 @@ main {
   background: #fff1cd;
   border-radius: 8px;
   padding: 16px 18px;
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
   color: #3f4a45;
+  font-size: 14px;
 }
 
 .section-title {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   font-size: 34px;
   line-height: 1.2;
   letter-spacing: 0;
 }
 
 .note {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 0 22px;
   color: var(--muted);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 15px;
 }
 
@@ -235,7 +227,7 @@ main {
 }
 
 .metric {
-  min-height: 122px;
+  min-height: 130px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fffdf6;
@@ -253,8 +245,7 @@ main {
 .metric span {
   display: block;
   color: var(--muted);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 13px;
+  font: 13px/1.55 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .cards {
@@ -265,7 +256,6 @@ main {
 
 .card {
   position: relative;
-  min-height: 260px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fffdf6;
@@ -284,8 +274,7 @@ main {
 
 .card small {
   color: var(--amber);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 700;
+  font: 700 13px/1.4 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .card h2 {
@@ -297,103 +286,94 @@ main {
 .card p {
   margin: 0;
   color: var(--muted);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 15px;
 }
 
-.list {
+.take-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.take {
+  border-top: 4px solid var(--green);
+  background: #fffdf6;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.take h3 {
+  margin: 0 0 9px;
+  color: var(--green);
+  font-size: 19px;
+}
+
+.take p {
   margin: 0;
-  padding-left: 21px;
-}
-
-.list li {
-  margin: 9px 0;
-}
-
-.timeline {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: var(--muted);
   font-size: 14px;
 }
 
-.timeline th,
-.timeline td {
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
   border-bottom: 1px solid var(--line);
   padding: 12px 9px;
   text-align: left;
   vertical-align: top;
 }
 
-.timeline th {
+.table th {
   color: var(--green);
+  white-space: nowrap;
 }
 
-.matrix {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.cell {
-  border-top: 4px solid var(--moss);
-  background: #fffdf6;
-  border-radius: 8px;
-  padding: 18px;
-}
-
-.cell h3 {
-  margin: 0 0 10px;
-  color: var(--green);
-  font-size: 19px;
-}
-
-.cell p {
+.checklist {
   margin: 0;
-  color: var(--muted);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  padding-left: 21px;
 }
+
+.checklist li { margin: 9px 0; }
 
 .warning {
   background: #fff1e7;
-  border-color: rgba(169, 72, 57, .3);
+  border-color: rgba(167, 67, 53, .32);
 }
 
-.warning .section-title {
-  color: var(--red);
-}
+.warning .section-title { color: var(--red); }
 
 .footer {
   padding: 28px 18px 38px;
   text-align: center;
   color: var(--muted);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 13px;
 }
 
 @media (max-width: 920px) {
   .topbar { display: block; }
   .nav { justify-content: flex-start; margin-top: 16px; }
-  .hero-main { margin-top: 70px; }
+  .hero-main { margin-top: 68px; }
   h1 { font-size: 42px; }
   .lede { font-size: 19px; }
   .split,
   .cards,
-  .matrix { grid-template-columns: 1fr; }
+  .take-grid { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .card { min-height: auto; }
 }
 
 @media (max-width: 620px) {
-  .hero { min-height: 72vh; padding-bottom: 82px; }
-  h1 { font-size: 28px; }
-  h1 span { display: block; }
-  .hero-main { margin-top: 54px; }
+  .hero { min-height: 74vh; padding-bottom: 86px; }
+  .hero-main { margin-top: 52px; }
+  h1 { font-size: 29px; }
   .quote,
   .section-title { font-size: 26px; }
   .metrics { grid-template-columns: 1fr; }
-  .timeline { font-size: 13px; }
+  .table { font-size: 13px; }
 }
 </style>
 </head>
@@ -401,155 +381,175 @@ main {
 <header class="hero">
   <img class="hero-img" src="assets/ai-data-analysis-map.png" alt="AI 数据分析项目流程图">
   <div class="topbar">
-    <div class="brand">Dinner Notes · Public Review · 2026-05-10</div>
+    <div class="brand">Dinner Notes · High Density Review · 2026-05-10</div>
     <nav class="nav">
-      <a href="#summary">总览</a>
-      <a href="#model">项目结构</a>
-      <a href="#timeline">时间线</a>
-      <a href="#risks">风险</a>
-      <a href="#actions">行动</a>
+      <a href="#what">这是什么</a>
+      <a href="#lessons">能学什么</a>
+      <a href="#model">商业模型</a>
+      <a href="#sop">交付 SOP</a>
+      <a href="#pitfall">避坑</a>
     </nav>
   </div>
   <div class="hero-main">
-    <div class="kicker">39 分钟线下饭局纪要 · 公开脱敏版</div>
-    <h1><span class="title-a">AI 数据分析项目</span><span class="title-b">饭局复盘：</span><span class="title-c">交付、流量与知识付费警惕</span></h1>
-    <p class="lede">这场讨论真正有价值的地方，不是“某个项目很赚钱”，而是把一个 AI 数据分析项目拆成了交付效率、平台流量、合作分工、用户筛选和行业避坑五件事。</p>
+    <div class="kicker">39 分钟饭局纪要 · 高密度学习版</div>
+    <h1><span>AI 数据分析饭局拆解：</span><span>一门生意怎么起盘</span></h1>
+    <p class="lede">这不是“某人说项目赚钱”的摘要，而是一套起盘逻辑：把 AI 数据分析从课程包装，拆成订单、流量、交付、分钱、用户筛选和风险控制。</p>
     <div class="chips">
-      <span class="chip">不公开原始逐字稿</span>
-      <span class="chip">不保留个人姓名</span>
-      <span class="chip">敏感起号细节仅做风险提示</span>
+      <span class="chip">保留商业判断</span>
+      <span class="chip">不放原始逐字稿</span>
+      <span class="chip">不公开具体违规操作</span>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="panel split" id="summary">
+  <section class="panel split" id="what">
     <div>
-      <p class="quote">AI 数据分析项目的关键，不是把“课”卖出去，而是把原来一到三个月的软件教学，压缩成可复用、可质检、可分工的 AI 交付流程。</p>
+      <p class="quote">这场饭局最值得学的，不是“AI 数据分析能不能赚钱”，而是一个项目从信息差走向可复制交付时，必须同时解决四件事：谁来客、谁成交、谁交付、谁兜底。</p>
     </div>
     <aside class="source">
       <strong>来源信息</strong><br>
       录音时间：2026-05-10 12:31:53 至 13:11:32<br>
-      时长：约 39 分钟<br>
-      参与人数：约 4 人<br>
-      原始材料：18 页 PDF 智能纪要与逐字稿
+      时长：约 39 分钟，约 4 人参与<br>
+      原始材料：18 页 PDF 智能纪要与逐字稿<br>
+      整理原则：脱敏公开，保留可学习结构
     </aside>
   </section>
 
   <section class="panel">
-    <h2 class="section-title">四个结论</h2>
+    <h2 class="section-title">先讲人话：这到底是什么项目？</h2>
+    <p class="note">饭局讨论的是一个“AI + 数据分析”的服务/培训混合项目。表面看是在教人做数据分析，本质更像一个订单履约系统：前端拿需求，中间用 AI 调工具，后端有人复核和售后，再把交付能力分包给线下携手或学员。</p>
     <div class="metrics">
-      <div class="metric"><strong>10-30 分钟</strong><span>讨论中反复出现的学习周期假设：有基础的人更快，弱基础的人需要更强筛选和陪跑。</span></div>
-      <div class="metric"><strong>交付优先</strong><span>项目不是先讲故事，而是先证明 AI 工作流能稳定产出数据分析结果。</span></div>
-      <div class="metric"><strong>流量受限</strong><span>平台关键词、好评内容、私域转化和封号风险，决定项目能不能持续放量。</span></div>
-      <div class="metric"><strong>知识付费慎入</strong><span>社群打榜、向上社交和高抽佣分发，如果不能带来净成交，很容易只是成本转移。</span></div>
+      <div class="metric"><strong>10-30 分钟</strong><span>不是说人人都能学会数据分析，而是核心操作被压缩成“会描述需求 + 会调 AI + 会复核输出”。</span></div>
+      <div class="metric"><strong>5/4/1</strong><span>合作方拿获客大头，携手负责一线交付，团队抽小比例但负责兜底；真正利润仍来自自营盘。</span></div>
+      <div class="metric"><strong>5-10 万</strong><span>单帖曝光数字说明平台有流量窗口，但也说明账号、评价、关键词和规则是项目最大不确定性。</span></div>
+      <div class="metric"><strong>50 万</strong><span>计划投入不是“稳赚证明”，而是前期投流、研发、试错和团队成本的预算池。</span></div>
+    </div>
+  </section>
+
+  <section class="panel" id="lessons">
+    <h2 class="section-title">这场饭局真正能学到的 10 个点</h2>
+    <div class="take-grid">
+      <div class="take"><h3>1. 产品不是课，是履约系统</h3><p>如果只卖“数据分析课”，就会卷进知识付费；如果卖“我帮你把数据分析任务交付掉”，价值就落在结果、速度和可靠性上。</p></div>
+      <div class="take"><h3>2. AI 改变的是教学成本</h3><p>过去要教 Excel、Python、Origin、图表和报告，现在可以让 AI 调用工具。教学从“学软件”变成“填需求、跑流程、验结果”。</p></div>
+      <div class="take"><h3>3. 低门槛不等于低售后</h3><p>上手快只解决第一步。客户问口径、改图、解释结论、补数据时，仍然需要懂业务的人兜底。</p></div>
+      <div class="take"><h3>4. 不培养纯小白是成本策略</h3><p>小白不是不能做，而是会把利润吃在陪跑里。更适合的用户是有任务、有材料、有基础、有付费能力的人。</p></div>
+      <div class="take"><h3>5. 平台流量是放大器，也是雷区</h3><p>曝光能带订单，但平台词、评价内容、账号状态随时影响生死。项目不能只靠一个平台、一个账号、一个关键词。</p></div>
+      <div class="take"><h3>6. 分成不是越大方越好</h3><p>合作方拿五成看起来爽，但如果团队还要兜底服务、培训、售后和投流指导，必须算净利润和责任边界。</p></div>
+      <div class="take"><h3>7. 自营盘才是利润核心</h3><p>饭局里说得很清楚：对外合作是扩张，自营流量自己开单才是主利润。合作盘更多是渠道和产能杠杆。</p></div>
+      <div class="take"><h3>8. 信息差窗口很短</h3><p>一旦变成公开培训，写手和同行都会复制，价格会被打下来。真正壁垒要转向流程、案例、数据和品牌。</p></div>
+      <div class="take"><h3>9. 创始人先干杂活才有 SOP</h3><p>接单、改需求、售后、答疑、平台问题都亲自跑过，才知道哪些步骤能自动化，哪些必须人工判断。</p></div>
+      <div class="take"><h3>10. 知识付费要看净账</h3><p>GMV、打榜、社群曝光都不等于赚钱。要扣掉分佣、交付、时间、老客重复成交和机会成本。</p></div>
     </div>
   </section>
 
   <section class="panel" id="model">
-    <h2 class="section-title">项目结构</h2>
-    <p class="note">公开版只保留可迁移的业务结构，不保留具体账号、具体人名、具体刷量步骤和可直接复制的平台灰色操作。</p>
+    <h2 class="section-title">把这个项目拆成一张生意图</h2>
+    <table class="table">
+      <thead>
+        <tr><th>模块</th><th>饭局里的信息</th><th>你应该学到的判断</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>目标客户</td><td>提到后续想打留学群体，因为付费能力强、议价弱、需求稳定。</td><td>先找“任务刚需 + 预算明确 + 时间紧”的人群，而不是泛泛卖课。</td></tr>
+        <tr><td>流量入口</td><td>平台流量、投流、私域承接、企业微信成交都被提到。</td><td>曝光不是结果，能不能把平台线索转成私域咨询，才决定项目能不能复用。</td></tr>
+        <tr><td>交付能力</td><td>核心卖点是用 AI 调工具，缩短传统软件教学周期。</td><td>交付标准要写成“输入材料、处理步骤、复核标准、交付格式”，否则规模一大就乱。</td></tr>
+        <tr><td>合作分成</td><td>外部合作方、线下携手、团队兜底、自营盘各拿不同角色。</td><td>分成不是聊天里说清就完事，必须写清客户归属、售后责任、退款责任和保密边界。</td></tr>
+        <tr><td>竞争优势</td><td>同行仍在逐个教软件，交付周期长；新模式强调一键化和工具调用。</td><td>真正优势不是“会 AI”，而是能不能把 AI 变成稳定可验收的交付流程。</td></tr>
+        <tr><td>扩张成本</td><td>提到研发成本高、资深 AI 开发月薪两三万、准备较大预算试错。</td><td>不要只算投流费，还要算研发、售后、培训、风控、退款和管理成本。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel" id="sop">
+    <h2 class="section-title">如果你要复盘成 SOP，应该这样写</h2>
+    <p class="note">下面不是平台操作教程，而是一个正规交付项目该沉淀的流程骨架。它比“项目很猛”更有用。</p>
     <div class="cards">
       <article class="card">
-        <small>Delivery</small>
-        <h2>交付模型：从软件教学改成 AI 调用</h2>
-        <p>传统数据分析培训需要逐个教软件。饭局里讨论的新模式，是用 AI 统一调动 Python、数据处理与图表工具，把“学软件”改为“描述需求、调用工具、复核结果”。这能显著降低交付时间，但前提是有清晰的质检标准。</p>
+        <small>Step 1</small>
+        <h2>客户输入模板</h2>
+        <p>让客户一次性提交：数据文件、研究问题、输出格式、截止时间、是否需要图表、是否需要解释结论、哪些内容不能做。没有输入模板，后端一定返工。</p>
       </article>
       <article class="card">
-        <small>Traffic</small>
-        <h2>流量模型：平台流量只是入口，不是护城河</h2>
-        <p>会议提到某二手平台的搜索、投流和成交路径，也提到因客户评价触发封号的案例。结论是：平台流量可以起盘，但不能把项目命运压在单一账号、单一关键词和单一规则窗口上。</p>
+        <small>Step 2</small>
+        <h2>任务分级</h2>
+        <p>把订单分成简单清洗、统计分析、可视化、建模、报告改写、紧急救火。不同级别匹配不同价格、交付时长和人工复核强度。</p>
       </article>
       <article class="card">
-        <small>Partnership</small>
-        <h2>合作模型：获客、兜底、携手要拆清楚</h2>
-        <p>讨论里的合作设计把角色分成获客方、交付兜底方、线下携手和自营盘。真正需要写清的是收入归属、售后责任、退款责任、客户数据归属和保密边界。</p>
+        <small>Step 3</small>
+        <h2>AI 工具链</h2>
+        <p>把 AI 的职责限定为：读数据、生成代码、调用工具、初步出图、整理报告草稿。不要让 AI 单独承担最终结论责任。</p>
       </article>
       <article class="card">
-        <small>Customer</small>
-        <h2>用户模型：宁可筛选，也不要全量小白</h2>
-        <p>核心判断是“不培养完全零基础”。原因不是歧视小白，而是交付成本会吞掉利润。更稳的筛选标准是：有明确需求、有基础操作能力、有付费能力、能接受规范交付流程。</p>
+        <small>Step 4</small>
+        <h2>人工复核清单</h2>
+        <p>至少检查数据口径、异常值、统计方法、图表标签、结论是否过度、是否涉及敏感材料。复核清单是避免售后爆炸的核心。</p>
+      </article>
+      <article class="card">
+        <small>Step 5</small>
+        <h2>交付包</h2>
+        <p>交付时不要只给结果图。最好包含结果文件、处理说明、可复现脚本或步骤、图表解释、修改范围和售后边界。</p>
+      </article>
+      <article class="card">
+        <small>Step 6</small>
+        <h2>订单台账</h2>
+        <p>记录来源、成交话术、客单价、交付时长、返工次数、投诉原因、退款原因。做满 20 单再决定是否放大投流和招人。</p>
       </article>
     </div>
   </section>
 
-  <section class="panel" id="timeline">
-    <h2 class="section-title">时间线摘要</h2>
-    <table class="timeline">
+  <section class="panel">
+    <h2 class="section-title">知识付费那段，真正的重点不是八卦</h2>
+    <table class="table">
       <thead>
-        <tr><th>时间</th><th>讨论重点</th><th>整理后的判断</th></tr>
+        <tr><th>饭局里的吐槽</th><th>可迁移的知识</th></tr>
       </thead>
       <tbody>
-        <tr><td>00:00-00:04</td><td>AI 数据分析项目学习周期、收益案例、合作分成。</td><td>早期叙事很容易被收益数字带偏，真正要验证的是可重复交付和获客稳定性。</td></tr>
-        <tr><td>00:04-00:09</td><td>技术优势：AI 调用工具，缩短传统数据分析教学周期。</td><td>优势成立的前提是工具链稳定、结果可复核、售后问题能闭环。</td></tr>
-        <tr><td>00:10-00:20</td><td>知识付费行业吐槽：线下活动、夸大收入、打榜和社群成本。</td><td>“向上社交”只有在带来真实成交、资源和能力迁移时才值得投入，否则只是高成本情绪消费。</td></tr>
-        <tr><td>00:20-00:24</td><td>信息差、项目投入、研发成本和扩张想法。</td><td>信息差窗口期很短，真正的壁垒要从流程、服务、品牌和数据资产里长出来。</td></tr>
-        <tr><td>00:24-00:31</td><td>CPS 业务、起盘经验、创始人亲自跑流程。</td><td>早期创始人必须亲自做脏活累活，先摸清流程，再谈 SOP 和团队复制。</td></tr>
-        <tr><td>00:31-00:39</td><td>学员筛选、平台起号、生活闲聊和人员安排。</td><td>平台操作细节不适合公开扩散；可迁移的是“筛选用户、控制风险、降低交付成本”。</td></tr>
+        <tr><td>线下活动后半段靠学员分享，收入数字被夸大。</td><td>判断一个社群或课程，不看台上故事，看学员真实结果、样本数量和可验证证据。</td></tr>
+        <tr><td>课程卖出 GMV 后，还要给平台、教练和渠道分成。</td><td>GMV 没意义，净利润才有意义。课程收入要扣掉渠道分佣、交付人力、售后和退款。</td></tr>
+        <tr><td>付费加入社群后，反过来帮平台做交付、拉新、打榜。</td><td>警惕“我付钱却还要替对方打工”的模式。学习付费应该换能力，不是换任务。</td></tr>
+        <tr><td>打榜带来的成交里，有一部分本来就是自己的老客户。</td><td>算渠道贡献时要扣除自然成交和老客重复成交，否则会高估渠道价值。</td></tr>
+        <tr><td>累计投入很高，最后只是勉强覆盖成本。</td><td>知识付费要建一张投入回收表：学费、差旅、时间、佣金、成交数、净利润、可复用资产。</td></tr>
       </tbody>
     </table>
   </section>
 
   <section class="panel">
-    <h2 class="section-title">可迁移方法论</h2>
-    <div class="matrix">
-      <div class="cell"><h3>先跑交付闭环</h3><p>把客户输入、AI 分析、人工复核、结果交付、售后答疑拆成固定动作。没有这个闭环，流量越大，事故越大。</p></div>
-      <div class="cell"><h3>再跑流量闭环</h3><p>平台曝光、私域承接、企业微信成交、案例复用需要一条可追踪路径。只看曝光，不看成交和退款，会误判项目质量。</p></div>
-      <div class="cell"><h3>最后跑组织闭环</h3><p>合作方、携手、交付团队和研发人员要有明确边界。否则分成看起来合理，遇到售后、违规或退款时就会变成互相甩锅。</p></div>
-      <div class="cell"><h3>不要迷信信息差</h3><p>信息差能带来第一波钱，但会被复制。能留下来的，是服务稳定性、客户信任、案例资产和交付数据。</p></div>
-      <div class="cell"><h3>不要全吃小白</h3><p>低基础用户带来更高陪跑成本。项目早期更适合服务有明确任务、有基础材料、有结果压力的客户。</p></div>
-      <div class="cell"><h3>不要被社群账面收入迷惑</h3><p>课程 GMV、打榜排名和朋友圈截图不等于净利润。要看获客成本、分佣比例、交付时长、复购和退款。</p></div>
+    <h2 class="section-title">CPS 案例为什么被提到？</h2>
+    <p class="note">饭局里提到外卖/淘系 CPS，不是闲聊，而是在对比“项目稳定性”。CPS 能长期赚钱，是因为它踩中了大众需求、高频消费、系统分佣和 KOL 分发。</p>
+    <div class="cards">
+      <article class="card"><small>稳定项目</small><h2>需求每天发生</h2><p>外卖、优惠券、购物是高频刚需。数据分析不是高频需求，所以更要找高价值人群和高客单任务。</p></article>
+      <article class="card"><small>平台角色</small><h2>系统比个人更稳</h2><p>CPS 强在系统分佣和渠道网络。AI 数据分析如果只靠个人答疑，就很难稳定；必须把流程产品化。</p></article>
+      <article class="card"><small>渠道杠杆</small><h2>让别人帮你分发</h2><p>总代把优惠券收集起来给 KOL 分发，自己抽中间差。对应到本项目，就是让合作方负责获客，但交付标准必须统一。</p></article>
+      <article class="card"><small>风险提醒</small><h2>别拿短期窗口当长期壁垒</h2><p>很多项目“前一秒起飞，下一秒挂掉”。只有需求、系统、渠道、履约都成立，项目才有长期性。</p></article>
     </div>
   </section>
 
-  <section class="panel warning" id="risks">
-    <h2 class="section-title">风险清单</h2>
-    <ul class="list">
-      <li><strong>平台合规风险：</strong>关键词、客户评价、投流、账号动作都可能触发规则变化。公开版不沉淀任何具体绕规则教程。</li>
-      <li><strong>交付质量风险：</strong>AI 能快速调用工具，但不能替代结果复核。数据口径、图表解释和结论责任必须有人承担。</li>
-      <li><strong>隐私与数据风险：</strong>客户数据、学术材料、商业数据和留学相关材料都可能涉及敏感信息，必须提前约定存储、删除和使用范围。</li>
-      <li><strong>收益夸大风险：</strong>饭局里的收益案例只能当线索，不能当承诺。项目对外表达要避免“保证收益”“保证回本”式话术。</li>
-      <li><strong>团队成本风险：</strong>研发、投流、售后和线下管理都会吃掉利润。预算要绑定阶段目标，不要只按热情投入。</li>
-      <li><strong>知识付费风险：</strong>高价社群和打榜如果不能转化为客户、资源或能力，只会把利润交给平台和中间人。</li>
+  <section class="panel warning" id="pitfall">
+    <h2 class="section-title">不要照抄的部分</h2>
+    <ul class="checklist">
+      <li><strong>不要公开承诺收益：</strong>饭局里的收益案例只能当线索，不能写成保证回本或保证赚钱。</li>
+      <li><strong>不要复制平台灰色动作：</strong>平台账号、评价、起号和关键词相关细节只适合作为风险提醒，不适合公开成教程。</li>
+      <li><strong>不要忽视学术与数据合规：</strong>客户材料可能涉及学术诚信、隐私数据和商业数据，必须提前设置拒单边界。</li>
+      <li><strong>不要只看曝光：</strong>曝光、咨询、成交、复购、退款、封号风险要一起看。</li>
+      <li><strong>不要过早招人放大：</strong>先跑 20 单，算清交付时长和返工率，再决定投流、合作和招聘。</li>
     </ul>
   </section>
 
-  <section class="panel" id="actions">
-    <h2 class="section-title">下一步行动清单</h2>
-    <div class="cards">
-      <article class="card">
-        <small>Week 1</small>
-        <h2>写出交付 SOP</h2>
-        <p>定义客户需要提交什么材料、AI 做哪几步、人工复核哪几项、最终交付什么格式，以及什么情况必须拒单。</p>
-      </article>
-      <article class="card">
-        <small>Week 1-2</small>
-        <h2>建立风险台账</h2>
-        <p>把平台规则、账号风险、敏感词、隐私数据、退款场景和客户误解列成表，每次成交前都能检查。</p>
-      </article>
-      <article class="card">
-        <small>Week 2-3</small>
-        <h2>跑小样本成交</h2>
-        <p>先用小流量、小预算、小团队跑 20 个真实订单，记录咨询来源、成交理由、交付时长、返工次数和客户反馈。</p>
-      </article>
-      <article class="card">
-        <small>Week 3-4</small>
-        <h2>再谈合作复制</h2>
-        <p>当交付和售后数据稳定后，再设计分成、培训、携手管理和区域合作。不要用还没验证的流程去放大风险。</p>
-      </article>
-    </div>
-  </section>
-
   <section class="panel">
-    <h2 class="section-title">公开删减原则</h2>
-    <ul class="list">
-      <li>保留：项目模式、交付判断、流量约束、合作结构、知识付费行业观察、风险提示。</li>
-      <li>删除或泛化：真实人名、具体账号、具体刷量步骤、原始逐字稿、脏话、可被直接复制的平台规避细节。</li>
-      <li>不复制原始 PDF：仓库只放整理页，避免把私人饭局原文公开到 GitHub Pages。</li>
+    <h2 class="section-title">你看完这份纪要，最该带走的检查表</h2>
+    <ul class="checklist">
+      <li>我卖的是“课”，还是“可验收的结果”？</li>
+      <li>客户需要提交什么材料？不提交完整材料怎么办？</li>
+      <li>哪些任务 AI 可以做，哪些必须人工复核？</li>
+      <li>我的平台线索如何进入私域？私域里谁成交？谁售后？</li>
+      <li>合作方拿多少？携手拿多少？退款时谁承担？</li>
+      <li>20 单之后，我的平均交付时长、返工率、客单价、净利润是多少？</li>
+      <li>如果平台规则变了、账号没了、关键词不能用了，这个项目还活不活？</li>
+      <li>我花钱加入的社群，到底给我带来了客户、能力、资源，还是只带来了情绪和任务？</li>
     </ul>
   </section>
 </main>
 
-<footer class="footer">根据 2026-05-10 PDF 智能纪要二次整理。公开脱敏版，仅用于项目复盘和方法论沉淀。</footer>
+<footer class="footer">根据 2026-05-10 PDF 智能纪要二次整理。公开脱敏版，重点保留项目起盘知识和风险判断。</footer>
 </body>
 </html>
