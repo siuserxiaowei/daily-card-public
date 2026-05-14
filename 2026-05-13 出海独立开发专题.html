@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 2026-05-13 微信群学习卡片</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    line-height: 1.7;
+    color: #2c3e50;
+    background: #fafafa;
+    padding: 0;
+  }
+  .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+  }
+  .nav-back {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.2s;
+  }
+  .nav-back:hover { background: rgba(255,255,255,0.3); }
+  .hero .date { font-size: 14px; opacity: 0.85; margin-bottom: 10px; letter-spacing: 2px; }
+  .hero h1 { font-size: 32px; margin-bottom: 16px; font-weight: 700; }
+  .hero .summary { max-width: 720px; margin: 0 auto; font-size: 17px; opacity: 0.95; line-height: 1.7; text-align: left; }
+  .hero .summary strong { color: #fff; font-weight: 700; }
+  .hero .summary code { background: rgba(255,255,255,0.18); color: #fff8e1; padding: 2px 7px; border-radius: 4px; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.92em; }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+  #content h1 { font-size: 28px; margin: 36px 0 20px; padding-bottom: 12px; border-bottom: 2px solid #eee; }
+  #content h2 { font-size: 22px; margin: 36px 0 18px; padding-left: 12px; border-left: 4px solid #667eea; line-height: 1.3; }
+  #content h3 { font-size: 18px; margin: 28px 0 12px; color: #2c3e50; }
+  #content h3::before { content: ""; display: inline-block; width: 6px; height: 6px; background: #667eea; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+  #content p { margin: 12px 0; color: #34495e; }
+  #content ul, #content ol { margin: 12px 0 12px 24px; }
+  #content li { margin: 6px 0; }
+  #content blockquote {
+    border-left: 4px solid #f39c12;
+    background: #fff8e1;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border-radius: 4px;
+    color: #5d4037;
+  }
+  #content blockquote p { margin: 4px 0; color: #5d4037; }
+  #content a { color: #1976d2; text-decoration: none; border-bottom: 1px dashed #1976d2; }
+  #content a:hover { background: #e3f2fd; }
+  #content code {
+    background: #f4f4f4; color: #c0392b;
+    padding: 2px 6px; border-radius: 3px;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.9em;
+  }
+  #content pre {
+    background: #2d2d2d; color: #f8f8f2;
+    padding: 16px 20px; border-radius: 6px; overflow-x: auto;
+    margin: 16px 0;
+  }
+  #content pre code { background: transparent; color: inherit; padding: 0; }
+  #content table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  #content th { background: #34495e; color: white; padding: 10px 12px; text-align: left; }
+  #content td { padding: 10px 12px; border-bottom: 1px solid #ecf0f1; }
+  #content tr:nth-child(even) td { background: #f8f9fa; }
+  #content tr:hover td { background: #e3f2fd; }
+  #content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+  #content strong { color: #1a1a1a; font-weight: 600; }
+  #content em { color: #7f8c8d; }
+  /* 表情卡片 emoji */
+  #content h2:contains("🔥") { color: #e74c3c; }
+  /* 移动端 */
+  @media (max-width: 640px) {
+    .hero { padding: 40px 18px; padding-top: 60px; }
+    .nav-back { top: 12px; left: 12px; padding: 6px 12px; font-size: 12px; }
+    .hero h1 { font-size: 24px; }
+    .container { padding: 24px 18px 60px; }
+    #content h1 { font-size: 22px; }
+    #content h2 { font-size: 18px; }
+    #content table { font-size: 12px; display: block; overflow-x: auto; }
+  }
+  footer {
+    text-align: center; padding: 30px 20px;
+    color: #95a5a6; font-size: 12px; border-top: 1px solid #ecf0f1;
+  }
+  footer a { color: #95a5a6; text-decoration: none; border-bottom: 1px dotted #bdc3c7; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <a class="nav-back" href="./index.html">← 返回首页</a>
+  <div class="date">DAILY · 2026-05-13</div>
+  <h1>📚 微信群学习卡片</h1>
+  <div class="summary">Vercel 账单爆炸有三个经典坑可提前规避；外链买到 30 条后流量开始起飞；出海和一人公司概念已进入上海阿姨爷叔的咖啡店闲聊——大众化信号出现。
+
+---</div>
+</div>
+
+<div class="container">
+  <div id="content">⏳ 加载中...</div>
+</div>
+
+<footer>
+  🤖 由 AI 替你读了 78 群 / 3,512 条消息后浓缩而成 ·
+  <a href="https://obsidian.md">Obsidian</a> +
+  <a href="https://www.anthropic.com/claude">Claude</a>
+</footer>
+
+<script>
+  // base64 解码 → 再按 UTF-8 解释字节(否则中文乱码)
+  const md = new TextDecoder('utf-8').decode(
+    Uint8Array.from(atob("YGBgeWFtbAotLS0KdHlwZTogbGVhcm5pbmctY2FyZApkYXRlOiAyMDI2LTA1LTEzCnRvcGljOiDlh7rmtbfni6znq4vlvIDlj5EKZ2VuZXJhdGVkX2F0OiAyMDI2LTA1LTE0CnNvdXJjZTog6LWr5YW555qE5pyL5Y+L5LusfuWHuua1t+S6pOa1gSAvIOWHuua1t+eLrOeri+W8gOWPkeS6pOa1gee+pC1Bc251bGwgLyDpl7LogYrmtbfovrnmmZLlpKrpmLMgLyDnga/kuIvnmb3lkKzlj4sx576kCnRhZ3M6IFtWZXJjZWwsIENsb3VkZmxhcmUsIOWklumTviwgU3RyaXBlLCBTRU8sIOS4gOS6uuWFrOWPuCwg5Ye65rW3XQpwcmlvcml0eTog4q2Q5qC45b+DCi0tLQpgYGAKCiMjIPCfjq8g5LiA5Y+l6K+d5oC757uTCgpWZXJjZWwg6LSm5Y2V54iG54K45pyJ5LiJ5Liq57uP5YW45Z2R5Y+v5o+Q5YmN6KeE6YG/77yb5aSW6ZO+5Lmw5YiwIDMwIOadoeWQjua1gemHj+W8gOWni+i1t+mjnu+8m+WHuua1t+WSjOS4gOS6uuWFrOWPuOamguW/teW3sui/m+WFpeS4iua1t+mYv+WnqOeIt+WPlOeahOWSluWVoeW6l+mXsuiBiuKAlOKAlOWkp+S8l+WMluS/oeWPt+WHuueOsOOAggoKLS0tCgojIyDwn5SlIDcg5Liq5a2m5Lmg54K5CgojIyMgMS4gVmVyY2VsIOi0puWNleWdkSDikaDvvJrlm77niYfotYTmupDmlL7plJnlnLDmlrkKCuWbvueJh+ebtOaOpeaUviBWZXJjZWwg6aG555uu55uu5b2VICsg55SoIGA8SW1hZ2UgLz5gIOagh+etvu+8jOS8muinpuWPkSAqKlZlcmNlbCBJbWFnZSBPcHRpbWl6YXRpb24qKiDorqHotLnvvIzotLnnlKjniIbngrjjgILop6Pms5XvvJrmiYDmnInlm77niYcv6KeG6aKR6LWE5rqQ6L+BICoqQ2xvdWRmbGFyZSBSMioq77yM5YWN6LS5IDEwIEdC77yM6LaF5Ye66YOo5YiGICoqJDAuMDE1L0dCL+aciCoq77yM5Yeg5LmO5Y+v5b+955Wl44CCCgo+ICLlm77niYfotYTmupDmmK/nm7TmjqXmlL7liLDkuobpobnnm67ph4zpnaLvvIzkuIrkvKDliLAgdmVyY2Vs77yM54S25ZCO55So55qEIGA8SW1hZ2UgLz5gIOagh+etvu+8jOi/mOS8muacieS4gOS4qiBWZXJjZWwgSW1hZ2UgT3B0aW1pemF0aW9uIOWbvueJh+S8mOWMlu+8jOWvvOiHtOiKsei0ueeIhueCuOOAguino+WGs+aWueahiOWwseaYr+eri+WNs+aKiui/memDqOWIhui1hOa6kOaUvuWIsOS6hiBjbG91ZGZsYXJlIOeahCBSMuOAgiIg4oCUIHd4aWRfc3NzaGVuMDdod3h1MjIKCiMjIyAyLiBWZXJjZWwg6LSm5Y2V5Z2RIOKRoe+8mueIrOiZq+eWr+eLguaKk+WPlgoK5peg5rWB6YeP5bCP56uZ56qB54S25q+P5aSp5Yeg55m+IEsg6K6/6Zeu77yM6LSm5Y2V6aOZ5Y2H44CC5bqU5a+577ya5ZyoIFZlcmNlbCDlkI7lj7Dmib7lh7rmr4/lsI/ml7borr/pl67kuIrljYPmrKHnmoQgSVDvvIzorr7oh6rlrprkuYnop4TliJkgKipkZW55Kiog55u05o6l5bCB5o6J44CCCgo+ICLmib7liLDlhbfkvZPnmoTpobnnm67lkI7vvIzmiJHlj5HnjrDmmK/vvIzmnInlh6DkuKpJUOWvueW6lOeahOeIrOiZq+eWr+eLgueahOiuv+mXruaIkeeahOe9keerme+8jOS4gOWkqeacieWHoOeZvkvnmoTorr/pl67ph4/vvIzlvZPml7blsLHmmK/miorov5npg6jliIbniKzomavnmoRJUOe7memZkOWItuS6huOAgiIg4oCUIHd4aWRfc3NzaGVuMDdod3h1MjIKCiMjIyAzLiBWZXJjZWwg6LSm5Y2V5Z2RIOKRou+8muWKqOaAgeivt+axgue7lei/h+e8k+WtmAoK55m75b2V5pe26K6w5b2V5Zu95a6256CB6L+Z57G75pON5L2c5Lya6K6pIENsb3VkZmxhcmUg5oqK6aG16Z2i6K+G5Yir5Li6KirliqjmgIHor7fmsYIqKu+8jOa1gemHj+aMgee7reaJk+WIsCBWZXJjZWwgQ0ROL01pZGRsZXdhcmXvvIzorqHlhaUgRmFzdCBEYXRhIFRyYW5zZmVyL09yaWdpbiBUcmFuc2ZlcuOAguino+azle+8muWcqCBDbG91ZGZsYXJlIOWxguaJi+WKqOmFjee9rue8k+WtmOinhOWImeOAggoKPiAi5LuW5LiK5LqG5LiA5Liq5Yqf6IO955m76ZmG55qE5pe25YCZ6K6w5b2V5Zu95a6256CB77yM54S25ZCO5a+86Ie06aG16Z2i5LiN6LWw57yT5a2Y5LqG4oCm4oCm5LuW55qE6Kej5Yaz5pa55qGI5bCx5piv5ZyoIGNsb3VkZmxhcmUg5LiK6YWN572u5LqG57yT5a2Y44CCIiDigJQgd3hpZF9zc3NoZW4wN2h3eHUyMgoKIyMjIDQuIOS7mOi0ueWuouW6p+WNmuWuouWklumTvu+8mjMwIOadoeWQjua1gemHj+i1t+mjngoK5p+QIEFJIOW3peWFt+ermeWcqOS7mOi0ueWuouW6pyBibG9nIOW5s+WPsO+8iOavlCBhZHN5IOS+v+WunO+8iei0reS5sOe6piAqKjMwKyDmnaHlrqLluqcgYmxvZyoq77yM57Sv6K6h6Iqx6LS5Kirlh6Dnmb7nvo7ph5EqKu+8jOaQnOe0oua1gemHj+WSjOaOkuWQjemaj+WQjui1t+mjnuOAguWFs+mUruWcqOS6juW5s+WPsOmAieaLqe+8muWQjOexu+acjeWKoeS7t+agvOW3ruW8guaYvuiRl+OAggoKPiAi5oiR55qEIGFpIOW3peWFt+ermeWcqOS4iumdoui0reS5sOS6huWkp+amgiAzMCDlh6DmnaHlrqLluqcgYmxvZ++8iOWFseWHoOeZvue+jumHke+8ieWQju+8jOaQnOe0oua1gemHj+WSjOaOkuWQjeWwsei1t+mjnuS6huOAgiIg4oCUIOWHuua1t+eLrOeri+W8gOWPkeS6pOa1gee+pCBBc251bGwKCi0g5Y+C6ICD5biW5a2Q77yaW+S7jjDliLAzMDDmnaHpq5jotKjph4/lpJbpk77lhajmlLvnlaVdKGh0dHBzOi8vbXAud2VpeGluLnFxLmNvbS9zP19fYml6PU16WTVPREU0T0RRNE1RPT0mbWlkPTIyNDc0ODM3NDIp77yI5YiY5bCP5Z+f77yJCi0g5LuY6LS55a6i5bqnIGJsb2cg5bmz5Y+w6K6o6K6677ya5Y2z5Yi7IEFwcCDluJblrZDvvIjpnIDnmbvlvZXmn6XnnIvljp/luJbvvIkKCiMjIyA1LiBTdHJpcGUg5rOo5YaM5Zyw5Z2A77ya6aaZ5riv5Zyw5Z2A5piv5bi46KeB6YCJ5oupCgrkuKrkurrlvIAgU3RyaXBlIOaXtuaUtueojuWcsOWdgOacieS6uuWhqyoq6aaZ5riv5Lit546vKirvvIzmmK/ml6DlhoXlnLDlrp7kvZPml7bnmoTluLjop4Hmk43kvZzjgILms6jmhI/kuI7lvIDmiLfpk7booYzljaHmiYDlnKjlnLDkuIDoh7TmgKfjgIIKCj4gIuaIkeWhq+eahOmmmea4r+S4reeOryIg4oCUIOi1q+WFueeahOaci+WPi+S7rOe+pOWPiwoKIyMjIDYuIOWHuua1ty/kuIDkurrlhazlj7jlt7LlpKfkvJfljJYKCuS4iua1t+W3peS9nOaXpeWSluWVoeW6l+mHjO+8jOmYv+WnqOeIt+WPlOWcqOiBiuWHuua1t+WSjOS4gOS6uuWFrOWPuOKAlOKAlOi/meaYryoq6LWb6YGT6L+H54Ot5L+h5Y+3KirvvIzmhI/lkbPnnYDlqpLkvZPmuLLmn5PliLDkvY3lkI7nrqHmjqfpo47pmankuIrljYfvvIjnvqTph4zmnInkurrmj5DliLAi5YWI5o2n5YaN5p2AIu+8ieOAggoKPiAi5oiR5bey57uP5Zyo5LiK5rW35bel5L2c5pel5Y2I5ZCO5ZKW5ZWh5bqX5ZCs5Yiw6Zi/5aeo54i35Y+U5Zyo6LCI6K665Ye65rW35ZKM5LiA5Lq65YWs5Y+45LqG77yM6K+05LiN5a6a5YaN5Zad54K55Lik5Y+j6IO95ZCs5Yiw576k5Y+L55qE5ZCN5a2XIiDigJQgd3hpZF83d3N3NDNnZzdjMHQyMgo+Cj4gIuWqkuS9k+a4suafk+ayoeWlveS6i++8jOS7gOS5iOWHuua1t++8jOS7gOS5iOS4gOS6uuWFrOWPuO+8jOWFiOaNp+WGjeadgCIg4oCUIOmXsuiBiue+pOe+pOWPiwoKIyMjIDcuIOWbveWGhSBBSSDkuK3ovaznq5nmoLzlsYDvvJrlpKflhazlj7jlkIjop4TmiJDmnKzpq5gKCuWkp+WFrOWPuOWSjOS6keacjeWKoeS7o+eQhuWBmiBBUEkg5Lit6L2s77yM5ZCI6KeE5oiQ5pys6auY44CB5ZSu5Lu36auY77yb5Liq5Lq65bCP5Zui6Zif5pCt55qE5Lit6L2s5Lu35qC85pu05L2O44CC5a2Z5a6H5pmo44CB5YKF55ub562J5Z2H5pyJ5Y+C5LiO77yM55uR566h5Y+v6IO96LaL5Lil44CCCgo+ICLkuI3osIjms5XlvovvvIzosIjliKnnm4rvvIzlj6rnnIvliLDlvojlpJrlpKflhazlj7jlkozljp/mnaXkupHmnI3liqHku6PnkIbpg73lnKjlgZrkuK3ovazvvIzku5bku6zlkIjop4TmiJDmnKzpq5jvvIzllK7ku7fkuZ/mr5TkuKrkurrlsI/lm6LpmJ/mkK3nmoTkuK3ovazpq5giIOKAlCB3eGlkXzd3c3c0M2dnN2MwdDIyCgotLS0KCiMjIPCfkqEg5LuK5aSp6IO95YGa55qEIDMg5Lu25LqLCgoxLiAqKuajgOafpeS9oOeahCBWZXJjZWwg6aG555uuKirvvJrov5votKbljZXlkI7lj7DvvIznoa7orqTlm77niYfotYTmupDmmK/lkKbotbAgQ2xvdWRmbGFyZSBSMu+8jOajgOafpeaYr+WQpuacieW8guW4uCBJUCDorr/pl67vvJvlpoLmnpzmnInnmbvlvZXmgIHpobXpnaLvvIznoa7orqTmmK/lkKbooqsgQ2xvdWRmbGFyZSDmraPnoa7nvJPlrZjjgIIKMi4gKirmkJzlpJbpk77lubPlj7AqKu+8muWcqOWNs+WIuy9Ud2l0dGVyIOaQnOe0oiLku5jotLnlrqLluqfljZrlrqIgQUkg5bel5YW3Iu+8jOWvueavlCBhZHN5IOWSjOW4luWtkOS4reaPkOWIsOeahOW5s+WPsOS7t+agvO+8jOeul+S4gOS4iyAzMCDmnaHlpJbpk77nmoTpooTnrpflkozpooTmnJ8gUk9J44CCCjMuICoq5Li65L2g55qE54us56uL56uZ5YaZIDEg56+H5Lqn5ZOB5paH56ugKirvvJrlj4LnhafnvqTph4wgd3hpZF96M3d5bnl2ZW5qaTEyMiDnmoTmgJ3ot6/igJTigJTmlofnq6Dmm53lhYkgKyDkuqflk4Hku5jotLnovazljJblj4znur/lubbov5vvvIzmr5TljZXnuq/pnaDmtYHph4/kuLvmgKfku7fmr5Tpq5jlvpflpJrjgIIKCi0tLQoKIyMg8J+TjiDpk77mjqXlupMKCnwg6LWE5rqQIHwg6ZO+5o6lIHwKfC0tLS0tLXwtLS0tLS18Cnwg5Ye65rW3572R56uZ5LuOMOWIsDHlu7rlpJbpk77lhajmlLvnlaUgfCBb5YiY5bCP5Z+f5YWs5LyX5Y+35paH56ugXShodHRwczovL21wLndlaXhpbi5xcS5jb20vcz9fX2Jpej1Nelk1T0RFNE9EUTRNUT09Jm1pZD0yMjQ3NDgzNzQyKSB8Cnwg6aaW5bGKT1BD6K665Z2b77yI5LiA5Lq65YWs5Y+477yJ5YyX5LqsIHwgW+acieWTgVkuUElOXShodHRwczovL21wLndlaXhpbi5xcS5jb20vcz9fX2Jpej1Nell6TlRjMU9EWXdOQT09Jm1pZD0yMjQ3NDgzOTk5KSB8Cnwg5LuY6LS55a6i5bqnIGJsb2cg5bmz5Y+w5YiG5Lqr77yI5Y2z5Yi777yJIHwgW+WNs+WIu+W4luWtkF0oaHR0cHM6Ly9tLm9ramlrZS5jb20vb3JpZ2luYWxQb3N0cy82YTAyNzVmMzdmODI1MjgyNDY5ZmZjYWYpIHw="), c => c.charCodeAt(0))
+  );
+  const html = DOMPurify.sanitize(marked.parse(md));
+  document.getElementById('content').innerHTML = html;
+  // 把 hero 上面已经渲染的总结从 md 内容里隐藏 (避免重复)
+  document.querySelectorAll('#content h2').forEach(h => {
+    if (h.textContent.includes('一句话总结')) {
+      let next = h.nextElementSibling;
+      h.style.display = 'none';
+      while (next && next.tagName !== 'H2' && next.tagName !== 'HR') {
+        next.style.display = 'none';
+        next = next.nextElementSibling;
+      }
+    }
+  });
+</script>
+</body>
+</html>
