@@ -3,145 +3,942 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📚 _INDEX 微信群学习卡片</title>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<title>📚 学习卡片总入口</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-    line-height: 1.7;
-    color: #2c3e50;
-    background: #fafafa;
-    padding: 0;
-  }
-  .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 60px 24px 50px;
-    text-align: center;
-    position: relative;
-  }
-  .nav-back {
-    position: absolute;
-    top: 18px;
-    left: 18px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
-    background: rgba(255,255,255,0.18);
-    color: white;
-    text-decoration: none;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 500;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: background 0.2s;
-  }
-  .nav-back:hover { background: rgba(255,255,255,0.3); }
-  .hero .date { font-size: 14px; opacity: 0.85; margin-bottom: 10px; letter-spacing: 2px; }
-  .hero h1 { font-size: 32px; margin-bottom: 16px; font-weight: 700; }
-  .hero .summary { max-width: 720px; margin: 0 auto; font-size: 17px; opacity: 0.95; line-height: 1.7; text-align: left; }
-  .hero .summary strong { color: #fff; font-weight: 700; }
-  .hero .summary code { background: rgba(255,255,255,0.18); color: #fff8e1; padding: 2px 7px; border-radius: 4px; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.92em; }
-  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
-  #content h1 { font-size: 28px; margin: 36px 0 20px; padding-bottom: 12px; border-bottom: 2px solid #eee; }
-  #content h2 { font-size: 22px; margin: 36px 0 18px; padding-left: 12px; border-left: 4px solid #667eea; line-height: 1.3; }
-  #content h3 { font-size: 18px; margin: 28px 0 12px; color: #2c3e50; }
-  #content h3::before { content: ""; display: inline-block; width: 6px; height: 6px; background: #667eea; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
-  #content p { margin: 12px 0; color: #34495e; }
-  #content ul, #content ol { margin: 12px 0 12px 24px; }
-  #content li { margin: 6px 0; }
-  #content blockquote {
-    border-left: 4px solid #f39c12;
-    background: #fff8e1;
-    padding: 14px 20px;
-    margin: 16px 0;
-    border-radius: 4px;
-    color: #5d4037;
-  }
-  #content blockquote p { margin: 4px 0; color: #5d4037; }
-  #content a { color: #1976d2; text-decoration: none; border-bottom: 1px dashed #1976d2; }
-  #content a:hover { background: #e3f2fd; }
-  #content code {
-    background: #f4f4f4; color: #c0392b;
-    padding: 2px 6px; border-radius: 3px;
-    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-    font-size: 0.9em;
-  }
-  #content pre {
-    background: #2d2d2d; color: #f8f8f2;
-    padding: 16px 20px; border-radius: 6px; overflow-x: auto;
-    margin: 16px 0;
-  }
-  #content pre code { background: transparent; color: inherit; padding: 0; }
-  #content table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
-  #content th { background: #34495e; color: white; padding: 10px 12px; text-align: left; }
-  #content td { padding: 10px 12px; border-bottom: 1px solid #ecf0f1; }
-  #content tr:nth-child(even) td { background: #f8f9fa; }
-  #content tr:hover td { background: #e3f2fd; }
-  #content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
-  #content strong { color: #1a1a1a; font-weight: 600; }
-  #content em { color: #7f8c8d; }
-  /* 表情卡片 emoji */
-  #content h2:contains("🔥") { color: #e74c3c; }
-  /* 移动端 */
-  @media (max-width: 640px) {
-    .hero { padding: 40px 18px; padding-top: 60px; }
-    .nav-back { top: 12px; left: 12px; padding: 6px 12px; font-size: 12px; }
-    .hero h1 { font-size: 24px; }
-    .container { padding: 24px 18px 60px; }
-    #content h1 { font-size: 22px; }
-    #content h2 { font-size: 18px; }
-    #content table { font-size: 12px; display: block; overflow-x: auto; }
-  }
-  footer {
-    text-align: center; padding: 30px 20px;
-    color: #95a5a6; font-size: 12px; border-top: 1px solid #ecf0f1;
-  }
-  footer a { color: #95a5a6; text-decoration: none; border-bottom: 1px dotted #bdc3c7; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  background: #fafafa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 50px 20px 40px;
+  text-align: center;
+}
+.hero h1 { font-size: 30px; margin-bottom: 10px; }
+.hero p { opacity: 0.9; font-size: 15px; }
+.container { max-width: 880px; margin: 0 auto; padding: 30px 20px 60px; }
+.section-title {
+  font-size: 18px; margin: 28px 0 14px;
+  padding-left: 10px; border-left: 4px solid #667eea;
+  display: flex; align-items: baseline; gap: 10px;
+}
+.weekday { font-size: 14px; color: #95a5a6; font-weight: normal; }
+.empty { color: #7f8c8d; text-align: center; padding: 40px 0; }
+.card {
+  display: flex; align-items: stretch;
+  background: white; border-radius: 10px; margin-bottom: 12px;
+  text-decoration: none; color: inherit;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.15s;
+  overflow: hidden;
+}
+.card:hover { box-shadow: 0 4px 16px rgba(102,126,234,0.18); transform: translateY(-1px); }
+.card-emoji {
+  font-size: 32px; padding: 18px 16px 18px 20px;
+  display: flex; align-items: center;
+  background: #f8f9fa;
+}
+.card-body { flex: 1; padding: 16px 18px; min-width: 0; }
+.card-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.card-meta { font-size: 12px; color: #95a5a6; margin-bottom: 8px; }
+.card-summary { font-size: 13px; color: #5d6d7e; line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-summary code { background: #fff8e1; color: #c0392b; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+.card-summary strong { color: #2c3e50; }
+.card-side {
+  padding: 14px 18px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  font-size: 11px; color: #95a5a6; min-width: 90px; text-align: right;
+}
+.badge { background: #e8f5e9; color: #2e7d32; padding: 3px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; }
+.card-kb { font-family: ui-monospace, monospace; }
+footer { text-align: center; padding: 30px; color: #bdc3c7; font-size: 12px; }
+@media (max-width: 600px) {
+  .hero { padding: 35px 18px; }
+  .hero h1 { font-size: 22px; }
+  .card-emoji { font-size: 24px; padding: 14px 12px; }
+  .card-side { padding: 10px 12px; min-width: 70px; }
+}
 </style>
 </head>
 <body>
-
 <div class="hero">
-  <a class="nav-back" href="./index.html">← 返回首页</a>
-  <div class="date">DAILY · _INDEX</div>
   <h1>📚 微信群学习卡片</h1>
-  <div class="summary"></div>
+  <p>AI 直接读取本地微信数据库，浓缩成可执行的学习点</p>
 </div>
-
 <div class="container">
-  <div id="content">⏳ 加载中...</div>
+<section><h2 class="section-title">2026-05-16 <span class="weekday">周六</span></h2>
+<a class="card" href="2026-05-16 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Codex 登陆手机端并实现多设备远程控制，成为全天最炸裂的信号；与此同时 Anthropic 官方 Claude Code 101 教程、微信读书官方 Skill、Skill 设计方法论三线并进，AI 编程工作流进入全民普及拐点。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-16 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">AI产品的增长战场从技术能力转向渠道卡位与用户教育：运营商抢Token入口、政府级合作批量获客、FDE驻场成新交付标准，但落地最后一公里仍是管理问题而非技术问题。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">16.9 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-15 <span class="weekday">周五</span></h2>
+<a class="card" href="2026-05-15 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">OpenAI 把 Codex 塞进手机端（全用户免费 preview）是今天最高密度事件，同时 Anthropic 发布准政策文件争抢 2028 年 AI 主导权，两件事叠加——AI 编程工具的移动化与地缘政治博弈同步加速。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">24.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 知识卡片集.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">知识卡片集</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">35.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">大厂财报印证 AI 商业化进入正向回报周期；小公司融资决策成关键生死线——拿机构钱就上了增长跑步机，不拿才能活得久。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">2026 年独立开发出海的基础设施已极度成熟：Cloudflare 全栈几美元搞定部署，AI agent 接管 TikTok 选人/选品决策，Newsletter 内容驱动电商仍是验证过的低成本路径——天花板远高于国内。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">15.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">工具站流量是起点不是终点——今天最深的信号是「留存资产化」+「细分市场冷启动」两条主线，哥飞群连续4小时深度复盘了 Sudowrite / Chatbooks / DailyCandy 三个案例，给出了从 0→1 到 1→N 的完整路径拆解。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">16.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Codex 正在抢夺 Claude Code 的重度用户，同时 Agent 能力从桌面延伸到手机、浏览器，AI 编程工作流向「人审批 + Agent 执行」的分层架构演进。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">14.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Gemini 3.5 Pro 编程能力曝光追平 GPT-5.5、美团发布推理评测新标尺、DeepSeek 爆出 P0 级多租户隔离漏洞——模型军备竞赛与安全隐患同步升温。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">9.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-15 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">2026-05-15 各核心群信号极稀疏，仅采集到 1 条有效候选消息，当日无可提炼的实质性学习点。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.6 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-14 <span class="weekday">周四</span></h2>
+<a class="card" href="2026-05-14 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">特朗普访华触发 H200 芯片解禁、英伟达显卡重上架，同一天 Anthropic 宣布 6 月起将 Agent SDK 用量单独计费——中国 AI 的硬件枷锁松了一格，但软件侧的成本结构正在重新定价。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">22.5 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 知识卡片集.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">知识卡片集</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">33.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5月14日是中美科技资本的&quot;大日子&quot;：特朗普访华落地数百亿经贸协议、英伟达芯片管制松动、A股创11年新高；与此同时，一张AI公司估值横截面表，把&quot;全球市场给什么定价&quot;讲得清清楚楚。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">11.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">出海产品的付费转化率由需求等级决定——赚钱型和强刚需型产品天然拥有高付费意愿；Reddit 冷启动 + AI短剧矩阵正成为独立开发者出海流量的两条主路。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">14.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">&quot;赚钱型需求&quot;的 AI 产品拥有最强留存与定价权；出海爆品的共性路径是：找到可量化 ROI 的用户场景 → 快速验证 MRR → KOL+付费投流双引擎放量。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">15.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">多 Agent 架构（Orchestrator/Worker/Validator）正在替代单 agent 长跑成为工程主流；同时工具链组合（Codex + 飞书CLI + Obsidian）、换模型省钱（DeepSeek 替代 Claude 最高省 120 倍）是当前实战焦点。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">15.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">小型专用模型（LAM）、多模型架构 vs 单模型 Agent、模型安全漏洞三条线同时在社区发酵——模型不再是越大越好，而是越专越值钱。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-14 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">需求痛点等级决定转化率上限——赫兹群一篇拆解直接给出选品/定价的底层框架；与此同时，平台管控收紧（ChatGPT 封号、Android 17 限制群控 API）提醒出海人降低对灰色工具的依赖。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">20.5 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-13 <span class="weekday">周三</span></h2>
+<a class="card" href="2026-05-13 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">AI 从&quot;答题工具&quot;加速进化为长程自主任务执行者，今天群里同时出现了三个信号印证这一判断：多 Agent 工程实战爆发、GPT Image 2 + Seedance 2 组合成爆款内容流水线、GLM-5.1 在 Claude Code 上拿下开源 Coding Agent 基准第一。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">22.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-13 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">快手可灵AI估值200亿美元冲刺明年IPO；Anthropic推出金融AI Agent；AI驱动的「无人公司」趋势正从预测变为现实。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-13 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Vercel账单有三类经典雷区；外链+产品文章是独立站起量的双轮驱动；AI培训服务已成为客单价万元以上的可落地路径。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.6 KB</span>
+  </div>
+</a><a class="card" href="2026-05-13 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">TikTok跟随操盘的核心是找到「已经火的姿势」然后抢占 → 20个小KOL同步推是放大器；公众号流量主收益已衰退，产品文章+付费课程才是正确变现闭环。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-13 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Vibe coding没有git就等于裸奔；CLAUDE.md规则能把Claude出错率从41%降到11%；HeavySkill的多SubAgent辩论架构和Hermes看板的文件式任务交接是当前多Agent工程的两个可用范式。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">15.7 KB</span>
+  </div>
+</a><a class="card" href="2026-05-13 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">jina-embeddings-v5-omni 打通文本/图像/音频/视频四模态嵌入；GLM-5.1 在 Claude Code 中拿下开源 Coding Agent 基准第一；豆包记忆清除形同虚设。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-13 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">今天最强信号有两条：shipany 模板曝出配置泄露漏洞已致群友 Google Key 被刷，同时 MH 赛季群对 YouMind &quot;trending prompt 截流 + 产品绑定&quot;打法做了深度拆解，这条路径已有国人在复制。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">25.7 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-12 <span class="weekday">周二</span></h2>
+<a class="card" href="2026-05-12 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">OpenAI 前 CTO 新公司 Thinking Machines 首模型发布，多群同步热议&quot;AI产品从聊天框进入工作现场&quot;；与此同时 Context Mode MCP 以 94-99% 上下文压缩率冲进圈子，Claude Code 的挖掘深度仍被认为不足 1%。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">21.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-12 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">一人公司突破 100 万成为今日社群图腾；360 &quot;1 亿 Token&quot; 是值约 ¥20 的低成本 PR 操作；翼菲科技（06871.HK）轻工业机器人赛道值得关注。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-12 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Stripe 合规是出海生死线，最高罚 $50,000；$3,000 构建 3105 个全球投资人离线数据库是今日最具参考价值的产品动作；文科生一人公司案例证明技术门槛已不是瓶颈。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">12.5 KB</span>
+  </div>
+</a><a class="card" href="2026-05-12 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">&quot;3 天 100 万用户&quot;是本周增长热文；OPC 用户真实付费天花板只有话费级别（¥160）；ELO 不只是排名机制，它是一种被黑客松验证的数据飞轮——这三个信号都指向同一件事：增长需要先找到真实付费动机再动手。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">12.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-12 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Context Mode MCP 解决了长上下文污染问题（节省 94–99%），Claude Code 的应用边界仍被严重低估；今天最值得动手的事是把这两个工具装进工作流。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">14.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-12 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">OpenAI 前 CTO 新公司 Thinking Machines 发布首个模型，多位观察者认为 AI 产品将从&quot;聊天框&quot;进入&quot;工作现场&quot;；DeepSeek-TUI 以 1M 上下文 + 前缀缓存感知成为终端编程 Agent 代表案例；嵌入式付费模型实测性能甚至不如免费 API。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-12 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">NSFW 一锅端 + Stripe 封号真实案例警示今日出海合规红线；3 天 100 万注册用户产品自传播案例成全群最热话题。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">16.9 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-11 <span class="weekday">周一</span></h2>
+<a class="card" href="2026-05-11 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Agent 开发范式正式从&quot;把 Prompt 写详尽&quot;转向&quot;精准 Harness 工程&quot;——同天，DeepSeek-V4-Pro 发布百万 token 窗口且 FLOPs 仅 V3.2 的 27%，Codex computer use 被实战验证可接管浏览器全自动化，哥飞社区新词站比赛首月千万 PV。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">26.5 KB</span>
+  </div>
+</a><a class="card" href="2026-05-11 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">DeepSeek 曝出寻求 500 亿人民币首轮融资（估值 3500 亿），打破「不融资」宣言；OpenAI 正式成立「部署公司」进军企业咨询，AI 商业化进入新阶段。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-11 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">4月新词新站比赛出炉，前10站总UV 713万；sbti.ai一小时建站一万块收入揭示了新词速攻+小红书评论区冷启动的完整公式，同时哥飞系统讲透了双边平台（陪产员/律师目录站）的冷启动逻辑。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">17.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-11 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">今日最强认知冲击：「AI 的交付物不是产品，AI 永远没有交付完毕的那一刻」；同时赛博禅心用「服务即软件」给出了在中国用 Agent 真正赚钱的实操路径——不是卖订阅，而是找企业已经在花钱的服务用 Agent 重构交付。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-11 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Codex 的 computer use 打开浏览器操作成为今日最热话题（彭涛全面切 Codex）；Harness 工程从权重→上下文→Harness 三阶段进化路线图清晰；EvoMap 的 GEP 协议「less is more」对 Skill/Prompt 设计有颠覆性启示。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">17.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-11 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">DeepSeek-V4-Pro 在长上下文效率上大幅领先（100万 token 下 FLOPs 仅 V3.2 的 27%）；GPT-5.5 Codex 单周下载量 9000 万成为工具侧最热数字；Qwen3.5 35B 本地部署表现被多人实测推荐。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.5 KB</span>
+  </div>
+</a><a class="card" href="2026-05-11 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">哥飞4月新词新站赛结果出炉，sbti.ai 首月千万 PV 完整复盘落地；同时 Next.js 15.2+ Streaming Metadata 导致 SEO 标题被&quot;Play&quot;&quot;GitHub&quot;替换的隐蔽 bug 在群内首次完整曝光——今天两条信息都值得立刻动手。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">29.3 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-10 <span class="weekday">周日</span></h2>
+<a class="card" href="2026-05-10 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">HTML 正在取代 Markdown 成为 AI 输出格式首选，同时 Codex 5.5 显著优于 5.3/5.4，MiMo V2.5 凭借&quot;DS风格+不限速&quot;在金融/生产场景逆袭，API 中转站安全风险被点名警示。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">28.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-10 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">9.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-10 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Codex 双档思考模式工作流 + Claude Code 内置电台 /radio 是今日两个高密度工具信号；Manus 收购失败 + InfoQ 阴阳报道引爆媒体信任讨论。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">23.0 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-09 <span class="weekday">周六</span></h2>
+<a class="card" href="2026-05-09 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Codex 在多群爆发性讨论，已可在 macOS/Windows Chrome 直接运行；与此同时，Agent 通信协议（HTML vs JSON vs MD）、Memory Agent 赛道价值、AI 幻觉法律责任三条线同步引爆深度争论。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">25.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-09 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">阿里投资的项目有&quot;创始人出局&quot;规律；Agent 赛道当前泡沫大于落地；学生创业有10道系统性的坎。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">9.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-09 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">蹭词站用户不低端、可服务变现；万刀里程碑被跑通；Claude订阅有完整低风险路径。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">12.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-09 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Memory Agent 赛道有价值但空间存疑；真正的提效是缩短工作时间而非干更多活；AI+教育内容天然高传播。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">12.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-09 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Claude Code 官方文档有大量被忽视的提效点；Codex 在浏览器操作/运维场景无可替代；CC 黑客松六强作品拓宽了 AI 编程的应用想象。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">14.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-09 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">DeepSeek 在中国实验室中受尊重、字节被忌惮；Codex 目前只认 GPT 协议；小米 mimo 不支持 Haiku 需手动路由。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">9.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-09 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">今日最强信号来自赫兹出海群：一位群友系统梳理了 Claude Code 官方中文文档的六大模块精华，补齐大量&quot;不知道自己不知道&quot;的提效盲点；出海独立开发群同步传递了两个值得记住的策略视角：B 端用户付费力远超 C 端，蹭词站完全可以当正经产品经营。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">22.7 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-08 <span class="weekday">周五</span></h2>
+<a class="card" href="2026-05-08 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Anthropic 推出跨会话记忆技术 Dreaming，同日 Codex 上线 Chrome 插件打通浏览器自动化；豆包以语音交互完成 AI 国民化，成为下沉市场第一入口——工具层竞争从算力转向交互和记忆。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">18.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-08 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-08 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-08 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.7 KB</span>
+  </div>
+</a><a class="card" href="2026-05-08 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">15.9 KB</span>
+  </div>
+</a><a class="card" href="2026-05-08 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-08 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">ElevenLabs API 降价 + GPT Codex 成出海编程主力，但 GPT 5.4+ 道德过滤让「Codex 自动外链」走入死胡同（5.3-codex 和 Claude Opus 4.7 仍可跑）；小程序流量主数据曝光：7.6 万 UV = 160 刀，同类封面广告 ECPM 差距 10 倍，一位张总亲历&quot;5 年不优化少赚 2000 万&quot;敲警钟。</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">17.6 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-07 <span class="weekday">周四</span></h2>
+<a class="card" href="2026-05-07 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">Anthropic 租下马斯克 22 万张 GPU、Claude 限额翻倍是本日最大事件；与此同时 DeepSeek 首轮估值 450 亿美元、xAI 正式解散并入 SpaceXAI，AI 算力与资本格局在 24 小时内完成一次重组。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">17.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.6 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">14.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">11.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-07 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">PhotoColors 色彩滤镜 App 国内爆发、截流窗口已开；游戏/电影 wiki 站 4 月跑出 716K 访问被哥飞现场验证，&quot;抄需求不抄产品&quot;成昨日最高密度共识。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">19.8 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-06 <span class="weekday">周三</span></h2>
+<a class="card" href="2026-05-06 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">DeepSeek V4 被 MiniMax M2.7 全面压制（Skill调用尤其拉跨），同日 GPT-5.5 Instant 全量上线、ChatGPT 开广告平台——国内模型又一次掉队，OpenAI 则开始把注意力变现。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">18.0 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 投资商业专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">投资商业专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 出海独立开发专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海独立开发专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">12.7 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 产品增长专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">产品增长专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">12.3 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 AI编程专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI编程专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">14.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 AI模型专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">AI模型专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary"></div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">10.8 KB</span>
+  </div>
+</a><a class="card" href="2026-05-06 8核心群日报.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">8核心群日报</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">五一假期收尾日，MH群连发三个小众赛道真实数据（TikTok矩阵 → $120K MRR、迪士尼徽章AI定价 → $80K MRR、德州扑克GTO → $30K MRR），赫兹群同步放出 Stripe CLI + Claude 自动接入支付的完整姿势——今天这两条线可以直接抄作业。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">17.8 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-05 <span class="weekday">周二</span></h2>
+<a class="card" href="2026-05-05 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5/5 三条主线:(1)Anthropic 零人公司手册官方发布,跟 OPC 主题一拍即合,jiangye 顺势开源 opc-skill + 你自己上线 opcgate.com;(2)Imagineers VibeCoding 比赛冠军揭晓 — Branton 的《郁金香狂潮》获冠,[imagineersclub.com](https://imagineersclub.com/) 全部作品可看;(3)群里多场哲学反思 — 紫苏子知识冰山、#吴熳 + 俞浩谈创新 = Mix、何帆 AI 时代不必恐慌,五一假期&quot;思考密度&quot;明显高于 5/4。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">30.4 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-04 <span class="weekday">周一</span></h2>
+<a class="card" href="2026-05-04 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5/4 群聊主旋律是 AI 编程(占 7/10 学习点)— 三条主线:(1) Codex + Cola 把 AI 编程推进到&quot;computer use + 多步规划执行&quot;阶段,但桌面版 100 万上下文不真实;(2) Cloudflare 给 AI agent 开户买域名,&quot;软件买软件&quot;时代来了;(3) 结构化文本(MD+JSON)替代 PDF 成共识。 其余 3/10:OPC 公司注册新规(出海/创业)、独立开发者产品矩阵案例(watcha.cn 5 个产品)、AI 自媒体内容矩阵流(低调哥免费分享 8 步流程)。 &gt; ⚠️ 5/4 当天群聊没有显著的 SEO/电商/支付/健康 信号,因为这</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">37.2 KB</span>
+  </div>
+</a><a class="card" href="2026-05-04 电商专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">电商专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5/4 电商主题 vault 里几乎没人聊。仅有的信号:(1)小红书虚拟资料是惠州 4 个新人都在做的赛道,宋宋实证月入 25000 / 日入 3000;(2)出海跨境融资有人开口子(全球 AI&amp;品牌出海资源互助群);(3)赫兹的哥飞 + 彪哥 + 壹树 直播` 偏出海创业,沾电商边。 ⚠️ 想看真正的电商干货,你需要拉专门的电商群(TT Shop / Amazon / 闲鱼 / 补单互补 / 跨境 等),5/4 这些群不在你 vault 里。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">13.1 KB</span>
+  </div>
+</a><a class="card" href="2026-05-04 出海专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">出海专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5/4 出海最重要 3 件事:(1)Cloudflare + Stripe 联手发布 AI Agent 三层协议,agent 自己开户买域名拿 token 部署的范式确立;(2)siuser小伟(就是你)发了《Stripe 官方点名认证三十多位一人公司年入千万》并做成在线页;(3)哥飞深度拆解 SEO Canonical + 307 跳转转移权重的实战玩法。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">24.4 KB</span>
+  </div>
+</a><a class="card" href="2026-05-04 内容创作专题.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">内容创作专题</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5/4 内容创作圈最值得看的 3 件事:(1)Codex 桌宠教程成 9 群跨群最热爆款,创作圈也在围观技术派;(2)钟莹 AI 人像摄影 prompt 框架三天涨粉 400+,提供具体可复用方法;(3)枫丝语提出&quot;自媒体把文章做成 skills&quot;是新趋势 — 内容资产化新方向。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">16.4 KB</span>
+  </div>
+</a></section>
+<section><h2 class="section-title">2026-05-03 <span class="weekday">周日</span></h2>
+<a class="card" href="2026-05-03 学习卡片.html">
+  <div class="card-emoji">📚</div>
+  <div class="card-body">
+    <div class="card-title">全主题学习卡片</div>
+    <div class="card-meta">已发布 HTML</div>
+    <div class="card-summary">5/3 跨群三条主线:(1)青书公开《低价订阅 ChatGPT 20x 完整教程》—— Bitget 虚拟卡 + 菲律宾/土耳其区,实付 146 刀;(2)饼干哥哥用爱马仕(hermes)多 Agent 搭建跨境电商团队,「Agent + 业务」组合开始走通;(3)群内多场哲学辩论 —— OPC 是不是人、AI Coding vs 真实商业、管理 100 人 vs 距模型最近,周日反思味浓。 ---</div>
+  </div>
+  <div class="card-side">
+    
+    <span class="card-kb">26.3 KB</span>
+  </div>
+</a></section>
+
 </div>
-
 <footer>
-  🤖 由 AI 替你读了 78 群 / 3,512 条消息后浓缩而成 ·
-  <a href="https://obsidian.md">Obsidian</a> +
-  <a href="https://www.anthropic.com/claude">Claude</a>
+  🤖 本地生成 · 数据来自微信数据库 · 2026-05-19 00:44 更新
 </footer>
-
-<script>
-  // base64 解码 → 再按 UTF-8 解释字节(否则中文乱码)
-  const md = new TextDecoder('utf-8').decode(
-    Uint8Array.from(atob("IyDwn5OaIOWtpuS5oOWNoeeJh+aAu+ebruW9lQoKIyMgMjAyNi0wNS0wNCjlkajkuIApCgp8IOWNoeeJhyB8IOaVsOaNruinhOaooSB8IOS4u+mimCB8CnwtLS18LS0tOnwtLS18CnwgW1syMDI2LTA1LTA0IOWtpuS5oOWNoeeJhy5tZFx88J+MkCDlhajkuLvpopjlrabkuaDljaHniYco6K+m57uG54mIKV1dIHwgNzgg576kIC8gNzQ0IOWAmemAiSB8IOe7vOWQiChBSSDnvJbnqIvkuLrkuLspIHwKfCBbWzIwMjYtMDUtMDQg5Ye65rW35LiT6aKYLm1kXHzwn4yNIOWHuua1t+S4k+mimF1dIHwgMTEg576kIC8gMzEg5raI5oGvIHwgQ2xvdWRmbGFyZSBBSSBBZ2VudCAvIFN0cmlwZSDkuIDkurrlhazlj7ggLyBTRU8gQ2Fub25pY2FsIHwKfCBbWzIwMjYtMDUtMDQg5YaF5a655Yib5L2c5LiT6aKYLm1kXHzinI3vuI8g5YaF5a655Yib5L2c5LiT6aKYXV0gfCA4IOe+pCAvIDM0IOa2iOaBryB8IFgg5aKe6ZW/IC8g5bCP57qi5LmmIC8gQUkg5Lq65YOPIHByb21wdCAvIOi3qOW5s+WPsOaooeadvyB8CnwgW1syMDI2LTA1LTA0IOeUteWVhuS4k+mimC5tZFx88J+bkiDnlLXllYbkuJPpophdXSB8IDIg576kIC8gOCDmtojmga8gfCDimqDvuI8g5pWw5o2u5p6B5bCROuWwj+e6ouS5puiZmuaLn+i1hOaWmeaciOWFpSAyNUsgfAoKIyMgMjAyNi0wNS0wMyjlkajml6UpCgp8IOWNoeeJhyB8IOaVsOaNruinhOaooSB8IOS4u+mimCB8CnwtLS18LS0tOnwtLS18CnwgW1syMDI2LTA1LTAzIOWtpuS5oOWNoeeJhy5tZFx88J+TmiDlhajkuLvpopjlrabkuaDljaHniYddXSB8IDkzIOe+pCAvIDY1NSDlgJnpgIkgfCBDaGF0R1BUIDIweCDkvY7ku7forqLpmIUgLyBoZXJtZXMg5aSaIEFnZW50IC8gT1BDIOWTsuWtpui+qeiuuiB8CgotLS0KCiMjIPCfmoAg5oCO5LmI6K+7CgoxLiAqKuaDs+W/q+mAn+eciyoqOiDpobbpg6gi8J+OryDkuIDlj6Xor53mgLvnu5MiCjIuICoq5oOz55yL5a6e5pONKio6IOebtOaOpeaLieWIsCLwn5KhIOaOqOiNkOS9oOS7iuWkqeWwseWBmueahCBYIOS7tuS6iyIKMy4gKirmg7Ppgb/lnZEqKjog55yL5pyr5bC+IuKaoO+4jyBYIOS4quWAvOW+l+mBv+W8gOeahOWdkSIKNC4gKirmg7PliIbkuqsqKjogSFRNTCDniYgo5ZCM5ZCNIC5odG1sIOaWh+S7tikg5Y+M5Ye75rWP6KeI5Zmo5omT5byACgojIyDwn5SEIOiHquWKqOWMlgoK5q+P5aSp5pepIDg6MzAg6Ieq5Yqo55Sf5oiQ5paw5Y2h54mHIOKAlCDor6bop4EgW1suY2xhdWRpYW4vd2VjaGF0L0RBSUxZX0NBUkRfU0VUVVAubWRdXQ=="), c => c.charCodeAt(0))
-  );
-  const html = DOMPurify.sanitize(marked.parse(md));
-  document.getElementById('content').innerHTML = html;
-  // 把 hero 上面已经渲染的总结从 md 内容里隐藏 (避免重复)
-  document.querySelectorAll('#content h2').forEach(h => {
-    if (h.textContent.includes('一句话总结')) {
-      let next = h.nextElementSibling;
-      h.style.display = 'none';
-      while (next && next.tagName !== 'H2' && next.tagName !== 'HR') {
-        next.style.display = 'none';
-        next = next.nextElementSibling;
-      }
-    }
-  });
-</script>
 </body>
 </html>
