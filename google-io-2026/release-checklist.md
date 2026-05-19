@@ -1,12 +1,13 @@
 # Google I/O 2026 公众号发布清单
 
-更新时间：2026-05-19 23:10 北京时间
+更新时间：2026-05-20 07:21 北京时间
 
 ## 标题
 
-首选：Google I/O速览｜Gemini·XR·开发者AI
+首选：Google I/O速览｜Gemini·XR·多模态
 
 候选：
+- Google I/O速览｜Gemini·XR·多模态
 - Google I/O速览｜Gemini·XR·开发者AI
 - 谷歌I/O前夜｜Gemini进系统·XR预热
 - Google I/O一夜速览｜Gemini接管入口
@@ -14,7 +15,7 @@
 
 ## 摘要
 
-会前版先锁定官方日程和已确认预热：Gemini进系统、Android桌面化、Chrome AI、XR眼镜和开发者工具。
+Google I/O会后速览：按官方与主流媒体证据重排亮点，给出普通用户、开发者和内容创作者的影响判断。
 
 ## 文件
 
