@@ -1,13 +1,13 @@
 # Google I/O 2026 公众号发布清单
 
-更新时间：2026-05-20 08:54 北京时间
+更新时间：2026-05-20 09:17 北京时间
 
 ## 标题
 
-首选：Google I/O速览｜Gemini接管入口
+首选：Google I/O 2026：一夜看完
 
 候选：
-- Google I/O速览｜Gemini接管入口
+- Google I/O 2026：一夜看完
 - Google I/O速览｜Gemini·XR·Agent
 - 谷歌I/O前夜｜Gemini进系统·XR预热
 - Google I/O一夜速览｜Gemini接管入口
@@ -15,7 +15,7 @@
 
 ## 摘要
 
-Google I/O会后速览：按官方与主流媒体证据重排亮点，给出普通用户、开发者和内容创作者的影响判断。
+Google I/O一夜看完：模型、Agent、搜索、电商、创作工具和AI眼镜一起升级，Gemini正在接管入口。
 
 ## 文件
 
