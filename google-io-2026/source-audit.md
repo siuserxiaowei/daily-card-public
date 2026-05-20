@@ -1,6 +1,6 @@
 # Google I/O 2026 公众号稿检索审计
 
-更新时间：2026-05-20 09:23 北京时间
+更新时间：2026-05-20 10:35 北京时间
 
 ## 已修正的问题
 
@@ -31,18 +31,18 @@
 
 ## YouTube 官方结果
 
-- Google for Developers｜Developer Keynote (Google I/O '26)｜views=67966｜https://www.youtube.com/watch?v=aqmpZocmR8o
-- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜views=5527｜https://www.youtube.com/watch?v=KPYtmPz5pbU
-- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=908｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
-- Google｜Google – Welcome to the Gemini era｜views=55480928｜https://www.youtube.com/watch?v=_fuimO6ErKI
-- Google｜Google I/O '26 Keynote｜views=8519188｜https://www.youtube.com/watch?v=wYSncx9zLIU
-- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8412531｜https://www.youtube.com/watch?v=dXCCleAddEA
-- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723327｜https://www.youtube.com/watch?v=11PBno-cJ1g
-- Google｜Google I/O '26 Keynote - American Sign Language｜views=103597｜https://www.youtube.com/watch?v=vw73r_xaeX0
-- Android｜The Android Show: I/O Edition | Googlebook｜views=80619｜https://www.youtube.com/watch?v=y6u6iAo0KDo
-- Google｜Introducing Gemini Omni: Create Anything from Anything｜views=37424｜https://www.youtube.com/watch?v=KUyRq7szZsM
-- Google｜What’s New in Search｜views=21364｜https://www.youtube.com/watch?v=p6EBMG8OEBI
-- Google｜Make Something That Matters｜views=6131｜https://www.youtube.com/watch?v=YXbCQVhKb-Q
+- Google for Developers｜Developer Keynote (Google I/O '26)｜views=70734｜https://www.youtube.com/watch?v=aqmpZocmR8o
+- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜views=5718｜https://www.youtube.com/watch?v=KPYtmPz5pbU
+- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=2084｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
+- Google｜Google – Welcome to the Gemini era｜views=55480971｜https://www.youtube.com/watch?v=_fuimO6ErKI
+- Google｜Google I/O '26 Keynote｜views=8534573｜https://www.youtube.com/watch?v=wYSncx9zLIU
+- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8414845｜https://www.youtube.com/watch?v=dXCCleAddEA
+- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723385｜https://www.youtube.com/watch?v=11PBno-cJ1g
+- Google｜Google I/O '26 Keynote - American Sign Language｜views=104652｜https://www.youtube.com/watch?v=vw73r_xaeX0
+- Android｜The Android Show: I/O Edition | Googlebook｜views=80696｜https://www.youtube.com/watch?v=y6u6iAo0KDo
+- Google｜Introducing Gemini Omni: Create Anything from Anything｜views=39711｜https://www.youtube.com/watch?v=KUyRq7szZsM
+- Google｜What’s New in Search｜views=22364｜https://www.youtube.com/watch?v=p6EBMG8OEBI
+- Google｜TPU Training Day for  I/O  ‘26｜views=7931｜https://www.youtube.com/watch?v=dhI4djOVEmI
 
 ## 推测
 
@@ -53,15 +53,27 @@
 
 ## 官方截图
 
+- io-home｜https://io.google/2026/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/io-home.png`
 - google-io-keynote-page｜https://io.google/2026/explore/google-keynote-1｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/google-io-keynote-page.png`
+- developer-keynote-page｜https://io.google/2026/explore/developer-keynote-1｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/developer-keynote-page.png`
+- google-ai-stack-session｜https://io.google/2026/explore/pa-keynote-1｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/google-ai-stack-session.png`
+- antigravity-ai-studio-session｜https://io.google/2026/explore/pa-keynote-2｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/antigravity-ai-studio-session.png`
+- android-development-tools-session｜https://io.google/2026/explore/pa-keynote-7｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/android-development-tools-session.png`
+- adaptive-android-ecosystem-session｜https://io.google/2026/explore/pa-keynote-8｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/adaptive-android-ecosystem-session.png`
+- agent-first-workflows-session｜https://io.google/2026/explore/pa-keynote-11｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/agent-first-workflows-session.png`
+- agentic-ai-era-session｜https://io.google/2026/explore/pa-keynote-14｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/agentic-ai-era-session.png`
 - developer-keynote-recap｜https://developers.googleblog.com/en/all-the-news-from-the-google-io-2026-developer-keynote/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/developer-keynote-recap.png`
+- get-ready-google-io-2026｜https://developers.googleblog.com/en/get-ready-for-google-io-2026/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/get-ready-google-io-2026.png`
 - android-show-overview｜https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/android-show-overview.png`
 - gemini-intelligence-android｜https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-intelligence-android.png`
 - gemini-chrome-android｜https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-chrome-android.png`
 - googlebook-gemini-intelligence｜https://blog.google/products-and-platforms/platforms/android/meet-googlebook/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/googlebook-gemini-intelligence.png`
+- search-ai-mode-updates｜https://blog.google/products-and-platforms/products/search/ai-mode-ai-overviews-updates｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/search-ai-mode-updates.png`
+- ucp-shopping-updates｜https://blog.google/products-and-platforms/products/shopping/ucp-updates/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/ucp-shopping-updates.png`
 - youtube-google-i-o-26-keynote｜https://www.youtube.com/watch?v=wYSncx9zLIU｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-google-i-o-26-keynote.png`
 - youtube-developer-keynote-google-i-o-26｜https://www.youtube.com/watch?v=aqmpZocmR8o｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26.png`
 - youtube-introducing-gemini-omni-create-anything-from-anything｜https://www.youtube.com/watch?v=KUyRq7szZsM｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-introducing-gemini-omni-create-anything-from-anything.png`
+- youtube-what-s-new-in-search｜https://www.youtube.com/watch?v=p6EBMG8OEBI｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-what-s-new-in-search.png`
 
 ## 运行日志
 
