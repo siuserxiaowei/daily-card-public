@@ -1,17 +1,17 @@
 # Google I/O 2026 公众号发布清单
 
-更新时间：2026-05-20 07:21 北京时间
+更新时间：2026-05-20 08:46 北京时间
 
 ## 标题
 
-首选：Google I/O速览｜Gemini·XR·多模态
+首选：Google I/O速览｜Gemini接管入口
 
 候选：
-- Google I/O速览｜Gemini·XR·多模态
-- Google I/O速览｜Gemini·XR·开发者AI
+- Google I/O速览｜Gemini接管入口
+- Google I/O速览｜Gemini·XR·Agent
 - 谷歌I/O前夜｜Gemini进系统·XR预热
 - Google I/O一夜速览｜Gemini接管入口
-- 谷歌I/O亮点｜Android桌面·Chrome AI
+- 谷歌I/O亮点｜搜索变成Agent
 
 ## 摘要
 
@@ -26,6 +26,20 @@ Google I/O会后速览：按官方与主流媒体证据重排亮点，给出普�
 - 方图：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/cover-square-2160.png`
 - 正文图目录：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets`
 - 总览图：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/contact-sheet.jpg`
+- Google 官方截图目录：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots`
+- YouTube 检索快照：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/sources/youtube-latest.md`
+
+## Google 官方截图
+
+- google-io-keynote-page：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/google-io-keynote-page.png`
+- developer-keynote-recap：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/developer-keynote-recap.png`
+- android-show-overview：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/android-show-overview.png`
+- gemini-intelligence-android：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-intelligence-android.png`
+- gemini-chrome-android：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-chrome-android.png`
+- googlebook-gemini-intelligence：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/googlebook-gemini-intelligence.png`
+- youtube-developer-keynote-google-i-o-26：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26.png`
+- youtube-developer-keynote-google-i-o-26-american-sign-language：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26-american-sign-language.png`
+- youtube-google-i-o-2026-developer-keynote-5-minute-recap：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-google-i-o-2026-developer-keynote-5-minute-recap.png`
 
 ## 发布前核对
 

@@ -1,95 +1,117 @@
-# Google I/O速览｜Gemini·XR·多模态
+# Google I/O速览｜Gemini接管入口
 
 > Google I/O会后速览：按官方与主流媒体证据重排亮点，给出普通用户、开发者和内容创作者的影响判断。
 
-更新时间：2026-05-20 07:21（北京时间）
+更新时间：2026-05-20 08:46（北京时间）
 
 ## 开头
 
-这是北京时间 2026-05-20 07:21 的会后迭代版。重点不只是列发布清单，而是判断 Google 这一轮到底在争夺哪个入口。
+这是北京时间 2026-05-20 08:46 的会后迭代版。重点不只是列发布清单，而是判断 Google 这一轮到底在争夺哪个入口。
 如果只用一句话概括：Google 正在把 AI 从聊天框推到系统、浏览器、开发工具和下一代硬件入口里。
 
 ## 核心亮点
 
-### 1. Gemini 3.5 与模型矩阵成主角（媒体报道）
+### 1. Gemini 3.5 Flash 成为新底座（媒体报道）
 
-会后媒体把 Gemini 新模型和模型矩阵放在第一梯队，说明 Google 仍在用模型能力稳住 AI 叙事中心。
+这次模型线的核心不是单纯刷榜，而是把 Gemini 3.5 Flash 放进 Gemini App、Search、Antigravity 和 API 这些入口。
 
-对普通用户：普通用户更直接感知的是 Gemini App、搜索、YouTube、Workspace 里的可用能力，而不是模型参数本身。
+对普通用户：普通用户会先在 Gemini App 和 AI Mode 里感知速度、交互和答案形态变化，而不是感知模型参数。
 
-对开发者：开发者要看 API 可用性、价格、上下文、多模态和工具调用稳定性，别只看 keynote 名词。
+对开发者：重点看默认模型切换、API 可用性、代码能力、工具调用和成本速度比，不要只看 keynote 名词。
 
 来源：https://9to5google.com/2026/05/19/google-io-2026-news/
 
-### 2. Gemini Spark 把个人助理推向 Agent（媒体报道）
+### 2. Gemini Spark 把助手推向 Agent（媒体报道）
 
-AP 把 Gemini Spark 描述为面向个人助理的 agentic AI，这条线比普通聊天升级更重要。
+Gemini Spark 的看点是 24/7 后台任务、Workspace 接入和后续第三方工具扩展，Google 明显在讲“替你办事”。
 
-对普通用户：如果它能持续理解任务、记忆上下文并主动执行，AI 会从“问答工具”变成“办事入口”。
+对普通用户：如果它能稳定处理邮件、文档、提醒和跨应用任务，AI 会从聊天窗口变成日常办事入口。
 
-对开发者：后续重点看权限、记忆、安全确认和第三方应用接入方式。
+对开发者：真正要盯的是授权边界、任务确认、MCP/第三方工具接入和失败回滚机制。
 
-来源：https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/
+来源：https://9to5google.com/2026/05/19/google-io-2026-news/
 
-### 3. AI Search 和 YouTube 变成问答入口（媒体报道）
+### 3. Gemini Omni 把多模态推到视频（媒体报道）
 
-Axios 提到 Google 把 AI 往搜索和 YouTube 里继续塞，这对内容流量和搜索分发最敏感。
+Gemini Omni 被报道为新的多模态模型线，首个 Omni Flash 面向图像、音频、视频和文字输入生成视频。
 
-对普通用户：用户会更少点击网页，更多直接在搜索页或视频页里完成追问。
+对普通用户：普通创作者会更快把素材改成短视频、解释视频和视觉化内容，但也要更重视水印和出处说明。
 
-对开发者：内容站和产品页需要更强的结构化表达、可引用段落和品牌实体信号。
+对开发者：重点看视频编辑能力是否开放 API，以及生成内容的水印、检测和版权策略怎么落地。
 
-来源：https://developers.googleblog.com/en/get-ready-for-google-io-livestream-schedule-revealed/
+来源：https://9to5google.com/2026/05/19/google-io-2026-news/
 
-### 4. Gemini 进入 Android 系统层（已确认）
+### 4. 搜索、YouTube 和购物进入 Agent 化（媒体报道）
 
-今年最值得盯的不是单个 App，而是 Gemini 被写进手机、电脑和浏览器的默认工作流。
+Search 的 AI Mode、Ask YouTube、Universal Cart 和信息 Agent，指向同一个方向：入口不只回答，还要持续跟进任务。
 
-对普通用户：普通用户会更少打开独立 AI 应用，更多在手机通知、Chrome、桌面模式里直接得到建议和操作。
+对普通用户：用户会更少在网页和视频之间来回跳转，更多在搜索页、视频页或购物流程里直接追问和执行。
 
-对开发者：开发者需要把产品能力接进系统级上下文，而不是只做一个聊天入口。
+对开发者：内容站和产品页要增强结构化表达、可引用段落、商品信息和品牌实体信号。
 
-来源：https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/
+来源：https://9to5google.com/2026/05/19/google-io-2026-news/
 
-### 5. Android XR 眼镜进入公开演示区（媒体报道）
+### 5. Gemini Intelligence 进入 Android 系统层（已确认）
 
-智能眼镜是这次最容易传播的硬件线，但它真正的价值是第一视角 AI，而不是眼镜本身。
+官方把 Android 从 operating system 往 intelligence system 上讲，Gemini Intelligence 覆盖自动化、Chrome、表单和自定义组件。
 
-对普通用户：短期看翻译、导航、拍摄和现场问答；长期看佩戴舒适度、隐私和生态。
+对普通用户：普通用户会在长按电源键、通知、浏览器和表单填写里遇到更多主动建议。
 
-对开发者：机会更可能先出现在第一视角工作流、空间内容和垂直场景 Agent，而不是整机创业。
+对开发者：应用要考虑系统级上下文、屏幕/图片上下文、权限确认和跨应用任务链路。
 
-来源：https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/
+来源：https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/
 
-### 6. Googlebook 把 Android 推向桌面（已确认）
+### 6. Android XR 眼镜给 Gemini 第一视角（媒体报道）
 
-Googlebook 的信号很清楚：Android 不只在手机上跑，也要覆盖轻办公和多窗口桌面。
+眼镜线最容易出圈，但更关键的是 Gemini 有了第一视角：翻译、导航、拍摄、提醒和现场问答都可以被串起来。
 
-对普通用户：如果 Android 设备能更自然地接显示器、键鼠和多窗口，轻办公设备的边界会被重新划一遍。
+对普通用户：短期看佩戴舒适度、隐私提示、续航和真实场景可用性；长期看它能不能成为手机外的新入口。
 
-对开发者：应用要重新检查大屏、键鼠、窗口缩放和跨设备状态保存。
+对开发者：机会更可能先出现在第一视角工作流、空间内容和垂直场景 Agent，而不是单纯做硬件概念。
 
-来源：https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/
+来源：https://9to5google.com/2026/05/19/google-io-2026-news/
 
-### 7. Chrome 的 AI 变成默认入口（已确认）
+### 7. Googlebook 把 Android 推向笔记本（已确认）
 
-Chrome 不只是浏览器，正在变成 Google 给移动端塞 AI 工作流的主入口。
+Googlebook 是 Google 对 Chromebook 之后笔记本形态的再定义：Android、ChromeOS 和 Gemini Intelligence 被打包成新类别。
 
-对普通用户：网页总结、检索和自动化操作更可能从浏览器侧发生，而不是每次跳到聊天机器人。
+对普通用户：如果它真的把手机应用、文件、浏览器和桌面组件顺起来，轻办公设备的边界会被重新划一遍。
 
-对开发者：内容和产品页面要考虑 AI 浏览器如何读取、摘要和触发下一步操作。
+对开发者：应用要重新检查大屏、键鼠、窗口缩放、跨设备状态保存和 Android 应用在笔记本上的体验。
 
-来源：https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/
+来源：https://blog.google/products-and-platforms/platforms/android/meet-googlebook/
 
-### 8. AI Studio 与开发者工具会是暗线（待确认）
+### 8. 开发者工具主线是 Agent 编程（已确认）
 
-I/O 真正影响开发者的一条线，是 Google 如何把模型、IDE、部署和监控串起来。
+官方 Developer keynote 把 Antigravity 2.0、AI Studio、Managed Agents、Android CLI、WebMCP 和 Chrome DevTools for agents 放在同一条线上。
 
-对普通用户：普通用户未必直接感知，但这会决定未来半年 AI 应用迭代速度。
+对普通用户：普通用户未必直接感知，但这会决定未来半年 AI 应用迭代速度和 App 质量。
 
-对开发者：重点看 Gemini API、AI Studio、Firebase、Chrome DevTools 和 Android Studio 的联动。
+对开发者：重点看 AI Studio 到 Cloud Run/Firebase、Android CLI、WebMCP、Chrome DevTools for agents 和 Antigravity SDK 的连接方式。
 
-来源：https://developers.googleblog.com/en/get-ready-for-google-io-livestream-schedule-revealed/
+来源：https://developers.googleblog.com/en/all-the-news-from-the-google-io-2026-developer-keynote/
+
+## YouTube 检索与推测
+
+本轮已把 YouTube 搜索纳入素材池。官方视频只作为事实核对入口，第三方视频只作为传播声量参考。
+
+### 官方视频结果
+
+- Google for Developers｜Developer Keynote (Google I/O '26)｜约 66,166 次观看｜https://www.youtube.com/watch?v=aqmpZocmR8o
+- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜约 5,430 次观看｜https://www.youtube.com/watch?v=KPYtmPz5pbU
+- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜约 472 次观看｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
+- Google｜Google – Welcome to the Gemini era｜约 55,480,900 次观看｜https://www.youtube.com/watch?v=_fuimO6ErKI
+- Google｜Google I/O '26 Keynote｜约 8,507,094 次观看｜https://www.youtube.com/watch?v=wYSncx9zLIU
+- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜约 8,410,879 次观看｜https://www.youtube.com/watch?v=dXCCleAddEA
+- Google Cloud｜Google Cloud Next '26 Opening Keynote｜约 1,723,307 次观看｜https://www.youtube.com/watch?v=11PBno-cJ1g
+- Google｜Google I/O '26 Keynote - American Sign Language｜约 102,899 次观看｜https://www.youtube.com/watch?v=vw73r_xaeX0
+
+### 推测：对公众号写法的影响
+
+- 官方视频结构已经分成主 keynote 与 Developer keynote 两条线，公众号主文也应该分成“普通用户入口”和“开发者工具链”两条叙事。
+- YouTube 标题里 Gemini 的出现频率最高，标题和封面文案要把 Gemini 放在第一视觉锚点。
+- 硬件相关视频更适合做传播钩子，但正文里要把它们写成“入口变化”，不要写成单纯酷炫硬件盘点。
+- Search 与 YouTube 的问答化会影响内容分发，建议单独保留“对内容创作者意味着什么”。
 
 ## 关键判断
 
@@ -101,41 +123,47 @@ Google 今年押的不是一个更聪明的聊天机器人，而是把 AI 放回
 
 - [OK] Google I/O 2026 Keynote｜confirmed｜https://io.google/2026/explore/google-keynote-1
 - [OK] Google Developers Blog I/O livestream schedule｜confirmed｜https://developers.googleblog.com/en/get-ready-for-google-io-livestream-schedule-revealed/
+- [OK] Google Developers Blog Developer keynote recap｜confirmed｜https://developers.googleblog.com/en/all-the-news-from-the-google-io-2026-developer-keynote/
 - [OK] Android Show I/O Edition｜confirmed｜https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/
+- [OK] Gemini Intelligence on Android｜confirmed｜https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/
+- [OK] Gemini in Chrome on Android｜confirmed｜https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/
+- [OK] Googlebook for Gemini Intelligence｜confirmed｜https://blog.google/products-and-platforms/platforms/android/meet-googlebook/
 - [OK] AP Google I/O 2026｜reported｜https://apnews.com/article/a984e6756032dc4af260f8fa27e8f4a9
 - [FAIL] Axios Google I/O 2026｜reported｜https://www.axios.com/2026/05/19/google-ai-youtube-gemini
 - [OK] 9to5Google I/O 2026 roundup｜reported｜https://9to5google.com/2026/05/19/google-io-2026-news/
+- [OK] Android Authority Gemini 3.5 Flash｜reported｜https://www.androidauthority.com/google-gemini-3-5-flash-3668559/
 - [OK] MacRumors Google I/O roundup｜reported｜https://www.macrumors.com/2026/05/19/google-io-2026-roundup/
 - [OK] Android Central live blog｜reported｜https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news
 - [OK] Tom's Guide live blog｜reported｜https://www.tomsguide.com/news/live/google-io-2026-live-news-updates
 - [OK] The Verge Google I/O｜reported｜https://www.theverge.com/google-io
-- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMickFVX3lxTE53MjJ0Z0dFdDJ6RDZUVURfSVFVVFVQZVJmLVFiajUzdHJlc2J1aU41V0pQdl9RQ29SSnZ6RkhEN3V4cEFJZHlFRV82Y3hEbnZuMDE3VURZTlRSbEU1NGNscjZUZndpUWZROWp0cWw1SzR3UQ?oc=5
+- [OK] The Verge biggest I/O 2026 announcements｜reported｜https://www.theverge.com/tech/933415/google-io-2026-biggest-announcements-ai-gemini
+- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMieEFVX3lxTE9zS0gzclN2QkFWRHJFd0pKM1dEQV93WTJFeU1ZTWxEZS1BZHVjVUxyNkdwYWdTTjI1U1J2S2YyOEZ2UnF1WG9seWJDVEJDWFYwSW9rVlVfaFNjcDI5LTRBMEtNUlJrSEZybU5hTU9QTlNGaDVma3BTSg?oc=5
 - [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMiTEFVX3lxTE1MR2ZsVjRUMkhwZ2E0Wm8ySmltZmdfaGdMcTZ1S3R1S0d3dTFlRGc0NW5wdl9TN0FFekxMSDB4TWNNd2U4VVVEQ3pFU2I?oc=5
 - [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMikwFBVV95cUxQOVExWUp4YlFNU0NJYzVJM2lfMWxpTnRkdlM4OTdDcWlPeFZiUVVMR21FZ1g0SHFHNEZGaWdiVnN2QXVoQXotZFlWYjg2V1BUb3IzdG5HLUxnenB0UVFLdWQtbnVBV3k2TmpGMnR5aTVaemlOV2RGRUJmZ3hsNTdTNmJXVjJWYllfMzJmYWx4N0lyU1E?oc=5
 - [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMifkFVX3lxTFBkU0dqSUdfOHQtSkd5c193V3Q1ekd2ZUdhbHhvMnJHSE9GU1hXNW1kMlcxd3BPMGRtU1F2OXNZOGEwdlJwNnJiQTJRLUZfVm5NWjZIV3FGaHVsOWtxRDI0NDNJb2FUemMzbmo1LUhSMjhPVVhJOU5oNUE2Y19sdw?oc=5
 - [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMid0FVX3lxTE5aUHdDaFdrT3JkdnozZzdmdVU5VFNzM0hKMnE4NlFIb0xEaFFXRERUS2Q3ZTNjZnpicXItY0VzbG9fTnh4MlY2TmFqc0JFakp3M0dPbGx5QUt6Y0VZZjhac3ozM2wyaVB2VEdLMkxqdjg1T0Y1VzlB?oc=5
-- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMiigFBVV95cUxNczQxb1pYdUpRZ2NxbEN5NDlZRi1PS0I1a2szSGhOZlN1ZWc1TG95QUxSaHdZaXBEV1YzVGNISkx0czFxNGdycFgzMmtfNzJpZ2h4UUlMckdQeVNhZEFGVTN1M0ZXWW53Vlc0NFBJc19zTDlBSUx2ekhHNFpST0JNbFBNNF80TlJjOHc?oc=5
+- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMif0FVX3lxTE93aUhUZmNKc1JRT2xuYkM5YUdlNUNFWDd5ay1aSXZ0SXFuWmgyWF9XQ1BlTlBkSDRTcFJVeFhneC05NmNRa0FITUExR0tOdGdtNGpXRThiblhBZ2hCbm02NWl3U2d2cUR4NGJON214YjNUYVUyVG5MZ2xUQjQtZ2M?oc=5
+- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMiiwFBVV95cUxPa3g2d2xvMDZLN3FWTnJkRmotdk5SeTB3bS02R190eDVyWHMzRGoyNDhNN3JIQ3VTQkJSRFMyVDVNc0xab05HdU43dG5nbGFtTnkyeWRnZEVCUzVVZzVXQXgxTnRZZzZ0SHhUcTItaC1wNXU3MHBLRkE0dXZvZWRJM0U1SkFKUC1hWV9z?oc=5
 - [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMikAFBVV95cUxPMXd0MEEzOWxtZlVDb3FiaUhpQ1h2VDR6UXFEa3ZHc2Iwb291VzJkTEZVSW5SdVdHWXVHN3RqODFzeWJLVjFaWng5cDhKOXNLOGlIanYtYy1MMklGcWtGMEVmWEwxb2g4V3B5ekY3VkhtMWNSN1poRmpGWjJHc0RBS2U2TVAtOGdkUWstNGJkN1M?oc=5
-- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMieEFVX3lxTE9zS0gzclN2QkFWRHJFd0pKM1dEQV93WTJFeU1ZTWxEZS1BZHVjVUxyNkdwYWdTTjI1U1J2S2YyOEZ2UnF1WG9seWJDVEJDWFYwSW9rVlVfaFNjcDI5LTRBMEtNUlJrSEZybU5hTU9QTlNGaDVma3BTSg?oc=5
-- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMimgFBVV95cUxOTXlnWFlEbl85X2JsWTIzVWYtNmN6N1ZHVHJmb1B4SGpFaDBuQjljZkQxa2pnaVBkTGdBWEVSTTJlZzE0bWJoMDlTVXZUa01YN1JKWU1jaklETjhfXzhpcGZ4Y0xLM1VQZUJNMVlKZzNsMFNpbV9UZk42OHRRcHEzNzFZb3hBMkJBWFhIa0Z6NVFJUWk0UnpFbkZR?oc=5
 - [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMickFVX3lxTE9fYTk5ZnpfZjRDZkJDTlJNYWUtbzJjR0poeFJXdzRnc0Q2UHhOTE9WcWJOTEIxbVE0cXZjLXpvTHlOQ01PN0VOMlA3ZFZVMjFpcGVUQ3Nwa3RsNTZ6b0dOcFFuMmVGUnhsaF9MNlZvb051QQ?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiY0FVX3lxTE51ZURVTDFsTUNDN1BWR2FRSUVVcGlDaTd4MUtkX2QwckFEY0hzOGNGWnVhSkFsTS0tLU54cVNHbDNOSnBOaUhETVZrVVl3RUh3c1lJVF9XTk9GZkdjWDZZcFkzWQ?oc=5
+- [OK] Google News RSS: Google I/O 2026 keynote｜reported｜https://news.google.com/rss/articles/CBMimgFBVV95cUxOTXlnWFlEbl85X2JsWTIzVWYtNmN6N1ZHVHJmb1B4SGpFaDBuQjljZkQxa2pnaVBkTGdBWEVSTTJlZzE0bWJoMDlTVXZUa01YN1JKWU1jaklETjhfXzhpcGZ4Y0xLM1VQZUJNMVlKZzNsMFNpbV9UZk42OHRRcHEzNzFZb3hBMkJBWFhIa0Z6NVFJUWk0UnpFbkZR?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiZEFVX3lxTFBiYVdtVVc4bjllWENISUlnQ2lDcjFfeHFxWFpJb0JzSVNvVG85eFkxTVF4M2oyTlM3M1VxajQxZE4wejgtTm1wek9WbXM1M1dIQVZGd1JiQ2NHWVFMa29mVTdZcjQ?oc=5
 - [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMihwFBVV95cUxPSm5weVJ1T0RNZGtBc3JTdmJZUXZGNkhWR3FjRFZDeDgzbDF0cFhhQkJmUEh3YklXT3VuME13N21xOXVieEd3WmRuTUdSTDN1ZGEwUTFsLVZZR25oVjBhZkNzUHQ5T0RmWGt0Q0pSV1JwZldwcXU0ZnJLM3psZDdRWFlqa1YzZXM?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiigFBVV95cUxNczQxb1pYdUpRZ2NxbEN5NDlZRi1PS0I1a2szSGhOZlN1ZWc1TG95QUxSaHdZaXBEV1YzVGNISkx0czFxNGdycFgzMmtfNzJpZ2h4UUlMckdQeVNhZEFGVTN1M0ZXWW53Vlc0NFBJc19zTDlBSUx2ekhHNFpST0JNbFBNNF80TlJjOHc?oc=5
 - [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMikwFBVV95cUxNTWJrdjVZM2RFT21LWjBYUjNtYzZWQjNwU2E0TVJRbnRSQXZmTWIzZXBXSlpBcVM0aDBSM1FmOWVqRVlCUGlCeHpuUDRITmtRMW1oLUd3MFhwNEVCQm95WnpmMFZYYndhdEowcU5vZEhvRTIwdUYySUIxNnVwY2tEWmtwZGs1dVBqWUx3a2k0SzdzNDg?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMif0FVX3lxTE93aUhUZmNKc1JRT2xuYkM5YUdlNUNFWDd5ay1aSXZ0SXFuWmgyWF9XQ1BlTlBkSDRTcFJVeFhneC05NmNRa0FITUExR0tOdGdtNGpXRThiblhBZ2hCbm02NWl3U2d2cUR4NGJON214YjNUYVUyVG5MZ2xUQjQtZ2M?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMidEFVX3lxTE8tcjBMeFBZWEt4dXZrVy1vTXlZbXNlZk5xQ0gxZWV6TVV6U25iekF2X3R6N1FVWkN4SjRPSkRvb04za2g5REV5aEJ5ZGNPSllHelA2N0dqREVKaV9paGhSVGlfRG1kRGllY1lCb1ZvenV4M1pH?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMidkFVX3lxTE9YSDRWMlV1cGRQTGEtc3NwVE1raTRxNmhTWTg0c1phOGFVSS12djI0b29zMDY4UWlicHFoa3J3bmtRWUJiM3A4RFVsMjhPdXJFTE1HZG93Y3Vra2FDYVZ1Q1gxZmlJd1draF9oRy1XWDQydUxvMVE?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMieEFVX3lxTE9zS0gzclN2QkFWRHJFd0pKM1dEQV93WTJFeU1ZTWxEZS1BZHVjVUxyNkdwYWdTTjI1U1J2S2YyOEZ2UnF1WG9seWJDVEJDWFYwSW9rVlVfaFNjcDI5LTRBMEtNUlJrSEZybU5hTU9QTlNGaDVma3BTSg?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMieEFVX3lxTFBkd0Ytc1JPdXpSMENSbmZaUGxKQkdPWFBCV3lhN1pmajQ5WVRJZnhVc3RhNWN4TEswM29xaW1kZlFNU0x2dFRRWjk4VzFxSnk4aXdreS15RFJZYUdIejVudVdacWo0Ykt4RmwwbjNVREg1aWI3dUNCQg?oc=5
-- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMid0FVX3lxTE5aUHdDaFdrT3JkdnozZzdmdVU5VFNzM0hKMnE4NlFIb0xEaFFXRERUS2Q3ZTNjZnpicXItY0VzbG9fTnh4MlY2TmFqc0JFakp3M0dPbGx5QUt6Y0VZZjhac3ozM2wyaVB2VEdLMkxqdjg1T0Y1VzlB?oc=5
-- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RZUxDMzlZTzdxUlI5elNqeHlJVVBpWkZVQ0FraURpQjU0MjhfUm5Wb3ptNWRwTEI2ZkgzVnBrTGg2T3VGMjI4YXFaVlBOc3BmM2JB?oc=5
-- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMi6wFBVV95cUxObFpnR2VweWJvbGNSdFVnc1BVUGdTVE5RTGp0UUxLUW1GcTdTeHdJQUtPcFRmdjVFTXFkZkxORTZVajNCUTA4Um9pcTVVWHNfaVRGN2ZBTVpIZjBmek1ObjFpaHRKRnhfdEpDOHRUZHdxZFloaDg3OHhNTlZzd1F4TmxMR0hUMENmOUVJQzZ3bGpfTGhVdHJ2T1EyV2RZT3luVFNRLWtWX192OUVMUXkxV1dTWklVclk3aWFxblJsNjlvTXVsTjByNlVvb2pXY2stMEF6empIb0VHMGg2ZUxTWVJCTlRIMmxxYWNz?oc=5
-- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMia0FVX3lxTE15dEp3Rm9UV2NNRGk4aW4waVpKRkYtUnh3SlF1amtDRDc4cmJjTDFaVV9DOVRhb3VBU1BYQWZiOUU4TXdQTFZEOEwxSzlpNlQ0OWU0a0UwRll1THlISm83YjFxR19rcHpCdlRz0gFrQVVfeXFMTXl0SndGb1RXY01EaThpbjBpWkpGRi1SeHdKUXVqa0NENzhyYmNMMVpVX0M5VGFvdUFTUFhBZmI5RThNd1BMVkQ4TDFLOWk2VDQ5ZTRrRTBGWXVMeUhKbzdiMXFHX2twekJ2VHM?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiwwFBVV95cUxPd3FxZGEtdDFNcmhwN2pJcUtsWGc1YW04QlRwQmdoYW80c2VIaFUtaDJvMkJGeWtOSUxra1pJenJHNW03eXlkaTVuVk9TMHpwVlF1WUl5M1I2OFhUTUhNVnR0QlJOQXZpMWE1MXlSbUNIOHV3SkVoQi04QlhTaGNYbEF5UDRDN2hrZGpxZVJRMlk3MF8zTHNueDZiemFsMlpsOWtsRF8yVXRlT1oyLVFGNHVocnN3cVhvOWdoSEw1dDlOd1E?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiggFBVV95cUxPMTJBUUEtVGdsTTd4Y2FXNjNSMW1XTWM0VUdfQTE1ZVV2OGpDRmVEOWExTHdoNTZKdTNQZjRYVUtrU1M4T3RSS1YxNkFDVWpUWW1rNFI1eFJYdUdjMVVXUU5hZTRQalhHemotVDJJcFktUy1sVnNXbXFSYS11S2lQekx3?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMicEFVX3lxTE43YTFtMFllSmhaVElDZzh5XzZJMmVCbzNDa09pVS1iWUNNeGU4ZFh3T1hQdUdjdm05WEtSMF9BNklGN3FZWFlYWUhzZUtXWHhEVkp5MU9ZZVIwMTNJd1ZSZU5saDFlT1VtSEM4NGlBc1M?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiigFBVV95cUxNczQxb1pYdUpRZ2NxbEN5NDlZRi1PS0I1a2szSGhOZlN1ZWc1TG95QUxSaHdZaXBEV1YzVGNISkx0czFxNGdycFgzMmtfNzJpZ2h4UUlMckdQeVNhZEFGVTN1M0ZXWW53Vlc0NFBJc19zTDlBSUx2ekhHNFpST0JNbFBNNF80TlJjOHc?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMiakFVX3lxTE0wQk9XRlQ5dDVzMDA1N1N4UXQ3U3IzNWI0Q205bXQzdHczMS1sV0pPeU5vc0R5RWdWb01LWHhZM0VQZDRIMkhUZVN5bWM4cUprZHYtVm5weW5XSFNIOWw5Y3NiRGFsYlB4amc?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMigwFBVV95cUxQckZSdDZJNlhNZWo2OXVvVXFvMmlLb213cnA0aUZoTmpxZVlIcHJrVmpLVXFUMGR2cVJ4ckJTdVB2cW9uOXo2WnFucUhNNnZ2WWk4MVhHb2RzTXJqWGp0azlPWU1QU3JidXI4czhtN3JyaXFubVpJQlpRRlZaUEVLZ2lUSQ?oc=5
+- [OK] Google News RSS: Google I/O 2026 Gemini Android XR｜reported｜https://news.google.com/rss/articles/CBMingFBVV95cUxOMm1NelVTbUJ0Z2RzNDR4WjBITnpnVkxtMlRUX2tHSXNiTVR0am1UYjREaHgzZDRUUWxhcThzeThUWDN3MXBrYzJ0emRDM0ZTYy12S20wcGpzZVZ6bVAyLVNHZGlqam4wOWlYX3pTa2gzLTNrbGlDTzJPMkRFSVlPWVZVcTVoc082bXA3Mm5LM0NXbXl1cU5sMkpIU1d4QQ?oc=5
+- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiSEFVX3lxTE40Vk8tU3lfZHJzcU84eTQ1RF9fMHQ5aUtiVjhQWUV6QzNCalE5WkVmVV80ckhnS0pEY3phX0FsQ1FJc195bFpOZg?oc=5
+- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMi5wFBVV95cUxPenVaSVJnU0lKUzgtRDVRWjBlYjVKbEZlOWhQaFBGZVM0RWlwV2NQV09oT1BsTUpzQ1BXNFJ6d19QZDhvNmZEVVZ2ZHVYRG55VjFxakVFWkdmdDUzakNrT0ZkSFEtNGFJUjdyQjZRelhjSmJfdDNlUGFNSkVycGpta0xfWmVISkExRkc3eXhiZm5tdlNlNzZfTGcyM1VqRUhSdVd5WFpwRUJLYS1OUl9XZjNqOHhqM2I5SUNjX0VNNkxndUJGVW1HeEtVUHEzVDFFeWRoblRCVFpDZ3pVU1J5LTFBdkU4em8?oc=5
+- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiZkFVX3lxTE5QOXNRTlhwREFpMTUwMFVtLU5CZ2w5WTJFelNpcnN3cHF2bElZcmUtcTJnUTlQWE9WTzRoYXJVLXFmMUlobV9iVUFVNTg3WTBkc2pQSEkzN2JGQW12TjlHWE5GT1h5d9IBa0FVX3lxTE9kaXRzRER1b3FwcWh2WjJqRWtiWWVxZU44aG02MkZEMVpPNlhsZk9sZjNDUF9RUVJHYnhvTExlVkxfeS1rTGpQSXAwV3pjeGZFOGxlQVI2U2RFUVNWdEc3dTh3SjQ0S09CdUhr?oc=5
 - [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiS0FVX3lxTFBfVXppNDNFSWRTZ3dSa19hZmNuM2prMm1vbHY4MDBIaXI4U0tjYkJDQjFmNmNSQ2lLXzZQSnd5UDlqTVI3cXJTai1WTQ?oc=5
+- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMi6wFBVV95cUxObFpnR2VweWJvbGNSdFVnc1BVUGdTVE5RTGp0UUxLUW1GcTdTeHdJQUtPcFRmdjVFTXFkZkxORTZVajNCUTA4Um9pcTVVWHNfaVRGN2ZBTVpIZjBmek1ObjFpaHRKRnhfdEpDOHRUZHdxZFloaDg3OHhNTlZzd1F4TmxMR0hUMENmOUVJQzZ3bGpfTGhVdHJ2T1EyV2RZT3luVFNRLWtWX192OUVMUXkxV1dTWklVclk3aWFxblJsNjlvTXVsTjByNlVvb2pXY2stMEF6empIb0VHMGg2ZUxTWVJCTlRIMmxxYWNz?oc=5
+- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiU0FVX3lxTE41bDVZRFRGaDkxOF9JUmduclVTdlZrWVE0TmdnVXpneklLaUQ0YWFEaTljbHEtRnFvX0FMU3hQcmRRcUkxNXdEZmNPQXdJWUNFTW1R?oc=5
 - [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiyAJBVV95cUxQQ3hnQmFBd3U0YWx5eGRxYTJXeEVJYlFXRGVPM3E4ZzJ4WDFiQXJkYTdURVB3OUdBUVhadXlNam5mMXpCSjJVT1RlbURiNmIxaGdROXctdkVCbTJUZHlHSks2T3U2eG4xNV9Hd01FTGI2Q09TOVdjQmtfdWhjSGxTWjZCU2xhWHZTcWRPZ3RYUzdzSzNZekZfMmpsYncxR3ExaVd6TnFacE90bUZiejFpVkIyM2FnWW1zdXBtUUJNUEtUZC1qN3N6V2JwUUZYM3pMZUpTblZ6dTFrMHU2M25WajZCanFWWEphY1JPb0dFVk9wWmY1LUp6d0FuYVQ3VEdtV3NYd2NTRzNnMmQ4aGhFc0pock4yWnFVRGF1cFR0cERyZlA3a1U2MW5OODlSZEdzSTZnanBQQUhFQlNSdVp5LUlXQ09CdHRn?oc=5
 - [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMirwFBVV95cUxOWE5QUUdyNEVvQUdmWm9wR2lsRzBtalhXdGsySkxVVDFMcEEzbzZXREV5RTdZWFJnTVFVbWtpZGhEb2ZzcTZteFdoV2FJMjdjWk9pWHRuVHlURzRLMWNWeEMxOG8wNjYtTDVKYWRmWkQtUWpGRlRGTkROZk93cUJoTXFJLVY0T2NzT1k0N3dXNVNjUDQxNDhoSTZrVmRhMWRwOERja1I5bEQ3bWwya19B?oc=5
-- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiU0FVX3lxTE41bDVZRFRGaDkxOF9JUmduclVTdlZrWVE0TmdnVXpneklLaUQ0YWFEaTljbHEtRnFvX0FMU3hQcmRRcUkxNXdEZmNPQXdJWUNFTW1R?oc=5
 - [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xRk9CMjB4WXpGMFU1UWJZUEpVTFZYdmVBVDVqM0lpVklsRUNJa2FiRGF5RjlreElrWE5vUDFyR0h3cDQzLVUwS2ZuSUVUUS1KZGc?oc=5
 - [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QSmRlUzgtX1NEemxNMnctNzM1Y0YwdkxuQ2N2S3ZtbXhDN1lBUzdaaWQwSXlXZ08wSV9rWG1kY1dSUzdxM3Jjb19mN3FFR2tab2tjOVQ3SUphaW1zcHc?oc=5
-- [OK] Google News RSS: Google I/O 2026 谷歌 Gemini Android｜reported｜https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHBmbmhTcF9GTERjQlMxMEFqazlTWnhROUxPVkNsM2dadGd0RW5NQ0lIWXRrT1ZqZlBISEdHUkhzSVJ6MnczcVZUQkVSOGM1aHBwdVdSODI5Njd1SU5BQVBmX1dkMWxjTlREMms0ZzFObVZTSW1wOEhzaWUwWGtjZHVMMkMzV18yUFgxeUxCVkZKQWhoUEZQbnRhNkVnaWx1UUxCZ05fUXcyZlU2SHFF?oc=5
