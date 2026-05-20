@@ -1,6 +1,6 @@
 # Google I/O 2026 公众号发布清单
 
-更新时间：2026-05-20 08:46 北京时间
+更新时间：2026-05-20 08:48 北京时间
 
 ## 标题
 
@@ -37,9 +37,9 @@ Google I/O会后速览：按官方与主流媒体证据重排亮点，给出普�
 - gemini-intelligence-android：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-intelligence-android.png`
 - gemini-chrome-android：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-chrome-android.png`
 - googlebook-gemini-intelligence：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/googlebook-gemini-intelligence.png`
+- youtube-google-i-o-26-keynote：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-google-i-o-26-keynote.png`
 - youtube-developer-keynote-google-i-o-26：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26.png`
-- youtube-developer-keynote-google-i-o-26-american-sign-language：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26-american-sign-language.png`
-- youtube-google-i-o-2026-developer-keynote-5-minute-recap：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-google-i-o-2026-developer-keynote-5-minute-recap.png`
+- youtube-introducing-gemini-omni-create-anything-from-anything：`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-introducing-gemini-omni-create-anything-from-anything.png`
 
 ## 发布前核对
 

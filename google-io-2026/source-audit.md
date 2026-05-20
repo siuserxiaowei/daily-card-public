@@ -1,6 +1,6 @@
 # Google I/O 2026 公众号稿检索审计
 
-更新时间：2026-05-20 08:46 北京时间
+更新时间：2026-05-20 08:48 北京时间
 
 ## 已修正的问题
 
@@ -31,18 +31,18 @@
 
 ## YouTube 官方结果
 
-- Google for Developers｜Developer Keynote (Google I/O '26)｜views=66166｜https://www.youtube.com/watch?v=aqmpZocmR8o
+- Google for Developers｜Developer Keynote (Google I/O '26)｜views=66371｜https://www.youtube.com/watch?v=aqmpZocmR8o
 - Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜views=5430｜https://www.youtube.com/watch?v=KPYtmPz5pbU
-- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=472｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
-- Google｜Google – Welcome to the Gemini era｜views=55480900｜https://www.youtube.com/watch?v=_fuimO6ErKI
-- Google｜Google I/O '26 Keynote｜views=8507094｜https://www.youtube.com/watch?v=wYSncx9zLIU
+- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=506｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
+- Google｜New Home | Google Gemini SB Commercial 2026｜views=100215724｜https://www.youtube.com/watch?v=Z1yGy9fELtE
+- Google｜Google – Welcome to the Gemini era｜views=55480906｜https://www.youtube.com/watch?v=_fuimO6ErKI
+- Google｜Google I/O '26 Keynote｜views=8508606｜https://www.youtube.com/watch?v=wYSncx9zLIU
 - Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8410879｜https://www.youtube.com/watch?v=dXCCleAddEA
-- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723307｜https://www.youtube.com/watch?v=11PBno-cJ1g
-- Google｜Google I/O '26 Keynote - American Sign Language｜views=102899｜https://www.youtube.com/watch?v=vw73r_xaeX0
+- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723311｜https://www.youtube.com/watch?v=11PBno-cJ1g
+- Google｜Google I/O '26 Keynote - American Sign Language｜views=103010｜https://www.youtube.com/watch?v=vw73r_xaeX0
 - Android｜The Android Show: I/O Edition | Googlebook｜views=80570｜https://www.youtube.com/watch?v=y6u6iAo0KDo
 - Google｜Introducing Gemini Omni: Create Anything from Anything｜views=35560｜https://www.youtube.com/watch?v=KUyRq7szZsM
 - Google｜What’s New in Search｜views=20026｜https://www.youtube.com/watch?v=p6EBMG8OEBI
-- Google｜Make Something That Matters｜views=6025｜https://www.youtube.com/watch?v=YXbCQVhKb-Q
 
 ## 推测
 
@@ -59,9 +59,9 @@
 - gemini-intelligence-android｜https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-intelligence-android.png`
 - gemini-chrome-android｜https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/gemini-chrome-android.png`
 - googlebook-gemini-intelligence｜https://blog.google/products-and-platforms/platforms/android/meet-googlebook/｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/googlebook-gemini-intelligence.png`
+- youtube-google-i-o-26-keynote｜https://www.youtube.com/watch?v=wYSncx9zLIU｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-google-i-o-26-keynote.png`
 - youtube-developer-keynote-google-i-o-26｜https://www.youtube.com/watch?v=aqmpZocmR8o｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26.png`
-- youtube-developer-keynote-google-i-o-26-american-sign-language｜https://www.youtube.com/watch?v=KPYtmPz5pbU｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-developer-keynote-google-i-o-26-american-sign-language.png`
-- youtube-google-i-o-2026-developer-keynote-5-minute-recap｜https://www.youtube.com/watch?v=FZ-3BjbfNlI｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-google-i-o-2026-developer-keynote-5-minute-recap.png`
+- youtube-introducing-gemini-omni-create-anything-from-anything｜https://www.youtube.com/watch?v=KUyRq7szZsM｜`/Users/siuserxiaowei/Documents/New project 3/wechat-articles/google-io-2026-live/assets/official-screenshots/youtube-introducing-gemini-omni-create-anything-from-anything.png`
 
 ## 运行日志
 
