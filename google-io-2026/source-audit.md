@@ -1,6 +1,6 @@
 # Google I/O 2026 公众号稿检索审计
 
-更新时间：2026-05-20 10:39 北京时间
+更新时间：2026-05-20 10:43 北京时间
 
 ## 已修正的问题
 
@@ -31,16 +31,16 @@
 
 ## YouTube 官方结果
 
-- Google for Developers｜Developer Keynote (Google I/O '26)｜views=70921｜https://www.youtube.com/watch?v=aqmpZocmR8o
+- Google for Developers｜Developer Keynote (Google I/O '26)｜views=71091｜https://www.youtube.com/watch?v=aqmpZocmR8o
 - Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜views=5727｜https://www.youtube.com/watch?v=KPYtmPz5pbU
-- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=2170｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
-- Google｜Google – Welcome to the Gemini era｜views=55480972｜https://www.youtube.com/watch?v=_fuimO6ErKI
+- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=2259｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
+- Google｜Google – Welcome to the Gemini era｜views=55480973｜https://www.youtube.com/watch?v=_fuimO6ErKI
 - Google｜Google I/O '26 Keynote｜views=8535787｜https://www.youtube.com/watch?v=wYSncx9zLIU
-- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8414845｜https://www.youtube.com/watch?v=dXCCleAddEA
-- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723386｜https://www.youtube.com/watch?v=11PBno-cJ1g
+- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8414945｜https://www.youtube.com/watch?v=dXCCleAddEA
+- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723387｜https://www.youtube.com/watch?v=11PBno-cJ1g
 - Google｜Google I/O '26 Keynote - American Sign Language｜views=104692｜https://www.youtube.com/watch?v=vw73r_xaeX0
-- Android｜The Android Show: I/O Edition | Googlebook｜views=80696｜https://www.youtube.com/watch?v=y6u6iAo0KDo
-- Google｜Introducing Gemini Omni: Create Anything from Anything｜views=39711｜https://www.youtube.com/watch?v=KUyRq7szZsM
+- Android｜The Android Show: I/O Edition | Googlebook｜views=80699｜https://www.youtube.com/watch?v=y6u6iAo0KDo
+- Google｜Introducing Gemini Omni: Create Anything from Anything｜views=39857｜https://www.youtube.com/watch?v=KUyRq7szZsM
 - Google｜What’s New in Search｜views=22454｜https://www.youtube.com/watch?v=p6EBMG8OEBI
 - Google｜TPU Training Day for  I/O  ‘26｜views=7957｜https://www.youtube.com/watch?v=dhI4djOVEmI
 
