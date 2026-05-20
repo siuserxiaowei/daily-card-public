@@ -2,11 +2,11 @@
 
 > Google I/O一夜看完：模型、Agent、搜索、电商、创作工具和AI眼镜一起升级，Gemini正在接管入口。
 
-更新时间：2026-05-20 09:17（北京时间）
+更新时间：2026-05-20 09:23（北京时间）
 
 ## 开头
 
-北京时间 2026-05-20 09:17，Google I/O 2026 的主线已经很清楚：这不是一次单点模型发布，而是一次入口重排。
+北京时间 2026-05-20 09:23，Google I/O 2026 的主线已经很清楚：这不是一次单点模型发布，而是一次入口重排。
 Google 把 Gemini 塞进搜索、YouTube、Chrome、Android、开发工具、购物链路和眼镜里。换句话说，它不只是要回答问题，而是想接管你接下来要做的事。
 
 ## 核心亮点
@@ -97,14 +97,14 @@ Googlebook 是 Google 对 Chromebook 之后笔记本形态的再定义：Android
 
 ### 官方视频结果
 
-- Google for Developers｜Developer Keynote (Google I/O '26)｜约 67,665 次观看｜https://www.youtube.com/watch?v=aqmpZocmR8o
-- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜约 5,514 次观看｜https://www.youtube.com/watch?v=KPYtmPz5pbU
-- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜约 825 次观看｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
-- Google｜Google – Welcome to the Gemini era｜约 55,480,927 次观看｜https://www.youtube.com/watch?v=_fuimO6ErKI
-- Google｜Google I/O '26 Keynote｜约 8,516,385 次观看｜https://www.youtube.com/watch?v=wYSncx9zLIU
-- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜约 8,412,314 次观看｜https://www.youtube.com/watch?v=dXCCleAddEA
-- Google Cloud｜Google Cloud Next '26 Opening Keynote｜约 1,723,324 次观看｜https://www.youtube.com/watch?v=11PBno-cJ1g
-- Google｜Google I/O '26 Keynote - American Sign Language｜约 103,417 次观看｜https://www.youtube.com/watch?v=vw73r_xaeX0
+- Google for Developers｜Developer Keynote (Google I/O '26)｜约 67,966 次观看｜https://www.youtube.com/watch?v=aqmpZocmR8o
+- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜约 5,527 次观看｜https://www.youtube.com/watch?v=KPYtmPz5pbU
+- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜约 908 次观看｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
+- Google｜Google – Welcome to the Gemini era｜约 55,480,928 次观看｜https://www.youtube.com/watch?v=_fuimO6ErKI
+- Google｜Google I/O '26 Keynote｜约 8,519,188 次观看｜https://www.youtube.com/watch?v=wYSncx9zLIU
+- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜约 8,412,531 次观看｜https://www.youtube.com/watch?v=dXCCleAddEA
+- Google Cloud｜Google Cloud Next '26 Opening Keynote｜约 1,723,327 次观看｜https://www.youtube.com/watch?v=11PBno-cJ1g
+- Google｜Google I/O '26 Keynote - American Sign Language｜约 103,597 次观看｜https://www.youtube.com/watch?v=vw73r_xaeX0
 
 ### 推测：对公众号写法的影响
 
