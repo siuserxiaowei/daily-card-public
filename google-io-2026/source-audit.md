@@ -1,6 +1,6 @@
 # Google I/O 2026 公众号稿检索审计
 
-更新时间：2026-05-20 08:48 北京时间
+更新时间：2026-05-20 08:54 北京时间
 
 ## 已修正的问题
 
@@ -31,18 +31,18 @@
 
 ## YouTube 官方结果
 
-- Google for Developers｜Developer Keynote (Google I/O '26)｜views=66371｜https://www.youtube.com/watch?v=aqmpZocmR8o
-- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜views=5430｜https://www.youtube.com/watch?v=KPYtmPz5pbU
-- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=506｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
-- Google｜New Home | Google Gemini SB Commercial 2026｜views=100215724｜https://www.youtube.com/watch?v=Z1yGy9fELtE
-- Google｜Google – Welcome to the Gemini era｜views=55480906｜https://www.youtube.com/watch?v=_fuimO6ErKI
-- Google｜Google I/O '26 Keynote｜views=8508606｜https://www.youtube.com/watch?v=wYSncx9zLIU
-- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8410879｜https://www.youtube.com/watch?v=dXCCleAddEA
-- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723311｜https://www.youtube.com/watch?v=11PBno-cJ1g
-- Google｜Google I/O '26 Keynote - American Sign Language｜views=103010｜https://www.youtube.com/watch?v=vw73r_xaeX0
-- Android｜The Android Show: I/O Edition | Googlebook｜views=80570｜https://www.youtube.com/watch?v=y6u6iAo0KDo
-- Google｜Introducing Gemini Omni: Create Anything from Anything｜views=35560｜https://www.youtube.com/watch?v=KUyRq7szZsM
-- Google｜What’s New in Search｜views=20026｜https://www.youtube.com/watch?v=p6EBMG8OEBI
+- Google for Developers｜Developer Keynote (Google I/O '26)｜views=66743｜https://www.youtube.com/watch?v=aqmpZocmR8o
+- Google for Developers｜Developer Keynote (Google I/O '26) - American Sign Language｜views=5465｜https://www.youtube.com/watch?v=KPYtmPz5pbU
+- Google for Developers｜Google I/O 2026 Developer Keynote 5-Minute recap｜views=577｜https://www.youtube.com/watch?v=FZ-3BjbfNlI
+- Google｜Google – Welcome to the Gemini era｜views=55480907｜https://www.youtube.com/watch?v=_fuimO6ErKI
+- Google｜Google I/O '26 Keynote｜views=8510571｜https://www.youtube.com/watch?v=wYSncx9zLIU
+- Android and Android Developers｜🎬 Watch The Android Show | I/O Edition 2026｜views=8411186｜https://www.youtube.com/watch?v=dXCCleAddEA
+- Google Cloud｜Google Cloud Next '26 Opening Keynote｜views=1723313｜https://www.youtube.com/watch?v=11PBno-cJ1g
+- Google｜Google I/O '26 Keynote - American Sign Language｜views=103109｜https://www.youtube.com/watch?v=vw73r_xaeX0
+- Android｜The Android Show: I/O Edition | Googlebook｜views=80583｜https://www.youtube.com/watch?v=y6u6iAo0KDo
+- Google｜Introducing Gemini Omni: Create Anything from Anything｜views=36075｜https://www.youtube.com/watch?v=KUyRq7szZsM
+- Google｜What’s New in Search｜views=20383｜https://www.youtube.com/watch?v=p6EBMG8OEBI
+- Google｜Make Something That Matters｜views=6056｜https://www.youtube.com/watch?v=YXbCQVhKb-Q
 
 ## 推测
 
