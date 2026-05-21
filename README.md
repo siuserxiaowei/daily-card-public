@@ -1,5 +1,18 @@
 # Daily Learning Cards
 
+<!-- SIUSER-SEO-INTRO:START -->
+
+## 项目介绍 / Project Introduction
+
+**中文介绍**：公开版日报与知识卡片项目，用于沉淀 AI 摘要、内容视觉化、长图排版和公开传播素材。
+
+**English**: A public daily-card and knowledge-card project for AI summaries, content visualization, long-image layouts, and shareable media assets.
+
+**SEO 关键词 / SEO Keywords**: daily card, AI summary, knowledge card, content design, 长图排版, 内容视觉化
+
+<!-- SIUSER-SEO-INTRO:END -->
+
+
 每日由 AI 从微信群、社群讨论和公开资料中浓缩出来的学习卡片与专题日报（脱敏分享版）。
 
 🌐 **在线浏览**: https://siuserxiaowei.github.io/daily-card-public/
@@ -65,3 +78,17 @@ AI 替我读了几十个 AI 编程 / 出海 / 内容创作 / 独立开发方向�
 ## License
 
 CC BY 4.0 — 个人非商业使用,转载请注明出处。
+
+<!-- SIUSER-CONTACT:START -->
+
+## 联系我 / Contact
+
+想交流 AI 工具、内容自动化、SEO、私域增长或项目合作，可以扫码加我微信。
+
+For collaboration on AI tools, content automation, SEO, private-domain growth, or product experiments, scan the WeChat QR code below.
+
+<img src="https://raw.githubusercontent.com/siuserxiaowei/siuserxiaowei/main/assets/contact/wechat-qrcode.jpg" width="180" alt="WeChat QR code / 微信二维码" />
+
+**关键词 / Keywords**: daily card, AI summary, knowledge card, content design, AI tools, AI automation, GitHub Pages, SEO
+
+<!-- SIUSER-CONTACT:END -->
