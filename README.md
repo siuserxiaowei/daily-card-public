@@ -4,24 +4,24 @@
 
 ## 项目介绍 / Project Introduction
 
-**中文介绍**：公开版日报与知识卡片项目，用于沉淀 AI 摘要、内容视觉化、长图排版和公开传播素材。
+**中文介绍**：`daily-card-public` 是公开版日报与知识卡片主输出，用于沉淀 AI 摘要、内容视觉化、长图排版和可分享的脱敏学习素材。
 
-**English**: A public daily-card and knowledge-card project for AI summaries, content visualization, long-image layouts, and shareable media assets.
+**English**: `daily-card-public` is the main public output for daily cards and knowledge cards, publishing privacy-preserving AI summaries, visualized content, long-image layouts, and shareable learning assets.
 
 **SEO 关键词 / SEO Keywords**: daily card, AI summary, knowledge card, content design, 长图排版, 内容视觉化
 
 <!-- SIUSER-SEO-INTRO:END -->
 
 
-每日由 AI 从微信群、社群讨论和公开资料中浓缩出来的学习卡片与专题日报（脱敏分享版）。
+每日由 AI 从社群讨论、个人学习素材和公开资料中浓缩出来的学习卡片与专题日报（脱敏分享版）。这里展示的是 `daily-card-public` 的公开输出，不是完整聊天记录归档。
 
 🌐 **在线浏览**: https://siuserxiaowei.github.io/daily-card-public/
 
 ## 项目介绍
 
-`daily-card-public` 是一个面向个人学习和社群复盘的公开知识卡片库。它把每天分散在微信群里的高价值讨论，按主题压缩成更容易阅读、检索和转发的 HTML 卡片。
+`daily-card-public` 是一个面向个人学习和社群复盘的公开知识卡片库，也是这个流程的主输出站点。它把每天分散在社群讨论、个人笔记和公开资料里的高价值信息，按主题压缩成更容易阅读、检索和转发的 HTML 卡片。
 
-我关注的方向主要包括 AI 编程、AI 模型、出海独立开发、产品增长、内容创作、投资商业和电商等。这个仓库不是完整聊天记录存档，而是经过 AI 总结、人工筛选和脱敏处理后的学习入口。
+我关注的方向主要包括 AI 编程、AI 模型、出海独立开发、产品增长、内容创作、投资商业和电商等。这个仓库不是完整聊天记录存档，而是经过 AI 总结、人工筛选和脱敏处理后的公开学习入口。
 
 适合这些使用场景：
 
@@ -32,8 +32,8 @@
 
 ## 这是什么
 
-AI 替我读了几十个 AI 编程 / 出海 / 内容创作 / 独立开发方向的微信群,
-把每天群里**有学习价值的内容浓缩成一张知识卡片** — 不要搞笑、不要闲聊、不要表情。
+AI 替我梳理 AI 编程 / 出海 / 内容创作 / 独立开发方向的社群讨论和学习素材,
+把每天**有学习价值的内容浓缩成一张知识卡片** — 保留观点、工具和链接，不发布完整聊天上下文。
 
 每天早 8:30 自动更新一次。
 
@@ -50,7 +50,7 @@ AI 替我读了几十个 AI 编程 / 出海 / 内容创作 / 独立开发方向�
 ## 为什么公开
 
 - 卡片里只保留**观点 + 链接 + 工具名**,不含具体群名 / 群成员对话原文
-- 帮朋友也省时间 — 一份卡片 ≈ 替你读了几千条群聊
+- 帮朋友也省时间 — 一份卡片 ≈ 替你过滤一整天的高噪音信息流
 - 让学习内容从“刷过就没了”变成“可以复查、可以引用、可以继续生长”
 
 ## 脱敏原则
@@ -63,7 +63,7 @@ AI 替我读了几十个 AI 编程 / 出海 / 内容创作 / 独立开发方向�
 ## 技术栈
 
 - [Obsidian](https://obsidian.md) (vault)
-- [jackwener/wx-cli](https://github.com/jackwener/wx-cli) (微信本地数据)
+- [jackwener/wx-cli](https://github.com/jackwener/wx-cli) (本地素材读取)
 - Python (扫描 + 渲染)
 - [Claude Sonnet 4.5](https://www.anthropic.com/claude) (AI 浓缩)
 - GitHub Pages (托管)
