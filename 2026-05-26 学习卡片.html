@@ -1,50 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📚 2026-05-26 选中群本地学习卡片</title>
-<style>
-.main-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; margin:34px 0 46px; }
-.main-stat { padding:22px 24px; }
-.main-stat b { display:block; font-size:clamp(28px,3vw,46px); line-height:1.1; }
-.main-stat span { color:#647084; font-size:14px; font-weight:800; }
-.entry-card { display:block; margin:24px 0 38px; padding:28px 32px; text-decoration:none; color:inherit; }
-.entry-card strong { display:block; color:#2d3a4a; font-size:clamp(24px,2.5vw,38px); margin-bottom:10px; }
-.entry-card span { color:#647084; font-size:clamp(16px,1.4vw,22px); }
-@media(max-width:760px){.main-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
-</style>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-05-26 微信群情报 Wiki</title>
 <link rel="stylesheet" href="assets/daily-card-theme.css">
+
+<style>
+body.daily-card-theme.wiki-card { background: var(--dc-bg); }
+.wiki-card .hero { text-align: center; }
+.wiki-card .nav-back { display: inline-flex; align-items: center; min-height: 34px; padding: 0 14px; margin: 0 auto 22px; font-size: 14px; font-weight: 800; }
+.wiki-card .chips { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; max-width:1180px; margin:30px auto 0; }
+.wiki-card .chips span { display:inline-flex; align-items:center; min-height:34px; padding:0 13px; border:1px solid rgba(255,255,255,.32); border-radius:999px; background:rgba(255,255,255,.16); color:#fff; font-size:14px; font-weight:850; }
+.wiki-card .nav { position: sticky; top: 0; z-index: 5; display:flex; flex-wrap:wrap; gap:10px; margin:-30px 0 44px; padding:14px 0 18px; background:rgba(247,247,248,.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--dc-line); }
+.wiki-card .nav a { display:inline-flex; align-items:center; min-height:34px; padding:0 12px; font-size:14px; }
+.wiki-card .section { margin: 64px 0 0; }
+.wiki-card .section h2, .wiki-card .concept > .concept-head + .lead-small + .claim-grid + .evidence-grid + h2 { margin:70px 0 34px; padding-left:24px; border-left:8px solid var(--dc-blue); color:var(--dc-ink); font-size:clamp(30px,3vw,48px); line-height:1.22; font-weight:850; }
+.wiki-card .answer-grid, .wiki-card .arch, .wiki-card .claim-grid, .wiki-card .lint { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.wiki-card .answer, .wiki-card .arch article, .wiki-card .claim-grid div, .wiki-card .lint div, .wiki-card .conclusion-item, .wiki-card .evidence-card { background:#fff; border:1px solid #e4e5ea; border-radius:8px; box-shadow:0 2px 10px rgba(45,58,74,.05); }
+.wiki-card .answer, .wiki-card .arch article, .wiki-card .claim-grid div, .wiki-card .lint div { padding:22px 24px; }
+.wiki-card .answer b, .wiki-card .claim-grid b, .wiki-card .lint b { display:block; color:#4357bf; font-size:15px; margin-bottom:8px; }
+.wiki-card .answer p, .wiki-card .arch p, .wiki-card .claim-grid p, .wiki-card .lint p { margin:0; font-size:16px; color:#33465a; }
+.wiki-card .conclusion { display:grid; gap:14px; }
+.wiki-card .conclusion-item { display:grid; grid-template-columns:48px minmax(0,1fr); gap:16px; align-items:start; padding:22px 24px; }
+.wiki-card .conclusion-item span { display:inline-flex; justify-content:center; align-items:center; width:42px; height:42px; border-radius:50%; background:#eef0ff; color:#4357bf; font-weight:900; }
+.wiki-card .conclusion-item h3, .wiki-card .concept h3, .wiki-card .arch h3 { margin:0 0 10px; color:var(--dc-ink); line-height:1.28; font-weight:850; }
+.wiki-card .conclusion-item p { margin:0; color:#33465a; }
+.wiki-card .concept { margin:72px 0 0; padding-top:42px; border-top:2px solid var(--dc-line); }
+.wiki-card .concept-head { display:flex; gap:14px; align-items:flex-start; margin-bottom:12px; }
+.wiki-card .concept .badge { flex:0 0 auto; display:inline-flex; align-items:center; min-height:30px; padding:0 11px; font-size:13px; }
+.wiki-card .lead-small { max-width:1100px; margin:8px 0 24px; color:#33465a; font-size:clamp(18px,1.45vw,23px); font-weight:720; }
+.wiki-card .evidence-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.wiki-card .evidence-card { padding:18px 20px; }
+.wiki-card .evidence-meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; color:var(--dc-muted); font-size:12px; font-weight:800; }
+.wiki-card .evidence-meta a, .wiki-card .evidence-meta span:last-child { padding:2px 8px; border-radius:999px; background:#eef0ff; color:#4357bf; text-decoration:none; }
+.wiki-card .evidence-card h4 { margin:8px 0 7px; color:var(--dc-ink); font-size:17px; line-height:1.35; }
+.wiki-card .evidence-card p { margin:0; font-size:14px; line-height:1.65; color:#4a5b6d; overflow-wrap:anywhere; }
+.wiki-card .table-wrap { overflow:auto; border-radius:8px; }
+.wiki-card table { min-width:780px; }
+.wiki-card td:nth-child(2), .wiki-card td:nth-child(3), .wiki-card th:nth-child(2), .wiki-card th:nth-child(3) { text-align:right; white-space:nowrap; }
+.wiki-card .footer { margin:34px 0 0; color:var(--dc-muted); font-size:14px; }
+@media (max-width:900px) { .wiki-card .answer-grid, .wiki-card .arch, .wiki-card .claim-grid, .wiki-card .lint, .wiki-card .evidence-grid { grid-template-columns:1fr; } .wiki-card .conclusion-item { grid-template-columns:40px minmax(0,1fr); padding:18px; } .wiki-card .conclusion-item span { width:34px; height:34px; } .wiki-card .nav { position:static; margin-top:0; } }
+</style>
 </head>
-<body class="daily-card-theme daily-article daily-526-main">
-<div class="hero">
-  <a class="nav-back" href="./index.html">← 返回首页</a>
-  <div class="date">LOCAL CACHE · 2026-05-26</div>
-  <h1>📚 2026-05-26 选中群本地学习卡片</h1>
-  <div class="summary">这版是本地安全缓存公开版：41 个已选群里 32 个在缓存内活跃，合计 2033 条消息，数据只覆盖到 <strong>2026-05-26 11:12:09</strong>。它不是完整全天版，重点是把可公开的 HTML 入口整理好。</div>
-</div>
+<body class="daily-card-theme daily-article wiki-card">
+<header class="hero"><div class="hero-inner"><a class="nav-back" href="./index.html">返回首页</a><p class="kicker">LOCAL WIKI · TRACEABLE DAILY CARD</p><h1>2026-05-26 微信群情报 Wiki</h1><p class="lead">这版不再把 1248 条候选当链接墙，而是按「raw / wiki / schema」重新编译：先给结论，再给证据，再给下一步。数据仍只来自本地缓存，截至 <strong>2026-05-26 11:12:09</strong>，不是完整全天版。</p><div class="chips"><span>41 个已选群</span><span>2033 条缓存消息</span><span>1248 条候选</span><span>不运行微信相关 CLI</span><span>不调用外部模型处理聊天内容</span></div></div></header>
 <main class="container article-main">
-  <h1>5/26 本地安全缓存版</h1>
-  <div class="main-grid">
-    <div class="main-stat card"><b>41</b><span>已选群</span></div>
-    <div class="main-stat card"><b>32</b><span>缓存内活跃群</span></div>
-    <div class="main-stat card"><b>2033</b><span>缓存内消息</span></div>
-    <div class="main-stat card"><b>11:12</b><span>缓存截止</span></div>
-  </div>
-  <h2 class="article-section-title">🔥 公开口径</h2>
-  <h3 class="article-subtitle">1. 只发布 HTML，不发布原始数据</h3>
-  <blockquote><p>本次公开范围只包含学习卡片入口、41 群索引和逐群 HTML 页面；不包含 raw JSON、stats、候选 Markdown、执行报告或完整聊天文本。</p></blockquote>
-  <p>这次改版的目标是让公开页回到“学习卡片”的阅读体验，而不是把用户带到一个冷冰冰的目录表。所有页面仍然保留缓存截止说明，避免被误读成完整全天日报。</p>
-  <h3 class="article-subtitle">2. 群日报作为来源入口保留</h3>
-  <p>逐群 HTML 仍然保留，方便从主卡片进入具体群的公开日报页面。0 消息群也保留入口，用来说明 41 个已选群的覆盖范围没有被悄悄缩小。</p>
-  <a class="entry-card card" href="2026-05-26-selected-groups/index.html"><strong>打开 41 个选中群本地日报索引</strong><span>41 个已选群 / 32 个缓存内活跃群 / 2033 条消息 / 截至 11:12</span></a>
-  <h2 class="article-section-title">📌 当天可读方式</h2>
-  <h3 class="article-subtitle">1. 先看索引，再按群深入</h3>
-  <p>索引页按缓存内消息量排序，能快速看到当天哪些圈子最活跃；逐群页用于查看公开 HTML 日报，不承担完整聊天归档功能。</p>
-  <h3 class="article-subtitle">2. 后续补全不走高风险方案</h3>
-  <p>如果要补全天，只能基于既有安全缓存或旧 key 备份做离线处理；不默认重新抓当前微信进程 key，不注入、不重签、不 hook 客户端。</p>
+<nav class="nav"><a href="#questions">三问</a><a href="#conclusions">先抛结论</a><a href="#schema">raw / wiki / schema</a><a href="#agent-operating-system">Agent 工程</a><a href="#ai-outbound-growth">AI 出海</a><a href="#local-data-safety">本地数据安全</a><a href="#multimodal-world-model">多模态判据</a><a href="#content-ip-product-sense">内容/IP 闭环</a><a href="#lint">Lint</a><a href="#groups">41 群入口</a></nav>
+<section class="section" id="questions"><h2>这版先回答三个问题</h2><div class="answer-grid"><article class="answer"><b>1. 今天真正的新东西是什么？</b><p>不是某个链接，而是 Agent、出海、安全、多模态几条线同时从“看热闹”转向“需要可维护系统”。</p></article><article class="answer"><b>2. 哪些东西能复用？</b><p>Codex Academy、Kimi/Claude Code 架构讨论、出海学习路线、外链建设、世界模型判定门槛、微信本地安全边界。</p></article><article class="answer"><b>3. 哪些判断还不该写死？</b><p>AI 工具站是否值得、多 Agent 架构是否有效、官方/反代/API 差距、世界模型能力，都需要证据继续补。</p></article></div></section>
+<section class="section" id="conclusions"><h2>先抛结论</h2><div class="conclusion"><article class="conclusion-item"><span>1</span><div><h3>Agent 工程正在从工具体验变成操作系统层</h3><p>Codex/Kimi/Claude Code 的讨论不只是工具热，而是工作流、计划树、知识库与 API 入口开始被结构化。</p></div></article><article class="conclusion-item"><span>2</span><div><h3>AI 出海焦点从“做工具站”转向渠道组合与真实数据</h3><p>群里已经出现反思：SEO 很确定，但单押 SEO 不够；AI 工具站低门槛、竞争卷，需要真实收入与渠道数据。</p></div></article><article class="conclusion-item"><span>3</span><div><h3>微信数据工具已变成安全边界问题，而不是单纯效率问题</h3><p>微信仪表盘开源链接被多群转发，同时本机已有官方警告背景；默认路线必须转向本地只读、证据链、不可触碰客户端。</p></div></article><article class="conclusion-item"><span>4</span><div><h3>多模态与世界模型的价值在工程判据，不在热词本身</h3><p>讨论从本地 mmproj、视频抽帧，到 Kimi K2.5 与世界模型判定门槛；共同指向“如何验证能力”。</p></div></article><article class="conclusion-item"><span>5</span><div><h3>内容/IP 讨论开始强调产品手感与闭环，而不是单纯发内容</h3><p>13 岁独立开发者、AI+IP 创业手册、超级个体叙事共同说明：内容生产只是入口，产品×流量×销售闭环才是主线。</p></div></article></div></section>
+<section class="section" id="schema"><h2>日报的 raw / wiki / schema</h2><div class="arch"><article><h3>raw</h3><p>本地候选池、41 份逐群 HTML 与统计清单。只读，不上传，不在公开站复制 raw 数据。</p></article><article><h3>wiki</h3><p>把候选消息编译成概念页、证据页、综合页。判断必须能回到群名、时间或 URL。</p></article><article><h3>schema</h3><p>规则层记录什么能晋级、怎么标证据、哪些微信相关动作只评估不执行。</p></article></div></section>
+<section class="concept" id="agent-operating-system">
+  <div class="concept-head"><span class="badge">高</span><h3>Agent 工程正在从工具体验变成操作系统层</h3></div>
+  <p class="lead-small">Codex/Kimi/Claude Code 的讨论不只是工具热，而是工作流、计划树、知识库与 API 入口开始被结构化。</p>
+  <div class="claim-grid"><div><b>信息增量</b><p>日报不能停留在链接聚合，应该维护一套可复用的 agent 工作流知识库：工具、教程、架构分歧、风险点都要落到概念页和证据页。</p></div><div><b>下一步</b><p>把 Codex/Claude/Kimi 相关内容拆成「能力」「入口」「成本」「可靠性」「适用场景」五类，而不是按发言时间展示。</p></div><div><b>未解决问题</b><p>Kimi Code 与 Claude Code 的实际架构差异、API/官方/反代的稳定性，需要后续用实测而不是群聊印象确认。</p></div></div>
+  <div class="evidence-grid"><article class="evidence-card">
+  <div class="evidence-meta"><span>09:13:40</span><span>WaytoAGI情报中心.1</span><a href="https://mp.weixin.qq.com/s?t=pages/image_detail&amp;scene=1&amp;__biz=MzI1MjkyNjI4NQ==&amp;mid=2247486958&amp;idx=1&amp;sn=50de54f49b32593d202127aecc6ad6c9&amp;from_masonry=1&amp;sharer_shareinfo_first=c87236ac46dbe625e31c05b04f38065e&amp;sharer_shareinfo=c87236ac46dbe625e31c05b04f38065e#wechat_redirect" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>Codex Academy 学习资源</h4>
+  <p>想学 Codex 的都去看：Codex Academy — GenAI共生人 — 最近看到 Codex 在国内终于火起来了，但身边还是有很多朋友不怎么会使用。分享一个官方推出的 Codex 学习网站：Codex Academy 网站里的学习内容非常丰富，包含：1 Codex 从入门到进阶的视频课程2 Codex 在不同领域的使用案例3 Codex 最新发布功能介绍 还有不同行业的 Codex 社区，尤其教育行业挺多的。Codex</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>08:48:54</span><span>🌊ShowMeAI 踏浪而歌</span><a href="https://mp.weixin.qq.com/s?__biz=MzY5MDIxMjY1Ng==&amp;mid=2247483998&amp;idx=1&amp;sn=095ccbcf5894f80ba24c7fb45aec1c43&amp;chksm=f2c463efa10dbfb77f6a8bff601d7b4040bdce12a5a0a7c4b77a3cf8df517e5b218e7856bf57&amp;mpshare=1&amp;scene=1&amp;srcid=0526QDiNHJ1w3mRzfn4vIDnb&amp;sharer_shareinfo=e9924ce124bf83acdf12e9eafa0a5f83&amp;sharer_shareinfo_first=e9924ce124bf83acdf12e9eafa0a5f83#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>kimi-code 对齐 Claude Code 架构</h4>
+  <p>月之暗面重写终端智能体并更名kimi-code，全面看齐Claude Code架构 — 亿执科技 — 月之暗面旗下的开源终端 AI 编码智能体 kimi-cli 正在悄然进行仓库迁移与架构重写，并已正式更名为 k</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>08:27:14</span><span>🌊ShowMeAI 踏浪而歌</span><a href="https://mp.weixin.qq.com/s?__biz=MzAxOTU5NTU4MQ==&amp;mid=2247497492&amp;idx=1&amp;sn=6a8dae5179a8fcbb61b3a173734e1f48&amp;chksm=9a94f5f961d2667a2902bcee3e364dcad48bb2cc43d27a4fad3bba4b230fdfb4d869ec294667&amp;mpshare=1&amp;scene=1&amp;srcid=0526Oz2ZuGbVfhKbYfN8Rzfe&amp;sharer_shareinfo=f8548c79cc8f6bc96973261438b01e54&amp;sharer_shareinfo_first=f8548c79cc8f6bc96973261438b01e54#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>Kimi K2.5 技术报告</h4>
+  <p>Kimi K2.5技术报告解读：视觉-文本联合训练与并行智能体框架 — ChallengeHub — Kimi K2.5震撼发布：视觉智能体革命，多智能体并行让AI提速4.5倍！</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>07:50:12</span><span>🌊ShowMeAI 踏浪而歌</span><a href="https://mp.weixin.qq.com/s?__biz=MzE5ODUyMTczMQ==&amp;mid=2247483839&amp;idx=1&amp;sn=552536ded37beeb35dccbe56a46026f0&amp;chksm=97774709ceae670bf9896ffcdec0c08caa5f0e6547cfa6e3e63aa37f03a6a07a334af19dbb49&amp;mpshare=1&amp;scene=1&amp;srcid=0526oHLZ4pCJTPSL7OAzO8xK&amp;sharer_shareinfo=440a0f19daea1720a8a65e7f63f5cc5a&amp;sharer_shareinfo_first=440a0f19daea1720a8a65e7f63f5cc5a#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>多 Agent 架构反例</h4>
+  <p>三省六部幻觉:为什么“虚拟公司&quot;式多Agent架构工程不行 — 我还能蒸 — 三省六部幻觉:为什么“虚拟公司&quot;式多Agent架构工程不行</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>10:28:32</span><span>一群神的孩子们</span><a href="https://x.com/servasyy_ai/status/2059098535249985990" target="_blank" rel="noopener noreferrer">X</a></div>
+  <h4>短期计划结构化为长期树</h4>
+  <p>强烈推荐群友作品！！ 对我的最近做的多Agent产品，帮助太大太大了！ 把短期 plans 变成一棵长期稳定、结构化的树。</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>11:10:08</span><span>dontbesilent 聊赚钱的群</span><a href="https://mp.weixin.qq.com/s?__biz=MzA5MDg2MzQ5NQ==&amp;mid=2247487959&amp;idx=1&amp;sn=cc6f29c2014e7464ffd588607dbc96a5&amp;chksm=915c352ac208527015e0f46405cddfda3e4bbdabcfa4f99ab6c49862e92e2719dcab654312d1&amp;mpshare=1&amp;scene=1&amp;srcid=0526poG3YwMnu9MicDyvDHSo&amp;sharer_shareinfo=4651b6e870aad3e3b1699530f2beaa71&amp;sharer_shareinfo_first=4651b6e870aad3e3b1699530f2beaa71#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>Claude Code API 配置教程</h4>
+  <p>手把手教你配置 Claude Code API — dontbesilent — 第一步：安装 Claude Code（已安装直接看第三步）如果你还没有安装 Claude Code，推荐先下载</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>10:32:13</span><span>赫兹的朋友们~出海交流</span><span>群聊文本</span></div>
+  <h4>官方 / 反代体验差异讨论</h4>
+  <p>我现在claude是用kiro反代的，但是有人跟我说和官方差距很大，有大佬了解吗</p>
+</article></div>
+</section>
+<section class="concept" id="ai-outbound-growth">
+  <div class="concept-head"><span class="badge">中高</span><h3>AI 出海焦点从“做工具站”转向渠道组合与真实数据</h3></div>
+  <p class="lead-small">群里已经出现反思：SEO 很确定，但单押 SEO 不够；AI 工具站低门槛、竞争卷，需要真实收入与渠道数据。</p>
+  <div class="claim-grid"><div><b>信息增量</b><p>出海日报应该产出「假设清单」和「验证动作」，而不是只收藏案例。今天的增量是：渠道不是 SEO vs 社媒，而是 SEO/外链/社媒/邮件/冷启/真实 MRR 的组合验证。</p></div><div><b>下一步</b><p>给出海群做一个匿名数据表：品类、流量来源、上线天数、MRR、成本、首单路径。没有这个表，讨论会继续停留在焦虑和个案。</p></div><div><b>未解决问题</b><p>AI 工具站到底是不是低收益高竞争，目前只有经验判断；缺分布数据。</p></div></div>
+  <div class="evidence-grid"><article class="evidence-card">
+  <div class="evidence-meta"><span>07:34:03</span><span>赫兹的朋友们~出海交流</span><a href="https://mp.weixin.qq.com/s/5DN254ifgjJiiu45nOJ68w" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>AI 网站出海学习路线</h4>
+  <p>网站出海每日分享：AI 网站出海的学习路线 — droidHZ — 很多朋友问过我一个问题，就是不知道怎么学习，各个阶段的学习目标应该是怎么样的。根据我个人的经验来分享一下这个路线吧，核心点还是在实践中学习。</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>10:47:08</span><span>赫兹的朋友们~出海交流</span><span>群聊文本</span></div>
+  <h4>AI 工具站低门槛与竞争</h4>
+  <p>我加了一些 AI 工具站出海的圈子，有个初步看法，只是没有数据支撑，不一定对，AI 工具站门槛低、竞争卷，有极少数人拿到大结果，但大部分人忙前忙后，赚得还不如打工多。像这位做跨境电商的朋友，虽说入门难度高点，但肯沉下心做，基本都能拿到不错的结果。 @Frio</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>10:50:11</span><span>赫兹的朋友们~出海交流</span><span>群聊文本</span></div>
+  <h4>出海真实数据匿名统计需求</h4>
+  <p>@droidHZ 群主能搞个匿名统计吗，我很好奇AI 出海的真实数据是个啥情况[捂脸]</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>09:52:04</span><span>赫兹的朋友们~出海交流</span><span>群聊文本</span></div>
+  <h4>SEO 不应单点押注</h4>
+  <p>最近我也在想，因为SEO太确定了，所以圈内大家都从 SEO 出手，但是宣发方式那么多，咱们有些太注意 SEO 的重要性了，社媒邮件冷启这个都应该配合来搞，而不是死磕SEO</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>10:22:41</span><span>小虾米AI出海编程交流群</span><a href="https://mp.weixin.qq.com/s?__biz=Mzg3MDc1NDcyNw==&amp;mid=2247486456&amp;idx=1&amp;sn=c17898851946d96646d6116bf1a476ff&amp;chksm=cf2cda4bd90b62a9c4d453ed1371fd2ddfc879382910f5761adf4a38a81eb3f89bc82d8ff619&amp;mpshare=1&amp;scene=1&amp;srcid=0526MxBN0uhNcxWVotlrElwI&amp;sharer_shareinfo=52591edf13d4fb0152ca88fbe0de2df3&amp;sharer_shareinfo_first=317bee1b4eee2d57f9d3ecfb80a5f855#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>外链建设资源</h4>
+  <p>【SEO】- 外链建设 — JChen AI笔记 — 给大家分享一波，性价比高的一些外链，我本人也在用！</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>09:09:21</span><span>赫兹的朋友们~出海交流</span><a href="https://www.reddit.com/r/microsaas/comments/1tn4jvh/my_new_saas_starts_making_13k_in_a_month_of/" target="_blank" rel="noopener noreferrer">Reddit</a></div>
+  <h4>Distilbook 微型 SaaS 案例</h4>
+  <p>这个产品还挺有趣，一个月做到了1千刀，可以看看他的推广方式 Trust MRR link: Website: Distilbook.com</p>
+</article></div>
+</section>
+<section class="concept" id="local-data-safety">
+  <div class="concept-head"><span class="badge">高</span><h3>微信数据工具已变成安全边界问题，而不是单纯效率问题</h3></div>
+  <p class="lead-small">微信仪表盘开源链接被多群转发，同时本机已有官方警告背景；默认路线必须转向本地只读、证据链、不可触碰客户端。</p>
+  <div class="claim-grid"><div><b>信息增量</b><p>任何日报系统都要把 raw/wiki/schema 分开：raw 只读缓存，wiki 是加工层，schema 是安全规则。不要把“能抓到”当成“应该抓”。</p></div><div><b>下一步</b><p>日报生成只读缓存；页面明确缓存截止时间；所有微信 CLI / wxchat / WeFlow / Frida / hook / 重签名方案默认列入风险评估，不作为执行路径。</p></div><div><b>未解决问题</b><p>后续如果需要全天补全，只能从旧 key 备份恢复或等待安全导出路径，不能绕回客户端注入。</p></div></div>
+  <div class="evidence-grid"><article class="evidence-card">
+  <div class="evidence-meta"><span>09:13:49</span><span>SimonlinのAI学术交流（兄弟姐妹）</span><a href="https://github.com/joeseesun/wechat-radar" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+  <h4>微信仪表盘开源与风险</h4>
+  <p>微信仪表盘开源了，为了避免风险，一天后转私有库，需要的尽快fork：</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>11:06:30</span><span>Harness精神病院(大群)</span><span>群聊文本</span></div>
+  <h4>微信收藏夹批量导入需求</h4>
+  <p>现在有没有什么工具可以批量导入 微信收藏夹，</p>
+</article></div>
+</section>
+<section class="concept" id="multimodal-world-model">
+  <div class="concept-head"><span class="badge">中</span><h3>多模态与世界模型的价值在工程判据，不在热词本身</h3></div>
+  <p class="lead-small">讨论从本地 mmproj、视频抽帧，到 Kimi K2.5 与世界模型判定门槛；共同指向“如何验证能力”。</p>
+  <div class="claim-grid"><div><b>信息增量</b><p>日报应把多模态信号沉淀成评测框架：输入类型、抽帧策略、延迟、成本、是否需要投影文件、是否只是概念包装。</p></div><div><b>下一步</b><p>建立一个小型评测表：图片理解、视频抽帧、音频转写、长视频去重、世界模型 7 个判定门槛。</p></div><div><b>未解决问题</b><p>当前材料多为文章和经验讨论，缺可复现实测。</p></div></div>
+  <div class="evidence-grid"><article class="evidence-card">
+  <div class="evidence-meta"><span>09:29:05</span><span>🌊ShowMeAI 踏浪而歌</span><a href="https://mp.weixin.qq.com/s?__biz=MzA5NDY0MDI0MQ==&amp;mid=2650939640&amp;idx=1&amp;sn=e85071e1bc390ff0270f8126c6c04741&amp;chksm=8aeef0862bb801cb817c5ce65064eb6f4a9f320d9b95bd663a614a8b0af2f62a982cf5e7e6c6&amp;mpshare=1&amp;scene=1&amp;srcid=0526p2v7Pgo6fPkuSLOP4OoE&amp;sharer_shareinfo=83d32c90f84cc17cf871f48b15a9be6f&amp;sharer_shareinfo_first=5b3b67cefa70c4126ad3da5c0069a1b5#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>世界模型判定门槛</h4>
+  <p>完全指南 | 天天发世界模型，哪些只是蹭热点？ — 迷幻小蘑菇啊 — LeCun、李飞飞等大佬如何说？&quot;世界模型&quot;的7个判定门槛是啥？前世今生完全指南</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>00:55:20</span><span>SimonlinのAI学术交流（兄弟姐妹）</span><span>群聊文本</span></div>
+  <h4>视频抽帧分析路径</h4>
+  <p>是不是还可以加一些代码算法 把帧画面重合度高的去掉 不需要抽帧的画面都分析</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>00:33:35</span><span>SimonlinのAI学术交流（兄弟姐妹）</span><span>群聊文本</span></div>
+  <h4>本地多模态 mmproj</h4>
+  <p>还有一个 mmproj 文件</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>08:27:14</span><span>🌊ShowMeAI 踏浪而歌</span><a href="https://mp.weixin.qq.com/s?__biz=MzAxOTU5NTU4MQ==&amp;mid=2247497492&amp;idx=1&amp;sn=6a8dae5179a8fcbb61b3a173734e1f48&amp;chksm=9a94f5f961d2667a2902bcee3e364dcad48bb2cc43d27a4fad3bba4b230fdfb4d869ec294667&amp;mpshare=1&amp;scene=1&amp;srcid=0526Oz2ZuGbVfhKbYfN8Rzfe&amp;sharer_shareinfo=f8548c79cc8f6bc96973261438b01e54&amp;sharer_shareinfo_first=f8548c79cc8f6bc96973261438b01e54#rd" target="_blank" rel="noopener noreferrer">公众号</a></div>
+  <h4>Kimi K2.5 技术报告</h4>
+  <p>Kimi K2.5技术报告解读：视觉-文本联合训练与并行智能体框架 — ChallengeHub — Kimi K2.5震撼发布：视觉智能体革命，多智能体并行让AI提速4.5倍！</p>
+</article></div>
+</section>
+<section class="concept" id="content-ip-product-sense">
+  <div class="concept-head"><span class="badge">中</span><h3>内容/IP 讨论开始强调产品手感与闭环，而不是单纯发内容</h3></div>
+  <p class="lead-small">13 岁独立开发者、AI+IP 创业手册、超级个体叙事共同说明：内容生产只是入口，产品×流量×销售闭环才是主线。</p>
+  <div class="claim-grid"><div><b>信息增量</b><p>内容类信号要拆成“输入训练量、产品感、私域闭环、销售路径”，否则就只是鸡血素材。</p></div><div><b>下一步</b><p>后续日报对 IP/内容素材增加「可执行闭环」字段：产品、流量、成交、复购，缺哪一环就标出来。</p></div><div><b>未解决问题</b><p>案例是否可迁移到普通创作者，仍需要更多样本。</p></div></div>
+  <div class="evidence-grid"><article class="evidence-card">
+  <div class="evidence-meta"><span>08:14:47</span><span>SimonlinのAI学术交流（兄弟姐妹）</span><a href="https://www.xiaoyuzhoufm.com/episode/6a1433bfe59ebca93642e525?s=eyJ1IjogIjYwNGFkMDFhZTBmNWU3MjNiYjI5OGVkMiJ9" target="_blank" rel="noopener noreferrer">小宇宙</a></div>
+  <h4>13 岁独立开发者产品手感</h4>
+  <p>24. 吕思彤：13岁独立开发者，4000小时AI练出来的产品手感 - 灯下白-走进 AI 圈的真实对话 | 小宇宙 - 听播客，上小宇宙 — 灯下白-走进 AI 圈的真实对话</p>
+</article>
+<article class="evidence-card">
+  <div class="evidence-meta"><span>08:47:36</span><span>👧AI自媒体IP 1️⃣群</span><a href="https://weread.qq.com/book-detail?type=1&amp;senderVid=387883486&amp;v=48932890813abb679g016cdc" target="_blank" rel="noopener noreferrer">微信读书</a></div>
+  <h4>AI+IP 超级个体闭环</h4>
+  <p>《超级个体AI+IP创业手册》这本书不错，推荐给你听 — 本书系统讲述了2026年“微利时代”下，普通人如何通过“AI+IP”模式成为超级个体。核心策略是构建“产品×流量×销售”的三角形闭环：聚焦高客单价产品，放弃爆款幻想、坚持“经营式出摊”获取精准流量，并通过私域和社群完成高信任成交。同时，强调利用AI放大个人能量、建立私有语料库，以及回收人生叙事的主体性。</p>
+</article></div>
+</section>
+<section class="section" id="lint"><h2>Lint：今天不能偷懒的矛盾和缺口</h2><div class="lint"><div><b>多 Agent 不是一个结论</b><p>同一天既有 Kimi/多 Agent 新架构，也有“虚拟公司式多 Agent 不行”的反例。要拆成计划树、工具编排、角色扮演三类。</p></div><div><b>出海缺真实分布</b><p>AI 工具站低门槛、SEO 很确定、案例有 MRR，但缺匿名统计。没有数据，今天只能写成待验证假设。</p></div><div><b>微信工具只做安全评估</b><p>开源仪表盘和收藏夹自动化都有需求，但结合官方警告背景，默认路线仍是本地只读缓存，不碰客户端。</p></div></div></section>
+<section class="section"><h2>公开入口</h2><div class="answer-grid"><article class="answer"><b>41 群索引</b><p><a href="2026-05-26-selected-groups/index.html">打开逐群 HTML 索引</a>。这里保留 41 个已选群的公开日报入口。</p></article><article class="answer"><b>发布范围</b><p>只发布整理后的 HTML 页面；不发布 raw JSON、stats、候选 Markdown、执行报告或完整聊天文本。</p></article><article class="answer"><b>数据口径</b><p>本页只覆盖本地安全缓存，截至 <strong>2026-05-26 11:12:09</strong>，不是完整全天版。</p></article></div></section>
+<section class="section" id="groups"><h2>41 群入口仍保留</h2><div class="table-wrap"><table><thead><tr><th>群</th><th>消息</th><th>活跃人数</th><th>日报</th></tr></thead><tbody><tr><td>SimonlinのAI学术交流（兄弟姐妹）</td><td>500</td><td>56</td><td><a href="2026-05-26-selected-groups/001-SimonlinのAI学术交流-兄弟姐妹-905854/2026-05-26-日报.html">打开</a></td></tr><tr><td>Harness精神病院(大群)</td><td>218</td><td>18</td><td><a href="2026-05-26-selected-groups/011-Harness精神病院-大群-896102/2026-05-26-日报.html">打开</a></td></tr><tr><td>赫兹的朋友们~出海交流</td><td>192</td><td>34</td><td><a href="2026-05-26-selected-groups/020-赫兹的朋友们-出海交流-500625/2026-05-26-日报.html">打开</a></td></tr><tr><td>🌊ShowMeAI 踏浪而歌</td><td>169</td><td>42</td><td><a href="2026-05-26-selected-groups/003-ShowMeAI-踏浪而歌-058301/2026-05-26-日报.html">打开</a></td></tr><tr><td>小虾米AI出海编程交流群</td><td>112</td><td>23</td><td><a href="2026-05-26-selected-groups/091-小虾米AI出海编程交流群-920262/2026-05-26-日报.html">打开</a></td></tr><tr><td>彻猹！</td><td>110</td><td>18</td><td><a href="2026-05-26-selected-groups/012-彻猹-333543/2026-05-26-日报.html">打开</a></td></tr><tr><td>1#易起搞钱（VIP）｜ 陈随易</td><td>109</td><td>25</td><td><a href="2026-05-26-selected-groups/002-1-易起搞钱-VIP-陈随易-114759/2026-05-26-日报.html">打开</a></td></tr><tr><td>『闲聊』海边晒太阳☀️</td><td>96</td><td>29</td><td><a href="2026-05-26-selected-groups/009-闲聊-海边晒太阳-947182/2026-05-26-日报.html">打开</a></td></tr><tr><td>灯下白听友1群</td><td>89</td><td>16</td><td><a href="2026-05-26-selected-groups/024-灯下白听友1群-746257/2026-05-26-日报.html">打开</a></td></tr><tr><td>一群神的孩子们</td><td>61</td><td>22</td><td><a href="2026-05-26-selected-groups/007-一群神的孩子们-308500/2026-05-26-日报.html">打开</a></td></tr><tr><td>VIP 1群/一支烟花社区</td><td>61</td><td>19</td><td><a href="2026-05-26-selected-groups/013-VIP-1群-一支烟花社区-868060/2026-05-26-日报.html">打开</a></td></tr><tr><td>MH-2026赛季</td><td>42</td><td>4</td><td><a href="2026-05-26-selected-groups/043-MH-2026赛季-992009/2026-05-26-日报.html">打开</a></td></tr><tr><td>🏆老卫的自媒体核心群(原X增长)</td><td>37</td><td>11</td><td><a href="2026-05-26-selected-groups/026-老卫的自媒体核心群-原X增长-537404/2026-05-26-日报.html">打开</a></td></tr><tr><td>一支烟花AI Coding 社群</td><td>30</td><td>10</td><td><a href="2026-05-26-selected-groups/047-一支烟花AI-Coding-社群-500175/2026-05-26-日报.html">打开</a></td></tr><tr><td>龙虾&amp;Hermes / 一支烟花社区 31群</td><td>27</td><td>9</td><td><a href="2026-05-26-selected-groups/039-龙虾-Hermes-一支烟花社区-31群-691907/2026-05-26-日报.html">打开</a></td></tr><tr><td>出海独立开发交流群 - Asnull</td><td>27</td><td>2</td><td><a href="2026-05-26-selected-groups/027-出海独立开发交流群---Asnull-827720/2026-05-26-日报.html">打开</a></td></tr><tr><td>ZOPC Builders 正式群</td><td>23</td><td>11</td><td><a href="2026-05-26-selected-groups/025-ZOPC-Builders-正式群-648925/2026-05-26-日报.html">打开</a></td></tr><tr><td>WaytoAGI情报中心.1</td><td>23</td><td>10</td><td><a href="2026-05-26-selected-groups/015-WaytoAGI情报中心.1-325031/2026-05-26-日报.html">打开</a></td></tr><tr><td>哥飞的朋友们⑪</td><td>20</td><td>10</td><td><a href="2026-05-26-selected-groups/033-哥飞的朋友们⑪-449178/2026-05-26-日报.html">打开</a></td></tr><tr><td>Ruiqin出海【day104#-4442】</td><td>17</td><td>8</td><td><a href="2026-05-26-selected-groups/092-Ruiqin出海-day104--4442-323506/2026-05-26-日报.html">打开</a></td></tr><tr><td>🚀低调哥丨Ai增长进化</td><td>16</td><td>5</td><td><a href="2026-05-26-selected-groups/031-低调哥丨Ai增长进化-841741/2026-05-26-日报.html">打开</a></td></tr><tr><td>dontbesilent 聊赚钱的群</td><td>15</td><td>5</td><td><a href="2026-05-26-selected-groups/022-dontbesilent-聊赚钱的群-650026/2026-05-26-日报.html">打开</a></td></tr><tr><td>dontbesilent 聊赚钱的群</td><td>10</td><td>5</td><td><a href="2026-05-26-selected-groups/040-dontbesilent-聊赚钱的群-626856/2026-05-26-日报.html">打开</a></td></tr><tr><td>dontbesilent 聊赚钱的群</td><td>8</td><td>5</td><td><a href="2026-05-26-selected-groups/014-dontbesilent-聊赚钱的群-220675/2026-05-26-日报.html">打开</a></td></tr><tr><td>出海X增长黑客实验室</td><td>4</td><td>4</td><td><a href="2026-05-26-selected-groups/137-出海X增长黑客实验室-920363/2026-05-26-日报.html">打开</a></td></tr><tr><td>Vibe Coding Master</td><td>4</td><td>2</td><td><a href="2026-05-26-selected-groups/055-Vibe-Coding-Master-927679/2026-05-26-日报.html">打开</a></td></tr><tr><td>侠狼信息精选2026年–5月底</td><td>3</td><td>1</td><td><a href="2026-05-26-selected-groups/174-侠狼信息精选2026年-5月底-993596/2026-05-26-日报.html">打开</a></td></tr><tr><td>Vibe Coding创作者交流群-bobooo</td><td>2</td><td>2</td><td><a href="2026-05-26-selected-groups/060-Vibe-Coding创作者交流群-bobooo-897584/2026-05-26-日报.html">打开</a></td></tr><tr><td>哥飞的朋友们⑦</td><td>2</td><td>1</td><td><a href="2026-05-26-selected-groups/042-哥飞的朋友们⑦-837542/2026-05-26-日报.html">打开</a></td></tr><tr><td>夙愿的AI实验室2026</td><td>2</td><td>1</td><td><a href="2026-05-26-selected-groups/044-夙愿的AI实验室2026-187410/2026-05-26-日报.html">打开</a></td></tr><tr><td>歸藏的 AIGC 周刊会员群 03</td><td>2</td><td>1</td><td><a href="2026-05-26-selected-groups/065-歸藏的-AIGC-周刊会员群-03-043305/2026-05-26-日报.html">打开</a></td></tr><tr><td>👧AI自媒体IP 1️⃣群</td><td>2</td><td>1</td><td><a href="2026-05-26-selected-groups/071-AI自媒体IP-1-群-368951/2026-05-26-日报.html">打开</a></td></tr><tr><td>AI编程-最小化商业产品</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/030-AI编程-最小化商业产品-811210/2026-05-26-日报.html">打开</a></td></tr><tr><td>dontbesilent 聊赚钱的群</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/051-dontbesilent-聊赚钱的群-345846/2026-05-26-日报.html">打开</a></td></tr><tr><td>AI先行者联盟</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/058-AI先行者联盟-716305/2026-05-26-日报.html">打开</a></td></tr><tr><td>搞钱-产品交流</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/064-搞钱-产品交流-958881/2026-05-26-日报.html">打开</a></td></tr><tr><td>君言戏语VIP读者群</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/080-君言戏语VIP读者群-205508/2026-05-26-日报.html">打开</a></td></tr><tr><td>AIBC共赢社-企业AI落地-1 群</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/141-AIBC共赢社-企业AI落地-1-群-221312/2026-05-26-日报.html">打开</a></td></tr><tr><td>春节月入 3k 刀围观群</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/145-春节月入-3k-刀围观群-041228/2026-05-26-日报.html">打开</a></td></tr><tr><td>出海研习社⛵「第四期」</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/178-出海研习社-第四期-402964/2026-05-26-日报.html">打开</a></td></tr><tr><td>AI视频SaaS网站-1月Mini航海群</td><td>0</td><td>0</td><td><a href="2026-05-26-selected-groups/200-AI视频SaaS网站-1月Mini航海群-743641/2026-05-26-日报.html">打开</a></td></tr></tbody></table></div><p class="footer">安全口径：本页只发布整理后的 HTML；未运行 wx/wxchat/WeFlow/Frida，未重新抓 key，未调用 Claude/API 处理聊天内容。参考结构来自公开 X 文章：<a href="https://x.com/LufzzLiz/status/2058542686551028006?s=20" target="_blank" rel="noopener noreferrer">LLM Wiki 范式实战教程</a>。</p></section>
 </main>
-<footer>🤖 本地安全缓存公开版 · 2026-05-27 视觉统一</footer>
 </body>
 </html>
