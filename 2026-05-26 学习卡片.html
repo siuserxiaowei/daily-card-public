@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 2026-05-26 选中群本地学习卡片</title>
+<style>
+.main-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; margin:34px 0 46px; }
+.main-stat { padding:22px 24px; }
+.main-stat b { display:block; font-size:clamp(28px,3vw,46px); line-height:1.1; }
+.main-stat span { color:#647084; font-size:14px; font-weight:800; }
+.entry-card { display:block; margin:24px 0 38px; padding:28px 32px; text-decoration:none; color:inherit; }
+.entry-card strong { display:block; color:#2d3a4a; font-size:clamp(24px,2.5vw,38px); margin-bottom:10px; }
+.entry-card span { color:#647084; font-size:clamp(16px,1.4vw,22px); }
+@media(max-width:760px){.main-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+</style>
+
+<link rel="stylesheet" href="assets/daily-card-theme.css">
+</head>
+<body class="daily-card-theme daily-article daily-526-main">
+<div class="hero">
+  <a class="nav-back" href="./index.html">← 返回首页</a>
+  <div class="date">LOCAL CACHE · 2026-05-26</div>
+  <h1>📚 2026-05-26 选中群本地学习卡片</h1>
+  <div class="summary">这版是本地安全缓存公开版：41 个已选群里 32 个在缓存内活跃，合计 2033 条消息，数据只覆盖到 <strong>2026-05-26 11:12:09</strong>。它不是完整全天版，重点是把可公开的 HTML 入口整理好。</div>
+</div>
+<main class="container article-main">
+  <h1>5/26 本地安全缓存版</h1>
+  <div class="main-grid">
+    <div class="main-stat card"><b>41</b><span>已选群</span></div>
+    <div class="main-stat card"><b>32</b><span>缓存内活跃群</span></div>
+    <div class="main-stat card"><b>2033</b><span>缓存内消息</span></div>
+    <div class="main-stat card"><b>11:12</b><span>缓存截止</span></div>
+  </div>
+  <h2 class="article-section-title">🔥 公开口径</h2>
+  <h3 class="article-subtitle">1. 只发布 HTML，不发布原始数据</h3>
+  <blockquote><p>本次公开范围只包含学习卡片入口、41 群索引和逐群 HTML 页面；不包含 raw JSON、stats、候选 Markdown、执行报告或完整聊天文本。</p></blockquote>
+  <p>这次改版的目标是让公开页回到“学习卡片”的阅读体验，而不是把用户带到一个冷冰冰的目录表。所有页面仍然保留缓存截止说明，避免被误读成完整全天日报。</p>
+  <h3 class="article-subtitle">2. 群日报作为来源入口保留</h3>
+  <p>逐群 HTML 仍然保留，方便从主卡片进入具体群的公开日报页面。0 消息群也保留入口，用来说明 41 个已选群的覆盖范围没有被悄悄缩小。</p>
+  <a class="entry-card card" href="2026-05-26-selected-groups/index.html"><strong>打开 41 个选中群本地日报索引</strong><span>41 个已选群 / 32 个缓存内活跃群 / 2033 条消息 / 截至 11:12</span></a>
+  <h2 class="article-section-title">📌 当天可读方式</h2>
+  <h3 class="article-subtitle">1. 先看索引，再按群深入</h3>
+  <p>索引页按缓存内消息量排序，能快速看到当天哪些圈子最活跃；逐群页用于查看公开 HTML 日报，不承担完整聊天归档功能。</p>
+  <h3 class="article-subtitle">2. 后续补全不走高风险方案</h3>
+  <p>如果要补全天，只能基于既有安全缓存或旧 key 备份做离线处理；不默认重新抓当前微信进程 key，不注入、不重签、不 hook 客户端。</p>
+</main>
+<footer>🤖 本地安全缓存公开版 · 2026-05-27 视觉统一</footer>
+</body>
+</html>
