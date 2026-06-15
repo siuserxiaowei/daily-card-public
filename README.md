@@ -1,5 +1,75 @@
 # Daily Learning Cards
 
+<!-- SIUSER-REPO-GUIDE:START -->
+## Repository Guide
+
+### What This Repository Does
+
+日报知识卡片：公开输出 AI 摘要、知识卡片和内容设计实验。
+
+English summary: Daily knowledge cards for public AI summaries, knowledge-card output, and content design experiments.
+
+### Online Entry Points
+
+- GitHub repository: https://github.com/siuserxiaowei/daily-card-public
+- Live / GitHub Pages: https://siuserxiaowei.github.io/daily-card-public/
+- Default branch: `main`
+- Primary language: `HTML`
+- Topics: `ai`, `daily-report`, `github-pages`, `knowledge-cards`, `wechat`
+
+### How To Read / Learn This Repository
+
+1. 先读本 README，确认项目目标、在线入口和本地运行方式。
+2. 打开上方 Live / GitHub Pages 链接，先从最终效果理解项目。
+3. 按仓库目录从入口文件、数据文件、脚本和文档依次阅读。
+4. 如果要修改内容，先小范围改动，再运行本 README 中的验证命令。
+
+### Clone This Repository
+
+```bash
+git clone https://github.com/siuserxiaowei/daily-card-public.git
+cd daily-card-public
+```
+
+### Run Or View Locally
+
+```bash
+python3 -m http.server 8000
+```
+
+然后打开 `http://127.0.0.1:8000/`。
+
+### Repository Map
+
+| Path | Purpose |
+| --- | --- |
+| `README.md` | 项目入口说明，先读这里。 |
+| `index.html` | 静态站首页或页面入口。 |
+| `assets/` | 图片、样式、字体或页面资源。 |
+| `scripts/` | 构建、同步、生成或维护脚本。 |
+| `2026-05-03 学习卡片.html` | 项目文件。 |
+| `2026-05-04 内容创作专题.html` | 项目文件。 |
+| `2026-05-04 出海专题.html` | 项目文件。 |
+| `2026-05-04 学习卡片.html` | 项目文件。 |
+| `2026-05-04 电商专题.html` | 项目文件。 |
+| `2026-05-05 学习卡片.html` | 项目文件。 |
+| `2026-05-06 8核心群日报.html` | 项目文件。 |
+| `2026-05-06 AI模型专题.html` | 项目文件。 |
+
+### Maintenance Notes
+
+- Keep this README in sync when the project purpose, live link, or run commands change.
+- Prefer small, focused commits when changing code, data, or generated pages.
+- Run the relevant build or validation command before publishing changes.
+- If this is a generated/static archive, update the source data first, then regenerate the public files.
+
+### Privacy And Safety
+
+- Do not commit API keys, tokens, passwords, cookies, private URLs, or internal account data.
+- Keep private source material out of public GitHub Pages output unless it has been explicitly cleared for publication.
+- When in doubt, run a quick secret scan such as `rg -n "token|secret|password|access_key|authorization"` before pushing.
+<!-- SIUSER-REPO-GUIDE:END -->
+
 <!-- SIUSER-SEO-INTRO:START -->
 
 ## 项目介绍 / Project Introduction
@@ -11,7 +81,6 @@
 **SEO 关键词 / SEO Keywords**: daily card, AI summary, knowledge card, content design, 长图排版, 内容视觉化
 
 <!-- SIUSER-SEO-INTRO:END -->
-
 
 每日由 AI 从社群讨论、个人学习素材和公开资料中浓缩出来的学习卡片与专题日报（脱敏分享版）。这里展示的是 `daily-card-public` 的公开输出，不是完整聊天记录归档。
 
